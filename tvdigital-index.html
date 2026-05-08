@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+<link rel='stylesheet' href='https://unpkg.com/plyr@3/dist/plyr.css'><link rel="stylesheet" href="./style.css">
+  <title>IPTV MAS</title>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+  <a href="https://bbmksnzwjcqigxoi0iicoq.on.drv.tw/www.tonor.com/iptviindex.html">iptvindex</a>
+  
+  <a href="https://bbmksnzwjcqigxoi0iicoq.on.drv.tw/www.tonor.com/tvplaer-index%20.html">player</a>
+  <a href="https://bbmksnzwjcqigxoi0iicoq.on.drv.tw/www.tonor.com/tonortv.index.html">tonortv</a>
+    <a href="https://bbmksnzwjcqigxoi0iicoq.on.drv.tw/www.tonor.com/tvid.index.html">tvid</a>
+      <a href="https://bbmksnzwjcqigxoi0iicoq.on.drv.tw/www.tonor.com/newtv.index.html">newiptv</a>
+  <a href="https://bbmksnzwjcqigxoi0iicoq.on.drv.tw/www.tonor.com/tvplaer-index%20.html">AIS GH</a>
+  <a href="https://bbmksnzwjcqigxoi0iicoq.on.drv.tw/sci1107drv.tw/indext.html/3bbasian%20(2)%20-%20%E0%B8%AA%E0%B8%B3%E0%B9%80%E0%B8%99%E0%B8%B2%20-%20%E0%B8%AA%E0%B8%B3%E0%B9%80%E0%B8%99%E0%B8%B2.html">Shaka iptv</a>
+  <a href="https://bbmksnzwjcqigxoi0iicoq.on.drv.tw/www.tonor.com/thaitv-index.html">Thai tv</a>
+  <a href="https://bbmksnzwjcqigxoi0iicoq.on.drv.tw/www.tonor.com/tviindex.html">ais</a>
+     <a href="">ais</a>
+       <a href="https://bbmksnzwjcqigxoi0iicoq.on.drv.tw/www.tonor.com/htmltv.index.html">htmltv</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html>
+  <!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+<link rel='stylesheet' href='https://unpkg.com/plyr@3/dist/plyr.css'><link rel="stylesheet" href="./style.css">
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IPTV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* �2�0�2�0�2�7�2�3�2�0�2�3�2�5 CSS �2�4�2�8�2�2�2�3�2�7�2�1 */
+    .container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    }
+
+    .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
+    body {
+      background-color: #000;
+      padding: 20px;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: auto;
+      font-family: 'Prompt', sans-serif;
+    }
+
+    
+
+    .channels {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .channel-button {
+      background-color: #222;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid #fff;
+      cursor: pointer;
+      text-align: center;
+      width: 120px;
+      font-family: 'Prompt', sans-serif;
+      outline: none;
+    }
+
+    .channel-button img {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+
+    .channel-button:hover,
+    .channel-button:focus {
+      background-color: #444;
+    }
+  </style>
+  
+  <style>
+ 
+     {
+    margin: 0;
+    padding: 0;
+    background: black;
+    height: 100%;
+    overflow: hidden;
+  }
+  video {
+    width: 100%;
+    height: 40%;
+    object-fit: cover; /* ครอบคลุมเต็มจอ */
+  }
+  
+         #videoContainer {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            background: black;
+        }
+        
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+
+        .button {
+            cursor: pointer;
+            padding: 3px 5px;
+            border: none;
+            background: #444;
+            color: red;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background: #555;
+        }
+  
+        
+    body {
+      background-color: #000;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 2em;
+      color: #00aaff;
+    }
+
+    
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 20px;
+      background-color: #222;
+      color: white;
+      border: 1px solid #00aaff;
+      border-radius: 5px;
+    }
+  </style>
+           
+                <font color="blue">
+
+ <text color="whitegreen">
+    <input type="text" id="videoInput" placeholder="กรอก URL ของไฟล์ .m3u8 ที่นี่" />
+    <button id="loadPlayer">โหลดวีดีโอ</button>
+<button onclick="toggleFullScreen()">เต็มจอ / ย่อจอ</button>
+    </text>
+    <div class="controls">
+        <button class="button" id="stretch">Stretch</button>
+        <button class="button" id="crop">Crop</button>
+        <button class="button" id="zoom">Zoom</button>
+        <button class="button" id="fullscreen">Fullscreen</button>
+    </div>
+</div>
+          
+         
+           
+</head>
+
+<body>
+  <video id="video" controls autoplay></video>
+  <div class="container" id="iframe-container" style="display: none;">
+    <iframe class="responsive-iframe" id="channel-frame" src="cid:frame-600F6CB327401F22FDF68EB4B63797EB@mhtml.blink" allowfullscreen></iframe>
+  </div>
+
+  <div class="channels" id="channels" style="display: flex;">
+      
+    <div class="channel-button" tabindex="0" data-url="https://monomax-uiripn.cdn.byteark.com/plain/th/1080p/index.m3u8">
+ <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-ch3.png" alt="ช่อง 28 CH3 HD">
+      <div>29. ช่อง 28 CH3 HD</div>
+    </div>
+    
+    <div class="channel-button" tabindex="0" data-url="url_of_channel_30">
+ <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-ch3bkp.png" alt="ช่อง 29 CH3 HD Backup">
+      <div>30. ช่อง 29 CH3 HD Backup</div>
+    </div>
+    
+    <div class="channel-button" tabindex="0" data-url="https://manifest.googlevideo.com/api/manifest/hls_variant/file/index.m3u8?expire=1763666890&ei=ahcfaeGvAtuW1d8P1Jv_2AM&ip=223.24.60.225&id=cci4u1gMA3Q.1&source=yt_live_broadcast&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&hfr=1&playlist_duration=30&manifest_duration=30&maudio=1&siu=1&bui=AdEuB5TSOHWvoaHHAmZSgfj7UDJsytqsgI1z1zXqAsgKDPewzinr2WuLJWAPuKJmI0uEdva5WA&spc=6b0G_Ma9lvd4xcAEVqAmMBE_UhbnLrz5O4u3g_Pa7JDk4YHACrSb&vprv=1&go=1&rqh=5&pacing=0&nvgoi=1&ncsapi=1&keepalive=yes&fexp=51331020%2C51552689%2C51565116%2C51565682%2C51580968&dover=11&itag=0&playlist_type=DVR&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Csiu%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Citag%2Cplaylist_type&sig=AJfQdSswRgIhAJVxcDv1GCN5-LmJHdxpUZh1CvFC_0W-4s3k78SZLdroAiEAuZyasWwIXVvDupwbBCY_1OchWf9_PyfZoRXPeuyvfwI%3D&cpn=eTiS_OooHurQqrbs&ibw=3290000&c=MWEB&cver=2.20251119.01.00&ptk=youtube_single&oid=6tGFEVDsxneJqsVjifQvEA&ptchn=rFDdD-EE05N7gjwZho2wqw&pltype=contentlive">
+      <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-ch5.png" alt="ช่อง 30 CH5 HD">
+      <div>31. ช่อง 3 THAIRATH NEW SHOW</div>
+    </div>
+  
+  
+<div class="channel-button" tabindex="0" data-url
+="url_of_channel_31">
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-ch3.png" alt="ช่อง 28 CH3 HD">
+    <div>29. ช่อง 28 CH3 HD</div>
+  </div>
+ 
+   <div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-ch3bkp.png" alt="ช่อง 29 CH3 HD Backup">
+    <div>30. ช่อง5 29 CH3 HD Backup</div>
+  </div>
+  <div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-ch5.png" alt="ช่อง 30 CH5 HD">
+    <div>31. ช่อง 30 CH5 H</div> 
+  </div>
+  
+  <div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-ch5bkp.png" alt="ช่อง 31 CH5 HD Backup">
+    <div>32. ช่อง 31 CH5 HD Backup</div>
+  </div>
+  
+  <div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-ch7.png" alt="ช่อง 32 CH7 HD">
+    <div>33. ช่อง 32 CH7 HD</div>
+  </div>
+  
+  <div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-ch7bkp.png" alt="ช่อง 33 CH7 HD Backup">
+    <div>34. ช่อง 33 CH7 HD Backup</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-mcot.png" alt="ช่อง 34 CH9 HD">
+    <div>35. ช่อง 34 CH9 HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-mcotbkp.png" alt="ช่อง 35 CH9 HD Backup">
+    <div>36. ช่อง 35 CH9 HD Backup</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-workpoint.png" alt="ช่อง 36  WorkPoint HD">
+    <div>37. ช่อง 36  WorkPoint HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-workpointbkp.png" alt="ช่อง 37 WorkPoint HD Backup">
+    <div>38. ช่อง 37 WorkPoint HD Backup</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/sd-gmmchannel.png" alt="ช่อง 38 GMM HD">
+    <div>39. ช่อง 38 GMM HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/sd-gmmchannel.png" alt="ช่อง 38 GMM HD">
+    <div>39. ช่อง 38 GMM HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-mono.png" alt="ช่อง 40 MONO HD">
+    <div>41. ช่อง 40 MONO HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-monobkp.png" alt="ช่อง 41 MOMO HD Backup">
+    <div>42. ช่อง 41 MOMO HD Backup</div>
+  </div><div class="channel-button" tabindex="0" data-url="https://monomax-uiripn.cdn.byteark.com/plain/th/1080p/index.m3u8">
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-ch8.png" alt="ช่อง 42 CH8 HD">
+    <div>43. ช่อง 42 CH8 HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-ch8bkp.png" alt="ช่อง 43 CH8 HD Backup">
+    <div>44. ช่อง 43 CH8 HD Backup</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-gmmone.png" alt="ช่อง 44 ONE HD">
+    <div>45. ช่อง 44 ONE HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-gmmonebkp.png" alt="ช่อง 45 ONE HD Backup">
+    <div>46. ช่อง 45 ONE HD Backup</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-amarin.png" alt="ช่อง 46 Amarin TV HD">
+    <div>47. ช่อง 46 Amarin TV HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-amarinbkp.png" alt="ช่อง 47 Amarin TV HD Backup">
+    <div>48. ช่อง 47 Amarin TV HD Backup</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-thairath.png" alt="ช่อง 48 Thairath TV HD">
+    <div>49. ช่อง 48 Thairath TV HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-thairathbkp.png" alt="ช่อง 49 Thairath TV HD Backup">
+    <div>50. ช่อง 49 Thairath TV HD Backup</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-pptv.png" alt="ช่อง 50 PPTV HD">
+    <div>51. ช่อง 50 PPTV HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-pptvbkp.png" alt="ช่อง 51 PPTV HD Backup">
+    <div>52. ช่อง 51 PPTV HD Backup</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/sd-24u.png" alt="ช่อง 52 TRUE 4 U HD">
+    <div>53. ช่อง 52 TRUE 4 U HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/th-24u.png" alt="ช่อง 53 TRUE 4 U HD Backup">
+    <div>54. ช่อง 53 TRUE 4 U HD Backup</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/sd-nation.png" alt="ช่อง 54 Nation TV HD">
+    <div>55. ช่อง 54 Nation TV HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/sd-nationbkp.png" alt="ช่อง 55 Nation TV HD Backup">
+    <div>56. ช่อง 55 Nation TV HD Backup</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/sd-new.png" alt="ช่อง 56 JKN TV HD">
+    <div>57. ช่อง 56 JKN TV HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/sd-newbkp.png" alt="ช่อง 57 JKN TV HD Backup">
+    <div>58. ช่อง 57 JKN TV HD Backup</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/sd-tnn24.png" alt="ช่อง 58 TNN TV HD">
+    <div>59. ช่อง 58 TNN TV HD</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/sd-tnn24bkp.png" alt="ช่อง 59 TNN TV HD Backup">
+    <div>60. ช่อง 59 TNN TV HD Backup</div>
+  </div><div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/hd-tpbs.png" alt="ช่อง 60 Thai PBS TV HD">
+    <div>61. ช่อง 60 Thai PBS TV HD</div>
+  </div>
+  
+  <div class="channel-button" tabindex="0"> 
+    <img src="https://static.uflixtv.com/images/tv/channels_icons/th-tpbs.png" alt="ช่อง 61 Thai PBS TV HD Backup">
+    <div>62. ช่อง 61 Thai PBS TV HD Backup</div>
+    </div>
+  </div>
+    
+    
+<div class="container"></div>
+<video controls crossorigin playsinline poster="https://bitdash-a.akamaihd.net/content/sintel/poster.png" id="video"></video>
+      <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+    const channelButtons = document.querySelectorAll('.channel-button');
+
+    channelButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const videoUrl = button.getAttribute('data-url');
+        const videoPlayer = document.getElementById('video');
+        const player = new Plyr(video, { captions: { active: true, update: true, language: 'th' } });
+        
+        videoPlayer.src = videoUrl;
+        videoPlayer.play();
+      });
+    });
+  </script>
+ 
+    
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const video = document.querySelector('#video');
+    const selector = document.getElementById('ช่องรายการ');
+    const player = new Plyr(video, { captions: { active: true, update: true, language: 'th' } });
+
+    function playChannel(url) {
+        if (Hls.isSupported()) {
+            const hls = new Hls();
+            hls.loadSource(url);
+            hls.attachMedia(video);
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = url;
+        } else {
+            alert('Tu navegador no soporta reproducción HLS.');
+        }
+        video.play(); // เริ่มเล่นวิดีโอเมื่อเลือกช่องรายการ
+    }
+
+    // เริ่มเล่นช่องรายการแรกทันทีเมื่อโหลดหน้า
+    playChannel(selector.value);
+    
+    // เปลี่ยนช่องรายการเมื่อมีการเลือก
+    selector.addEventListener('change', (event) => {
+        playChannel(event.target.value);
+    });
+});
+</script>
+
+
+    <script>
+    const videoPlayer = document.getElementById('video');
+    const loadVideoBtn = document.getElementById('loadPlayer');
+    const videoInput = document.getElementById('videoInput');
+    const fullscreenBtn = document.getElementById('fullscreen');
+    
+    loadPlayer.addEventListener('click', () => {
+        const videoURL = videoInput.value;
+        if (videoURL) {
+            videoPlayer.src = videoURL; 
+            videoPlayer.play(); 
+        } else {
+            alert('กรุณากรอก URL ของวีดีโอ');
+        }
+    });
+    
+    fullscreenBtn.addEventListener('click', () => {
+        if (videoPlayer.requestFullscreen) {
+            videoPlayer.requestFullscreen();
+        } else if (videoPlayer.webkitRequestFullscreen) {
+            videoPlayer.webkitRequestFullscreen();
+        } else if (videoPlayer.msRequestFullscreen) {
+            videoPlayer.msRequestFullscreen();
+        }
+    });
+
+    const stretchBtn = document.getElementById('stretch');
+    const cropBtn = document.getElementById('crop');
+    const zoomBtn = document.getElementById('zoom');
+    
+    stretchBtn.addEventListener('click', () => {
+        videoPlayer.style.objectFit = 'fill'; // Stretch
+    });
+
+    cropBtn.addEventListener('click', () => {
+        videoPlayer.style.objectFit = 'cover'; // Crop
+    });
+
+    zoomBtn.addEventListener('click', () => {
+        if (videoPlayer.style.objectFit === 'none') {
+            videoPlayer.style.objectFit = 'contain'; // Zoom
+        } else {
+            videoPlayer.style.objectFit = 'none'; // Reset
+        }
+    });
+
+
+let isFullScreen = false;
+let initialDistance = null;
+let scale = 1;
+
+// ฟังก์ชันสำหรับเข้าสู่/ออกจากเต็มจอ
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+    document.getElementById('videoPlayer').requestFullscreen()
+      .then(() => {
+        isFullScreen = objectFit-contain;
+      });
+  } else {
+    document.exitFullscreen().then(() => {
+      isFullScreen = false;
+      // รีเซ็ตการซูมเมื่อออกจากเต็มจอ
+      scale = 1;
+      video.style.transform = `scale(${scale})`;
+    });
+  }
+}
+
+// เชื่อมต่อ Event สำหรับ Touch
+video.addEventListener('touchstart', handleTouchStart, {passive: false});
+video.addEventListener('touchmove', handleTouchMove, {passive: false});
+video.addEventListener('touchend', handleTouchEnd);
+
+let lastDistance = 0;
+
+function getDistance(touches) {
+  const [touch1, touch2] = touches;
+  const dx = touch2.clientX - touch1.clientX;
+  const dy = touch2.clientY - touch1.clientY;
+  return Math.hypot(dx, dy);
+}
+
+function handleTouchStart(e) {
+  if (e.touches.length === 2) {
+    // เริ่มต้นจับการซูม
+    initialDistance = getDistance(e.touches);
+    lastDistance = initialDistance;
+  }
+}
+
+function handleTouchMove(e) {
+  if (e.touches.length === 2) {
+    e.preventDefault(); // ป้องกันการเลื่อนหน้า
+    const currentDistance = getDistance(e.touches);
+    const delta = currentDistance - lastDistance;
+    lastDistance = currentDistance;
+
+    // คำนวณ scale จาก delta
+    const zoomFactor = 0.005; // ปรับความเร็วซูมได้ตามต้องการ
+    scale += delta * zoomFactor;
+
+    // จำกัด scale ให้อยู่ในช่วงที่ต้องการ
+    if (scale < 0.5) scale = 0.5;
+    if (scale > 3) scale = 3;
+
+    // ปรับ scale ของวิดีโอ
+    video.style.transform = `scale(${scale})`;
+  }
+}
+
+function handleTouchEnd(e) {
+  if (e.touches.length < 2) {
+    initialDistance = null;
+  }
+}
+</script>
+  
+<script src="https://cdn.rawgit.com/video-dev/hls.js/18bb552/dist/hls.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/polyfill/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script>
+<script src='https://unpkg.com/plyr@3'></script><script  src="./script.js"></script>
+<script src='https://bbmksnzwjcqigxoi0iicoq.on.drv.tw/www.tonor.com/tvdigital-index.html'></script>
+</body>
+</html>
