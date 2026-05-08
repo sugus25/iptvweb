@@ -1,0 +1,1097 @@
+#EXTM3U
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ช่องรายการ Wiseplay</title>
+    <style>
+    
+     /* CSS Animation สำหรับพื้นหลัง */
+        @keyframes backgroundAnimation {
+            0% {
+                background-size: 100%;
+                background-position: center;
+            }
+            50% {
+                background-size: 120%;
+                background-position: center;
+            }
+            100% {
+                background-size: 100%;
+                background-position: center;
+            }
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%; /* ใช้ min-height เพื่อให้เนื้อหายืด */
+            overflow-x: hidden;
+            background-image: url();
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: yellow;
+            font-family: 'Arial', sans-serif;
+            animation: backgroundAnimation 10s infinite alternate;
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* เปลี่ยนจาก center เป็น flex-start เพื่อให้เลื่อนหน้าได้ */
+            padding: 0 10px;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 15px;
+            text-align: center;
+        }
+        h1 {
+            color: #1e90ff;
+            text-shadow: 1px 1px 2px #ccc;
+        }
+        .category {
+            margin: 30px 0 15px;
+            color: #0f0;
+            font-size: 24px;
+            text-align: left;
+            padding-left: 15px;
+            border-left: 5px solid #ff6b6b;
+        }
+        .channel-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .channel {
+            width: 100px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .channel:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+        .channel img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .channel p {
+            margin: 5px 0 0;
+            font-size: 12px;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 12px;
+        }
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .tab {
+            padding: 10px 15px;
+            background-color: #e0e0e0;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+        .tab.active {
+            background-color: #1e90ff;
+            color: white;
+        }
+        .category-content {
+            display: none;
+        }
+        .category-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<!--
+#EXTM3U url-tvg="https://iptv36.vercel.app/epg.xml,https://www.open-epg.com/files/thailand2.xml,https://raw.githubusercontent.com/Playidtv2/m3u/refs/heads/main/EPG/thailandpremium%20(1).xml,https://raw.githubusercontent.com/K-vanc/Tempest-EPG-Generator/refs/heads/main/Siteconfigs/Thailand/%5BENC%5Dgigatv.3bbtv.co.th_0.channel.xml,https://thailandepg.tiiny.site/thailand2-2.xml,https://raw.githubusercontent.com/K-vanc/Tempest-EPG-Generator/refs/heads/main/Siteconfigs/Thailand/%5BENC%5Dtv.trueid.net_0.channel.xml" refresh="3600"
+url=""
+
+#EXTINF:-1 tvg-id="Animal Planet.th" tvg-name="Animal Planet" tvg-logo="https://dookeela.live/uploads/1706112700.png" group-title="สารคดีนะ",Animal Planet
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/animal-planet/playlist.m3u8
+
+
+#EXTINF:-1 group-title="ดูหนังนะ" tvg-id=".th" tvg-logo="https://dookeela.live/uploads/1706112791.png",HITS
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; AspiegelBot)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/hits/playlist.m3u8
+
+#EXTINF:-1 tvg-chno="1" tvg-id="iptv36.workpoint" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/workpoint.png",Workpoint TV
+https://lb1-live-mv.v2h-cdn.com/hls/ffcb/workpoint/workpoint.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="iptv36.nbt" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/nbt.png?v=2",NBT HD
+https://lb1-live-mv.v2h-cdn.com/hls/fffe/nbt/nbt.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="iptv36.thaipbs" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/thaipbs.png",Thai PBS FHD
+https://thaipbs-live.cdn.byteark.com/live/playlist.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="iptv36.altv" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/altv.png",ALTV FHD
+https://thaipbs-ujxrch.cdn.byteark.com/live/playlist.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="iptv36.tv5" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/tv5.png",TV5 FHD
+https://639bc5877c5fe.streamlock.net/tv5hdlive/tv5hdlive/playlist.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="iptv36.pptv" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/pptv.png",PPTV HD
+https://lb1-live-mv.v2h-cdn.com/hls/ffab/pptv/pptv.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="iptv36.tsports" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/tsports.png",T-Sports
+https://lb1-live-mv.v2h-cdn.com/hls/ffef/tsport/tsport.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="iptv36.ch8" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/ch8.png",CH8
+https://lb1-live-mv.v2h-cdn.com/hls/ffbe/ch8/ch8.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="iptv36.mcot" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/mcot.png",MCOT HD
+https://lb1-live-mv.v2h-cdn.com/hls/ffbb/mcot/mcot.m3u8
+#EXTINF:-1 tvg-chno="10" tvg-id="iptv36.tptv" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/tptv.png",TPTV FHD
+https://tv-live.tpchannel.org/live/tv_1080p.m3u8?vhost=tv-live.tpchannel.org
+#EXTINF:-1 tvg-chno="11" tvg-id="iptv36.one" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/one.png",ONE FHD
+https://bcovlive-a.akamaihd.net/b6603a14ea59440a95e9235e14bc9332/ap-southeast-1/6415628290001/9c3d7fc7d10840a69e48b5939ae886e0/playlist_ssaiM.m3u8
+#EXTINF:-1 tvg-chno="12" tvg-id="iptv36.thairath" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/thairath.png",Thairath TV HD
+https://lb1-live-mv.v2h-cdn.com/hls/ffaf/thairath/thairath.m3u8
+#EXTINF:-1 tvg-chno="13" tvg-id="iptv36.ch3" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/ch3.png",CH3 HD
+https://lb1-live-mv.v2h-cdn.com/hls/ffae/3hd/3hd.m3u8
+#EXTINF:-1 tvg-chno="14" tvg-id="iptv36.amarin" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/amarin.png",Amarin TV HD
+https://lb1-live-mv.v2h-cdn.com/hls/ffad/amarin/amarin.m3u8
+#EXTINF:-1 tvg-chno="15" tvg-id="iptv36.ch7" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/ch7.png",CH7 HD
+https://lb1-live-mv.v2h-cdn.com/hls/ffac/7hd/7hd.m3u8
+#EXTINF:-1 tvg-chno="16" tvg-id="iptv36.tnn16" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/tnn16.png",TNN16
+https://lb1-live-mv.v2h-cdn.com/hls/ffdc/tnn/tnn.m3u8
+#EXTINF:-1 tvg-chno="17" tvg-id="iptv36.tnn16" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/tnn16.png",TNN16
+#EXTVLCOPT:http-referrer=https://live-demo.iamtheme.com/
+https://oral.thaim3u.com/tFQe38qxw4awKkMJD3kcfcekVSrfLnY9/tnn24_1080p/playlist.m3u8
+#EXTINF:-1 tvg-chno="18" tvg-id="iptv36.jkn18" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/jkn18.png",JKN18
+https://lb1-live-mv.v2h-cdn.com/hls/ffda/jkn18/jkn18.m3u8
+#EXTINF:-1 tvg-chno="19" tvg-id="iptv36.jkn18" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/jkn18.png",JKN18 Top News HD
+https://live.topnews.co.th/hls/topnews_a_720.m3u8
+#EXTINF:-1 tvg-chno="20" tvg-id="iptv36.true4u" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/true4u.png",True4U
+https://lb1-live-mv.v2h-cdn.com/hls/ffca/true24/true24.m3u8
+#EXTINF:-1 tvg-chno="21" tvg-id="iptv36.nation" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/nation.png",Nation TV
+https://lb1-live-mv.v2h-cdn.com/hls/ffcc/nation/nation.m3u8
+#EXTINF:-1 tvg-chno="22" tvg-id="iptv36.nation" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/nation.png",Nation TV FHD
+https://nationtv-1jdcjo.cdn.byteark.com/fleetstream/nationtvlive/index.m3u8
+#EXTINF:-1 tvg-chno="23" tvg-id="iptv36.workpoint" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/workpoint.png",Workpoint TV FHD
+https://global-media.sooplive.com/live/workpoint/master.m3u8
+#EXTINF:-1 tvg-chno="24" tvg-id="iptv36.true4u" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/true4u.png",True4U HD
+https://iptv36.vercel.app/api/true.m3u8?channel=true4u
+#EXTINF:-1 tvg-chno="25" tvg-id="iptv36.gmm25" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/gmm25.png",GMM25 FHD
+https://bcovlive-a.akamaihd.net/57d4bf695e80436d9335f4f50adbe438/ap-southeast-1/6415628290001/7e85dc4a59904e45b4fdffebd62e1d82/playlist_ssaiM.m3u8
+#EXTINF:-1 tvg-chno="26" tvg-id="iptv36.gmm25" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/gmm25.png",GMM25
+https://lb1-live-mv.v2h-cdn.com/hls/ffbf/gmm25/gmm25.m3u8
+#EXTINF:-1 tvg-chno="27" tvg-id="iptv36.ch8" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/ch8.png",CH8 HD
+https://prsmedia-mykojh.cdn.byteark.com/fleetstream/live/720p/index.m3u8
+#EXTINF:-1 tvg-chno="28" tvg-id="iptv36.mono29" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/mono29.png?v=2",MONO29
+https://lb1-live-mv.v2h-cdn.com/hls/ffbc/mono29/mono29.m3u8
+#EXTINF:-1 tvg-chno="29" tvg-id="iptv36.mono29" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/mono29.png?v=2",MONO29 FHD
+https://monomax-uiripn.cdn.byteark.com/plain/th/1080p/index.m3u8
+#EXTINF:-1 tvg-chno="30" tvg-id="iptv36.mcot" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/mcot.png",MCOT FHD
+https://cco-streamer2.cdn.3bbtv.com:8443/3bb/live/30/30.mpd
+#EXTINF:-1 tvg-chno="31" tvg-id="iptv36.one" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/one.png",ONE FHD
+https://cco-streamer2.cdn.3bbtv.com:8443/3bb/live/31/31.mpd
+#EXTINF:-1 tvg-chno="32" tvg-id="iptv36.thairath" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/thairath.png",Thairath TV HD
+#EXTVLCOPT:http-referrer=https://www.thairath.co.th/
+https://ssai-streaming.thairath.co.th/bamm-csai/720p/index.m3u8
+#EXTINF:-1 tvg-chno="33" tvg-id="iptv36.ch3" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/ch3.png",CH3 HD
+https://lb1-live-mv.v2h-cdn.com/hls/ffae/3hd/3hd.m3u8
+#EXTINF:-1 tvg-chno="34" tvg-id="iptv36.amarin" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/amarin.png",Amarin TV HD
+https://lb1-live-mv.v2h-cdn.com/hls/ffad/amarin/amarin.m3u8
+#EXTINF:-1 tvg-chno="35" tvg-id="iptv36.ch7" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/ch7.png",CH7 FHD
+#EXTVLCOPT:http-referrer=https://www.ch7.com/
+https://live-cdn-hwc.ch7.com/livech7hd/HD_1080p.m3u8?vhost=streaming-hwc.ch7.com
+#EXTINF:-1 tvg-chno="36" tvg-id="iptv36.pptv" group-title="ทีวีไทยนะ" tvg-logo="https://iptv36.vercel.app/logo/pptv.png",PPTV FHD
+https://pptv36-9h0yba.cdn.byteark.com/bamm-csai/playlist.m3u8?x_ark_access_id=fleet-2966&x_ark_auth_type=ark-v2&x_ark_expires=1754020201&x_ark_path_prefix=%2Fbamm-csai%2F&x_ark_signature=3SgUcw0LR0m6__fXGTkIiQ
+
+#EXTINF:-1 group-title="สารคดีนะ" tvg-id="Samrujlok.th" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png",Samrujlok 
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; AspiegelBot)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/samrujlok/playlist.m3u8
+
+#EXTINF:-1 group-title="สารคดีนะ" tvg-id="MySci.th" tvg-logo="https://dookeela.live/uploads/1705536991.png",MySci
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; AspiegelBot)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/mysci/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Animal Show.th" tvg-logo="https://dookeela.live/uploads/1705537126.png" group-title="สารคดีนะ", animal show 
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; AspiegelBot)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/animalshow/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TR EXP LIFE" tvg-logo="https://dookeela.live/uploads/1724166670.png" group-title="สารคดีนะ", True Explore Life
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live/
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/trueexplorelife/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TR EXP SCI" tvg-logo="https://dookeela2.live/uploads/1724167268.png" group-title="สารคดีนะ", True Explore Sci
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live/
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/trueexploresci/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TR EXP WILD" tvg-logo="https://dookeela.live/uploads/1724166218.png" group-title="สารคดีนะ",True Explore Wild  
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live/
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/trueexplorewild/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Thainess.th" tvg-logo="https://dookeela2.live/uploads/1742428803.png" group-title="สารคดีนะ", thainess 
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; AspiegelBot)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/thainess/playlist.m3u8
+
+#EXTINF:-1 tvg-id"Khongdee.th" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png" group-title="สารคดีนะ",Khong Dee Thailand GoodTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Tablet/15E148 Safari/604.1
+https://github.com/bestcommt2/m3u8/raw/refs/heads/master/khongdeethai.m3u8
+
+#EXTINF:-1 tvg-chno="45" tvg-id="iptv36.ch7" group-title="สารคดีนะ" tvg-logo="https://www.fileinw.com/postor/20240617204638FWDoc.jpg",FW DOC
+#EXTVLCOPT:http-referrer=https://www.ch7.com/
+https://freelive2.inwstream.com:1936/freelive-edge/fwdoc_fw-iptv.stream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9My8yNC8yMDI1IDEyOjEyOjQ2IFBNJmhhc2hfdmFsdWU9N3gvMjA4RWNONFBZb3BrbDQvYUFLQT09JnZhbGlkbWludXRlcz0y
+
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/bMtB5NKS/logo-animal.png" group-title="สารคดีนะ", Animal
+#EXTVLCOPT:http-user-agent=playidtv
+http://49.0.64.96:8007/Animal
+
+#EXTINF:-1 tvg-chno="36" tvg-id="HBO" group-title="ดูหนังนะ" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/R_0148.png",HBO
+#EXTVLCOPT:http-referrer=https://www.ch7.com/
+https://github.com/bestcommt2/m3u8/raw/refs/heads/master/HBOTHAI.m3u8
+
+#EXTINF:-1 tvg-id="True Movie Hits" tvg-logo="https://dookeela.live/uploads/1719803882.png" group-title="ดูหนังนะ",True Movie Hits
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/truemoviehits/playlist.m3u8
+
+#EXTINF:-1 tvg-chno="37" tvg-id="iptv36.ch7" group-title="ดูหนังนะ" tvg-logo="https://www.fileinw.com/postor/20240429213343just_for_laughs_gags.jpg",FW COMADY
+http://freelive2.inwstream.com:1935/freelive-edge/gags_fw-iptv.stream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NS8xNi8yMDI1IDEwOjQ2OjQ1IEFNJmhhc2hfdmFsdWU9ci80WDVqUWZRaHlHTjBZd3Mrekc3dz09JnZhbGlkbWludXRlcz0y&demo
+#EXTINF:-1 tvg-chno="37" tvg-id="iptv36.ch7" group-title="ดูหนังนะ" tvg-logo="https://www.fileinw.com/postor/20240429213309FWMOV.jpg",FW MOVIE
+https://freelive2.inwstream.com:1936/freelive-edge/fwmov_fw-iptv.stream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9My8yNC8yMDI1IDEyOjEyOjQ2IFBNJmhhc2hfdmFsdWU9N3gvMjA4RWNONFBZb3BrbDQvYUFLQT09JnZhbGlkbWludXRlcz0y
+#EXTINF:-1 tvg-chno="38" tvg-id="iptv36.ch7" group-title="ดูหนังนะ" tvg-logo="https://www.fileinw.com/postor/20240429213651FWTOON.jpg",FW TOON
+https://freelive2.inwstream.com:1936/freelive-edge/fwtoon_fw-iptv.stream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9My8yNC8yMDI1IDEyOjEyOjQ2IFBNJmhhc2hfdmFsdWU9N3gvMjA4RWNONFBZb3BrbDQvYUFLQT09JnZhbGlkbWludXRlcz0y
+
+#EXTINF:-1 tvg-id="True Film 2" tvg-logo="https://dookeela.live/uploads/1720723122.png" group-title=ดูหนังนะ",True Film 2
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/truefilm2/playlist.m3u8
+
+#EXTINF:-1 tvg-chno="39" tvg-id="HBO.th" group-title="ดูหนังนะ" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/R_0148.png",HBO TH
+https://github.com/bestcommt2/m3u8/raw/refs/heads/master/HBOTHAI.m3u8
+
+#EXTINF:-1 tvg-id="True X-Zyte" tvg-logo="https://dookeela.live/uploads/1719206155.png" group-title="ดูหนังนะ",True Xzyt
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/truex-zyte/playlist.m3u8
+ 
+ #EXTINF:-1 tvg-id="True Film 1" tvg-logo="https://dookeela.live/uploads/1720380229.png" group-title="ดูหนังนะ", True Film 1
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/truefilm1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="True Film Asia" tvg-logo="https://dookeela.live/uploads/1719205705.png" group-title="ดูหนังนะ",True Film Asia
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/truefilmasia/playlist.m3u8
+
+#EXTINF:-1 tvg-id="True Thai Film" tvg-logo="https://dookeela.live/uploads/1706539896.png" group-title="ดูหนังนะ",True Thai Film
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/truethaifilm/playlist.m3u8
+
+#EXTINF:-1 tvg-id="True Film 2" tvg-logo="https://dookeela.live/uploads/1706539896.png" group-title="ดูหนังนะ",True Thai Film
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/truefilm2/playlist.m3u8
+
+#EXTINF:-1 tvg-id="3BB Asian.th" tvg-logo="https://dookeela.live/uploads/1703829940.png" group-title="ดูหนังนะ",3BB Asian.th
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/3bbasian/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MySci.th" tvg-logo="https://www.img01.xyz/assets/img/ch_logo/hd-mysci.jpg" group-title="สารคดีนะ",MySci.th
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+https://smart-tv.livedoomovies.com:4432/02_MYSCIHD_720p/chunklist.m3u8
+
+#EXTINF:-1 tvg-id="Asian Hits" tvg-logo="https://dookeela.live/uploads/1703829940.png" group-title="ดูหนังนะ",Asian Hits
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+https://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/3bbasian/playlist.m3u8
+
+#EXTINF:-1 tvg-id="thailand boxoffice" tvg-logo="https://img2.pic.in.th/pic/_2025_07_18_08_38_54_237.png" group-title="ดูหนังนะ",ไทยแลนด์ บ๊อก อ๊อฟฟิศ
+#EXTVLCOPT:http-referrer=https://www.dooballfree24hrs.com/live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+http://moo7hd.myddns.me:9192/stream/boxoffice/index.m3u8?fbclid=IwY2xjawL_uE1leHRuA2FlbQIxMQABHitiSoSVnl9AoA1Sc8IGw7jLQlhKsQZrwsc6R8HZ4n9WTGP6azJMZ37whlQe_aem_B8f7xerQuF0xmNLI1jNdrQ
+
+#EXTINF:-1 group-title="ดูหนังนะ" tvg-id=" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTctbfHcyXTs5xXrfMkfpmiRYwugi8RzT3baNltOWwVeUCgSskErFYJa9Hm&s=10", boxoffice เครดิตช่อง Moo7
+#EXTVLCOPT:http-user-agent=ห้ามแชร์
+http://moo7hd.myddns.me:9192/stream/boxoffice/index.m3u8?fbclid=IwY2xjawL_uE1leHRuA2FlbQIxMQABHitiSoSVnl9AoA1Sc8IGw7jLQlhKsQZrwsc6R8HZ4n9WTGP6azJMZ37whlQe_aem_B8f7xerQuF0xmNLI1jNdrQ-->
+
+
+
+    </font>
+</br>
+<h>ต้น IPTV 3.0 ดูฟรีก็มีให้ดู ของฟรีก็คือของฟรี </h>
+<font color="redwhite">
+วันนี้
+<script>
+<!-- START HIDE
+print1="";
+print2="";
+print3="";
+today = new Date();
+weekday = today.getDay();
+if (weekday == 6) print1='วันเสาร์';
+if (weekday == 0) print1='วันอาทิตย์';
+if (weekday == 1) print1='วันจันทร์';
+if (weekday == 2) print1='วันอังคาร';
+if (weekday == 3) print1='วันพุธ';
+if (weekday == 4) print1='วันพฤหัสบดี';
+if (weekday == 5) print1='วันศุกร์';
+month = today.getMonth();
+if (month == 0) print2='เดือนมกราคม';
+if (month == 1) print2='เดือนกุมภาพันธ์';
+if (month == 2) print2='เดือนมีนาคม';
+if (month == 3) print2='เดือนเมษายน';
+if (month == 4) print2='เดือนพฤษภาคม';
+if (month == 5) print2='เดือนมิถุนายน';
+if (month == 6) print2='เดือนกรกฎาคม';
+if (month == 7) print2='เดือนสิงหาคม';
+if (month == 8) print2='เดือนกันยายน';
+if (month == 9) print2='เดือนตุลาคม';
+if (month == 10) print2='เดือนพฤศจิกายน';
+if (month == 11) print2='เดือนธันวาคม';
+date = today.getDate();
+year=today.getYear();
+document.write (print1,'ที่ ',date, ' ', print2,' พศ. ',year+2443);
+// STOP HIDE --></script>
+
+
+<hr>
+</font>
+    ยินดีต้อนรับสู่เวปไซต์ ต้น IPTV
+    
+   <div id="horizontalMenu">
+  <a href="http://127.0.0.1:16522/main/0/storage/emulated/0/HTMLTEST%20V1/wiseplay/%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B8%A7%E0%B8%B5wiseplay%20-%20V2.html">หน้าหลัก</a>
+  <a href="http://127.0.0.1:16522/main/0/storage/emulated/0/HTMLTEST%20V1/wiseplay/shared_text.html">หมวดหมู่</a>
+  <a href="https://inwiptv.org/demo.php">ทีวีสด</a>
+  <a href="http://thangap.ddns.net:8096/web/index.html#!/videos?serverId=7a69d989eebd4b138f14727e2459b146&parentId=3">EMBY</a>
+    <a href="">ทีวีเวป</a>
+  <a href="http://127.0.0.1:16522/main/0/storage/emulated/0/HTMLTEST%20V1/wiseplay/%E0%B8%95%E0%B9%89%E0%B8%991.html">ซีรีส์</a>
+</div 
+    
+<body>
+<font color="redwhite">
+<p id="time"></p>
+<script>
+  const today = new Date();
+
+  // แสดงเวลา
+  document.getElementById("time").textContent = today.toLocaleTimeString();
+
+</script>
+<body bgcolor="#1e90ff">
+<center>
+  <h2><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBXudk1s-aItn9yaPYq9QDT2SbzEZ_7rxOqV5XRfX36miwzuKSQncXwrw&s=10"></h2>
+</center>
+</body>
+<body>
+    <style>
+        body {
+            background-color: #000;
+            color: #FF18DD;
+            margin: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            border-radius: 5px;
+            border: 1px solid #87CEFA;
+            padding: 2px;
+            margin: 3px;
+            height: 50px;
+            width: 50px;
+        }
+    </style>  
+<font color="red">    <h1>APP NEXPLAYER</h1>
+    
+    <div class="tab-container">
+        <div class="tab active" onclick="showCategory('digital')">ทีวีดิจิตอล</div>
+        <div class="tab" onclick="showCategory('kids')">ดูหนังกัน</div>
+        <div class="tab" onclick="showCategory('documentary')">สารคดี</div>
+        <div class="tab" onclick="showCategory('movies')">หนังทีวี</div>
+        <div class="tab" onclick="showCategory('sport')">วิทยุ_ออนไลน์</div>
+    </div>
+
+    <!-- ทีวีดิจิตอล -->
+    <div id="digital" class="category-content active">
+        <div class="category">ทีวีดิจิตอล</div>
+        <div class="channel-container">
+            
+            
+<a href="intent://cdn-edge-ott.prd.go.th/live_vlc/smil:c30f-97f7-c767-ca64-98aa/chunklist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0001.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a hre<f="intent://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0014.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+
+<a href="intent://thaipbs-ujxrch.cdn.byteark.com/live/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/ALTV.PNG"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+
+<a href="intent://639bc5877c5fe.streamlock.net/tv5hdlive/tv5hdlive/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://ais-vidnt.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon//ch5new.logo.png"       alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+
+<a href="intent://cdn-edge.i-iptv.com/live3/91b1-ff25-f5ee-c27f-283a/chunklist_w1922821612.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0048.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://edge6a.v2h-cdn.com/tnn24/tnn24.stream/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://cms.dmpcdn.com/livetv/2017/10/18/f1b957db-b175-45fc-ab2b-60150f9c570a.png"       alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://edge6a.v2h-cdn.com/jkn18/jkn18.stream/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://ais-vidnt.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/JKN18.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+
+<a href="intent://edge6a.v2h-cdn.com/nation/nation.stream/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://ais-vidnt.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0021.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://lb1-live-mv.v2h-cdn.com/hls/ffcb/workpoint/workpoint.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0015_R.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://edge6a.v2h-cdn.com/true4u/true4u.stream/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0054.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+
+<a href="intent://bcovlive-a.akamaihd.net/fb7ac9cc4e1140238e3077ffd29337fe/ap-southeast-1/6415628290001/profile_0/chunklist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://ais-vidnt.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0019.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://prsmedia-mykojh.cdn.byteark.com/fleetstream/live/720p/index.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0006.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://lb1-live-mv.v2h-cdn.com/hls/ffbc/mono29/mono29.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0016.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+                <a href="intent://tv.trueid.net/embed/mono29
+#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0016.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+                
+                
+<a href="intent://live-org-01-cdn.mcot.net/mcothd1080p_edge/smil:mcothd1080p.smil/chunklist_w58587999_b2000000.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0008.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://bcovlive-a.akamaihd.net/e11d0db446fe41fe9be61157033f9325/ap-southeast-1/6415628290001/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://ais-vidnt.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0012.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/thairathtv/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0013_R.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+                
+                <a href="intent://tv.trueid.net/embed/thairathtv-hd
+#Intent;package=com.wiseplay;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0013_R.png"
+      alt="ไทยรัฐ ทีวี">
+      <p>ไทยรั ทีวี</p>        
+                </a>
+                
+                
+                
+<a href="intent://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/32/32.mpd
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://www.thairath.co.th/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0013_R.png"
+      alt="thairathtv">                    <p>thairathtv</p>                
+                </a>
+                
+<a href="intent://edge2a.v2h-cdn.com/3hd/3hd.stream/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://ch3plus.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0003.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://lb1-live-mv.v2h-cdn.com/hls/ffad/amarin/amarin.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://www.amarintv.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/AmarinTV_NEW512.png"       alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://live-cdn-hwc.ch7.com/livech7hd/HD_720p.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://wwww.ch7.com/no&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0018.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://live-cdn-hwc.ch7.com/livech7hd/HD_1080p.m3u8?vhost=streaming-hwc.ch7.com
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://www.ch7.com/no&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0018.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://dookeela.live/live-tv/pptv
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/no&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0022.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://stream1.stou.ac.th/live/stou_720p/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://ais-vidnt.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://img5.pic.in.th/file/secure-sv1/stou.jpeg"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://server1.streamssl.com/stream/news1_mid.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.Referer=https://.news1.live14.com
+/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0036.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://live.topnews.co.th/hls/topnews_a_720.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.Referer=https://live.topnews.co.th
+/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/TOPNEWS.PNG"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://live.x2.co.th/live/13livetv-th.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.Referer=https://live.x2.co.th
+/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://img2.pic.in.th/pic/images_3-transformed.png"
+      alt="trueexplorelife">                    <p>trueexplorelife</p>                
+                </a>
+                
+<a href="intent://vdo.plathong.net/tvmuslim/tvmuslim/chunklist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=android;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://cdn.pixabay.com/photo/2023/04/04/18/15/islamic-tv-7899989_1280.png"
+alt="trueexplorelife">
+                    <p>trueexplorelife</p>
+                </a>
+                
+<a href="intent://liveh12.vtvcab.vn/hls/ONVTC1_CL/01.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=android;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://img5.pic.in.th/file/secure-sv1/0e44c9f9b0d1196db9b1464b7a6be790.png"
+alt="trueexplorelife">
+                    <p>trueexplorelife</p>
+                </a>
+                
+<a href="intent://ott1.nethubtv.vn/live/vtv1/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=android;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mZqAymv1uvDCeuZaKw-ejv2Rp3NvtGOi6ywYR7HhBSE_S7AcWRq6fmbJ&s=10" alt="trueexplorelife">
+                    <p>trueexplorelife</p>
+                </a>
+<a href="intent://pa.thst.vn/hls-live/livepkgr/_definst_/liveevent/livestream.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=android;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDPL1JCmNGl1qFjyrZxGzj2fME4SVW-eNjmQ&usqp=CAU"
+alt="trueexplorelife">
+                    <p>trueexplorelife</p>
+                </a>
+<a href="intent://103.90.220.236/qtvlive/tv1live.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=android;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMvAGJgmseElggu2vfRi8iORNxAIRdIhgiQ&usqp=CAU"
+alt="trueexplorelife">
+                    <p>trueexplorelife</p>
+                </a>
+
+<a href="intent://tv.kgtv.vn/live/kgtv1/kgtv1.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=android;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsUd8JPlLJ92zYIYKjDV-5zz1PJXKRD4XKHQ&s"
+alt="trueexplorelife">
+                    <p>trueexplorelife</p>
+                </a>
+            </a>
+        </div>
+    </div>
+
+    <!-- ดูหนังกัน -->
+    <div id="kids" class="category-content">
+        <div class="category">ดูหนังกัน</div>
+        <div class="channel-container">
+            
+      <a href="intent://master.streamhls.com/hlsr2/56e608b971e0a95935810a621eee8a18/master.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://www.moviefree-hd.com/wp-content/uploads/2025/04/G20-2025.jpg"
+alt="PPTV">
+                <p>ต้นทีวี</p>
+            </a>
+
+<a href="intent://master.streamhls.com/hlsr2/8f68915f71768453b50174ffb60ee6f8/master.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://www.movies-d.com/wp-content/uploads/2025/06/xUp13D7rhipxsHsD3oRdNOkalwg.webp"
+alt="PPTV">
+                <p>ต้นทีวี</p>
+            </a>
+
+<a href="intent://master.streamhls.com/hlsr2/ad4c79696fd3a9a9ee5294dfc3ff903b/master.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://s3.movie555.com/assets/images/poster/a/compressed/202505/36791wLisxrgSau6kxvCx6gfNQuZIwzvrdnEg.jpg.webp"
+alt="PPTV">
+                <p>ต้นทีวี</p>
+            </a>
+
+
+<a href="intent://text-lb.xmoviedo24.com/playlist2/e2b3cb00/master.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://www.nung-th.net/wp-content/uploads/2025/08/The-Mother-203x300.webp" border="
+alt="PPTV">
+                <p>ต้นทีวี</p>
+            </a>
+
+<a href="intent://main.24playerhd.com/newplaylist/ae0daf1d8f760a85597a7b2b/ae0daf1d8f760a85597a7b2b.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=เดอะลาส ยูเอส;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://www.nung-th.net/wp-content/uploads/2025/08/The-Last-of-Us-199x300.webp" alt="PPTV">
+                <p>ต้นทีวี</p>
+            </a>
+
+<a href="intent://text-lb.xmoviedo24.com/playlist2/ded12e36/master.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=Simulant;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://www.nung-th.net/wp-content/uploads/2025/08/Simulant-199x300.webp"
+alt="PPTV">
+                <p>ต้นทีวี</p>
+            </a>
+
+<a href="intent://main.24playerhd.com/newplaylist/503694f6db3ae790034b1214/503694f6db3ae790034b1214.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=Superman;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://www.nung-th.net/wp-content/uploads/2025/08/Superman-203x300.webp"
+alt="PPTV">
+                <p>ต้นทีวี</p>
+            </a>
+
+<a href="intent://main.24playerhd.com/newplaylist/4f2068078ffe65ecc6564fc7/4f2068078ffe65ecc6564fc7.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=The Fantastic Four First Steps 4
+;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://www.nung-th.net/wp-content/uploads/2025/08/The-Fantastic-Four-First-Steps-4-199x300.webp"
+alt="PPTV">
+                <p>ต้นทีวี</p>
+            </a>
+
+<a href="intent://main.24playerhd.com/newplaylist/5dc315ebc5b5ab29a3dbaa13/5dc315ebc5b5ab29a3dbaa13.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://www.123hdtv.com/wp-content/uploads/2025/07/High-Rollers-2025-%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%9B%E0%B8%A5%E0%B9%89%E0%B8%99%E0%B8%84%E0%B8%99%E0%B8%AB%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A1-%E0%B8%97%E0%B8%B0%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%AA%E0%B8%B4%E0%B9%82%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B7%E0%B8%AD%E0%B8%94-300x450.png"
+alt="PPTV">
+                <p>ต้นทีวี</p>
+            </a>
+
+
+<a href="intent://original.enjoy24cdn.com/hlsr2/a7b3085cad6c8a9c764a9f590712c0a8/master.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://lk-hde.com/wp-content/uploads/2025/03/Alarum-2025-200x300.jpg"
+alt="PPTV">
+                <p>ต้นทีวี</p>
+            </a>
+
+
+<a href="intent://master.streamhls.com/hlsr2/6736289a8fc6e724450f60053142cc51/master.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://www.movies-d.com/wp-content/uploads/2025/06/q5pXRYTycaeW6dEgsCrd4mYPmxM.webp"
+alt="PPTV">
+                <p>ต้นทีวี</p>
+            </a>
+
+        
+            <a href="intent://enjoy24cdn.com/hlsr2/5faca044c90cbba39ee351958a91e85e/master.m3u8#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela2.live/&userAgent=exo_player;S.title=KTV;scheme=https;type=video/mp4;end" class="channel">
+                <img src="https://lk-hde.com/wp-content/uploads/2023/10/Wrath-Of-Man-2021-%E0%B8%84%E0%B8%99%E0%B8%84%E0%B8%A5%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B9%81%E0%B8%84%E0%B9%89%E0%B8%99-%E0%B8%9B%E0%B8%A5%E0%B9%89%E0%B8%99%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%81-200x300.jpg"
+alt="Wrath Of Man (2021) ">
+                <p>Wrath Of Man (2021) </p>
+            </a>
+            </a>
+        </div>
+    </div>
+
+    <!-- สารคดี -->
+    <div id="documentary" class="category-content">
+        <div class="category">สารคดี</div>
+        <div class="channel-container">
+            
+        
+              <a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/mysci/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://www.dooballfree24hrs.com/&userAgent=exo_player;S.title=Discovery;scheme=https;type=video/mp4;end" class="channel">
+                    <img src="https://dookeela.live/uploads/1705536991.png" alt="MySci">
+                    <p>MySci</p>
+                </a>
+                
+            
+              <a href="intent://streamamg-fa.akamaiz.com/dooballfree24hr/mysci/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://www.dooballfree24hrs.com/&userAgent=exo_player;S.title=Discovery;scheme=https;type=video/mp4;end" class="channel">
+                    <img src="https://dookeela.live/uploads/1705536991.png" alt="MySci">
+                    <p>MySci</p>
+                </a>
+                
+                <a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/samrujlok/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://www.dooballfree24hrs.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel"><img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png"
+alt="สำรวจโลก">                                             <p>สำรวจโลก</p>                
+                </a>
+                
+              <a href="intent://streamamg-fa.akamaiz.com/dooballfree24hr/samrujlok/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://www.dooballfree24hrs.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel"><img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png"
+alt="สำรวจโลก">                                             <p>สำรวจโลก</p>                
+                </a>
+           
+                <a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/trueexplorelife/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://img2.pic.in.th/pic/486c7da0-e599-11ed-b481-1b121c78e74e_webp_original.png" alt="trueexplorelife">
+                    <p>trueexplorelife</p>
+                </a>
+                
+                <a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/trueexplorewild/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://img5.pic.in.th/file/secure-sv1/ca686ee0-b44c-11ee-9f05-591527f02603_webp_original.webp"
+alt="trueexplorewild">
+                    <p>trueexplorewild</p>
+                </a>
+                
+                   
+    <a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/trueexploresci/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://www.dooballfree24hrs.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://cms.dmpcdn.com/livetv/2024/01/16/c9f16a20-b44c-11ee-8e80-c3f417d0d932_webp_original.webp"
+alt="trueexploresci">
+                    <p>trueexploresci</p>
+                </a>
+           
+                   <a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/thainess/playlist.m3u8#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://www.dooballfree24hrs.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+        <img src="https://dookeela2.live/uploads/1742428803.png" alt="thainess">
+        <p>thainess</p>
+    </a>
+    
+        <a href="intent://github.com/bestcommt2/m3u8/raw/refs/heads/master/khongdeethai.m3u8#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://www.dooballfree24hrs.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+        <img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png" alt="khongdeethai">
+        
+        <p>khongdeethai</p>
+           </a>
+           
+           <a href="http://49.0.64.96:8007/WSCI
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://www.dooballfree24hrs.com/&referer=https://dookeela.live/&userAgent=exo_player;S.title=ต้นทีวี;scheme=http;type=video/mp4;end" class="channel">
+<img src="https://cms.dmpcdn.com/livetv/2023/04/28/46fb6170-e599-11ed-b606-c19576cb8b29_webp_original.webphttps://i.ibb.co/gQLyLmK/logo-seience.png"
+alt="WSCI">
+                    <p>WSCI</p>
+                </a>
+           
+<a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/truex-zyte/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://www.dooballfree24hrs.com/&referer=https://dookeela.live/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://cms.dmpcdn.com/livetv/2023/04/28/46fb6170-e599-11ed-b606-c19576cb8b29_webp_original.webp"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+            </a>
+        </div>
+    </div>
+
+    <!-- หนังทีวี -->
+    <div id="movies" class="category-content">
+        <div class="category">หนังทีวี</div>
+        <div class="channel-container">
+            
+        
+            <a href="intent://freelive2.inwstream.com:1935/freelive-edge/fwmov_fw-iptv.stream/playlist.m3u8#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=KTV;scheme=http;type=video/mp4;end" class="channel">
+                <img src="https://iptv-dd.com/wp-content/uploads/2021/10/fwiptv.png"
+alt="fwmov_fw">
+                    <p>fwmov_fw</p>
+                </a>
+
+  <a href="intent://freelive2.inwstream.com:1935/freelive-edge/fwmov_fw-iptv.stream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OC8xNC8yMDI1IDg6MTQ6MzMgUE0maGFzaF92YWx1ZT1FZlVjZ1RWLzJCVGYya2tGMUJNSHp3PT0mdmFsaWRtaW51dGVzPTI=&demo#Intent;package=com.firecore.infuse;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=ต้นทีวี;scheme=http;type=video/mp4;end" class="channel"> class="channel">
+                <img src="https://www.fileinw.com/postor/20240429213309FWMOV.jpg"
+alt="fwmov_fw">
+                    <p>fwmov_fw</p>
+                </a>
+                
+
+    
+    <a href="intent://49.0.64.96:8007/H-Channel#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=ต้นทีวี;scheme=http;type=video/mp4;end" class="channel">
+        <img src="https://i.ibb.co/MxZHkhvV/logo-universal.png"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+    </a><a href="intent://dookeela.live/live-tv/trueseries#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+        <img src="https://cms.dmpcdn.com/livetv/2023/04/28/456c5d00-e599-11ed-b550-9935ba8025b9_webp_original.webp"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+                
+    </a><a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/truefilmasia/playlist.m3u8#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+        <img src="https://cms.dmpcdn.com/livetv/2023/12/15/547673c0-9af8-11ee-b1e6-1fd23e73ab60_webp_original.webp"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+</a><a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/truethaifilm/playlist.m3u8#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookezela.live/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+        <img src="https://cms.dmpcdn.com/livetv/2023/12/15/5607e930-9af8-11ee-b035-95a91afb0fb9_webp_original.webp"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+   
+    </a><a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/truefilm1/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://cms.dmpcdn.com/livetv/2023/12/15/54226050-9af8-11ee-b1e6-1fd23e73ab60_webp_original.webp"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+                
+</a><a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/truefilm2/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://cms.dmpcdn.com/livetv/2023/12/15/5440e4d0-9af8-11ee-8086-17feeb8a4188_webp_original.webp"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+</a><a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/truemoviehits/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://cms.dmpcdn.com/livetv/2023/12/15/55139e20-9af8-11ee-ba6c-fd47adcb0961_webp_original.webp"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+</a><a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/trueasianmore/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://goal-th.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/True_Asian_More.webp" alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+</a><a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/trueidasianseries/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://goal-th.com/&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://dookeela.live/uploads/1741551484.png"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+<a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/3bbasian/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/no&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE///channelicon//3BBAsian_new.png" alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+<a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/mono29plus/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/no&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE///channelicon//Mono29Plus_new.png" alt="mono29plus">
+                    <p>mono29plus</p>
+                </a>
+
+<a href="intent://freelive2.inwstream.com:1935/freelive-edge/fwtoon_fw-iptv.stream/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/no&userAgent=exo_player;S.title=ต้นทีวี;scheme=http;type=video/mp4;end" class="channel">
+<img src="https://iptv-dd.com/wp-content/uploads/2021/10/fwiptv.png" alt="fwtoon_fw">
+                    <p>fwtoon_fw</p>
+                </a>
+
+<a href="intent://dkl-c33es.cdn.akamaiz.com/dooballfree24hr/hbo/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/no&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkJt29b_ttv4jZDhUYd_8zA_z4y13Nw4UqWw&s"
+alt="hbo">
+                    <p>hbo</p>
+                </a>
+                
+<a href="intent://49.0.64.96:8007/IZAA
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/no&userAgent=exo_player;S.title=ต้นทีวี;scheme=http;type=video/mp4;end" class="channel">
+<img src="https://i.ibb.co/B53tBWkh/logoizaamovie.png"
+alt="IZAA">
+                    <p>IZAA</p>
+                </a>
+                
+</a><a href="intent://freelive2.inwstream.com:1935/freelive-edge/gags_fw-iptv.stream/playlist.m3u8
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/no&userAgent=exo_player;S.title=ต้นทีวี;scheme=http;type=video/mp4;end" class="channel">
+<img src="https://iptv-dd.com/wp-content/uploads/2021/10/fwiptv.png"
+alt="gags_fw">
+                    <p>gags_fw</p>
+                </a>
+                
+</a><a href="intent://dookeela.live/live-tv/hbo-signature
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/no&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0149.png"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+</a><a href="intent://moo7hd.myddns.me:9192/stream/boxoffice/index.m3u8?fbclid=IwY2xjawL_uE1leHRuA2FlbQIxMQABHitiSoSVnl9AoA1Sc8IGw7jLQlhKsQZrwsc6R8HZ4n9WTGP6azJMZ37whlQe_aem_B8f7xerQuF0xmNLI1jNdrQ
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/no&userAgent=exo_player;S.title=ต้นทีวี;scheme=http;type=video/mp4;end" class="channel">
+<img src="https://img2.pic.in.th/pic/_2025_07_18_08_38_54_237.png"
+alt="boxoffice">
+                    <p>boxoffice</p>
+                </a>
+                
+</a><a href="intent://43.229.132.25:80/play/lXczR7gX0aqSTYtv3UCQtvVgcONLEEy13ZjHiCaTs2GNXaNwzV0aoBpkJ1W6O9P8/ts
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=http://dookeela.live/&userAgent=http://45.144.165.223/;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://img5.pic.in.th/file/secure-sv1/oie_transparent-1.png"shttp://45.144.165.223/logo/ent/intermovie.png"
+alt="หนังฝรั่ง">
+                    <p>หนังฝรั่ง</p>
+                </a>
+
+          <a href="intent://43.229.132.25:80/play/lXczR7gX0aqSTYtv3UCQtvVgcONLEEy13ZjHiCaTs2FcjXqcX-KxE_l4-JqcfFrc/ts
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/no&userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="http://45.144.165.223/logo/ent/thaimovie.png"
+alt="หนังไทย">
+                    <p>หนังไทย</p>
+                </a>
+
+<a href="intent://43.229.132.25:80/play/lXczR7gX0aqSTYtv3UCQtvVgcONLEEy13ZjHiCaTs2FcjXqcX-KxE_l4-JqcfFrc/ts
+#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/no&userAgent=exo_player;S.title=ต้นทีวี;scheme=http;type=video/mp4;end" class="channel">
+<img src="http://45.144.165.223/logo/ent/thaimovie.png"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+<a href="intent://49.0.64.96:8007/PING
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=http;type=video/mp4;end" class="channel">
+<img src="https://i.ibb.co/nqWvLRYF/logo-fuckmovie.png"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+<a href="intent://49.0.64.96:8007/PLUSE
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=ห้ามแชร์;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="http://i.ibb.co/7xf3sR9Z/logo-pluse.png"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+
+            <a href="intent://43.229.132.25:80/play/lXczR7gX0aqSTYtv3UCQtvVgcONLEEy13ZjHiCaTs2GNXaNwzV0aoBpkJ1W6O9P8/ts#Intent;package=dev.anilbeesetti.nextplayer;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=KTV;scheme=http;type=video/mp4;end" class="channel">
+                <img src="http://45.144.165.223/logo/ent/intermovie.png"
+alt="หนังฝรั่ง">
+    
+                <p>หนังฝรั่ง</p>
+             </a>
+            </a>
+        </div>
+    </div>
+
+    <!-- วิทยุ_ออนไลน์ -->
+    <div id="sport" class="category-content">
+        <div class="category">วิทยุ_ออนไลน์</div>
+        <div class="channel-container">
+            <!-- play-sports-football-ออนไลน์-->
+            
+        
+        <a href="intent://playlist.xtemus.com/play.php?ch=t256y454t415642386v4v2y294
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://static.mytuner.mobi/media/tvos_radios/KvDHAwT62s.png"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+<a href="intent://atimeonline3.smartclick.co.th/green
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://static.mytuner.mobi/media/tvos_radios/52kDndQrUz.jpg"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+<a href="intent://atimeonline3.smartclick.co.th/efm
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://static.mytuner.mobi/media/tvos_radios/Ck8sVEmWdv.jpeg"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+<a href="intent://rr7---sn-5np5po4v-c33ze.googlevideo.com/videoplayback?expire=1755056523&ei=K7WbaMHHNrO24t4Pm-SXgAI&ip=223.24.165.17&id=o-ADQpfOydlvSdsSonDZ78LQU40dS4_6eoeDHYoos4GUQq&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1755034923%2C&mh=KH&mm=31%2C29&mn=sn-5np5po4v-c33ze%2Csn-5np5po4v-c33zr&ms=au%2Crdu&mv=m&mvi=7&pl=24&rms=au%2Cau&initcwndbps=420000&siu=1&bui=AY1jyLOJ6R9bf647WaRq-vlTK-vLYH3yInsGkSwtvBHdOKukJDaoZUlr-KWUMTqIYk__Od9K9g&spc=l3OVKR6MNCcnx5t6D0D9MQputYBiwJlYDnFA6UV9nWrkhYvujWSL2geRH6m_2DuI78Jllja93P5UhTQ03uxW1UL59Mc&vprv=1&svpuc=1&mime=video%2Fmp4&ns=1qI7k1jogJ_W3afA17XVOToQ&rqh=1&cnr=14&ratebypass=yes&dur=5385.404&lmt=1743167479447425&mt=1755034623&fvip=2&fexp=51331020%2C51548755&c=MWEB&sefc=1&txp=4538534&n=TDRjNjycmpyYZw&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Csiu%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRgIhAPwadqPN2Wa7gqoSufOR5Gd0ZoQDeOIqs-GPq686VZtuAiEAvO21QqiGMr2ulo9f1c5SCoJsNovaBtOHkVMVvN86QPk%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhAIGlxzQ9nzq0uATnA3H4UnIijX_de5ctzPcD4-s60YhcAiALCdf2QULz7bKJg7LQfRYnDgiBFXY8M_JdQAgyacPJiQ%3D%3D&cpn=DQ32kGCYBbAUlsAO&cver=2.20250812.01.00&ptk=youtube_single&oid=J4M2k3QT-PCjoBBqmEP5LQ&ptchn=QbVt5dy_MAsMDbGpI5y6Mg&pltype=content
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://i.ytimg.com/vi/vDdxVPSp2J8/hq720.jpg?sqp=-oaymwEcCK4FEIIDSEbyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBVxfErrB5Ktp1NX-oZZeD32Pvt1Q" alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+
+<a href="intent://radio.vpsthai.net/proxy/qndrbfic/stream
+#Intent;package=dev.anilbeesetti.nextplayer;S.userAgent=exo_player;S.title=ต้นทีวี;scheme=https;type=video/mp4;end" class="channel">
+<img src="https://static.mytuner.mobi/media/tvos_radios/662/great-93.a0cb964a.png"
+alt="truex-zyte">
+                    <p>ต้นทีวี</p>
+                </a>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>ชัยประเสริฐ นพรัตน์</p>
+    </div>
+    
+    <script>
+        function showCategory(categoryId) {
+            // ซ่อนเนื้อหาทั้งหมด
+            document.querySelectorAll('.category-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // แสดงเฉพาะหมวดหมู่ที่เลือก
+            document.getElementById(categoryId).classList.add('active');
+            
+            // อัพเดทแท็บที่ active
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // หาแท็บที่คลิกและเพิ่มคลาส active
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                if (tab.getAttribute('onclick').includes(categoryId)) {
+                    tab.classList.add('active');
+                }
+            });
+        }
+    </script>
+   <footer>
+   <marquee direction="left">© 🔘ชัยประเสริฐ IPTV📺</marquee>
+    <a href="http://127.0.0.1:16522/main/0/storage/emulated/0/HTMLTEST%20V1/wiseplay/%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B8%A7%E0%B8%B5wiseplay%20-%20V2.html">👉SUPER IPTV👈</a>
+        <a href="http://127.0.0.1:16522/main/0/storage/emulated/0/HTMLTEST%20V1/wiseplay/%E0%B8%95%E0%B9%89%E0%B8%99%20IPTV.html%26IPTVM3U%20(2).html">👉SUPER2 IPTV👈</a>
+      <a href="https://djtono.short.gy/ต้นSUPERIPTV-V2.m3u">👉SUPER IPTV 2V👈</a>
+      
+      </footer>
+      <body bgcolor="#1e90ff">
+<center>
+  <h2><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBXudk1s-aItn9yaPYq9QDT2SbzEZ_7rxOqV5XRfX36miwzuKSQncXwrw&s=10"></h2>
+</center>
+</body>
+</html>
