@@ -1,4 +1,4 @@
-#EXTM3U url="https://raw.githubusercontent.com/sugus320/sugus320tv/refs/heads/main/djtontv-playlist.m3u"
+#EXTM3U url=""
  
 #EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="FreeTV", HBO 34
 http://91.231.229.1:2005/live/play/VFZWaGRGWkZSVTlXUm5WWWVsZHlZM2x1VDNod09YSklhREJTVldwbFRYWmtUM1JKUkdabFExWkVaejA9/115704
