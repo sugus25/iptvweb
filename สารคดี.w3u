@@ -1,1 +1,77 @@
 
+{
+  "name": "รวมเวปออนไลน์",
+  "image": "https://download.logo.wine/logo/OnePlus/OnePlus-Logo.wine.png",
+  "stations": [
+  {
+    "name": "Animal",
+    "image": "https://i.ibb.co/bMtB5NKS/logo-animal.png",
+    "url": "http://49.0.64.96:8007/Animal",
+    "referer": "",
+    "userAgent": "ห้ามแชร์"
+  },
+  {
+    "name": "Science",
+    "image": "https://i.ibb.co/gQLyLmK/logo-seience.png",
+    "url": "http://49.0.64.96:8007/WSCI",
+    "referer": "",
+    "userAgent": "ห้ามแชร์"
+  },
+  {
+    "name": "Khong Dee Thailand",
+    "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png",
+    "url": "http://ultratv.one:2095/live/hCPtsREFtA/Xj25tg0ZXi/116072.m3u8",
+    "referer": "",
+    "userAgent": "ห้ามแชร์"
+  },
+  {
+    "name": "Khong Dee Thailand",
+    "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png",
+    "url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0154/DASH/V0154.mpd?playbackUrlPrefix\u003dhttps%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F\u0026originBasicUrl\u003dhttp%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia\u0026tt\u003d31dcdd09588bf67594a316c13fd491d6\u0026chunkHttps\u003dtrue\u0026tmid\u003dB0015\u0026tpbk\u003dOKAJuDlJPrYRk5As\u0026rrt\u003d1751326270\u0026tmod\u003drfk\u0026rsid\u003d83c4448e-8f1e-4298-88ce-99c426b36448\u0026tuid\u003di3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D\u0026cdn\u003dredfox-https\u0026tdid\u003d11825acc7df882991f32b9ba07ac7710\u0026origin\u003danevia\u0026tfa\u003df0-fc\u0026tttl\u003d1751412666|referer\u003dhttps://ais-vidnt.com/",
+    "referer": "https://ais-vidnt.com/",
+    "userAgent": ""
+  },
+  {
+    "name": "Samrujlok",
+    "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png",
+    "url": "https://blive99.github.io/m3u8/goodtv/goodtvSamrulok.m3u8",
+    "referer": "",
+    "userAgent": ""
+  },
+  {
+    "name": "Samrujlok",
+    "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png",
+    "url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0151/DASH/V0151.mpd?playbackUrlPrefix\u003dhttps%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F\u0026originBasicUrl\u003dhttp%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia\u0026tt\u003d31dcdd09588bf67594a316c13fd491d6\u0026chunkHttps\u003dtrue\u0026tmid\u003dB0015\u0026tpbk\u003dOKAJuDlJPrYRk5As\u0026rrt\u003d1751326270\u0026tmod\u003drfk\u0026rsid\u003d83c4448e-8f1e-4298-88ce-99c426b36448\u0026tuid\u003di3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D\u0026cdn\u003dredfox-https\u0026tdid\u003d11825acc7df882991f32b9ba07ac7710\u0026origin\u003danevia\u0026tfa\u003df0-fc\u0026tttl\u003d1751412666|referer\u003dhttps://ais-vidnt.com/",
+    "referer": "https://ais-vidnt.com/",
+    "userAgent": ""
+  },
+  {
+    "name": "Animal Show GoodTV",
+    "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png",
+    "url": "https://blive99.github.io/m3u8/goodtv/goodtvanimalshow.m3u8",
+    "referer": "",
+    "userAgent": "ห้ามแชร์"
+  },
+  {
+    "name": "Thainess",
+    "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///Thainess.png",
+    "url": "https://ipplaybox.fun/dookeela/thainess/chunks.m3u8",
+    "referer": "https://dookeela4.live",
+    "userAgent": ""
+  },
+  {
+    "name": "Thainess",
+    "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///Thainess.png",
+    "url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0155/DASH/V0155.mpd?playbackUrlPrefix\u003dhttps%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F\u0026originBasicUrl\u003dhttp%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia\u0026tt\u003d31dcdd09588bf67594a316c13fd491d6\u0026chunkHttps\u003dtrue\u0026tmid\u003dB0015\u0026tpbk\u003dOKAJuDlJPrYRk5As\u0026rrt\u003d1751326270\u0026tmod\u003drfk\u0026rsid\u003d83c4448e-8f1e-4298-88ce-99c426b36448\u0026tuid\u003di3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D\u0026cdn\u003dredfox-https\u0026tdid\u003d11825acc7df882991f32b9ba07ac7710\u0026origin\u003danevia\u0026tfa\u003df0-fc\u0026tttl\u003d1751412666|referer\u003dhttps://ais-vidnt.com/",
+    "referer": "https://ais-vidnt.com/",
+    "userAgent": ""
+  },
+  {
+    "name": "Mysci",
+    "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png",
+    "url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0152/DASH/V0152.mpd?playbackUrlPrefix\u003dhttps%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F\u0026originBasicUrl\u003dhttp%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia\u0026tt\u003d31dcdd09588bf67594a316c13fd491d6\u0026chunkHttps\u003dtrue\u0026tmid\u003dB0015\u0026tpbk\u003dOKAJuDlJPrYRk5As\u0026rrt\u003d1751326270\u0026tmod\u003drfk\u0026rsid\u003d83c4448e-8f1e-4298-88ce-99c426b36448\u0026tuid\u003di3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D\u0026cdn\u003dredfox-https\u0026tdid\u003d11825acc7df882991f32b9ba07ac7710\u0026origin\u003danevia\u0026tfa\u003df0-fc\u0026tttl\u003d1751412666|referer\u003dhttps://ais-vidnt.com/",
+    "referer": "https://ais-vidnt.com/",
+    "userAgent": ""
+  }
+  ]
+  },
