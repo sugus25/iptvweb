@@ -1,0 +1,180 @@
+{
+"name": "AIS PLAY",
+"author": "VIP",
+"url": "",
+"image": "https://cdn.pixabay.com/animation/2022/09/09/08/46/08-46-03-703_512.gif",
+"stations": [
+{
+"name": "3 HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/LOGO3HD.PNG",
+"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0003/DASH/B0003.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "ONE 31 HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0012.png",
+"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0012/DASH/B0012.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "CH7 HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0018.png",
+"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0018/DASH/B0018.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "MONO",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/Mono_2025e.png",
+"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0016/DASH/B0016.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "Thairath TV HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0013_R.png",
+"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0013/DASH/B0013.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "Workpoint TV",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0015_R.png",
+"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0015/DASH/B0015.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "AmarinTV HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/AmarinTV_NEW512.png",
+"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0017/DASH/B0017.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "สำรวจโลก",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png",
+"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0151/DASH/V0151.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "Mysci",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png",
+"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0152/DASH/V0152.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "Animal Show",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png",
+"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/origin/live/eds/V0153/HLS/V0153.m3u8?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "ของดีประเทศไทย",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png",
+"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0154/DASH/V0154.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "ไทยเนสส",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///Thainess.png",
+"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0155/DASH/V0155.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "FW COMNADY",
+"image": "https://www.fileinw.com/postor/20240429213343just_for_laughs_gags.jpg",
+"url": "http://freelive2.inwstream.com:1935/freelive-edge/gags_fw-iptv.stream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NS8xNi8yMDI1IDEwOjQ2OjQ1IEFNJmhhc2hfdmFsdWU9ci80WDVqUWZRaHlHTjBZd3Mrekc3dz09JnZhbGlkbWludXRlcz0y&demo",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "TRUE LOVE NATURE",
+"image": "https://cms.dmpcdn.com/livetv/2024/01/16/c97ab380-b44c-11ee-9687-e7ccd66e1ea3_webp_original.webp",
+"url": "https://github.com/bestcommt2/m3u8/raw/refs/heads/master/trueexplorelife.m3u8",
+"referer": ""
+},
+{
+"name": "TRUE EXPLORESCI",
+"image": "https://cms.dmpcdn.com/livetv/2024/01/16/c9f16a20-b44c-11ee-8e80-c3f417d0d932_webp_original.webp",
+"url": "https://github.com/bestcommt2/m3u8/raw/refs/heads/master/trueexploresci.m3u8",
+"referer": "",
+"info": "GojekTV-Free",
+"playInNatPlayer": "true"
+  }
+  ]
+  },
+"HBO TH",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/R_0148.png",
+"url": "https://github.com/bestcommt2/m3u8/raw/refs/heads/master/HBOTHAI.m3u8",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "FW MOVIE",
+"image": "https://www.fileinw.com/postor/20240429213309FWMOV.jpg",
+"url": "https://freelive2.inwstream.com:1936/freelive-edge/fwmov_fw-iptv.stream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9My8yNC8yMDI1IDEyOjEyOjQ2IFBNJmhhc2hfdmFsdWU9N3gvMjA4RWNONFBZb3BrbDQvYUFLQT09JnZhbGlkbWludXRlcz0y",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "FW TOON",
+"image": "https://www.fileinw.com/postor/20240429213651FWTOON.jpg",
+"url": "https://freelive2.inwstream.com:1936/freelive-edge/fwtoon_fw-iptv.stream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9My8yNC8yMDI1IDEyOjEyOjQ2IFBNJmhhc2hfdmFsdWU9N3gvMjA4RWNONFBZb3BrbDQvYUFLQT09JnZhbGlkbWludXRlcz0y",
+"referer": "https://ais-vidnt.com/"
+},
+{
+"name": "THAIFREE TV",
+"image": "http://iptv36.mooo.com/logo/info.png",
+"url": "http://iptv36.mooo.com/logo/info.png",
+"referer": ""
+},
+{
+"name": "fwmov",
+"image": "https://img.inwiptv.net/postor/20200512164154fwmov.jpg",
+"url": "https://www.inwiptv.com/player_demo.php?channel=95262",
+"referer": "https://www.inwiptv.com/",
+"userAgent": "exoplayer_video"
+},
+{
+"name": "fwsov",
+"image": "https://img.inwiptv.net/postor/20200512165346fwsov.jpg",
+"url": "https://www.inwiptv.com/player_demo.php?channel=89781",
+"referer": "https://www.inwiptv.com/",
+"userAgent": "exoplayer_video"
+},
+{
+"name": "fw teletoon",
+"image": "https://img.inwiptv.net/postor/20200512162950fw teletoon(1).jpg",
+"url": "https://www.inwiptv.com/player_demo.php?channel=89780",
+"referer": "https://www.inwiptv.com/",
+"userAgent": "exoplayer_video"
+},
+{
+"name": "FW cartoon",
+"image": "https://img2.pic.in.th/pic/CAR.png",
+"imageScale": "fitStart",
+"url": "https://www.inwiptv.com/player_demo.php?channel=92941",
+"referer": "",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "FW Comedy",
+"image": "https://img5.pic.in.th/file/secure-sv1/COM.png",
+"imageScale": "fitStart",
+"url": "https://www.inwiptv.com/player_demo.php?channel=89781",
+"referer": "",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "FW Doc",
+"image": "https://www.fileinw.com/postor/20240617204638FWDoc.jpg",
+"imageScale": "fitStart",
+"url": "https://www.inwiptv.com/player_demo.php?channel=91303",
+"referer": "",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "thaifree tv",
+"image": "http://iptv36.mooo.com/logo/info.png",
+"url": "http://iptv36.mooo.com/logo/info.png",
+"referer": "https://ais-vidnt.com/"
+},
+null
+]
+}<script src="https://www.drv.tw/inc/wd.js?s=streamjng5gfast5stream"></script>
