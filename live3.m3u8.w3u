@@ -1,0 +1,2119 @@
+{
+"name": "🅻🅸🆅🅴 ➊",
+"author": "🅻🅸🆅🅴 ➊ Visitor to Day 🧑‍🤝‍🧑 43",
+"url": "",
+"image": "http://guflix.streaming-fast.com/logo/2tvonline.jpg",
+"groups": [
+{
+"name": "ต่างประเทศ กีฬา",
+"image": "http://guflix.streaming-fast.com/logo/2tvonline.jpg",
+"stations": [
+{
+"name": "Sport TV 1",
+"image": "https://liveera.live/logos/63481.jpg",
+"url": "https://liveera.live/demo_app/63481/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sport TV 1"
+},
+{
+"name": "Sport TV 2",
+"image": "https://liveera.live/logos/63478.jpg",
+"url": "https://liveera.live/demo_app/63478/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sport TV 2"
+},
+{
+"name": "Sport TV 3",
+"image": "https://liveera.live/logos/63475.jpg",
+"url": "https://liveera.live/demo_app/63475/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sport TV 3"
+},
+{
+"name": "Sport TV 4",
+"image": "https://liveera.live/logos/63472.jpg",
+"url": "https://liveera.live/demo_app/63472/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sport TV 4"
+},
+{
+"name": "Sport TV 5",
+"image": "https://liveera.live/logos/63471.jpg",
+"url": "https://liveera.live/demo_app/63471/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sport TV 5"
+},
+{
+"name": "Fight Sports",
+"image": "https://liveera.live/logos/61289.jpg",
+"url": "https://liveera.live/demo_app/61289/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Fight Sports"
+},
+{
+"name": "Bein France 1",
+"image": "https://liveera.live/logos/61286.jpg",
+"url": "https://liveera.live/demo_app/61286/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Bein France 1"
+},
+{
+"name": "Bein France 2",
+"image": "https://liveera.live/logos/61283.jpg",
+"url": "https://liveera.live/demo_app/61283/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Bein France 2"
+},
+{
+"name": "Bein France 3",
+"image": "https://liveera.live/logos/61281.jpg",
+"url": "https://liveera.live/demo_app/61281/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Bein France 3"
+},
+{
+"name": "Sportsnet World",
+"image": "https://liveera.live/logos/16304.jpg",
+"url": "https://liveera.live/demo_app/16304/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sportsnet World"
+},
+{
+"name": "Sportsnet West",
+"image": "https://liveera.live/logos/16302.jpg",
+"url": "https://liveera.live/demo_app/16302/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sportsnet West"
+},
+{
+"name": "Sportsnet ONE",
+"image": "https://liveera.live/logos/16299.jpg",
+"url": "https://liveera.live/demo_app/16299/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sportsnet ONE"
+},
+{
+"name": "Sportsnet 360",
+"image": "https://liveera.live/logos/15787.jpg",
+"url": "https://liveera.live/demo_app/15787/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sportsnet 360"
+},
+{
+"name": "Sportsnet Ontario",
+"image": "https://liveera.live/logos/14975.jpg",
+"url": "https://liveera.live/demo_app/14975/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sportsnet Ontario"
+},
+{
+"name": "NHL",
+"image": "https://liveera.live/logos/14972.jpg",
+"url": "https://liveera.live/demo_app/14972/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "NHL"
+},
+{
+"name": "Arena Sport 1",
+"image": "https://liveera.live/logos/13918.jpg",
+"url": "https://liveera.live/demo_app/13918/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Arena Sport 1"
+},
+{
+"name": "Arena Sport 2",
+"image": "https://liveera.live/logos/13917.jpg",
+"url": "https://liveera.live/demo_app/13917/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Arena Sport 2"
+},
+{
+"name": "Arena Sport 3",
+"image": "https://liveera.live/logos/13916.jpg",
+"url": "https://liveera.live/demo_app/13916/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Arena Sport 3"
+},
+{
+"name": "Arena Sport 4",
+"image": "https://liveera.live/logos/13915.jpg",
+"url": "https://liveera.live/demo_app/13915/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Arena Sport 4"
+},
+{
+"name": "Arena Sport 5",
+"image": "https://liveera.live/logos/13071.jpg",
+"url": "https://liveera.live/demo_app/13071/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Arena Sport 5"
+},
+{
+"name": "Liverpool TV",
+"image": "https://liveera.live/logos/12684.jpg",
+"url": "https://liveera.live/demo_app/12684/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Liverpool TV"
+},
+{
+"name": "MUTV",
+"image": "https://liveera.live/logos/12682.jpg",
+"url": "https://liveera.live/demo_app/12682/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "MUTV"
+},
+{
+"name": "Sky Sports Racing",
+"image": "https://liveera.live/logos/11977.jpg",
+"url": "https://liveera.live/demo_app/11977/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sky Sports Racing"
+},
+{
+"name": "Sky Sports News",
+"image": "https://liveera.live/logos/11976.jpg",
+"url": "https://liveera.live/demo_app/11976/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sky Sports News"
+},
+{
+"name": "Sky Sports Mix",
+"image": "https://liveera.live/logos/11975.jpg",
+"url": "https://liveera.live/demo_app/11975/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sky Sports Mix"
+},
+{
+"name": "Sky Sports Football",
+"image": "https://liveera.live/logos/11974.jpg",
+"url": "https://liveera.live/demo_app/11974/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sky Sports Football"
+},
+{
+"name": "Sky Sports F1",
+"image": "https://liveera.live/logos/11973.jpg",
+"url": "https://liveera.live/demo_app/11973/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sky Sports F1"
+},
+{
+"name": "Sky Sports +",
+"image": "https://liveera.live/logos/11972.jpg",
+"url": "https://liveera.live/demo_app/11972/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sky Sports +"
+},
+{
+"name": "Sky Sports Action",
+"image": "https://liveera.live/logos/11952.jpg",
+"url": "https://liveera.live/demo_app/11952/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sky Sports Action"
+},
+{
+"name": "Sky Sports Cricket",
+"image": "https://liveera.live/logos/11951.jpg",
+"url": "https://liveera.live/demo_app/11951/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sky Sports Cricket"
+},
+{
+"name": "Sky Sports Golf",
+"image": "https://liveera.live/logos/11950.jpg",
+"url": "https://liveera.live/demo_app/11950/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sky Sports Golf"
+},
+{
+"name": "Sky Sports Main Event",
+"image": "https://liveera.live/logos/11949.jpg",
+"url": "https://liveera.live/demo_app/11949/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sky Sports Main Event"
+},
+{
+"name": "Sky Sports Premier League",
+"image": "https://liveera.live/logos/11948.jpg",
+"url": "https://liveera.live/demo_app/11948/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Sky Sports Premier League"
+},
+{
+"name": "TNT Sport 1",
+"image": "https://liveera.live/logos/11947.jpg",
+"url": "https://liveera.live/demo_app/11947/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "TNT Sport 1"
+},
+{
+"name": "TNT Sport 2",
+"image": "https://liveera.live/logos/11941.jpg",
+"url": "https://liveera.live/demo_app/11941/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "TNT Sport 2"
+},
+{
+"name": "TNT Sport 3",
+"image": "https://liveera.live/logos/11940.jpg",
+"url": "https://liveera.live/demo_app/11940/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "TNT Sport 3"
+},
+{
+"name": "TNT Sport 4",
+"image": "https://liveera.live/logos/11939.jpg",
+"url": "https://liveera.live/demo_app/11939/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "TNT Sport 4"
+},
+{
+"name": "EuroSport 1",
+"image": "https://liveera.live/logos/11936.jpg",
+"url": "https://liveera.live/demo_app/11936/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "EuroSport 1"
+},
+{
+"name": "EuroSport 2",
+"image": "https://liveera.live/logos/11935.jpg",
+"url": "https://liveera.live/demo_app/11935/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "EuroSport 2"
+},
+{
+"name": "Fox Sports 1 USA",
+"image": "https://liveera.live/logos/11926.jpg",
+"url": "https://liveera.live/demo_app/11926/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Fox Sports 1 USA"
+},
+{
+"name": "Fox Sports 2 USA",
+"image": "https://liveera.live/logos/11925.jpg",
+"url": "https://liveera.live/demo_app/11925/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Fox Sports 2 USA"
+},
+{
+"name": "ESPN 1",
+"image": "https://liveera.live/logos/11924.jpg",
+"url": "https://liveera.live/demo_app/11924/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ESPN 1"
+},
+{
+"name": "ESPN 2",
+"image": "https://liveera.live/logos/11923.jpg",
+"url": "https://liveera.live/demo_app/11923/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ESPN 2"
+},
+{
+"name": "NFL",
+"image": "https://liveera.live/logos/11922.jpg",
+"url": "https://liveera.live/demo_app/11922/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "NFL"
+},
+{
+"name": "CBS Sports",
+"image": "https://liveera.live/logos/11921.jpg",
+"url": "https://liveera.live/demo_app/11921/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "CBS Sports"
+},
+{
+"name": "NBC Sports",
+"image": "https://liveera.live/logos/11920.jpg",
+"url": "https://liveera.live/demo_app/11920/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "NBC Sports"
+},
+{
+"name": "TSN 1",
+"image": "https://liveera.live/logos/11904.jpg",
+"url": "https://liveera.live/demo_app/11904/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "TSN 1"
+},
+{
+"name": "TSN 2",
+"image": "https://liveera.live/logos/11903.jpg",
+"url": "https://liveera.live/demo_app/11903/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "TSN 2"
+},
+{
+"name": "TSN 3",
+"image": "https://liveera.live/logos/11902.jpg",
+"url": "https://liveera.live/demo_app/11902/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "TSN 3"
+},
+{
+"name": "TSN 4",
+"image": "https://liveera.live/logos/11901.jpg",
+"url": "https://liveera.live/demo_app/11901/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "TSN 4"
+},
+{
+"name": "TSN 5",
+"image": "https://liveera.live/logos/11900.jpg",
+"url": "https://liveera.live/demo_app/11900/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "TSN 5"
+},
+{
+"name": "Tennis Channel",
+"image": "https://liveera.live/logos/10332.jpg",
+"url": "https://liveera.live/demo_app/10332/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Tennis Channel"
+},
+{
+"name": "Being Sport USA",
+"image": "https://liveera.live/logos/10331.jpg",
+"url": "https://liveera.live/demo_app/10331/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Being Sport USA"
+},
+{
+"name": "MLB Network",
+"image": "https://liveera.live/logos/10330.jpg",
+"url": "https://liveera.live/demo_app/10330/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "MLB Network"
+},
+{
+"name": "WWE Network",
+"image": "https://liveera.live/logos/10329.jpg",
+"url": "https://liveera.live/demo_app/10329/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "WWE Network"
+},
+{
+"name": "Willow Cricket",
+"image": "https://liveera.live/logos/8740.jpg",
+"url": "https://liveera.live/demo_app/8740/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Willow Cricket"
+},
+{
+"name": "NBA",
+"image": "https://liveera.live/logos/8739.jpg",
+"url": "https://liveera.live/demo_app/8739/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "NBA"
+},
+{
+"name": "ITV1",
+"image": "https://liveera.live/logos/8738.jpg",
+"url": "https://liveera.live/demo_app/8738/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ITV1"
+},
+{
+"name": "ITV2",
+"image": "https://liveera.live/logos/8737.jpg",
+"url": "https://liveera.live/demo_app/8737/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ITV2"
+},
+{
+"name": "ITV3",
+"image": "https://liveera.live/logos/8736.jpg",
+"url": "https://liveera.live/demo_app/8736/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ITV3"
+},
+{
+"name": "ITV4",
+"image": "https://liveera.live/logos/8735.jpg",
+"url": "https://liveera.live/demo_app/8735/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ITV4"
+}
+]
+},
+{
+"name": "กีฬา",
+"image": "http://guflix.streaming-fast.com/logo/2tvonline.jpg",
+"stations": [
+{
+"name": "Monomax 1",
+"image": "https://liveera.live/logos/82290.jpg",
+"url": "https://liveera.live/demo_app/82290/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Monomax 1"
+},
+{
+"name": "Monomax 2",
+"image": "https://liveera.live/logos/82079.jpg",
+"url": "https://liveera.live/demo_app/82079/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Monomax 2"
+},
+{
+"name": "Monomax 3",
+"image": "https://liveera.live/logos/82044.jpg",
+"url": "https://liveera.live/demo_app/82044/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Monomax 3"
+},
+{
+"name": "Monomax 4",
+"image": "https://liveera.live/logos/81912.jpg",
+"url": "https://liveera.live/demo_app/81912/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Monomax 4"
+},
+{
+"name": "Monomax 5",
+"image": "https://liveera.live/logos/81779.jpg",
+"url": "https://liveera.live/demo_app/81779/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Monomax 5"
+},
+{
+"name": "Monomax 6",
+"image": "https://liveera.live/logos/81741.jpg",
+"url": "https://liveera.live/demo_app/81741/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Monomax 6"
+},
+{
+"name": "Monomax 7",
+"image": "https://liveera.live/logos/81639.jpg",
+"url": "https://liveera.live/demo_app/81639/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Monomax 7"
+},
+{
+"name": "Monomax 8",
+"image": "https://liveera.live/logos/81611.jpg",
+"url": "https://liveera.live/demo_app/81611/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Monomax 8"
+},
+{
+"name": "ONE Championship",
+"image": "https://liveera.live/logos/81433.jpg",
+"url": "https://liveera.live/demo_app/81433/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ONE Championship"
+},
+{
+"name": "beIN SPORTS 1",
+"image": "https://liveera.live/logos/7424.jpg",
+"url": "https://liveera.live/demo_app/7424/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "beIN SPORTS 1"
+},
+{
+"name": "beIN SPORTS 2",
+"image": "https://liveera.live/logos/7423.jpg",
+"url": "https://liveera.live/demo_app/7423/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "beIN SPORTS 2"
+},
+{
+"name": "beIN SPORTS 3",
+"image": "https://liveera.live/logos/7422.jpg",
+"url": "https://liveera.live/demo_app/7422/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "beIN SPORTS 3"
+},
+{
+"name": "beIN SPORTS 4",
+"image": "https://liveera.live/logos/7421.jpg",
+"url": "https://liveera.live/demo_app/7421/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "beIN SPORTS 4"
+},
+{
+"name": "beIN SPORTS 5",
+"image": "https://liveera.live/logos/7420.jpg",
+"url": "https://liveera.live/demo_app/7420/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "beIN SPORTS 5"
+},
+{
+"name": "beIN SPORTS 6",
+"image": "https://liveera.live/logos/7419.jpg",
+"url": "https://liveera.live/demo_app/7419/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "beIN SPORTS 6"
+},
+{
+"name": "beIN SPORTS 7",
+"image": "https://liveera.live/logos/7418.jpg",
+"url": "https://liveera.live/demo_app/7418/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "beIN SPORTS 7"
+},
+{
+"name": "beIN SPORTS 8",
+"image": "https://liveera.live/logos/7417.jpg",
+"url": "https://liveera.live/demo_app/7417/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "beIN SPORTS 8"
+},
+{
+"name": "beIN SPORTS 9",
+"image": "https://liveera.live/logos/7416.jpg",
+"url": "https://liveera.live/demo_app/7416/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "beIN SPORTS 9"
+},
+{
+"name": "beIN SPORTS 10",
+"image": "https://liveera.live/logos/7415.jpg",
+"url": "https://liveera.live/demo_app/7415/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "beIN SPORTS 10"
+},
+{
+"name": "Golf +",
+"image": "https://liveera.live/logos/7203.jpg",
+"url": "https://liveera.live/demo_app/7203/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Golf +"
+},
+{
+"name": "True Sport 1",
+"image": "https://liveera.live/logos/2892.jpg",
+"url": "https://liveera.live/demo_app/2892/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Sport 1"
+},
+{
+"name": "True Sport 2",
+"image": "https://liveera.live/logos/2891.jpg",
+"url": "https://liveera.live/demo_app/2891/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Sport 2"
+},
+{
+"name": "True Sport 3",
+"image": "https://liveera.live/logos/2890.jpg",
+"url": "https://liveera.live/demo_app/2890/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Sport 3"
+},
+{
+"name": "True Sport 4",
+"image": "https://liveera.live/logos/2889.jpg",
+"url": "https://liveera.live/demo_app/2889/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Sport 4"
+},
+{
+"name": "True Sport 5",
+"image": "https://liveera.live/logos/2888.jpg",
+"url": "https://liveera.live/demo_app/2888/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Sport 5"
+},
+{
+"name": "True Sport 7",
+"image": "https://liveera.live/logos/2829.jpg",
+"url": "https://liveera.live/demo_app/2829/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Sport 7"
+},
+{
+"name": "True Tennis",
+"image": "https://liveera.live/logos/2101.jpg",
+"url": "https://liveera.live/demo_app/2101/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Tennis"
+},
+{
+"name": "SPOTV 1",
+"image": "https://liveera.live/logos/2027.jpg",
+"url": "https://liveera.live/demo_app/2027/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "SPOTV 1"
+},
+{
+"name": "SPOTV 2",
+"image": "https://liveera.live/logos/2023.jpg",
+"url": "https://liveera.live/demo_app/2023/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "SPOTV 2"
+},
+{
+"name": "True Premier HD 3",
+"image": "https://liveera.live/logos/2018.jpg",
+"url": "https://liveera.live/demo_app/2018/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Premier HD 3"
+},
+{
+"name": "True Premier HD 4",
+"image": "https://liveera.live/logos/2017.jpg",
+"url": "https://liveera.live/demo_app/2017/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Premier HD 4"
+},
+{
+"name": "W-sport",
+"image": "https://liveera.live/logos/1498.jpg",
+"url": "https://liveera.live/demo_app/1498/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "W-sport"
+},
+{
+"name": "Mono MAX 1",
+"image": "https://liveera.live/logos/1495.jpg",
+"url": "https://liveera.live/demo_app/1495/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Mono MAX 1"
+},
+{
+"name": "Mono MAX 2",
+"image": "https://liveera.live/logos/1494.jpg",
+"url": "https://liveera.live/demo_app/1494/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Mono MAX 2"
+},
+{
+"name": "Mono MAX 3",
+"image": "https://liveera.live/logos/1493.jpg",
+"url": "https://liveera.live/demo_app/1493/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Mono MAX 3"
+},
+{
+"name": "Mono MAX 4",
+"image": "https://liveera.live/logos/1492.jpg",
+"url": "https://liveera.live/demo_app/1492/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Mono MAX 4"
+},
+{
+"name": "Mono MAX 5",
+"image": "https://liveera.live/logos/1491.jpg",
+"url": "https://liveera.live/demo_app/1491/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Mono MAX 5"
+},
+{
+"name": "Mono MAX 6",
+"image": "https://liveera.live/logos/1490.jpg",
+"url": "https://liveera.live/demo_app/1490/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Mono MAX 6"
+},
+{
+"name": "Mono MAX 7",
+"image": "https://liveera.live/logos/1489.jpg",
+"url": "https://liveera.live/demo_app/1489/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Mono MAX 7"
+},
+{
+"name": "Mono MAX 8",
+"image": "https://liveera.live/logos/1488.jpg",
+"url": "https://liveera.live/demo_app/1488/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Mono MAX 8"
+},
+{
+"name": "Mono MAX 9",
+"image": "https://liveera.live/logos/1487.jpg",
+"url": "https://liveera.live/demo_app/1487/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Mono MAX 9"
+},
+{
+"name": "Mono MAX 10",
+"image": "https://liveera.live/logos/1486.jpg",
+"url": "https://liveera.live/demo_app/1486/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Mono MAX 10"
+},
+{
+"name": "Play Sports 41",
+"image": "https://liveera.live/logos/1485.jpg",
+"url": "https://liveera.live/demo_app/1485/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 41"
+},
+{
+"name": "Play Sports 55",
+"image": "https://liveera.live/logos/1484.jpg",
+"url": "https://liveera.live/demo_app/1484/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 55"
+},
+{
+"name": "Play Sports 56",
+"image": "https://liveera.live/logos/1483.jpg",
+"url": "https://liveera.live/demo_app/1483/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 56"
+},
+{
+"name": "Play Sports 61",
+"image": "https://liveera.live/logos/1482.jpg",
+"url": "https://liveera.live/demo_app/1482/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 61"
+},
+{
+"name": "Play Sports 62",
+"image": "https://liveera.live/logos/1481.jpg",
+"url": "https://liveera.live/demo_app/1481/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 62"
+},
+{
+"name": "Play Sports 63",
+"image": "https://liveera.live/logos/1480.jpg",
+"url": "https://liveera.live/demo_app/1480/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 63"
+},
+{
+"name": "Play Sports 66",
+"image": "https://liveera.live/logos/1479.jpg",
+"url": "https://liveera.live/demo_app/1479/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 66"
+},
+{
+"name": "Play Sports 69",
+"image": "https://liveera.live/logos/1478.jpg",
+"url": "https://liveera.live/demo_app/1478/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 69"
+},
+{
+"name": "Play Sports 71",
+"image": "https://liveera.live/logos/1477.jpg",
+"url": "https://liveera.live/demo_app/1477/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 71"
+},
+{
+"name": "Play Sports 72",
+"image": "https://liveera.live/logos/1476.jpg",
+"url": "https://liveera.live/demo_app/1476/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 72"
+},
+{
+"name": "Play Sports 73",
+"image": "https://liveera.live/logos/1475.jpg",
+"url": "https://liveera.live/demo_app/1475/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 73"
+},
+{
+"name": "Play Sports 57",
+"image": "https://liveera.live/logos/1441.jpg",
+"url": "https://liveera.live/demo_app/1441/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 57"
+},
+{
+"name": "Play Sports 58",
+"image": "https://liveera.live/logos/1440.jpg",
+"url": "https://liveera.live/demo_app/1440/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 58"
+},
+{
+"name": "Play Sports 48",
+"image": "https://liveera.live/logos/1439.jpg",
+"url": "https://liveera.live/demo_app/1439/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 48"
+},
+{
+"name": "Play Sports 64",
+"image": "https://liveera.live/logos/1438.jpg",
+"url": "https://liveera.live/demo_app/1438/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 64"
+},
+{
+"name": "Play Sports 74",
+"image": "https://liveera.live/logos/1433.jpg",
+"url": "https://liveera.live/demo_app/1433/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 74"
+},
+{
+"name": "Play Sports 75",
+"image": "https://liveera.live/logos/1432.jpg",
+"url": "https://liveera.live/demo_app/1432/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Play Sports 75"
+},
+{
+"name": "Premier Sports",
+"image": "https://liveera.live/logos/1431.jpg",
+"url": "https://liveera.live/demo_app/1431/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Premier Sports"
+},
+{
+"name": "Ball Thai 1",
+"image": "https://liveera.live/logos/1389.jpg",
+"url": "https://liveera.live/demo_app/1389/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Ball Thai 1"
+},
+{
+"name": "RED BULL",
+"image": "https://liveera.live/logos/1373.jpg",
+"url": "https://liveera.live/demo_app/1373/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "RED BULL"
+},
+{
+"name": "Eurosport",
+"image": "https://liveera.live/logos/1368.jpg",
+"url": "https://liveera.live/demo_app/1368/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Eurosport"
+},
+{
+"name": "BG Sports 1",
+"image": "https://liveera.live/logos/1260.jpg",
+"url": "https://liveera.live/demo_app/1260/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "BG Sports 1"
+},
+{
+"name": "BG Sports 2",
+"image": "https://liveera.live/logos/1259.jpg",
+"url": "https://liveera.live/demo_app/1259/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "BG Sports 2"
+},
+{
+"name": "BG Sports 3",
+"image": "https://liveera.live/logos/1258.jpg",
+"url": "https://liveera.live/demo_app/1258/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "BG Sports 3"
+},
+{
+"name": "BG Sports 4",
+"image": "https://liveera.live/logos/1257.jpg",
+"url": "https://liveera.live/demo_app/1257/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "BG Sports 4"
+},
+{
+"name": "MUTV",
+"image": "https://liveera.live/logos/1239.jpg",
+"url": "https://liveera.live/demo_app/1239/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "MUTV"
+},
+{
+"name": "Realmadrid TV",
+"image": "https://liveera.live/logos/1231.jpg",
+"url": "https://liveera.live/demo_app/1231/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Realmadrid TV"
+},
+{
+"name": "ถิ่นใต้ IPTV",
+"image": "https://liveera.live/logos/24.jpg",
+"url": "https://liveera.live/demo_app/24/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ถิ่นใต้ IPTV"
+}
+]
+},
+{
+"name": "ข่าว",
+"image": "http://guflix.streaming-fast.com/logo/2tvonline.jpg",
+"stations": [
+{
+"name": "FOX NEWS",
+"image": "https://liveera.live/logos/9196.jpg",
+"url": "https://liveera.live/demo_app/9196/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "FOX NEWS"
+},
+{
+"name": "FOX Business",
+"image": "https://liveera.live/logos/7839.jpg",
+"url": "https://liveera.live/demo_app/7839/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "FOX Business"
+},
+{
+"name": "CNN",
+"image": "https://liveera.live/logos/6639.jpg",
+"url": "https://liveera.live/demo_app/6639/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "CNN"
+},
+{
+"name": "BBC World News",
+"image": "https://liveera.live/logos/6638.jpg",
+"url": "https://liveera.live/demo_app/6638/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "BBC World News"
+},
+{
+"name": "Euronews",
+"image": "https://liveera.live/logos/4337.jpg",
+"url": "https://liveera.live/demo_app/4337/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Euronews"
+},
+{
+"name": "CBS News (CBSN)",
+"image": "https://liveera.live/logos/3026.jpg",
+"url": "https://liveera.live/demo_app/3026/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "CBS News (CBSN)"
+},
+{
+"name": "Bloomberg",
+"image": "https://liveera.live/logos/2814.jpg",
+"url": "https://liveera.live/demo_app/2814/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Bloomberg"
+},
+{
+"name": "Deutsche Welle DW",
+"image": "https://liveera.live/logos/2145.jpg",
+"url": "https://liveera.live/demo_app/2145/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Deutsche Welle DW"
+},
+{
+"name": "CGTN",
+"image": "https://liveera.live/logos/2100.jpg",
+"url": "https://liveera.live/demo_app/2100/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "CGTN"
+},
+{
+"name": "ABC Australia",
+"image": "https://liveera.live/logos/1600.jpg",
+"url": "https://liveera.live/demo_app/1600/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ABC Australia"
+},
+{
+"name": "RT News",
+"image": "https://liveera.live/logos/1497.jpg",
+"url": "https://liveera.live/demo_app/1497/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "RT News"
+},
+{
+"name": "สุวรรณภูมิทีวี",
+"image": "https://liveera.live/logos/1243.jpg",
+"url": "https://liveera.live/demo_app/1243/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "สุวรรณภูมิทีวี"
+},
+{
+"name": "Channel NewsAsia",
+"image": "https://liveera.live/logos/433.jpg",
+"url": "https://liveera.live/demo_app/433/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Channel NewsAsia"
+},
+{
+"name": "NEWS1",
+"image": "https://liveera.live/logos/408.jpg",
+"url": "https://liveera.live/demo_app/408/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "NEWS1"
+},
+{
+"name": "Al Jazeera",
+"image": "https://liveera.live/logos/404.jpg",
+"url": "https://liveera.live/demo_app/404/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Al Jazeera"
+},
+{
+"name": "CCTV-4",
+"image": "https://liveera.live/logos/402.jpg",
+"url": "https://liveera.live/demo_app/402/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "CCTV-4"
+},
+{
+"name": "France 24",
+"image": "https://liveera.live/logos/394.jpg",
+"url": "https://liveera.live/demo_app/394/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "France 24"
+}
+]
+},
+{
+"name": "บันเทิง",
+"image": "http://guflix.streaming-fast.com/logo/2tvonline.jpg",
+"stations": [
+{
+"name": "ROCK X Stream",
+"image": "https://liveera.live/logos/261622.jpg",
+"url": "https://liveera.live/demo_app/261622/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ROCK X Stream"
+},
+{
+"name": "Rock Action",
+"image": "https://liveera.live/logos/2930.jpg",
+"url": "https://liveera.live/demo_app/2930/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Rock Action"
+},
+{
+"name": "Rock Entertainment",
+"image": "https://liveera.live/logos/2929.jpg",
+"url": "https://liveera.live/demo_app/2929/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Rock Entertainment"
+},
+{
+"name": "Mono29 Music Station",
+"image": "https://liveera.live/logos/2824.jpg",
+"url": "https://liveera.live/demo_app/2824/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Mono29 Music Station"
+},
+{
+"name": "Mono29 Plus",
+"image": "https://liveera.live/logos/2823.jpg",
+"url": "https://liveera.live/demo_app/2823/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Mono29 Plus"
+},
+{
+"name": "3BB Asian",
+"image": "https://liveera.live/logos/2821.jpg",
+"url": "https://liveera.live/demo_app/2821/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "3BB Asian"
+},
+{
+"name": "HBO",
+"image": "https://liveera.live/logos/2820.jpg",
+"url": "https://liveera.live/demo_app/2820/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "HBO"
+},
+{
+"name": "HBO Hits",
+"image": "https://liveera.live/logos/2819.jpg",
+"url": "https://liveera.live/demo_app/2819/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "HBO Hits"
+},
+{
+"name": "HBO Signature",
+"image": "https://liveera.live/logos/2818.jpg",
+"url": "https://liveera.live/demo_app/2818/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "HBO Signature"
+},
+{
+"name": "HBO Family",
+"image": "https://liveera.live/logos/2816.jpg",
+"url": "https://liveera.live/demo_app/2816/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "HBO Family"
+},
+{
+"name": "CINEMAX",
+"image": "https://liveera.live/logos/2815.jpg",
+"url": "https://liveera.live/demo_app/2815/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "CINEMAX"
+},
+{
+"name": "Warner TV",
+"image": "https://liveera.live/logos/2739.jpg",
+"url": "https://liveera.live/demo_app/2739/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Warner TV"
+},
+{
+"name": "AXN HD",
+"image": "https://liveera.live/logos/2650.jpg",
+"url": "https://liveera.live/demo_app/2650/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "AXN HD"
+},
+{
+"name": "True X-Zyte",
+"image": "https://liveera.live/logos/2056.jpg",
+"url": "https://liveera.live/demo_app/2056/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True X-Zyte"
+},
+{
+"name": "True Series",
+"image": "https://liveera.live/logos/1916.jpg",
+"url": "https://liveera.live/demo_app/1916/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Series"
+},
+{
+"name": "True Film Asia",
+"image": "https://liveera.live/logos/1915.jpg",
+"url": "https://liveera.live/demo_app/1915/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Film Asia"
+},
+{
+"name": "Celestial Classic Movies (CCM)",
+"image": "https://liveera.live/logos/1913.jpg",
+"url": "https://liveera.live/demo_app/1913/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Celestial Classic Movies (CCM)"
+},
+{
+"name": "True Film 1",
+"image": "https://liveera.live/logos/1877.jpg",
+"url": "https://liveera.live/demo_app/1877/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Film 1"
+},
+{
+"name": "True Movie Hits",
+"image": "https://liveera.live/logos/1875.jpg",
+"url": "https://liveera.live/demo_app/1875/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Movie Hits"
+},
+{
+"name": "True Thai Film",
+"image": "https://liveera.live/logos/1874.jpg",
+"url": "https://liveera.live/demo_app/1874/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Thai Film"
+},
+{
+"name": "True Asian More",
+"image": "https://liveera.live/logos/1873.jpg",
+"url": "https://liveera.live/demo_app/1873/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Asian More"
+},
+{
+"name": "Asian Food Network",
+"image": "https://liveera.live/logos/1854.jpg",
+"url": "https://liveera.live/demo_app/1854/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Asian Food Network"
+},
+{
+"name": "Food Network",
+"image": "https://liveera.live/logos/1845.jpg",
+"url": "https://liveera.live/demo_app/1845/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Food Network"
+},
+{
+"name": "Rama Channel",
+"image": "https://liveera.live/logos/1642.jpg",
+"url": "https://liveera.live/demo_app/1642/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Rama Channel"
+},
+{
+"name": "Fashion TV",
+"image": "https://liveera.live/logos/1418.jpg",
+"url": "https://liveera.live/demo_app/1418/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Fashion TV"
+},
+{
+"name": "Cool Channel",
+"image": "https://liveera.live/logos/1416.jpg",
+"url": "https://liveera.live/demo_app/1416/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Cool Channel"
+},
+{
+"name": "TV5MONDE",
+"image": "https://liveera.live/logos/1404.jpg",
+"url": "https://liveera.live/demo_app/1404/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "TV5MONDE"
+}
+]
+},
+{
+"name": "สารคดี",
+"image": "http://guflix.streaming-fast.com/logo/2tvonline.jpg",
+"stations": [
+{
+"name": "BBC Lifestyle",
+"image": "https://liveera.live/logos/1689.jpg",
+"url": "https://liveera.live/demo_app/1689/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "BBC Lifestyle"
+},
+{
+"name": "History Channel",
+"image": "https://liveera.live/logos/1667.jpg",
+"url": "https://liveera.live/demo_app/1667/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "History Channel"
+},
+{
+"name": "Discovery Asia",
+"image": "https://liveera.live/logos/1606.jpg",
+"url": "https://liveera.live/demo_app/1606/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Discovery Asia"
+},
+{
+"name": "Discovery Channel",
+"image": "https://liveera.live/logos/1546.jpg",
+"url": "https://liveera.live/demo_app/1546/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Discovery Channel"
+},
+{
+"name": "TLC",
+"image": "https://liveera.live/logos/1496.jpg",
+"url": "https://liveera.live/demo_app/1496/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "TLC"
+},
+{
+"name": "True Explore WILD",
+"image": "https://liveera.live/logos/740.jpg",
+"url": "https://liveera.live/demo_app/740/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Explore WILD"
+},
+{
+"name": "True Explore SCI",
+"image": "https://liveera.live/logos/722.jpg",
+"url": "https://liveera.live/demo_app/722/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True Explore SCI"
+},
+{
+"name": "ของดีประเทศไทย",
+"image": "https://liveera.live/logos/716.jpg",
+"url": "https://liveera.live/demo_app/716/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ของดีประเทศไทย"
+},
+{
+"name": "Thainess TV",
+"image": "https://liveera.live/logos/715.jpg",
+"url": "https://liveera.live/demo_app/715/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Thainess TV"
+},
+{
+"name": "Animal Show",
+"image": "https://liveera.live/logos/710.jpg",
+"url": "https://liveera.live/demo_app/710/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Animal Show"
+},
+{
+"name": "สำรวจโลก",
+"image": "https://liveera.live/logos/563.jpg",
+"url": "https://liveera.live/demo_app/563/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "สำรวจโลก"
+},
+{
+"name": "Mysci",
+"image": "https://liveera.live/logos/555.jpg",
+"url": "https://liveera.live/demo_app/555/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Mysci"
+},
+{
+"name": "DLTV1 ประถมศึกษาปีที่ 1",
+"image": "https://liveera.live/logos/159.jpg",
+"url": "https://liveera.live/demo_app/159/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV1 ประถมศึกษาปีที่ 1"
+},
+{
+"name": "DLTV1 ประถมศึกษาปีที่ 2",
+"image": "https://liveera.live/logos/144.jpg",
+"url": "https://liveera.live/demo_app/144/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV1 ประถมศึกษาปีที่ 2"
+},
+{
+"name": "DLTV3 ประถมศึกษาปีที่ 3",
+"image": "https://liveera.live/logos/112.jpg",
+"url": "https://liveera.live/demo_app/112/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV3 ประถมศึกษาปีที่ 3"
+},
+{
+"name": "DLTV4 ประถมศึกษาปีที่ 4",
+"image": "https://liveera.live/logos/61.jpg",
+"url": "https://liveera.live/demo_app/61/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV4 ประถมศึกษาปีที่ 4"
+},
+{
+"name": "DLTV5 ประถมศึกษาปีที่ 5",
+"image": "https://liveera.live/logos/21.jpg",
+"url": "https://liveera.live/demo_app/21/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV5 ประถมศึกษาปีที่ 5"
+},
+{
+"name": "DLTV5 ประถมศึกษาปีที่ 6",
+"image": "https://liveera.live/logos/20.jpg",
+"url": "https://liveera.live/demo_app/20/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV5 ประถมศึกษาปีที่ 6"
+},
+{
+"name": "DLTV7 มัธยมศึกษาปีที่ 1",
+"image": "https://liveera.live/logos/19.jpg",
+"url": "https://liveera.live/demo_app/19/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV7 มัธยมศึกษาปีที่ 1"
+},
+{
+"name": "DLTV8 มัธยมศึกษาปีที่ 2",
+"image": "https://liveera.live/logos/18.jpg",
+"url": "https://liveera.live/demo_app/18/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV8 มัธยมศึกษาปีที่ 2"
+},
+{
+"name": "DLTV9 มัธยมศึกษาปีที่ 3",
+"image": "https://liveera.live/logos/17.jpg",
+"url": "https://liveera.live/demo_app/17/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV9 มัธยมศึกษาปีที่ 3"
+},
+{
+"name": "DLTV10 อนุบาลศึกษาปีที่ 1",
+"image": "https://liveera.live/logos/16.jpg",
+"url": "https://liveera.live/demo_app/16/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV10 อนุบาลศึกษาปีที่ 1"
+},
+{
+"name": "DLTV11 อนุบาลศึกษาปีที่ 2",
+"image": "https://liveera.live/logos/15.jpg",
+"url": "https://liveera.live/demo_app/15/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV11 อนุบาลศึกษาปีที่ 2"
+},
+{
+"name": "DLTV12 อนุบาลศึกษาปีที่ 3",
+"image": "https://liveera.live/logos/7.jpg",
+"url": "https://liveera.live/demo_app/7/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV12 อนุบาลศึกษาปีที่ 3"
+},
+{
+"name": "DLTV13 มัธยมศึกษาปีที่ 4",
+"image": "https://liveera.live/logos/6.jpg",
+"url": "https://liveera.live/demo_app/6/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV13 มัธยมศึกษาปีที่ 4"
+},
+{
+"name": "DLTV14 มัธยมศึกษาปีที่ 5",
+"image": "https://liveera.live/logos/5.jpg",
+"url": "https://liveera.live/demo_app/5/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV14 มัธยมศึกษาปีที่ 5"
+},
+{
+"name": "DLTV15 มัธยมศึกษาปีที่ 6",
+"image": "https://liveera.live/logos/4.jpg",
+"url": "https://liveera.live/demo_app/4/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DLTV15 มัธยมศึกษาปีที่ 6"
+}
+]
+},
+{
+"name": "ดิจิตอลทีวี",
+"image": "http://guflix.streaming-fast.com/logo/2tvonline.jpg",
+"stations": [
+{
+"name": "ช่อง 3 HD",
+"image": "https://liveera.live/logos/7348.jpg",
+"url": "https://liveera.live/demo_app/7348/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ช่อง 3 HD"
+},
+{
+"name": "ช่อง 5 HD",
+"image": "https://liveera.live/logos/7347.jpg",
+"url": "https://liveera.live/demo_app/7347/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ช่อง 5 HD"
+},
+{
+"name": "7 HD",
+"image": "https://liveera.live/logos/7161.jpg",
+"url": "https://liveera.live/demo_app/7161/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "7 HD"
+},
+{
+"name": "TNN 16",
+"image": "https://liveera.live/logos/6345.jpg",
+"url": "https://liveera.live/demo_app/6345/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "TNN 16"
+},
+{
+"name": "Nation",
+"image": "https://liveera.live/logos/6339.jpg",
+"url": "https://liveera.live/demo_app/6339/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Nation"
+},
+{
+"name": "True4U",
+"image": "https://liveera.live/logos/6337.jpg",
+"url": "https://liveera.live/demo_app/6337/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "True4U"
+},
+{
+"name": "GMM 25",
+"image": "https://liveera.live/logos/6336.jpg",
+"url": "https://liveera.live/demo_app/6336/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "GMM 25"
+},
+{
+"name": "Workpoint TV",
+"image": "https://liveera.live/logos/6335.jpg",
+"url": "https://liveera.live/demo_app/6335/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Workpoint TV"
+},
+{
+"name": "MONO 29",
+"image": "https://liveera.live/logos/6333.jpg",
+"url": "https://liveera.live/demo_app/6333/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "MONO 29"
+},
+{
+"name": "MCOT HD",
+"image": "https://liveera.live/logos/6332.jpg",
+"url": "https://liveera.live/demo_app/6332/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "MCOT HD"
+},
+{
+"name": "ไทยรัฐ TV HD",
+"image": "https://liveera.live/logos/6330.jpg",
+"url": "https://liveera.live/demo_app/6330/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "ไทยรัฐ TV HD"
+},
+{
+"name": "Amarin TV",
+"image": "https://liveera.live/logos/6328.jpg",
+"url": "https://liveera.live/demo_app/6328/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Amarin TV"
+},
+{
+"name": "Top News",
+"image": "https://liveera.live/logos/1730.jpg",
+"url": "https://liveera.live/demo_app/1730/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Top News"
+},
+{
+"name": "Thai PBS",
+"image": "https://liveera.live/logos/1698.jpg",
+"url": "https://liveera.live/demo_app/1698/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Thai PBS"
+},
+{
+"name": "PPTV HD",
+"image": "https://liveera.live/logos/1664.jpg",
+"url": "https://liveera.live/demo_app/1664/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "PPTV HD"
+},
+{
+"name": "NBT Channel",
+"image": "https://liveera.live/logos/1450.jpg",
+"url": "https://liveera.live/demo_app/1450/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "NBT Channel"
+},
+{
+"name": "CH 8",
+"image": "https://liveera.live/logos/497.jpg",
+"url": "https://liveera.live/demo_app/497/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "CH 8"
+},
+{
+"name": "One Channel",
+"image": "https://liveera.live/logos/461.jpg",
+"url": "https://liveera.live/demo_app/461/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "One Channel"
+},
+{
+"name": "T Sport Channel",
+"image": "https://liveera.live/logos/435.jpg",
+"url": "https://liveera.live/demo_app/435/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "T Sport Channel"
+},
+{
+"name": "TPTV",
+"image": "https://liveera.live/logos/430.jpg",
+"url": "https://liveera.live/demo_app/430/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "TPTV"
+}
+]
+},
+{
+"name": "การ์ตูน",
+"image": "http://guflix.streaming-fast.com/logo/2tvonline.jpg",
+"stations": [
+{
+"name": "Boomerang",
+"image": "https://liveera.live/logos/8999.jpg",
+"url": "https://liveera.live/demo_app/8999/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Boomerang"
+},
+{
+"name": "Cartoon Network",
+"image": "https://liveera.live/logos/8007.jpg",
+"url": "https://liveera.live/demo_app/8007/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Cartoon Network"
+},
+{
+"name": "Nick Jr.",
+"image": "https://liveera.live/logos/2875.jpg",
+"url": "https://liveera.live/demo_app/2875/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Nick Jr."
+},
+{
+"name": "DreamWorks",
+"image": "https://liveera.live/logos/2347.jpg",
+"url": "https://liveera.live/demo_app/2347/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "DreamWorks"
+},
+{
+"name": "Nickelodeon",
+"image": "https://liveera.live/logos/2029.jpg",
+"url": "https://liveera.live/demo_app/2029/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Nickelodeon"
+},
+{
+"name": "Cartoonito",
+"image": "https://liveera.live/logos/477.jpg",
+"url": "https://liveera.live/demo_app/477/playlist.m3u8",
+"referer": "https://liveera.live/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"playInNatPlayer": "true",
+"info": "Cartoonito"
+}
+]
+}
+]
+}
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="/icon.jpg" type="image/x-icon">
+<title>streaming-fast.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="ไม่จำเป็นต้องกดเข้าลิงค์">
+<meta name="author" content="streaming-fast.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="0;url=http://streaming-fast.com/">
+</head>
+<body bgcolor="000000">
+<center>
+<h2><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif"></h2>
+</center>
+</body>
+</html>
