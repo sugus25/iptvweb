@@ -6,6 +6,9 @@
  #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="FreeTV", MySci
  https://liveera.live/demo_app/563/playlist.m3u8
  
+#EXTINF:-1 tvg-logo="https://dookeela.live/uploads/1724166218.png" group-title="FreeTV",True Explore Wild
+https://liveera.live/demo_app/740/playlist.m3u8
+ 
  #EXTINF:-1 group-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_4rcDFMco1p9KI5IGUjdGftoxViwNoXlPg&usqp=CAU"
 #EXTINF:-1 tvg-chno="2" tvg-id="NBT2.th" tvg-name="NBT HD" tvg-logo="https://58-64-52-73-rewriter.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0001.png" group-title="ช่อง3BBTV", NBT
 #KODIPROP:inputstreamaddon=inputstream.adaptive
