@@ -1,7 +1,7 @@
 #EXTM3U url="https://raw.githubusercontent.com/sugus25/iptvweb/refs/heads/main/djtontv-playlist.m3u"
  
  #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="ช่องทีวีดิจิตอล",สำรวจโลก
-https://liveera.live/demo_app/555/playlist.m3u8
+https://liveera.live/demo_app/563/playlist.m3u8 
  
  #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="ช่องทีวีดิจิตอล", MySci
 https://liveera.live/demo_app/555/playlist.m3u8
