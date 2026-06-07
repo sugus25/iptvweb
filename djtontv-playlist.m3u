@@ -1,638 +1,135 @@
 #EXTM3U url="https://raw.githubusercontent.com/sugus25/iptvweb/refs/heads/main/djtontv-playlist.m3u"
- 
- #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",สำรวจโลก
+  
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",สำรวจโลก
 https://liveera.live/demo_app/563/playlist.m3u8 
+
+
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",สำรวจโลก backup
+https://liveera.live/343live/563_backup/playlist.m3u8
  
- #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="สารคดี", MySci
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="สารคดี", MySci
 https://liveera.live/demo_app/555/playlist.m3u8
+ 
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="สารคดี", MySci
+https://liveera.live/343live/555_backup/playlist.m3u8
  
 #EXTINF:-1 tvg-logo="https://dookeela.live/uploads/1724166218.png" group-title="สารคดี",True Explore Wild
 https://liveera.live/demo_app/740/playlist.m3u8
 
-#EXTVLCOPT:http-referrer=
-https://live.topnews.co.th/hls/topnews_a_720.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/23.png" group-title="📺DIGITAL.TV",WorkpointTV
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=8e66726c1191403588f95c0757613ff1:67c26ba7f9b84024944808e01bbe6f47
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/23/23.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/24.png" group-title="📺DIGITAL.TV",True4U
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4eabd5db684248a98c5124fbb0687bde:d2f7a6f45b3c48678ca69c91d7823c25
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/24/24.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/25.png" group-title="📺DIGITAL.TV",GMM25
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=ae986b6dd3d84b2bb868c8765c604815:89bf3c85580249d5bac4d3edaec019ec
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/25/25.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/27.png" group-title="📺DIGITAL.TV",CH8
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4a0a9dd380b4409c8dad910691283a0d:1447c104caa244d9a367549534e0b807
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/27/27.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/29.png" group-title="📺DIGITAL.TV",MONO29 HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=96a14b36335645b391bbbb48c424fec7:e6971b27837a4822832d8215156bb516
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/29/29.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/30.png" group-title="📺DIGITAL.TV",9MCOT HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=edef8ba979d64acea3c827dcd51d21ed:1c9f0222e49da66fc785376c0645d86d
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/30/30.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/31.png" group-title="📺DIGITAL.TV",ONE31 HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=6529c8cd99db4489bd237f616f37124b:b9d299ba9ea94fd2ac4a77e8966dd91e
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/31/31.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/32.png" group-title="📺DIGITAL.TV",ThairathTV HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4b2bff3e598043cfaf949305e3d153fa:545df84ff4c54af6b5385516e0f65956
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/32/32.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/33.png" group-title="📺DIGITAL.TV",CH3 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 7.1.2; TV BOX Build/NHG47L) AppleWebKit/537.36 (KHTML เช่น Gecko) Chrome/56.0.2924.87 Safari/537.36
-#EXTVLCOPT:http-referrer=https://www.88-hd.com/
-https://www.livedoomovies.com:4431/02_3HD_720p/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/34.png" group-title="📺DIGITAL.TV",AmarinTV HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0b898bb9530b4b0a97e444d1e1f8960e:dab1a7c035d94287ac64417ef809ed3b
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/34/34.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/35.png" group-title="📺DIGITAL.TV",CH7 HD
-https://live-cdn.ch7.com/out/v1/eafeb02c55b64a15b278b1e66c7fc776/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/36.png" group-title="📺DIGITAL.TV",PPTV HD
-https://www.livedoomovies.com:4431/02_PPTVHD_720p/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/2.png" group-title="📺DIGITAL.TV",NBT HD
-https://cdn-edge.iiptvcdn.com/live_event/smil:f180-054a-38d7-ce66-f7cf.smil/chunklist_w884800294_b3128000.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/3.png" group-title="📺DIGITAL.TV",ThaiPBS HD
-http://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/4.png" group-title="📺DIGITAL.TV",ALTV(
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=1e98456bcbea44b7ad05831387e364ef:3d14fd4f9d3149a79b35a7124fccbd67
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/4/4.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/5.png" group-title="📺DIGITAL.TV",CH5 HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=87db4361f7894655a4656e9c8b935a02:b025a4b950df41158a87cfc8d6f2ac34
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/5/5.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/7.png" group-title="📺DIGITAL.TV",T Sports 7
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=6187523f92b9475bb5b192f70cef1342:5119311f482144d58dacabc5bc1fa4ba
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/7/7.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/10.png" group-title="📺DIGITAL.TV",TPTV(
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=5da46688fd1e4ed5b085a12519b9dc4e:fd07bcf33823447180f53f6540f74ccb
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/10/10.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/16.png" group-title="📺DIGITAL.TV",TNN16
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=9ebedc957e934d2b9023e4e60b97af73:7bcb4363df74457bbafedec1a864e6b6
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/16/16.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/18.png" group-title="📺DIGITAL.TV",JKN18
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=333de6034a1d45fe91c829539caf1149:2710efc048ca44bba4c2b57397989a26
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/18/18.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/22.png" group-title="📺DIGITAL.TV",NationTV
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=88b44b9be186449ca5322053d975aa4c:b95b471541994278a1960fd4f85a7ee2
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/22/22.mpd
+#EXTINF:-1 tvg-logo="https://dookeela.live/uploads/1724166218.png" group-title="สารคดี",True Explore Wild
+https://liveera.live/343live/740_backup/playlist.m3u8
 
- 
-#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="FreeTV", HBO 34
-http://91.231.229.1:2005/live/play/VFZWaGRGWkZSVTlXUm5WWWVsZHlZM2x1VDNod09YSklhREJTVldwbFRYWmtUM1JKUkdabFExWkVaejA9/115704
- 
-#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="FreeTV", HBO 34
-http://45.139.122.199:2095/live/dSS2jwyj/hwjda1S/115704.m3u8
- 
- 
-#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="FreeTV", HBO
-http://23.237.104.106:8080/USA_HBO/index.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/f91ef07f3e6e.webp" group-title="สารคดี",TRUE SCI
+https://liveera.live/343live/722/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/f91ef07f3e6e.webp" group-title="สารคดี",TRUE SCI bup
+https://liveera.live/343live/722_backup/playlist.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="FreeTV", HBO
-http://tbtv.me:2095/play/live.php?mac=10:27:BE:0D:E1:F4&stream=115714&extension=m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png" group-title="สารคดี", Khong Dee Thailand
+https://liveera.live/343live/716/playlist.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://img1.pic.in.th/images/-2026-05-11-024758.png" group-title="FreeTV", IPLAY MEDIA
-http://117.18.127.253:8080/live/LqCaeMPxGyEBmYWwL5oZl7im7OGwdhxG/ecuOzlDUcarGLiUUsjJWfVe0EgrT6pY5/37875.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png" group-title="สารคดี", Khong Dee Thailand
+https://liveera.live/343live/716_backup/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",MOVIES HITS
+https://liveera.live/343live/1875/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",MOVIES HITS2
+https://liveera.live/343live/1875_backup/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://343live.com/upload/1877.jpg" group-title="บันเทิง",TRUEFILM
+https://liveera.live/343live/1877/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://343live.com/upload/1877.jpg" group-title="บันเทิง",TRUEFILM BP
+https://liveera.live/343live/1877_backup/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง", HBO 
+https://liveera.live/343live/2820_backup/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง", HBO 
+https://liveera.live/343live/2820/playlist.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png" group-title="สารคดี", อนิมอล โชว์
 https://liveera.live/demo_app/710/playlist.m3u8
 
 
-
-#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLbCvlS5dVNB4dCTucggWnoqGPorUZReTPpA&s" group-title="FreeTV", หนังอิเตอร์
-http://117.18.127.253:8080/live/LqCaeMPxGyEBmYWwL5oZl7im7OGwdhxG/ecuOzlDUcarGLiUUsjJWfVe0EgrT6pY5/119704.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="FreeTV", HBO2
-http://23.237.104.106:8080/USA_HBO2/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="FreeTV", movie hit 
-https://liveera.live/demo_app/1875/playlist.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/7d96ee4ef1b6.webp" group-title="FreeTV", HBO Zone
-http://23.237.104.106:8080/USA_HBO_ZONE/index.m3u8
-
-
-#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/7d96ee4ef1b6.webp" group-title="FreeTV", HBO SCI
-https://config-m3u8.mquanggiu290.workers.dev/Exploresci.m3u8?token=vip1234
-
-#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/7d96ee4ef1b6.webp" group-title="FreeTV", HBO WILD
-https://config-m3u8.mquanggiu290.workers.dev/Explorewild.m3u8?token=vip1234
-
-
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/6fe0c3fe33cc.jpg" group-title="FreeTV", HBO TH
-https://dl.dropbox.com/scl/fi/bri2whhvzmy9dfnz5y5ox/server2-movies-hbo.m3u8?rlkey=3f24pg8w0myd4q1xvx1bolyiq&dl=1
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="FreeTV",สำรวจโลก
-https://blive99.github.io/m3u8/goodtv/goodtvSamrulok.m3u8
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="FreeTV",สำรวจโลก1
-https://love.sayob28681.workers.dev/lx-origin/streamx-samrujlok_720/chunks.m3u8
-
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="FreeTV",สำรวจโลก2
-https://pastebin.com/vbJz7rhK
-
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeXBmkdQdSVQEkfZDi8jFx8cW_G95yZKboy4KDRbv9diJw.png" group-title="FreeTV",TRUE SCI1
-https://dl.dropbox.com/scl/fi/f6w8209nglwoqbc5ojhkh/server1-ducument-true-explore-sci.m3u8?rlkey=jx134ruo149spjk7qdatq9778&dl=1#http://119.59.118.168/live/ch56/thailosonic2026/index.m3u8
-
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeXBmkdQdSVQEkfZDi8jFx8cW_G95yZKboy4KDRbv9diJw.png" group-title="FreeTV",TRUE SCI
-https://love.pifipa2974.workers.dev/lx-origin/sd-expsci_720/chunks.m3u8#http://119.59.118.168/live/ch56/thailosonic2026/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeXBmkdQdSVQEkfZDi8jFx8cW_G95yZKboy4KDRbv9diJw.png" group-title="FreeTV",TRUE SCI
-https://love.pifipa2974.workers.dev/lx-origin/sd-expsci_720/chunks.m3u8
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeXBmkdQdSVQEkfZDi8jFx8cW_G95yZKboy4KDRbv9diJw.png" group-title="FreeTV",TRUE SCI
-https://dl.dropbox.com/scl/fi/f6w8209nglwoqbc5ojhkh/server1-ducument-true-explore-sci.m3u8?rlkey=jx134ruo149spjk7qdatq9778&dl=1#http://119.59.118.168/live/ch56/thailosonic2026/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeXBmkdQdSVQEkfZDi8jFx8cW_G95yZKboy4KDRbv9diJw.png" group-title="FreeTV",TRUE SCI
-https://dl.dropbox.com/scl/fi/f6w8209nglwoqbc5ojhkh/server1-ducument-true-explore-sci.m3u8?rlkey=jx134ruo149spjk7qdatq9778&dl=1
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeXBmkdQdSVQEkfZDi8jFx8cW_G95yZKboy4KDRbv9diJw.png" group-title="FreeTV",MONO PLUS
-https://monomax-ooleht.cdn.byteark.com/fleetstream/MonoPlus/1080p/index.m3u8
-
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeXBmkdQdSVQEkfZDi8jFx8cW_G95yZKboy4KDRbv9diJw.png" group-title="FreeTV",MONO PLUS
-https://config-m3u8.mquanggiu290.workers.dev/FILMhd.m3u8?token=vip1234
-
-#EXTINF:-1 tvg-logo="https://cms.dmpcdn.com/livetv/2023/04/28/43f28e40-e599-11ed-844f-795506bf0bf9_webp_original.webp" group-title="FreeTV",TRUE FILM1
-https://config-m3u8.mquanggiu290.workers.dev/FILMhd.m3u8?token=vip1234
-
-
-
-#EXTINF:-1 tvg-logo="https://cms.dmpcdn.com/livetv/2023/04/28/43f28e40-e599-11ed-844f-795506bf0bf9_webp_original.webp" group-title="FreeTV",TRUE มูฟวี่ฮิต
-https://love.tivov68423.workers.dev/lx-origin/sd-moviehits_720/chunks.m3u8
-
-
-#EXTINF:-1 tvg-logo="https://cms.dmpcdn.com/livetv/2023/04/28/43f28e40-e599-11ed-844f-795506bf0bf9_webp_original.webp" group-title="FreeTV",TRUE มูฟวี่ฮิต3
-https://love.uh6wzyncw9.workers.dev/lx-origin/sd-moviehits_720/chunks.m3u8
-
-
-#EXTINF:-1 tvg-logo="https://cms.dmpcdn.com/livetv/2023/04/28/43f28e40-e599-11ed-844f-795506bf0bf9_webp_original.webp" group-title="FreeTV",TRUE มูฟวี่ฮิต2
-http://91.231.229.1:2005/live/play/VGpVdk9UUmhlRXh5VVVaMFZrdEdTMHhPUjJKS1QyaDZhSEJSUzBjeU9FRlZLM0JyVURaa0x6QnJVVDA9/115720
-
-
-#EXTINF:-1 tvg-logo="https://cms.dmpcdn.com/livetv/2023/04/28/43f28e40-e599-11ed-844f-795506bf0bf9_webp_original.webp" group-title="FreeTV",TRUE มูฟวี่ฮิตมูฟวี่ฮิต4
-http://tbtv.me:2095/play/live.php?mac=00:1A:79:E7:32:0C&stream=115720&extension=m3u8
-
-
-#EXTINF:-1 tvg-logo="https://cms.dmpcdn.com/livetv/2023/04/28/43f28e40-e599-11ed-844f-795506bf0bf9_webp_original.webp" group-title="FreeTV",TRUE เอสไซ
-https://love.pifipa2974.workers.dev/lx-origin/sd-expsci_720/chunks.m3u8#http://119.59.118.168/live/ch56/thailosonic2026/index.m3u8
-
-
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="FreeTV",MOVIES HITS1
-https://github.com/zaxacaasada/logotv/raw/refs/heads/main/truemoviehits.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="FreeTV",MOVIES HITS
-https://www.dropbox.com/scl/fi/zkfhp9c28j7ykzzyp25w3/server1-movies-true-movies-hits.m3u8?rlkey=ext5o29uqtnsrrio427hdjc0a&dl=1
-
-
-
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="FreeTV",MOVIES HITS
-https://love.pifipa2974.workers.dev/lx-origin/sd-moviehits_720/chunks.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="FreeTV",TRUE FILM1
-https://love.bebin98399.workers.dev/lx-origin/hd-tfilm_720/chunks.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="FreeTV",MOVIES HITS
-https://www.dropbox.com/scl/fi/zkfhp9c28j7ykzzyp25w3/server1-movies-true-movies-hits.m3u8?rlkey=ext5o29uqtnsrrio427hdjc0a&dl=1
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeUz42JIAnARoDTS-wNXiOu6TEihW1mwVGQeYNjRfdVbNQ.png" group-title="FreeTV",MOVIE HBO
-https://dl.dropbox.com/scl/fi/bri2whhvzmy9dfnz5y5ox/server2-movies-hbo.m3u8?rlkey=3f24pg8w0myd4q1xvx1bolyiq&dl=1
-
-
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeUz42JIAnARoDTS-wNXiOu6TEihW1mwVGQeYNjRfdVbNQ.png" group-title="FreeTV",MOVIE HBO
-https://love.pifipa2974.workers.dev/lx-origin/th-hbo_720/chunks.m3u8
-
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeXBmkdQdSVQEkfZDi8jFx8cW_G95yZKboy4KDRbv9diJw.png" group-title="FreeTV",CINEMAX
-http://mooseven.ddns.net:8080/blive/blivetv/255844
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeXBmkdQdSVQEkfZDi8jFx8cW_G95yZKboy4KDRbv9diJw.png" group-title="FreeTV",CINEMAX
-http://ultratv.one:2095/live/hCPtsREFtA/Xj25tg0ZXi/563005.m3u8
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/5.png" group-title="FreeTV",CH5 HD
+#EXTVLCOPT:http-referrer=
+https://live.topnews.co.th/hls/topnews_a_720.m3u8
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/23.png" group-title="DIGITAL.TV",WorkpointTV
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=8e66726c1191403588f95c0757613ff1:67c26ba7f9b84024944808e01bbe6f47
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/23/23.mpd
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/24.png" group-title="DIGITAL.TV",True4U
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=4eabd5db684248a98c5124fbb0687bde:d2f7a6f45b3c48678ca69c91d7823c25
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/24/24.mpd
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/25.png" group-title="DIGITAL.TV",GMM25
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ae986b6dd3d84b2bb868c8765c604815:89bf3c85580249d5bac4d3edaec019ec
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/25/25.mpd
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/27.png" group-title="DIGITAL.TV",CH8
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=4a0a9dd380b4409c8dad910691283a0d:1447c104caa244d9a367549534e0b807
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/27/27.mpd
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/29.png" group-title="DIGITAL.TV",MONO29 HD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=96a14b36335645b391bbbb48c424fec7:e6971b27837a4822832d8215156bb516
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/29/29.mpd
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/30.png" group-title="DIGITAL.TV",9MCOT HD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=edef8ba979d64acea3c827dcd51d21ed:1c9f0222e49da66fc785376c0645d86d
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/30/30.mpd
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/31.png" group-title="DIGITAL.TV",ONE31 HD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=6529c8cd99db4489bd237f616f37124b:b9d299ba9ea94fd2ac4a77e8966dd91e
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/31/31.mpd
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/32.png" group-title="DIGITAL.TV",ThairathTV HD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=4b2bff3e598043cfaf949305e3d153fa:545df84ff4c54af6b5385516e0f65956
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/32/32.mpd
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/33.png" group-title="DIGITAL.TV",CH3 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 7.1.2; TV BOX Build/NHG47L) AppleWebKit/537.36 (KHTML เช่น Gecko) Chrome/56.0.2924.87 Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.88-hd.com/
+https://www.livedoomovies.com:4431/02_3HD_720p/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/34.png" group-title="DIGITAL.TV",AmarinTV HD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=0b898bb9530b4b0a97e444d1e1f8960e:dab1a7c035d94287ac64417ef809ed3b
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/34/34.mpd
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/35.png" group-title="DIGITAL.TV",CH7 HD
+https://live-cdn.ch7.com/out/v1/eafeb02c55b64a15b278b1e66c7fc776/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/36.png" group-title="DIGITAL.TV",PPTV HD
+https://www.livedoomovies.com:4431/02_PPTVHD_720p/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/2.png" group-title="DIGITAL.TV",NBT HD
+https://cdn-edge.iiptvcdn.com/live_event/smil:f180-054a-38d7-ce66-f7cf.smil/chunklist_w884800294_b3128000.m3u8
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/3.png" group-title="DIGITAL.TV",ThaiPBS HD
+http://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/4.png" group-title="DIGITAL.TV",ALTV(
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=1e98456bcbea44b7ad05831387e364ef:3d14fd4f9d3149a79b35a7124fccbd67
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/4/4.mpd
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/5.png" group-title="DIGITAL.TV",CH5 HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=87db4361f7894655a4656e9c8b935a02:b025a4b950df41158a87cfc8d6f2ac34
 https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/5/5.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/7.png" group-title="FreeTV",T Sports 7
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/7.png" group-title="DIGITAL.TV",T Sports 7
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=6187523f92b9475bb5b192f70cef1342:5119311f482144d58dacabc5bc1fa4ba
 https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/7/7.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/10.png" group-title="FreeTV",TPTV
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/10.png" group-title="DIGITAL.TV",TPTV(
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5da46688fd1e4ed5b085a12519b9dc4e:fd07bcf33823447180f53f6540f74ccb
 https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/10/10.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/16.png" group-title="FreeTV",TNN16
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/16.png" group-title="DIGITAL.TV",TNN16
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=9ebedc957e934d2b9023e4e60b97af73:7bcb4363df74457bbafedec1a864e6b6
 https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/16/16.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/22.png" group-title="FreeTV",NationTV
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/18.png" group-title="DIGITAL.TV",JKN18
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=333de6034a1d45fe91c829539caf1149:2710efc048ca44bba4c2b57397989a26
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/18/18.mpd
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/22.png" group-title="DIGITAL.TV",NationTV
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=88b44b9be186449ca5322053d975aa4c:b95b471541994278a1960fd4f85a7ee2
 https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/22/22.mpd
 
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/23.png" group-title="FreeTV",WorkpointTV
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=8e66726c1191403588f95c0757613ff1:67c26ba7f9b84024944808e01bbe6f47
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/23/23.mpd
 
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/24.png" group-title="FreeTV",True4U
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4eabd5db684248a98c5124fbb0687bde:d2f7a6f45b3c48678ca69c91d7823c25
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/24/24.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/25.png" group-title="FreeTV",GMM25
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=ae986b6dd3d84b2bb868c8765c604815:89bf3c85580249d5bac4d3edaec019ec
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/25/25.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/27.png" group-title="FreeTV",CH8
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4a0a9dd380b4409c8dad910691283a0d:1447c104caa244d9a367549534e0b807
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/27/27.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/29.png" group-title="FreeTV",MONO29 HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=96a14b36335645b391bbbb48c424fec7:e6971b27837a4822832d8215156bb516
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/29/29.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/30.png" group-title="FreeTV",9MCOT HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=edef8ba979d64acea3c827dcd51d21ed:1c9f0222e49da66fc785376c0645d86d
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/30/30.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/31.png" group-title="FreeTV",ONE31 HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=6529c8cd99db4489bd237f616f37124b:b9d299ba9ea94fd2ac4a77e8966dd91e
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/31/31.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/32.png" group-title="FreeTV",ThairathTV HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4b2bff3e598043cfaf949305e3d153fa:545df84ff4c54af6b5385516e0f65956
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/32/32.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/33.png" group-title="FreeTV",CH3 HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=9d76aea451d441a4913d4d70c4e586ab:051027a6ff54494b949ba792928e9008
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/33/33.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/34.png" group-title="FreeTV",AmarinTV HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0b898bb9530b4b0a97e444d1e1f8960e:dab1a7c035d94287ac64417ef809ed3b
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/34/34.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/35.png" group-title="FreeTV",CH7 HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4d4426a505f64382a9841155d721cee6:0f4770219ccb4be5836a7517057e51c3
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/35/35.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/101.png" group-title="FreeTV",Asian-Hits
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=dac6cbd9d17a451bb76386f52469e0e9:2e2ac52cadf843459915eaa1a9b95e48
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/101/101.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/106.png" group-title="FreeTV",HBO Family
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=07b138f30ad3441ca5a2f476e550af25:826ee4deef4b45cfafd5f79a591b15c6
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/106/106.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/107.png" group-title="FreeTV",Cinemax
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=f48caba466394e93b50780f21798787a:9a074a10db4342e7937076b3e52f6029
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/107/107.mpd
-
-#EXTINF:-1 tvg-id=""tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/109.png" group-title="FreeTV",MONO29 PLUS+
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=072eeb02f6744f838fcc8f0ef36b312e:b797c12f2dd64728aae23fd3c8ef275c
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/109/109.mpd/
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png" group-title="FreeTV", Khong Dee Thailand2
-https://dl.dropbox.com/scl/fi/4ljyk3aviesgri2qzx9an/server1-ducument.m3u8?rlkey=dltxygh54ojc4hwbj4dbo9zwj&dl=1
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png" group-title="FreeTV", Khong Dee Thailand
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0154/DASH/V0154.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///Thainess.png" group-title="FreeTV", Thainess
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0155/DASH/V0155.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%
-
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="FreeTV",MOVIES HITS
-https://love.pifipa2974.workers.dev/lx-origin/sd-moviehits_720/chunks.m3u8
-
-
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="FreeTV",MOVIES HITS
-https://www.dropbox.com/scl/fi/zkfhp9c28j7ykzzyp25w3/server1-movies-true-movies-hits.m3u8?rlkey=ext5o29uqtnsrrio427hdjc0a&dl=1
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeUz42JIAnARoDTS-wNXiOu6TEihW1mwVGQeYNjRfdVbNQ.png" group-title="FreeTV",MOVIE HBO
-https://dl.dropbox.com/scl/fi/bri2whhvzmy9dfnz5y5ox/server2-movies-hbo.m3u8?rlkey=3f24pg8w0myd4q1xvx1bolyiq&dl=1
-
-
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeUz42JIAnARoDTS-wNXiOu6TEihW1mwVGQeYNjRfdVbNQ.png" group-title="FreeTV",MOVIE HBO
-https://love.pifipa2974.workers.dev/lx-origin/th-hbo_720/chunks.m3u8
-
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeXBmkdQdSVQEkfZDi8jFx8cW_G95yZKboy4KDRbv9diJw.png" group-title="FreeTV",CINEMAX
-http://mooseven.ddns.net:8080/blive/blivetv/255844
-
-#EXTINF:-1 tvg-logo="https://iptv.lancartech.co.id:443/images/YKMemZJn8ZK3UAp45Xvyj6un5rWGZ2eBiL3OsDHYkeXBmkdQdSVQEkfZDi8jFx8cW_G95yZKboy4KDRbv9diJw.png" group-title="FreeTV",CINEMAX
-http://ultratv.one:2095/live/hCPtsREFtA/Xj25tg0ZXi/563005.m3u8
-
-
-#EXTINF:-1 tvg-id="NBT" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0001.png" group-title="FreeTV", NBT 
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0001/DASH/B0001.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/   
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0014.png" group-title="FreeTV", TPBS
-#EXTVLCOPT:https://web-player.ais-vidnt.com/  
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0014/DASH/B0014.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/ 
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/ALTV.PNG" group-title="FreeTV", ALTV4
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0085/DASH/V0085.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon//ch5new.logo.png" group-title="FreeTV", CH5
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0007/DASH/B0007.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/T-SPorts_7_Final.png" group-title="FreeTV", T-SPORTS
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0129/DASH/B0129.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0048.png" group-title="FreeTV", Parliament
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0048/DASH/V0048.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/R2_0053.png" group-title="FreeTV", TNN 16
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0053/DASH/V0053.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/JKN18.png" group-title="FreeTV", JKN 18
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0010/DASH/B0010.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0021.png" group-title="FreeTV", Nation TV
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0021/DASH/B0021.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0015_R.png" group-title="FreeTV", Workpoint TV oldman
-https://global-media.sooplive.com/live/workpoint/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0015_R.png" group-title="FreeTV", Workpoint TV
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0015/DASH/B0015.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0054.png" group-title="FreeTV", True 4 U
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0054/DASH/B0054.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0019.png" group-title="FreeTV", GMM25
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0019/DASH/B0019.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0006.png" group-title="FreeTV", CH8
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0006/DASH/B0006.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/ 
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0016.png" group-title="FreeTV", MONO29
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0016/DASH/B0016.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/MCOT_new.png" group-title="FreeTV", MCOT9
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0008/DASH/B0008.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0012.png" group-title="FreeTV", ONE 31
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0012/DASH/B0012.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0013_R.png" group-title="FreeTV", Thairath oldman
-http://45.136.252.97:8081/app/thairathtv/playlist.m3u8,
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0013_R.png" group-title="FreeTV", Thairath
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0013/DASH/B0013.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/LOGO3HD.PNG" group-title="FreeTV", 3HD
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0003/DASH/B0003.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/AmarinTV_NEW512.png" group-title="FreeTV", Amarin
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0017/DASH/B0017.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0018.png" group-title="FreeTV", CH7
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0018/DASH/B0018.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/PPTV_2024e.jpg" group-title="FreeTV", PPTV
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0022/DASH/B0022.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png" group-title="FreeTV", Khong Dee Thailand
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0154/DASH/V0154.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///Thainess.png" group-title="FreeTV", Thainess
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0155/DASH/V0155.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-
-#EXTINF:-1 tvg-id="Samrujlok"  tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="FreeTV", Samrujlok
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0151/DASH/V0151.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/ 
-
-#EXTINF:-1 tvg-id="Samrujlok"  tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="FreeTV", Samrujlok
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0151/DASH/V0151.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544
- 
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="FreeTV", MySci
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0152/DASH/V0152.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
- 
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="FreeTV", MySci
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png" group-title="FreeTV", Animal Show
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0153/DASH/V0153.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png" group-title="FreeTV", Animal Show
-https://blive99.github.io/m3u8/goodtv/goodtvanimalshow.m3u8
-
-         -AIS KEY-
-https://49-231-37-236-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0016/HLS/V0016.m3u8?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544
-
-
-https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0016/HLS/V0016.m3u8?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544
-
-
-https://49-231-37-229-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/W0016/HLS/W0016.m3u8?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544 
-
-https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0016/HLS/V0016.m3u8?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0013_R.png" group-title="FreeTV", Thairath
-intent://49-231-37-236-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0013/HLS/B0013.m3u8?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/#Intent;scheme=http;type=video/*;package=com.mxtech.videoplayer.ad;end">
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="FreeTV", MySci
-#EXTVLCOPT:https://web-player.ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://49-231-37-236-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/B0013/HLS/B0013.m3u8?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-
-https://aisplay.ais.co.th/portal/live/?vid=595922daaae7312c00c6fcd8
-
-https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0016/HLS/V0016.m3u8?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544
-
-#EXTINF:-1 tvg-id="samrujlok.iptv36.my.to" tvg-name="" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",สำรวจโลก
-#EXTVLCOPT:http-referrer=https://ais-vidnt.com/
-https://49-231-34-109-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0151/DASH/V0151.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" tvg-id="Discovery Asia" group-title="สารคดี",MySci
-#EXTVLCOPT:http-referrer=https://ais-vidnt.com/
-https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0152/DASH/V0152.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=91cca55d77205316509cc370a1029f88&chunkHttps=true&tmid=V0016&tpbk=ownlXcRtZIrlVptW&rrt=1780412145&tmod=rfk&rsid=9ec56136-4d0d-49ef-acfa-fbe3db160e42&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1780498544|referer=https://ais-vidnt.com/
-
-#EXTINF:-1 tvg-name="Discovery" tvg-id="Discovery.th" group-logo="hhttps://aisplay.ais.co.th/portal/static/img/ais_play.e9f424a5.png" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE/channelicon//Discovery.png" group-title="สารคดี", Discovery
-#EXTVLCOPT:http-user-agent=AISPlay/2.9.17.29 (Linux;Android 11) ExoPlayerLib/2.9.6
-#EXTVLCOPT:http-referrer=https://ais-vidnt.com/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=7e8393537881b2d8534238f3a916d5a4:2ae033b06e3fb8e3a26ad63fb74d0f2f
-#https://49-231-37-37-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0180/DASH/V0180.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=a37b375db29148e73a16e5f05c594b82&chunkHttps=true&tmid=B0001&tpbk=YbpiMcwM0osflfyT&rrt=1737837002&tmod=rfk&rsid=61491d01-e130-4ca4-ad10-ccbb6cf157d1&tuid=jbyvGG%2FdqmxDOLh5AO7TzsqVUm1U7GEZPqVUXI9ASZ%2F02rRmaNLiMW59CHEeEBqB6EQTLYxWNqIVgz3ZzybbJRY+irA+g5Vzm06z845rvgGbc%3D&cdn=redfox-https&tdid=5e8266c54570acf0cd2dde795ad21999&origin=anevia&tfa=f0-fc&tttl=1737921602
-
-https://github.com/bestcommt2/m3u8/raw/refs/heads/master/aisDiscover.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f0/Discovery-asia.png" group-title="สารคดี",Discovery Asia
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4b2bff3e598043cfaf949305e3d153fa:545df84ff4c54af6b5385516e0f65956
-https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/505/505.mpd
-#EXTINF:-1 tvg-logo="https://dookeela.live/uploads/1724166670.png" group-title="สารคดี",True Explore Life
-#EXTVLCOPT:http-referrer=https://soccertv4k.com/
-https://playtvthai.github.io/m3u8/movie/trueexplife.m3u8
-#EXTINF:-1 tvg-logo="https://dookeela.live/uploads/1724167268.png" group-title="สารคดี",True Explore Sci
-#EXTVLCOPT:http-referrer=https://soccertv4k.com/
-https://github.com/bestcommt2/m3u8/raw/refs/heads/master/trueexploresci.m3u8
-#EXTINF:-1 tvg-logo="https://dookeela.live/uploads/1724167268.png" group-title="สารคดี",True Explore Sci
-#EXTVLCOPT:http-referrer=https://soccertv4k.com/
-https://cdn1.googlecdn.live/4k/trueexploresci/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://dookeela.live/uploads/1724166218.png" group-title="สารคดี",True Explore Wild
-#EXTVLCOPT:http-referrer=https://soccertv4k.com/
-https://playtvthai.github.io/m3u8/movie/trueexpwild.m3u8
-#EXTINF:-0 tvg-id="History" tvg-name="HistoryHD" tvg-logo="https://cms.dmpcdn.com/livetv/2023/05/26/e0b94410-fb8a-11ed-9087-3197146bda13_webp_original.png" group-title="สารคดี", HISTORY
-https://github.com/bestcommt2/m3u8/raw/refs/heads/master/trueH2.m3u8
-#EXTINF:-1 group-title="สารคดี" tvg-logo="https://i.ibb.co/zv40P0s/logo-amazing.png",AMAZING
-http://49.0.64.96:8007/AMAZING
-#EXTINF:-1 group-title="สารคดี" tvg-logo="https://i.ibb.co/bMtB5NKS/logo-animal.png",World Animal
-http://49.0.64.96:8007/Animal
-#EXTINF:-1 group-title="สารคดี" tvg-logo="https://i.ibb.co/gQLyLmK/logo-seience.png",World Science
-http://49.0.64.96:8007/WSCI
-
-#EXTINF:-1 group-logo="https://3bbtv.co.th/wp-content/uploads/2020/08/Logo-3BBTV-500x500pix.png"
-#EXTINF:-0 group-title="บันเทิง" tvg-id="HBO.th" tvg-logo="https://3bbtv.co.th/wp-content/themes/changwattana/img/channel/new2022/logohbo.png", HBO TH
-#EXTVLCOPT:http-user-agent=AISPlay/2.9.17.29 (Linux;Android 11) ExoPlayerLib/2.9.6
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=9c5735afb4fd402580360aed8364469c:128d55d9ac2b47ad85f86b5d08320179
-https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/103/103.mpd
-#EXTINF:-1 group-logo="https://3bbtv.co.th/wp-content/uploads/2020/08/Logo-3BBTV-500x500pix.png"
-#EXTINF:-0 group-title="บันเทิง" tvg-id="HBO Signature.th" tvg-logo="https://3bbtv.co.th/wp-content/themes/changwattana/img/channel/new2022/HBOSignature.png", HBO Signature
-#EXTVLCOPT:http-user-agent=AISPlay/2.9.17.29 (Linux;Android 11) ExoPlayerLib/2.9.6
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0db89bae851440a5994f5893ad480494:d88ef77eaedf4451a65be2e0bf6eabde
-https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/104/104.mpd
-#EXTINF:-1 group-logo="https://3bbtv.co.th/wp-content/uploads/2020/08/Logo-3BBTV-500x500pix.png"
-#EXTINF:-0 group-title="บันเทิง" tvg-id="HBO Hits.th" tvg-logo="https://3bbtv.co.th/wp-content/themes/changwattana/img/channel/new2022/hbohit.png", HBO Hits
-#EXTVLCOPT:http-user-agent=AISPlay/2.9.17.29 (Linux;Android 11) ExoPlayerLib/2.9.6
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=7c04b8e7aa524afea879b2ed1aef8242:91e72b75fcb94c3bb36cceb741afd621
-https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/105/105.mpd
-#EXTINF:-1 group-logo="https://3bbtv.co.th/wp-content/uploads/2020/08/Logo-3BBTV-500x500pix.png"
-#EXTINF:-0 group-title="บันเทิง" tvg-id="HBO Family.th" tvg-logo="https://3bbtv.co.th/wp-content/themes/changwattana/img/channel/new2022/family.png",HBO FAMILY
-#EXTVLCOPT:http-user-agent=AISPlay/2.9.17.29 (Linux;Android 11) ExoPlayerLib/2.9.6
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=07b138f30ad3441ca5a2f476e550af25:826ee4deef4b45cfafd5f79a591b15c6
-https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/106/106.mpd
-#EXTINF:-1 group-logo="https://3bbtv.co.th/wp-content/uploads/2020/08/Logo-3BBTV-500x500pix.png"
-#EXTINF:-1 group-title="บันเทิง" tvg-id="CINEMAX.th" tvg-logo="https://3bbtv.co.th/wp-content/themes/changwattana/img/channel/new2022/Cinemax.png",CINEMAX
-#EXTVLCOPT:http-user-agent=AISPlay/2.9.17.29 (Linux;Android 11) ExoPlayerLib/2.9.6
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=f48caba466394e93b50780f21798787a:9a074a10db4342e7937076b3e52f6029
-https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/107/107.mpd?ck=eyJmNDhjYWJhNDY2Mzk0ZTkzYjUwNzgwZjIxNzk4Nzg3YSI6IjlhMDc0YTEwZGI0MzQyZTc5MzcwNzZiM2U1MmY2MDI5In0%3D&headers=eyJvcmlnaW4iOiJodHRwczovL2F5YS1zdHJlYW1lcjIuY2RuLjNiYnR2LmNvbTo4NDQzLzNiYi9saXZlLzEwNy8xMDcubXBkIn0%3D&image=aHR0cHM6Ly8zYmJ0di5jby50aC93cC1jb250ZW50L3RoZW1lcy9jaGFuZ3dhdHRhbmEvaW1nL2NoYW5uZWwvbmV3MjAyMi9DaW5lbWF4LnBuZw%3D%3D&title=CINEMAX
-#https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/107/107.mpd
-#EXTINF:-1 group-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_4rcDFMco1p9KI5IGUjdGftoxViwNoXlPg&usqp=CAU"
-#EXTINF:-1 tvg-id="3BB Asian.th" tvg-name="" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE///channelicon//3BBAsian_new.png" group-title="บันเทิง",3BB Asian
-#EXTVLCOPT:http-user-agent=AISPlay/2.9.17.29 (Linux;Android 11) ExoPlayerLib/2.9.6
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=dac6cbd9d17a451bb76386f52469e0e9:2e2ac52cadf843459915eaa1a9b95e48
-https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/101/101.mpd
-#EXTINF:-1 tvg-id="MONO29 Plus.th" tvg-name="MonoPlus" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE///channelicon//Mono29Plus_new.png" group-title="บันเทิง", 3BB-MONO PLUS
-#EXTVLCOPT:http-user-agent=AISPlay/2.9.17.29 (Linux;Android 11) ExoPlayerLib/2.9.6
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=072eeb02f6744f838fcc8f0ef36b312e:b797c12f2dd64728aae23fd3c8ef275c
-https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/109/109.mpd
-#EXTINF:-1 tvg-id="TrueXZyte.th" tvg-name="True X-Zyte" tvg-logo="https://cms.dmpcdn.com/livetv/2022/01/12/2a450650-7374-11ec-91d2-797a50c5a656_webp_320.png" group-title="บันเทิง", True Xzyte
-#EXTVLCOPT:http-referrer=https://soccertv4k.com/
-https://playtvthai.github.io/m3u8/movie/xzyte.m3u8
-#EXTINF:-0 tvg-id="trueseries.th" tvg-name="trueseries" tvg-logo="https://cms.dmpcdn.com/livetv/2023/04/28/456c5d00-e599-11ed-b550-9935ba8025b9_webp_original.png" group-title="บันเทิง",TrueSeries
-#EXTVLCOPT:http-referrer=https://soccertv4k.com/
-https://github.com/bestcommt2/m3u8/raw/refs/heads/master/trueseries.m3u8
-#EXTINF:-1 group-title="บันเทิง" tvg-logo="https://cms.dmpcdn.com/livetv/2023/04/28/46f1c480-e599-11ed-96ec-4d05b9e2ca86_webp_original.png", True Thai Film
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
-http://myserver.myphuket.net:25461/live/test1/test1/55.m3u8
-#EXTINF:-1 group-title="บันเทิง" tvg-logo="https://dookeela.live/uploads/1719205850.png", True Asian More
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
-https://github.com/bestcommt2/m3u8/raw/refs/heads/master/trueasiamove.m3u8
-#EXTINF:-1 tvg-logo="https://dookeela.live/uploads/1719205705.png" group-title="บันเทิง",True Film Asia
-#EXTVLCOPT:http-referrer=https://soccertv4k.com/
-https://github.com/bestcommt2/m3u8/raw/refs/heads/master/truefilmasia.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f4/Food_Network_-_Logo_2016.png" group-title="บันเทิง",Food Network
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=d4b9d55410d24905920e57664a047116:d821110f280f4545ae0227d5784af199
-https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/205/205.mpd
-#EXTINF:-1 group-title="บันเทิง" tvg-logo="https://i.postimg.cc/X7NThYMK/Movies1.png",Movies 1
-#EXTVLCOPT:http-user-agent=playidtv
-http://45.144.165.187:8080/playidtv1/12345/15672
-#EXTINF:-1 group-title="บันเทิง" tvg-logo="https://i.postimg.cc/BnkkX5jN/Movies2.png",Movies 2
-#EXTVLCOPT:http-user-agent=playidtv
-http://45.144.165.187:8080/playidtv1/12345/9198
-#EXTINF:-1 group-title="บันเทิง" tvg-logo="https://i.postimg.cc/JnWFQ1ck/Movies3.png",Movies 3
-#EXTVLCOPT:http-user-agent=playidtv
-http://45.144.165.187:8080/playidtv1/12345/15675
-#EXTINF:-1 group-title="บันเทิง" tvg-logo="https://i.postimg.cc/fWCPxQ3V/Movies4.png",Movies 4
-#EXTVLCOPT:http-user-agent=playidtv
-http://45.144.165.187:8080/playidtv1/12345/17715
-#EXTINF:-1 group-title="บันเทิง" tvg-logo="https://i.postimg.cc/VkrHQSKt/Movies5.png",Movies 5
-#EXTVLCOPT:http-user-agent=playidtv
-http://45.144.165.187:8080/playidtv1/12345/37
-#EXTINF:-1 group-title="บันเทิง" tvg-logo="https://i.ibb.co/MxZHkhvV/logo-universal.png", Universal
-http://49.0.64.96:8007/H-Channel
-#EXTINF:-1 group-title="บันเทิง" tvg-logo="https://img5.pic.in.th/file/secure-sv1/MW1.png",Movies world1
-http://49.0.64.96:8007/PING
-#EXTINF:-1 group-title="บันเทิง" tvg-logo="https://img2.pic.in.th/pic/MW2.png",Movies world2
-http://49.0.64.96:8007/IZAA
-#EXTINF:-1 group-title="บันเทิง" tvg-logo="https://img5.pic.in.th/file/secure-sv1/MW3.png",Movies Series
-http://49.0.64.96:8007/SERIES
