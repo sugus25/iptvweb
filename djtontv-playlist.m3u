@@ -1,4 +1,5 @@
 #EXTM3U url="https://raw.githubusercontent.com/sugus25/iptvweb/refs/heads/main/djtontv-playlist.m3u"
+url="https://raw.githubusercontent.com/sugus25/iptvweb/refs/heads/main/thaitv.xml,https://akkradet.github.io/IPTV-THAI/guide.xml,https://raw.githubusercontent.com/sugus25/iptvweb/refs/heads/main/%5BENC%5Daisplay.ais.co.th_0.channel.xml,https://gitlab.com/moutrainz/m3u/-/raw/main/EPG/thailand.xml?ref_type=heads" refresh="360"
   
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",สำรวจโลก
 https://liveera.live/demo_app/563/playlist.m3u8 
