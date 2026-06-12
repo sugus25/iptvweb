@@ -36,7 +36,7 @@ https://liveera.live/343live/716_backup/playlist.m3u8
 https://liveera.live/343live/1875/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits
-https://dl.dropbox.com/scl/fi/zkfhp9c28j7ykzzyp25w3/server1-movies-true-movies-hits.m3u8?rlkey=ext5o29uqtnsrrio427hdjc0a&dl=1
+http://v3tv.live:80/play/live.php?mac=00:1A:79:C2:01:8B&stream=1776096&extension=m3u8
 
 #EXTINF:-1 tvg-logo="https://343live.com/upload/1877.jpg" group-title="บันเทิง",True Film 1
 https://liveera.live/343live/1877/playlist.m3u8|referer=https://liveera.live/
