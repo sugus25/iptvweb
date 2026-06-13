@@ -6,10 +6,10 @@ https://liveera.live/demo_app/563/playlist.m3u8|referer=https://liveera.live/
 
 
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok 
-https://liveera.live/343live/563_backup/playlist.m3u8
+http://119.59.118.168/live/ch50/178129981373409/index.m3u8
  
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="สารคดี", MySci
-https://liveera.live/demo_app/555/playlist.m3u8|referer=https://liveera.live/
+https://liveera.live/demo_app/555/playlist.m3u8|referer=https://liveera.live/demo_app/
  
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="สารคดี", MySci
 https://liveera.live/343live/555_backup/playlist.m3u8
@@ -18,13 +18,13 @@ https://liveera.live/343live/555_backup/playlist.m3u8
 https://liveera.live/demo_app/740/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-logo="https://liveera.live/logos/740.jpg" group-title="สารคดี",True Explore Wild
-https://liveera.live/343live/740_backup/playlist.m3u8
+http://119.59.118.168/live/ch57/178129981373409/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/f91ef07f3e6e.webp" group-title="สารคดี",TRUE SCI
 https://liveera.live/343live/722/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/f91ef07f3e6e.webp" group-title="สารคดี",TRUE SCI bup
-https://liveera.live/343live/722_backup/playlist.m3u8
+http://119.59.118.168/live/ch56/178129981373409/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png" group-title="สารคดี", Khong Dee Thailand
 https://liveera.live/343live/716/playlist.m3u8|referer=https://liveera.live/
@@ -36,7 +36,7 @@ https://liveera.live/343live/716_backup/playlist.m3u8
 https://liveera.live/343live/1875/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits
-http://v3tv.live:80/play/live.php?mac=00:1A:79:C2:01:8B&stream=1776096&extension=m3u8
+http://119.59.118.168/live/ch59/178129981373409/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://343live.com/upload/1877.jpg" group-title="บันเทิง",True Film 1
 https://liveera.live/343live/1877/playlist.m3u8|referer=https://liveera.live/
@@ -45,10 +45,10 @@ https://liveera.live/343live/1877/playlist.m3u8|referer=https://liveera.live/
 https://dl.dropbox.com/scl/fi/lnttquxxzvj5rev9m2wzj/server1-movies-true-film1hd.m3u8?rlkey=rjb8gvl3q1tgfptk2tz4lm50i&dl=1
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง", HBO 
-https://liveera.live/343live/2820_backup/playlist.m3u8
+http://119.59.118.168/live/ch26/178129981373409/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง", HBO 
-https://liveera.live/343live/2820/playlist.m3u8|referer=https://liveera.live/
+https://dl.dropbox.com/scl/fi/s9onsgdanokae93aapznh/server1-movies-hbo.m3u8?rlkey=1xg5mnpqot8pzgk5x9cirq4us&dl=1
 
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png" group-title="สารคดี", อนิมอล โชว์
