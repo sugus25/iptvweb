@@ -114,19 +114,23 @@ http://iptv36.mooo.com/logo/info.png
 ##ช่องสารคดี###
 
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok GF
-#EXTVLCOPT:http-referrer=https://liveera.liv
 https://liveera.live/liveeratest/563/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok  OM
 http://119.59.118.168/live/ch50/178138621279091/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok
+https://godlivetv.io/343live/563/playlist.m3u8|referer=https://343live.com/
  
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",MySci GF
-#EXTVLCOPT:http-referrer=https://liveera.liv
-https://liveera.live/liveeratest/555/playlist.m3u8/
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="สารคดี",MySci GF
+https://liveera.live/liveeratest/555/playlist.m3u8|referer=https://liveera.live/
  
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="สารคดี", MySci
-https://liveera.live/343live/555_backup/playlist.m3u8
- 
+https://godlivetv.io/343live/555/playlist.m3u8|referer=https://343live.com/
+
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="สารคดี", MySci OM
+http://119.59.118.168/live/ch39/178138621279091/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://liveera.live/logos/740.jpg" group-title="สารคดี",True Explore Wild
 https://liveera.live/liveeratest/740/playlist.m3u8|referer=https://liveera.live/
 
@@ -145,6 +149,13 @@ https://liveera.live/liveeratest/716/playlist.m3u8|referer=https://liveera.live/
 #EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png" group-title="สารคดี", Khong Dee Thailand
 https://liveera.live/343live/716_backup/playlist.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png" group-title="สารคดี", อนิมอล โชว์
+https://liveera.live/liveeratest/710/playlist.m3u8|referer=https://liveera.live/live
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png" group-title="สารคดี", อนิมอล โชว์ OM
+http://119.59.118.168/live/ch30/178138621279091/index.m3u8
+
+##ช่องบันเทิง##
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits
 https://liveera.live/liveeratest/1875/playlist.m3u8|referer=https://liveera.live/
 
@@ -164,11 +175,11 @@ http://119.59.118.168/live/ch54/178138621279091/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง", HBO 
 http://119.59.118.168/live/ch26/178138621279091/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง", HBO 
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง",HBO
 https://dl.dropbox.com/scl/fi/s9onsgdanokae93aapznh/server1-movies-hbo.m3u8?rlkey=1xg5mnpqot8pzgk5x9cirq4us&dl=1
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png" group-title="สารคดี", อนิมอล โชว์
-https://liveera.live/liveeratest/710/playlist.m3u8|referer=https://liveera.live/
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง",CINEMAX
+http://119.59.118.168/live/ch77/178138621279091/index.m3u8
 
 
-178138621279091
+/178138621279091/
