@@ -42,7 +42,7 @@ http://119.59.118.168/live/ch59/178138621279091/index.m3u8
 https://liveera.live/343live/1877/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-logo="https://343live.com/upload/1877.jpg" group-title="บันเทิง",True Film 1 
-https://dl.dropbox.com/scl/fi/lnttquxxzvj5rev9m2wzj/server1-movies-true-film1hd.m3u8?rlkey=rjb8gvl3q1tgfptk2tz4lm50i&dl=1
+http://119.59.118.168/live/ch54/178138621279091/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง", HBO 
 http://119.59.118.168/live/ch26/178138621279091/index.m3u8
