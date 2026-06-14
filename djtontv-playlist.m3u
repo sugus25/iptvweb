@@ -1,45 +1,162 @@
-#EXTM3U url="https://raw.githubusercontent.com/sugus25/iptvweb/refs/heads/main/djtontv-playlist.m3u"
+#EXTM3U url-tvg="https://iptv36.vercel.app/epg.xml.gz" refresh="3600"
 
+url="https://raw.githubusercontent.com/sugus25/iptvweb/refs/heads/main/djtontv-playlist.m3u"
 
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok
-https://liveera.live/demo_app/563/playlist.m3u8|referer=https://liveera.live/
+#EXTINF:-1 tvg-chno="1" tvg-id="iptv36.nbt" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/nbt.png?v=4",NBT FHD
+https://cdn-edge.iiptvcdn.com/live_event/smil:1180-0c9c-ad1f-4e5d-aa48.smil/playlist.m3u8
 
+#EXTINF:-1 tvg-chno="2" tvg-id="iptv36.thaipbs" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/thaipbs.png",Thai PBS FHD
+https://thaipbs-live.cdn.byteark.com/live/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok 
+#EXTINF:-1 tvg-chno="3" tvg-id="iptv36.tv5" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/tv5.png",TV5 FHD
+https://639bc5877c5fe.streamlock.net/tv5hdlive/tv5hdlive/playlist.m3u8
+
+#EXTINF:-1 tvg-chno="4" tvg-id="iptv36.tv5" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/tv5.png",TV5 HD
+https://lb-gmmz.sky-cdn.com/gmm/ch5.m3u8
+
+#EXTINF:-1 tvg-chno="5" tvg-id="iptv36.tsports" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/tsports.png",T-Sports
+https://lb-gmmz.sky-cdn.com/gmm/tsport7.m3u8
+
+#EXTINF:-1 tvg-chno="6" tvg-id="iptv36.tptv" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/tptv.png",TPTV FHD
+https://tv-live.tpchannel.org/live/tv_1080p.m3u8?vhost=tv-live.tpchannel.org
+
+#EXTINF:-1 tvg-chno="7" tvg-id="iptv36.tptv" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/tptv.png",TPTV
+https://lb-gmmz.sky-cdn.com/gmm/tptv.m3u8
+
+#EXTINF:-1 tvg-chno="8" tvg-id="iptv36.nbtcentral" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/nbt.png?v=4",NBT Central FHD
+https://cdn-edge.iiptvcdn.com/live_event/smil:6ee0-5126-0cee-7ba2-18b7.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-chno="9" tvg-id="iptv36.tnn16" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/tnn16.png",TNN16
+https://lb-gmmz.sky-cdn.com/gmm/tnn16.m3u8
+
+#EXTINF:-1 tvg-chno="10" tvg-id="iptv36.nation" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/nation.png",Nation TV FHD
+#EXTVLCOPT:http-referrer=https://www.nationtv.tv/
+https://nationtv-1jdcjo.cdn.byteark.com/fleetstream/nationtvlive/index.m3u8
+
+#EXTINF:-1 tvg-chno="11" tvg-id="iptv36.nation" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/nation.png",Nation TV
+https://lb-gmmz.sky-cdn.com/gmm/nation.m3u8
+
+#EXTINF:-1 tvg-chno="12" tvg-id="iptv36.workpoint" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/workpoint.png",Workpoint TV
+https://lb-gmmz.sky-cdn.com/gmm/workpoint.m3u8
+
+#EXTINF:-1 tvg-chno="13" tvg-id="iptv36.workpoint" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/workpoint.png",Workpoint TV
+https://cco-streamer2.cdn.3bbtv.com:8443/3bb/live/23/23.mpd
+
+#EXTINF:-1 tvg-chno="14" tvg-id="iptv36.true4u" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/true4u.png",True4U HD
+https://iptv36.vercel.app/api/true.m3u8?channel=true4u
+
+#EXTINF:-1 tvg-chno="15" tvg-id="iptv36.true4u" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/true4u.png",True4U
+https://lb-gmmz.sky-cdn.com/gmm/true24.m3u8
+
+#EXTINF:-1 tvg-chno="16" tvg-id="iptv36.gmm25" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/gmm25.png",GMM25 FHD
+https://fastly.live.brightcove.com/6392745120112/ap-southeast-1/6415628290001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoicWN6dGF6LmVncmVzcy5wcHRpOHciLCJhY2NvdW50X2lkIjoiNjQxNTYyODI5MDAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2NDE1NjI4MjkwMDAxIl0sImp0aSI6IjYzOTI3NDUxMjAxMTIifQ.w9Q_oqsE_WFClGF5tLVDtHnz5zfHHgNpumxVYNx4yYw/playlist-hls.m3u8
+
+#EXTINF:-1 tvg-chno="17" tvg-id="iptv36.gmm25" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/gmm25.png",GMM25
+https://lb-gmmz.sky-cdn.com/gmm/gmm25.m3u8
+
+#EXTINF:-1 tvg-chno="18" tvg-id="iptv36.ch8" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/ch8.png",CH8
+https://lb-gmmz.sky-cdn.com/gmm/ch8.m3u8
+
+#EXTINF:-1 tvg-chno="19" tvg-id="iptv36.ch8" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/ch8.png",CH8
+https://cco-streamer2.cdn.3bbtv.com:8443/3bb/live/27/27.mpd
+
+#EXTINF:-1 tvg-chno="20" tvg-id="iptv36.mono29" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/monomax.png",Monomax Sports FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0
+https://live-tv.monomax.me/v1/019d38969c6c150b585a1f99efcb45/019e96a14f12150b585a122d294a26/main.m3u8
+
+#EXTINF:-1 tvg-chno="21" tvg-id="iptv36.mono29" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/monomax.png",Monomax Sports
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/29/29.mpd
+
+#EXTINF:-1 tvg-chno="22" tvg-id="iptv36.mcot" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/mcot.png",MCOT FHD
+https://cco-streamer2.cdn.3bbtv.com:8443/3bb/live/30/30.mpd
+
+#EXTINF:-1 tvg-chno="23" tvg-id="iptv36.mcot" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/mcot.png",MCOT FHD
+https://mcothd-streaming-edge-cdn.mcot.net/tencentmcot/smil:tencentmcot.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-chno="24" tvg-id="iptv36.one" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/one.png",ONE FHD
+https://fastly.live.brightcove.com/6393158620112/ap-southeast-1/6415628290001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoicWN6dGF6LmVncmVzcy5wcHRpOHciLCJhY2NvdW50X2lkIjoiNjQxNTYyODI5MDAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2NDE1NjI4MjkwMDAxIl0sImp0aSI6IjYzOTMxNTg2MjAxMTIifQ.Pv-kHDlJaV05HiJ2AQmS3PnV2ZQg7ovszKptAGg1EN0/playlist-hls.m3u8
+
+#EXTINF:-1 tvg-chno="25" tvg-id="iptv36.one" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/one.png",ONE HD
+https://lb-gmmz.sky-cdn.com/gmm/one.m3u8
+
+#EXTINF:-1 tvg-chno="26" tvg-id="iptv36.thairath" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/thairath.png",Thairath TV FHD
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/32/32.mpd
+
+#EXTINF:-1 tvg-chno="27" tvg-id="iptv36.thairath" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/thairath.png",Thairath TV HD
+#EXTVLCOPT:http-referrer=https://www.thairath.co.th/
+https://ssai-streaming.thairath.co.th/bamm-csai/720p/index.m3u8
+
+#EXTINF:-1 tvg-chno="28" tvg-id="iptv36.ch3" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/ch3.png",CH3 HD
+https://lb-gmmz.sky-cdn.com/gmm/ch3.m3u8
+
+#EXTINF:-1 tvg-chno="29" tvg-id="iptv36.amarin" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/amarin.png",Amarin TV FHD
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/34/34.mpd
+
+#EXTINF:-1 tvg-chno="30" tvg-id="iptv36.amarin" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/amarin.png",Amarin TV HD
+https://lb-gmmz.sky-cdn.com/gmm/amarin.m3u8
+
+#EXTINF:-1 tvg-chno="31" tvg-id="iptv36.ch7" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/ch7.png",CH7 FHD
+#EXTVLCOPT:http-referrer=https://www.ch7.com/
+https://live-cdn.ch7.com/out/v1/eafeb02c55b64a15b278b1e66c7fc776/playlist_9.m3u8
+
+#EXTINF:-1 tvg-chno="32" tvg-id="iptv36.ch7" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/ch7.png",CH7 HD
+https://lb-gmmz.sky-cdn.com/gmm/ch7.m3u8
+
+#EXTINF:-1 tvg-chno="33" tvg-id="iptv36.pptv" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/pptv.png",PPTV HD
+https://lb-gmmz.sky-cdn.com/gmm/pptv.m3u8
+
+#EXTINF:-1 tvg-chno="34" group-title="Thai Free TV" tvg-logo="http://iptv36.mooo.com/logo/info.png",2026-06-14T18:46
+http://iptv36.mooo.com/logo/info.png
+
+#EXTINF:-1 tvg-chno="35" group-title="Thai Free TV" tvg-logo="http://iptv36.mooo.com/logo/info.png",https://iptv36.mooo.com/
+http://iptv36.mooo.com/logo/info.png
+
+##ช่องสารคดี###
+
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok GF
+#EXTVLCOPT:http-referrer=https://liveera.liv
+https://liveera.live/liveeratest/563/playlist.m3u8|referer=https://liveera.live/
+
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok  OM
 http://119.59.118.168/live/ch50/178138621279091/index.m3u8
  
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="สารคดี", MySci
-https://liveera.live/demo_app/555/playlist.m3u8|referer=https://liveera.live/demo_app/
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",MySci GF
+#EXTVLCOPT:http-referrer=https://liveera.liv
+https://liveera.live/liveeratest/555/playlist.m3u8/
  
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="สารคดี", MySci
 https://liveera.live/343live/555_backup/playlist.m3u8
  
 #EXTINF:-1 tvg-logo="https://liveera.live/logos/740.jpg" group-title="สารคดี",True Explore Wild
-https://liveera.live/demo_app/740/playlist.m3u8|referer=https://liveera.live/
+https://liveera.live/liveeratest/740/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-logo="https://liveera.live/logos/740.jpg" group-title="สารคดี",True Explore Wild
 http://119.59.118.168/live/ch57/178138621279091/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/f91ef07f3e6e.webp" group-title="สารคดี",TRUE SCI
-https://liveera.live/343live/722/playlist.m3u8|referer=https://liveera.live/
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/f91ef07f3e6e.webp" group-title="สารคดี",TRUE SCI GF
+https://liveera.live/liveeratest/722/playlist.m3u8|referer=https://liveera.live/
 
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/f91ef07f3e6e.webp" group-title="สารคดี",TRUE SCI bup
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/f91ef07f3e6e.webp" group-title="สารคดี",TRUE SCI OM
 http://119.59.118.168/live/ch56/178138621279091/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png" group-title="สารคดี", Khong Dee Thailand
-https://liveera.live/343live/716/playlist.m3u8|referer=https://liveera.live/
+https://liveera.live/liveeratest/716/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png" group-title="สารคดี", Khong Dee Thailand
 https://liveera.live/343live/716_backup/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits
-https://liveera.live/343live/1875/playlist.m3u8|referer=https://liveera.live/
+https://liveera.live/liveeratest/1875/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits
 http://119.59.118.168/live/ch59/178138621279091/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://343live.com/upload/1877.jpg" group-title="บันเทิง",True Film 1
-https://liveera.live/343live/1877/playlist.m3u8|referer=https://liveera.live/
+https://liveera.live/liveeratest/1877/playlist.m3u8|referer=https://liveera.live/
+
+#EXTINF:-1 tvg-logo="https://343live.com/upload/1877.jpg" group-title="บันเทิง",True Film 1 
+https://dl.dropbox.com/scl/fi/lnttquxxzvj5rev9m2wzj/server1-movies-true-film1hd.m3u8?rlkey=rjb8gvl3q1tgfptk2tz4lm50i&dl=1
+
 
 #EXTINF:-1 tvg-logo="https://343live.com/upload/1877.jpg" group-title="บันเทิง",True Film 1 
 http://119.59.118.168/live/ch54/178138621279091/index.m3u8
@@ -50,164 +167,8 @@ http://119.59.118.168/live/ch26/178138621279091/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง", HBO 
 https://dl.dropbox.com/scl/fi/s9onsgdanokae93aapznh/server1-movies-hbo.m3u8?rlkey=1xg5mnpqot8pzgk5x9cirq4us&dl=1
 
-
 #EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png" group-title="สารคดี", อนิมอล โชว์
-https://liveera.live/demo_app/710/playlist.m3u8|referer=https://liveera.live/
+https://liveera.live/liveeratest/710/playlist.m3u8|referer=https://liveera.live/
 
-
-#EXTVLCOPT:http-referrer=
-https://live.topnews.co.th/hls/topnews_a_720.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/23.png" group-title="DIGITAL.TV",WorkpointTV
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=8e66726c1191403588f95c0757613ff1:67c26ba7f9b84024944808e01bbe6f47
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/23/23.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/24.png" group-title="DIGITAL.TV",True4U
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4eabd5db684248a98c5124fbb0687bde:d2f7a6f45b3c48678ca69c91d7823c25
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/24/24.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/25.png" group-title="DIGITAL.TV",GMM25
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=ae986b6dd3d84b2bb868c8765c604815:89bf3c85580249d5bac4d3edaec019ec
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/25/25.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/27.png" group-title="DIGITAL.TV",CH8
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4a0a9dd380b4409c8dad910691283a0d:1447c104caa244d9a367549534e0b807
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/27/27.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/29.png" group-title="DIGITAL.TV",MONO29 HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=96a14b36335645b391bbbb48c424fec7:e6971b27837a4822832d8215156bb516
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/29/29.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/30.png" group-title="DIGITAL.TV",9MCOT HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=edef8ba979d64acea3c827dcd51d21ed:1c9f0222e49da66fc785376c0645d86d
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/30/30.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/31.png" group-title="DIGITAL.TV",ONE31 HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=6529c8cd99db4489bd237f616f37124b:b9d299ba9ea94fd2ac4a77e8966dd91e
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/31/31.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/32.png" group-title="DIGITAL.TV",ThairathTV HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4b2bff3e598043cfaf949305e3d153fa:545df84ff4c54af6b5385516e0f65956
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/32/32.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/33.png" group-title="DIGITAL.TV",CH3 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 7.1.2; TV BOX Build/NHG47L) AppleWebKit/537.36 (KHTML เช่น Gecko) Chrome/56.0.2924.87 Safari/537.36
-#EXTVLCOPT:http-referrer=https://www.88-hd.com/
-https://www.livedoomovies.com:4431/02_3HD_720p/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/34.png" group-title="DIGITAL.TV",AmarinTV HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0b898bb9530b4b0a97e444d1e1f8960e:dab1a7c035d94287ac64417ef809ed3b
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/34/34.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/35.png" group-title="DIGITAL.TV",CH7 HD
-https://live-cdn.ch7.com/out/v1/eafeb02c55b64a15b278b1e66c7fc776/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/36.png" group-title="DIGITAL.TV",PPTV HD
-https://www.livedoomovies.com:4431/02_PPTVHD_720p/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/2.png" group-title="DIGITAL.TV",NBT HD
-https://cdn-edge.iiptvcdn.com/live_event/smil:f180-054a-38d7-ce66-f7cf.smil/chunklist_w884800294_b3128000.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/3.png" group-title="DIGITAL.TV",ThaiPBS HD
-http://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/4.png" group-title="DIGITAL.TV",ALTV(
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=1e98456bcbea44b7ad05831387e364ef:3d14fd4f9d3149a79b35a7124fccbd67
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/4/4.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/5.png" group-title="DIGITAL.TV",CH5 HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=87db4361f7894655a4656e9c8b935a02:b025a4b950df41158a87cfc8d6f2ac34
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/5/5.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/7.png" group-title="DIGITAL.TV",T Sports 7
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=6187523f92b9475bb5b192f70cef1342:5119311f482144d58dacabc5bc1fa4ba
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/7/7.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/10.png" group-title="DIGITAL.TV",TPTV(
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=5da46688fd1e4ed5b085a12519b9dc4e:fd07bcf33823447180f53f6540f74ccb
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/10/10.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/16.png" group-title="DIGITAL.TV",TNN16
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=9ebedc957e934d2b9023e4e60b97af73:7bcb4363df74457bbafedec1a864e6b6
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/16/16.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/18.png" group-title="DIGITAL.TV",JKN18
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=333de6034a1d45fe91c829539caf1149:2710efc048ca44bba4c2b57397989a26
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/18/18.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/22.png" group-title="DIGITAL.TV",NationTV
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=88b44b9be186449ca5322053d975aa4c:b95b471541994278a1960fd4f85a7ee2
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/22/22.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/23.png" group-title="DIGITAL.TV",WorkpointTV
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=8e66726c1191403588f95c0757613ff1:67c26ba7f9b84024944808e01bbe6f47
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/23/23.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/24.png" group-title="DIGITAL.TV",True4U
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4eabd5db684248a98c5124fbb0687bde:d2f7a6f45b3c48678ca69c91d7823c25
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/24/24.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/25.png" group-title="DIGITAL.TV",GMM25
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=ae986b6dd3d84b2bb868c8765c604815:89bf3c85580249d5bac4d3edaec019ec
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/25/25.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/27.png" group-title="DIGITAL.TV",CH8
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4a0a9dd380b4409c8dad910691283a0d:1447c104caa244d9a367549534e0b807
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/27/27.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/29.png" group-title="DIGITAL.TV",MONO29 HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=96a14b36335645b391bbbb48c424fec7:e6971b27837a4822832d8215156bb516
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/29/29.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/30.png" group-title="DIGITAL.TV",9MCOT HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=edef8ba979d64acea3c827dcd51d21ed:1c9f0222e49da66fc785376c0645d86d
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/30/30.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/31.png" group-title="DIGITAL.TV",ONE31 HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=6529c8cd99db4489bd237f616f37124b:b9d299ba9ea94fd2ac4a77e8966dd91e
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/31/31.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/32.png" group-title="DIGITAL.TV",ThairathTV HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4b2bff3e598043cfaf949305e3d153fa:545df84ff4c54af6b5385516e0f65956
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/32/32.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/33.png" group-title="DIGITAL.TV",CH3 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 7.1.2; TV BOX Build/NHG47L) AppleWebKit/537.36 (KHTML เช่น Gecko) Chrome/56.0.2924.87 Safari/537.36
-#EXTVLCOPT:http-referrer=https://www.88-hd.com/
-https://www.livedoomovies.com:4431/02_3HD_720p/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/34.png" group-title="DIGITAL.TV",AmarinTV HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0b898bb9530b4b0a97e444d1e1f8960e:dab1a7c035d94287ac64417ef809ed3b
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/34/34.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/35.png" group-title="DIGITAL.TV",CH7 HD
-https://live-cdn.ch7.com/out/v1/eafeb02c55b64a15b278b1e66c7fc776/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/36.png" group-title="DIGITAL.TV",PPTV HD
-https://www.livedoomovies.com:4431/02_PPTVHD_720p/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/2.png" group-title="DIGITAL.TV",NBT HD
-https://cdn-edge.iiptvcdn.com/live_event/smil:f180-054a-38d7-ce66-f7cf.smil/chunklist_w884800294_b3128000.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/3.png" group-title="DIGITAL.TV",ThaiPBS HD
-http://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/4.png" group-title="DIGITAL.TV",ALTV(
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=1e98456bcbea44b7ad05831387e364ef:3d14fd4f9d3149a79b35a7124fccbd67
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/4/4.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/5.png" group-title="DIGITAL.TV",CH5 HD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=87db4361f7894655a4656e9c8b935a02:b025a4b950df41158a87cfc8d6f2ac34
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/5/5.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/7.png" group-title="DIGITAL.TV",T Sports 7
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=6187523f92b9475bb5b192f70cef1342:5119311f482144d58dacabc5bc1fa4ba
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/7/7.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/10.png" group-title="DIGITAL.TV",TPTV(
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=5da46688fd1e4ed5b085a12519b9dc4e:fd07bcf33823447180f53f6540f74ccb
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/10/10.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/16.png" group-title="DIGITAL.TV",TNN16
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=9ebedc957e934d2b9023e4e60b97af73:7bcb4363df74457bbafedec1a864e6b6
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/16/16.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/18.png" group-title="DIGITAL.TV",JKN18
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=333de6034a1d45fe91c829539caf1149:2710efc048ca44bba4c2b57397989a26
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/18/18.mpd
-#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/22.png" group-title="DIGITAL.TV",NationTV
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=88b44b9be186449ca5322053d975aa4c:b95b471541994278a1960fd4f85a7ee2
-https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/22/22.mpd
 
 178138621279091
