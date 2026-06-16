@@ -117,7 +117,7 @@ http://iptv36.mooo.com/logo/info.png
 https://liveera.live/liveeratest/563/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok  OM
-http://119.59.118.168/live/ch50/178147261323967/index.m3u8
+http://119.59.118.168/live/ch50/178155901357614/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok
 https://godlivetv.io/343live/563/playlist.m3u8|referer=https://343live.com/
@@ -129,19 +129,19 @@ https://liveera.live/liveeratest/555/playlist.m3u8|referer=https://liveera.live/
 https://godlivetv.io/343live/555/playlist.m3u8|referer=https://343live.com/
 
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="สารคดี", MySci OM
-http://119.59.118.168/live/ch39/178147261323967/index.m3u8
+http://119.59.118.168/live/ch39/178155901357614/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://liveera.live/logos/740.jpg" group-title="สารคดี",True Explore Wild
 https://liveera.live/liveeratest/740/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-logo="https://liveera.live/logos/740.jpg" group-title="สารคดี",True Explore Wild
-http://119.59.118.168/live/ch57/178147261323967/index.m3u8
+http://119.59.118.168/live/ch57/178155901357614/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/f91ef07f3e6e.webp" group-title="สารคดี",TRUE SCI GF
 https://liveera.live/liveeratest/722/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/f91ef07f3e6e.webp" group-title="สารคดี",TRUE SCI OM
-http://119.59.118.168/live/ch56/178147261323967/index.m3u8
+http://119.59.118.168/live/ch56/178155901357614/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png" group-title="สารคดี", Khong Dee Thailand
 https://liveera.live/liveeratest/716/playlist.m3u8|referer=https://liveera.live/
@@ -153,14 +153,14 @@ https://liveera.live/343live/716_backup/playlist.m3u8
 https://liveera.live/liveeratest/710/playlist.m3u8|referer=https://liveera.live/live
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png" group-title="สารคดี", อนิมอล โชว์ OM
-http://119.59.118.168/live/ch30/178147261323967/index.m3u8
+http://119.59.118.168/live/ch30/178155901357614/index.m3u8
 
 ##ช่องบันเทิง##
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits
 https://liveera.live/liveeratest/1875/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits
-http://119.59.118.168/live/ch59/178147261323967/index.m3u8
+http://119.59.118.168/live/ch59/178155901357614/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://343live.com/upload/1877.jpg" group-title="บันเทิง",True Film 1
 https://liveera.live/liveeratest/1877/playlist.m3u8|referer=https://liveera.live/
@@ -170,16 +170,18 @@ https://dl.dropbox.com/scl/fi/lnttquxxzvj5rev9m2wzj/server1-movies-true-film1hd.
 
 
 #EXTINF:-1 tvg-logo="https://343live.com/upload/1877.jpg" group-title="บันเทิง",True Film 1 
-http://119.59.118.168/live/ch54/178147261323967/index.m3u8
+http://119.59.118.168/live/ch54/178155901357614/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง", HBO 
-http://119.59.118.168/live/ch26/178147261323967/index.m3u8
+http://119.59.118.168/live/ch26/178155901357614/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง",HBO
 https://dl.dropbox.com/scl/fi/s9onsgdanokae93aapznh/server1-movies-hbo.m3u8?rlkey=1xg5mnpqot8pzgk5x9cirq4us&dl=1
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง",CINEMAX
-http://119.59.118.168/live/ch77/178147261323967/index.m3u8
+http://119.59.118.168/live/ch77/178155901357614/index.m3u8
 
 
-/178147261323967/
+/178155901357614/
+
+http://119.59.118.168/live/ch50/178155901357614/index.m3u8
