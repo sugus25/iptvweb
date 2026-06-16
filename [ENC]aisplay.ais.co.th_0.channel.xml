@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site generator-info-name="Tempest EPG Generator (made by Kvanc)" generator-info-url="https://github.com/K-vanc/Tempest-EPG-Generator.git" site="[ENC]aisplay.ais.co.th_0">
-  <channels>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv>
     <channel site="[ENC]aisplay.ais.co.th_0" site_id="5f9e908c12008d9caab3cf3b||0001" xmltv_id="NBT 2 HD">NBT 2 HD</channel>
     <channel site="[ENC]aisplay.ais.co.th_0" site_id="6378ef895b10cf050fd01614||0014" xmltv_id="TPBS">TPBS</channel>
     <channel site="[ENC]aisplay.ais.co.th_0" site_id="5efdd162fbb0045345ef2b61||ALTV" xmltv_id="ALTV4">ALTV4</channel>
