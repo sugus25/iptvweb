@@ -4,126 +4,126 @@
 "url": "https://raw.githubusercontent.com/sugus25/iptvweb/refs/heads/main/DjTvW3u.w3u",
 "image": "https://cdn.pixabay.com/animation/2022/09/09/08/46/08-46-03-703_512.gif",
 "stations": [
-     {
-          "name": "5HD",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon//ch5new.logo.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=5b335ab3d817de6d62889a6b",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "NBT 2 HD",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0001.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=5f9e908c12008d9caab3cf3b",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "TPBS",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0014.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=6378ef895b10cf050fd01614",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "T-sport7",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/T-SPorts_7_Final.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=612e7228b48eb0aad1c66193",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "True4U",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0054.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=5b3359d9bf6aee16d7459c25",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "8_HD",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//CH8_2026.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=5a127510d817de0fae3b6f2c",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "MONO29",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/Mono_2025e.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=595922daaae7312c00c6fcd8",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "Workpoint TV",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0015_R.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=632f2696fd54ec81809f7920",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "GMM25",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0019.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=59592d98aae7312bfffb2c8a",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "ONE31_HD",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0012.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=5959255eaae7312bfffb2c86",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "Thairath TV HD",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0013_R.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=60bd9c7b497960d3f9a3e222",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "3HD",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/LOGO3HD.PNG",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=59592e08bf6aee4e3ecce051",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "MCOT_HD",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/MCOT_new.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=5efec3f10f6d9dc4b26c6e77",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "AmarinTV_HD",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/AmarinTV_NEW512.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=5b335b61bf6aee16d8c33382",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
-        {
-          "name": "7HD",
-          "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0018.png",
-          "url": "https://app.ais-vidnt.com/portal/live?vid=597bab757ed5a24e46f6724c",
-          "referer": "https://www.google.com/",
-          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-          "playInNatPlayer": "true"
-        },
+{
+"name": "5HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon//ch5new.logo.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=5b335ab3d817de6d62889a6b",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "NBT 2 HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0001.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=5f9e908c12008d9caab3cf3b",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "TPBS",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0014.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=6378ef895b10cf050fd01614",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "T-sport7",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/T-SPorts_7_Final.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=612e7228b48eb0aad1c66193",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "True4U",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0054.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=5b3359d9bf6aee16d7459c25",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "8_HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//CH8_2026.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=5a127510d817de0fae3b6f2c",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "MONO29",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/Mono_2025e.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=595922daaae7312c00c6fcd8",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "Workpoint TV",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0015_R.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=632f2696fd54ec81809f7920",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "GMM25",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0019.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=59592d98aae7312bfffb2c8a",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "ONE31_HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0012.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=5959255eaae7312bfffb2c86",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "Thairath TV HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0013_R.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=60bd9c7b497960d3f9a3e222",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "3HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/LOGO3HD.PNG",
+"url": "https://app.ais-vidnt.com/portal/live?vid=59592e08bf6aee4e3ecce051",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "MCOT_HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/MCOT_new.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=5efec3f10f6d9dc4b26c6e77",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "AmarinTV_HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/AmarinTV_NEW512.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=5b335b61bf6aee16d8c33382",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
+{
+"name": "7HD",
+"image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0018.png",
+"url": "https://app.ais-vidnt.com/portal/live?vid=597bab757ed5a24e46f6724c",
+"referer": "https://www.google.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+"playInNatPlayer": "true"
+},
 {
 "name": "3 HD",
 "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/LOGO3HD.PNG",
@@ -181,7 +181,7 @@
 {
 "name": "Animal Show",
 "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png",
-"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/origin/live/eds/V0153/HLS/V0153.m3u8?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
+"url": "https://49-231-34-101-rewriter.ais-vidnt.com/ais/play/origin/live/eds/V0153/DASH/V0153.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=31dcdd09588bf67594a316c13fd491d6&chunkHttps=true&tmid=B0015&tpbk=OKAJuDlJPrYRk5As&rrt=1751326270&tmod=rfk&rsid=83c4448e-8f1e-4298-88ce-99c426b36448&tuid=i3s4oe8Umb9vkroNBH7qT6fIKs2pmPcHuXpmuzeY%2BL2BWPCUuMn2JTgBnQYel9wNZjQTLYxWNqIVgz3ZzybbJRYyMvvS8EEQKXulLJP9984AU%3D&cdn=redfox-https&tdid=11825acc7df882991f32b9ba07ac7710&origin=anevia&tfa=f0-fc&tttl=1751412666|referer=https://ais-vidnt.com/",
 "referer": "https://ais-vidnt.com/"
 },
 {
@@ -215,9 +215,9 @@
 "referer": "",
 "info": "GojekTV-Free",
 "playInNatPlayer": "true"
-  }
-  ]
-  },
+}
+]
+},
 "HBO TH",
 "image": "https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/R_0148.png",
 "url": "https://github.com/bestcommt2/m3u8/raw/refs/heads/master/HBOTHAI.m3u8",
