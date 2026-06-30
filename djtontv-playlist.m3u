@@ -116,7 +116,9 @@ http://iptv36.mooo.com/logo/info.png
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok GF
 https://liveera.live/liveeratest/563/playlist.m3u8|referer=https://liveera.live/
 
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok  OM
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok  OMm3u
+http://54.37.19.157/samrujlok/tracks-v1a1/playlist.m3u8
+
 http://119.59.118.168/live/ch50/178190461527307/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="สารคดี",Samrujlok
@@ -136,6 +138,10 @@ http://119.59.118.168/live/ch39/178190461527307/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="สารคดี", MySci
 https://godlivetv.io/343live/555/playlist.m3u8|referer=https://343live.com/
+
+
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="สารคดี", MySci
+https://49-231-37-236-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0152/DASH/V0152.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=18a9e1e6da29399dc3e69f42c75f5c98&chunkHttps=true&tmid=B0015&tpbk=TJtxvf3fuponBzw2&rrt=1782074625&tmod=rfk&rsid=ce223463-a750-43fc-ab2c-69c7011ceab8&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1782161024|referer=https://ais-vidnt.com/
 
 #EXTINF:-1 tvg-logo="https://liveera.live/logos/740.jpg" group-title="สารคดี",True Explore Wild
 https://liveera.live/liveeratest/740/playlist.m3u8|referer=https://liveera.live/
@@ -165,7 +171,9 @@ https://godlivetv.io/343live/710/playlist.m3u8|referer=https://343live.com/
 http://119.59.118.168/live/ch30/178190461527307/index.m3u8
 
 ##ช่องบันเทิง##
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits 
+http://54.37.19.157/moviehits/tracks-v1a1/playlist.m3u8
+
 https://liveera.live/liveeratest/1875/playlist.m3u8|referer=https://liveera.live/
 
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits
@@ -195,6 +203,9 @@ https://dl.dropbox.com/scl/fi/s9onsgdanokae93aapznh/server1-movies-hbo.m3u8?rlke
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง",HBO
 https://godlivetv.io/343live/2820/playlist.m3u8|referer=https://343live.com/
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง",HBO
+http://54.37.19.157/hbohd/tracks-v1a1/playlist.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง",CINEMAX
 http://119.59.118.168/live/ch77/178190461527307/index.m3u8
