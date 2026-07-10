@@ -134,8 +134,8 @@ https://github.com/cattv976/documentary/raw/refs/heads/main/trueexploresci1.m3u8
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="ช่องสารคดี",Samrujlok GF
 https://liveera.live/liveeratest/563/playlist.m3u8|referer=https://liveera.live/
 
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="ช่องสารคดี",Samrujlok  OMm3u
-http://54.37.19.157/samrujlok/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="ช่องสารคดี",Samrujlok  Emby
+https://emby.ekcdn.cc/emby/videos/942592/live.m3u8?DeviceId=0c6f333c-8dd8-4257-86a9-c93170c606b0&MediaSourceId=2305f0a9f7e3dbebe4a2c8fec3eaffb7&PlaySessionId=6fd9fe56730544559a5c1a9ba5fdc58f&api_key=7ac06cdd8ba04caeb62fd26c0132dc1e&LiveStreamId=06044cf0e6f93cdae5f285c9ecfaaeb4_01413a525b3a9622ce6fdf19f7dde354_2305f0a9f7e3dbebe4a2c8fec3eaffb7&VideoCodec=hevc,h264,av1&AudioCodec=mp3,aac&VideoBitrate=872769&AudioBitrate=127232&MaxWidth=1920&AudioStreamIndex=1&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&SubtitleStreamIndexes=-1&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline&h264-level=62&hevc-codectag=hvc1,hev1,hevc,hdmv&TranscodeReasons=ContainerBitrateExceedsLimit,DirectPlayError&allowVideoStreamCopy=false
 
 http://119.59.118.168/live/ch50/178190461527307/index.m3u8
 
@@ -146,7 +146,7 @@ https://godlivetv.io/343live/563/playlist.m3u8|referer=https://343live.com/
 http://54.37.19.157/samrujlok/tracks-v1a1/playlist.m3u8
  
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="ช่องสารคดี",MySci EMBY
-https://emby.ekcdn.cc/emby/videos/942626/master.m3u8?DeviceId=0c6f333c-8dd8-4257-86a9-c93170c606b0&MediaSourceId=50e7c3e4bc8ba79ea66ded0787d43ef1&PlaySessionId=83962dec243f45be9e8e372e727215e3&api_key=7ac06cdd8ba04caeb62fd26c0132dc1e&LiveStreamId=06044cf0e6f93cdae5f285c9ecfaaeb4_01413a525b3a9622ce6fdf19f7dde354_50e7c3e4bc8ba79ea66ded0787d43ef1&VideoCodec=hevc,h264,av1&AudioCodec=mp3,aac&VideoBitrate=904822&AudioBitrate=95179&MaxWidth=1920&AudioStreamIndex=1&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&SubtitleStreamIndexes=-1&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline&h264-level=62&hevc-codectag=hvc1,hev1,hevc,hdmv&TranscodeReasons=ContainerBitrateExceedsLimit
+https://emby.ekcdn.cc/emby/videos/942592/master.m3u8?DeviceId=0c6f333c-8dd8-4257-86a9-c93170c606b0&MediaSourceId=2305f0a9f7e3dbebe4a2c8fec3eaffb7&PlaySessionId=01cb7fa20b1c4352852a10c0f814f162&api_key=7ac06cdd8ba04caeb62fd26c0132dc1e&LiveStreamId=06044cf0e6f93cdae5f285c9ecfaaeb4_01413a525b3a9622ce6fdf19f7dde354_2305f0a9f7e3dbebe4a2c8fec3eaffb7&VideoCodec=hevc,h264,av1&AudioCodec=mp3,aac&VideoBitrate=870695&AudioBitrate=129306&MaxWidth=1920&AudioStreamIndex=1&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&SubtitleStreamIndexes=-1&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline&h264-level=62&hevc-codectag=hvc1,hev1,hevc,hdmv&TranscodeReasons=ContainerBitrateExceedsLimit
  
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="ช่องสารคดี", MySci
 https://godlivetv.io/343live/555/playlist.m3u8|referer=https://343live.com/
@@ -159,7 +159,7 @@ https://godlivetv.io/343live/555/playlist.m3u8|referer=https://343live.com/
 
 
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="ช่องสารคดี", MySci
-https://49-231-37-236-rewriter.ais-vidnt.com/ais/play/anevia/live/eds/V0152/DASH/V0152.mpd?playbackUrlPrefix=https%3A%2F%2Ftr.play-rbcdn.ais.co.th%3A8438%2F&originBasicUrl=http%3A%2F%2Fpl-origin.ais-vidnt.com%2Fais%2Fplay%2Fanevia&tt=18a9e1e6da29399dc3e69f42c75f5c98&chunkHttps=true&tmid=B0015&tpbk=TJtxvf3fuponBzw2&rrt=1782074625&tmod=rfk&rsid=ce223463-a750-43fc-ab2c-69c7011ceab8&tuid=4ac7aaf9e9&cdn=redfox-https&tdid=9e9faa7ca4b63de2d94e1a285ezfnnya&origin=anevia&tfa=f0-fc&tttl=1782161024|referer=https://ais-vidnt.com/
+https://emby.ekcdn.cc/emby/videos/942626/master.m3u8?DeviceId=0c6f333c-8dd8-4257-86a9-c93170c606b0&MediaSourceId=50e7c3e4bc8ba79ea66ded0787d43ef1&PlaySessionId=a4d76b311b3c46c38b13923e9fc78a3e&api_key=7ac06cdd8ba04caeb62fd26c0132dc1e&LiveStreamId=06044cf0e6f93cdae5f285c9ecfaaeb4_01413a525b3a9622ce6fdf19f7dde354_50e7c3e4bc8ba79ea66ded0787d43ef1&VideoCodec=hevc,h264,av1&AudioCodec=mp3,aac&VideoBitrate=903730&AudioBitrate=96271&MaxWidth=1920&AudioStreamIndex=1&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&SubtitleStreamIndexes=-1&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline&h264-level=62&hevc-codectag=hvc1,hev1,hevc,hdmv&TranscodeReasons=ContainerBitrateExceedsLimit
 
 #EXTINF:-1 tvg-logo="https://liveera.live/logos/740.jpg" group-title="ช่องสารคดี",True Explore Wild
 https://github.com/cattv976/documentary/raw/refs/heads/main/trueexplorewild1.m3u8
