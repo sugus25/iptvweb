@@ -145,8 +145,8 @@ https://godlivetv.io/343live/563/playlist.m3u8|referer=https://343live.com/
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="ช่องสารคดี",Samrujlok
 http://54.37.19.157/samrujlok/tracks-v1a1/playlist.m3u8
  
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="ช่องสารคดี",MySci GF
-https://liveera.live/liveeratest/555/playlist.m3u8|referer=https://liveera.live/
+#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="ช่องสารคดี",MySci EMBY
+https://emby.ekcdn.cc/emby/videos/942626/master.m3u8?DeviceId=0c6f333c-8dd8-4257-86a9-c93170c606b0&MediaSourceId=50e7c3e4bc8ba79ea66ded0787d43ef1&PlaySessionId=83962dec243f45be9e8e372e727215e3&api_key=7ac06cdd8ba04caeb62fd26c0132dc1e&LiveStreamId=06044cf0e6f93cdae5f285c9ecfaaeb4_01413a525b3a9622ce6fdf19f7dde354_50e7c3e4bc8ba79ea66ded0787d43ef1&VideoCodec=hevc,h264,av1&AudioCodec=mp3,aac&VideoBitrate=904822&AudioBitrate=95179&MaxWidth=1920&AudioStreamIndex=1&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&SubtitleStreamIndexes=-1&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline&h264-level=62&hevc-codectag=hvc1,hev1,hevc,hdmv&TranscodeReasons=ContainerBitrateExceedsLimit
  
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="ช่องสารคดี", MySci
 https://godlivetv.io/343live/555/playlist.m3u8|referer=https://343live.com/
