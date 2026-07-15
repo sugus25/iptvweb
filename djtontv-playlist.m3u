@@ -146,10 +146,12 @@ https://godlivetv.io/343live/563/playlist.m3u8|referer=https://343live.com/
 http://54.37.19.157/samrujlok/tracks-v1a1/playlist.m3u8
  
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="ช่องสารคดี",MySci EMBY
-https://emby.ekcdn.cc/emby/videos/942592/master.m3u8?DeviceId=0c6f333c-8dd8-4257-86a9-c93170c606b0&MediaSourceId=2305f0a9f7e3dbebe4a2c8fec3eaffb7&PlaySessionId=01cb7fa20b1c4352852a10c0f814f162&api_key=7ac06cdd8ba04caeb62fd26c0132dc1e&LiveStreamId=06044cf0e6f93cdae5f285c9ecfaaeb4_01413a525b3a9622ce6fdf19f7dde354_2305f0a9f7e3dbebe4a2c8fec3eaffb7&VideoCodec=hevc,h264,av1&AudioCodec=mp3,aac&VideoBitrate=870695&AudioBitrate=129306&MaxWidth=1920&AudioStreamIndex=1&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&SubtitleStreamIndexes=-1&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline&h264-level=62&hevc-codectag=hvc1,hev1,hevc,hdmv&TranscodeReasons=ContainerBitrateExceedsLimit
+https://emby.ekcdn.cc/emby/videos/942626/master.m3u8?DeviceId=0c6f333c-8dd8-4257-86a9-c93170c606b0&MediaSourceId=50e7c3e4bc8ba79ea66ded0787d43ef1&PlaySessionId=21f1bd6de5d446d099758b89671d567e&api_key=7ac06cdd8ba04caeb62fd26c0132dc1e&LiveStreamId=06044cf0e6f93cdae5f285c9ecfaaeb4_01413a525b3a9622ce6fdf19f7dde354_50e7c3e4bc8ba79ea66ded0787d43ef1&VideoCodec=hevc,h264,av1&AudioCodec=mp3,aac&VideoBitrate=903745&AudioBitrate=96256&MaxWidth=1920&AudioStreamIndex=1&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&SubtitleStreamIndexes=-1&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline&h264-level=62&hevc-codectag=hvc1,hev1,hevc,hdmv&TranscodeReasons=ContainerBitrateExceedsLimit
  
-#EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="ช่องสารคดี", MySci
-https://godlivetv.io/343live/555/playlist.m3u8|referer=https://343live.com/
+#EXTINF:-1 tvg-id="TN.us" group-title="ช่องสารคดี" tvg-logo="https://cdn.imgchest.com/files/e340a0dd5de8.png", mysci
+#EXTVLCOPT:http-referrer=https://github.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/mysci.m3u8
 
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="ช่องสารคดี", MySci OM
 http://119.59.118.168/live/ch39/178190461527307/index.m3u8
@@ -197,8 +199,8 @@ https://liveera.live/liveeratest/1875/playlist.m3u8|referer=https://liveera.live
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits EMBY
 http://thangap.ddns.net:3000/inw/truemoviehits/steamball2026.m3u8?token=EHLhaYTvcYeK1RZT
 
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits
-https://godlivetv.io/343live/1875/playlist.m3u8|referer=https://343live.com/
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits iptv+
+http://6395online.com:8080//Iptv6988/0905692638/148
 
 #EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits
 http://54.37.19.157/moviehits/tracks-v1a1/playlist.m3u8
@@ -230,88 +232,6 @@ http://54.37.19.157/hbohd/tracks-v1a1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง",CINEMAX
 http://119.59.118.168/live/ch77/178190461527307/index.m3u8
 
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",42 - ดอนยาง - บ้านดี
-https://streaming2.highwaytraffic.go.th/Phase14/PER_14_013.stream/chunklist_w601473323.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",43 - ปาแด - มะพร้าวต้นเดียว
-https://streaming2.highwaytraffic.go.th/Phase14/PER_14_014.stream/chunklist_w84104493.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",408 - อ.สิงหนคร จ.สงขลา
-https://streaming1.highwaytraffic.go.th/Phase8/PER_8_035.stream/chunklist_w2080970197.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4 - พรุพ้อ - เนินพิชัย
-https://streaming2.highwaytraffic.go.th/Phase14/PER_14_010.stream/chunklist_w1148849427.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",43 - นาหม่อม - จะนะ
-https://streaming2.highwaytraffic.go.th/Phase14/PER_14_011.stream/chunklist_w1967772673.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",408 - ทุ่งหวัง - นาทวี
-https://streaming2.highwaytraffic.go.th/Phase14/PER_14_012.stream/chunklist_w699339946.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",406 - ค่ายรวมมิตร - คลองขุด
-https://streaming2.highwaytraffic.go.th/Phase14/PER_14_016.stream/chunklist_w697183262.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",416 - อ.ท่าแพ จ.สตูล
-https://streaming1.highwaytraffic.go.th/Phase8/PER_8_037.stream/chunklist_w789567811.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",419-ถนนแหวนรอบเมืองตรัง
-https://streaming2.highwaytraffic.go.th/Phase18/PER_18_003.stream/chunklist_w1960856324.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4 - อ.นาโยง จ.ตรัง
-https://streaming1.highwaytraffic.go.th/Phase8/PER_8_027.stream/chunklist_w1599757509.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4 - เขาคราม - ตลาดเก่า
-https://streaming2.highwaytraffic.go.th/Phase14/PER_14_007.stream/chunklist_w813343442.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4 - คลองบางดินสอ - นาเหนือ
-https://streaming2.highwaytraffic.go.th/Phase14/PER_14_008.stream/chunklist_w552380459.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4 - อ.ทับปุด จ.พังงา
-https://streaming1.highwaytraffic.go.th/Phase8/PER_8_024.stream/chunklist_w1135869194.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4024 - อ.เมืองภูเก็ต จ.ภูเก็ต
-https://streaming1.highwaytraffic.go.th/Phase8/PER_8_038.stream/chunklist_w2008897596.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4142 - บ้านใน - บ้านโฉ
-https://streaming2.highwaytraffic.go.th/Phase14/PER_14_006.stream/chunklist_w360374767.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4009 - บางใหญ่-ซอยสิบ
-https://streaming2.highwaytraffic.go.th/Phase14/PER_14_005.stream/chunklist_w1973668656.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",44 - ท่าเรือ - หินโงก
-https://streaming2.highwaytraffic.go.th/Phase14/PER_14_004_IN.stream/chunklist_w1513355524.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",420 - วงแหวนรอบเมืองสุราษฎร์ธานี
-https://streaming2.highwaytraffic.go.th/Phase14/PER_14_003.stream/chunklist_w1138836778.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",401 - อ.พุนพิน จ.สุราษฎร์ธานี
-https://streaming1.highwaytraffic.go.th/Phase8/PER_8_030.stream/chunklist_w2007286908.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",41 - อ.ท่าฉาง จ.สุราษฎร์ธานี
-https://streaming1.highwaytraffic.go.th/Phase5/PER_5_017.stream/chunklist_w274068298.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4006 - ราชกรูด-วังตะกอ
-https://streaming2.highwaytraffic.go.th/Phase14/PER_14_009.stream/chunklist_w1257662032.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",41 - อ.สวี จ.ชุมพร
-https://streaming1.highwaytraffic.go.th/Phase5/PER_5_016.stream/chunklist_w341366293.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",37 - อ.หัวหิน จ.ประจวบคีรีขันธ์
-https://streaming1.highwaytraffic.go.th/Phase10/PER_10_028.stream/chunklist_w1609035350.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4 - อ.บางสะพาน จ.ประจวบคีรีขันธ์
-https://streaming1.highwaytraffic.go.th/Phase5/PER_5_008.stream/chunklist_w1441511474.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4 - สระพระ - ห้วยทรายใต้
-https://streaming2.highwaytraffic.go.th/Phase13/PER_13_033_1.stream/chunklist_w894094493.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",37 - อ.ชะอำ จ.เพชรบุรี
-https://streaming1.highwaytraffic.go.th/Phase10/PER_10_031.stream/chunklist_w255165016.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4 - อ.ชะอำ จ.เพชรบุรี
-https://streaming1.highwaytraffic.go.th/Phase5/PER_5_007_OUT.stream/chunklist_w1055970963.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4 - อ.ชะอำ จ.เพชรบุรี
-https://streaming1.highwaytraffic.go.th/Phase5/PER_5_006_OUT.stream/chunklist_w643978273.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4 - คลองอีจาง - หลุมดิน
-https://streaming2.highwaytraffic.go.th/Phase13/PER_13_034.stream/chunklist_w2107192078.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",4 - อ.โพธาราม จ.ราชบุรี
-https://streaming1.highwaytraffic.go.th/Phase10/PER_10_032.stream/chunklist_w1972996942.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg",304-เขตมีนบุรี จ.กรุงเทพมหานคร
-https://streaming1.highwaytraffic.go.th/Phase9/PER_9_027_IN.stream/chunklist_w1781472263.m3u8
-#EXTINF:-1 group-title=""tvg-logo="https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B8%A3.jpg
-https://www.cctvbangkok.com/wp-content/uploads/2023/03/%E0%B8%81%E0%B
 
 /178190461527307/
 
@@ -321,3 +241,18 @@ http://119.59.118.168/live/ch50/178190461527307/index.m3u8
 
 #EXTINF:-1 tvg-chno="26" tvg-id="iptv36.thairath" group-title="Thai Free TV" tvg-logo="https://iptv36.vercel.app/logo/thairath.png",Thairath TV
 https://godlivetv.io/343live/6330/playlist.m3u8|referer=https://343live.com/
+
+
+
+
+#EXTINF:-1 group-title="ช่องสารคดี" tvg-logo="https://cdn.imgchest.com/files/42b31bd3433c.jpg",Animal Show
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/animalshow/playlist.m3u8
+ 
+
+
+#EXTINF:-1 group-title="ช่องสารคดี" tvg-logo="https://cdn.imgchest.com/files/5944e14c1b6f.webp",สำรวจโลก
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/samrujlok/playlist.m3u8
