@@ -226,6 +226,9 @@ http://54.37.19.157/hbohd/tracks-v1a1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/db6073dade40.jpg" group-title="บันเทิง",CINEMAX
 http://119.59.118.168/live/ch77/178190461527307/index.m3u8
 
+#EXTINF:-1 group-title="บันเทิง" tvg-logo="https://www.fileinw.com/postor/20240429213343just_for_laughs_gags.jpg",GAGS
+https://distributionsjustepourrire-justforlaughsgags-1-us.tcl.wurl.tv/playlist.m3u8
+
 
 /178190461527307/
 
@@ -250,3 +253,6 @@ https://cdn2.stream.atmflix.live/atmflixlive/animalshow/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://atmflix.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
 https://cdn2.stream.atmflix.live/atmflixlive/samrujlok/playlist.m3u8
+
+#EXTINF:-1 group-title="ช่องสารคดี" tvg-logo="https://www.fileinw.com/postor/20240429213343just_for_laughs_gags.jpg",GAGS
+https://distributionsjustepourrire-justforlaughsgags-1-us.tcl.wurl.tv/playlist.m3u8
