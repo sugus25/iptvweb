@@ -141,7 +141,7 @@ http://119.59.118.168/live/ch50/178190461527307/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="ช่องสารคดี",Samrujlok
 https://godlivetv.io/madoball/563/playlist.m3u8|referer=https://madoball.com/
-https://godlivetv.io/343live/563/playlist.m3u8|referer=https://343live.com/
+http://119.59.118.168/live/ch50/178415102492336kosvlkkgofkijensjfmgllspekokokesfsdflskpweorwerk/index.m3u8
  
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///SamRujLok.png" group-title="ช่องสารคดี",Samrujlok
 http://54.37.19.157/samrujlok/tracks-v1a1/playlist.m3u8
@@ -162,7 +162,7 @@ https://godlivetv.io/343live/555/playlist.m3u8|referer=https://343live.com/
 
 
 #EXTINF:-1 tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///MySCI.png" group-title="ช่องสารคดี", MySci
-https://emby.ekcdn.cc/emby/videos/942626/master.m3u8?DeviceId=0c6f333c-8dd8-4257-86a9-c93170c606b0&MediaSourceId=50e7c3e4bc8ba79ea66ded0787d43ef1&PlaySessionId=a4d76b311b3c46c38b13923e9fc78a3e&api_key=7ac06cdd8ba04caeb62fd26c0132dc1e&LiveStreamId=06044cf0e6f93cdae5f285c9ecfaaeb4_01413a525b3a9622ce6fdf19f7dde354_50e7c3e4bc8ba79ea66ded0787d43ef1&VideoCodec=hevc,h264,av1&AudioCodec=mp3,aac&VideoBitrate=903730&AudioBitrate=96271&MaxWidth=1920&AudioStreamIndex=1&TranscodingMaxAudioChannels=2&SegmentContainer=ts&MinSegments=1&BreakOnNonKeyFrames=True&SubtitleStreamIndexes=-1&ManifestSubtitles=vtt&h264-profile=high,main,baseline,constrainedbaseline&h264-level=62&hevc-codectag=hvc1,hev1,hevc,hdmv&TranscodeReasons=ContainerBitrateExceedsLimit
+http://119.59.118.168/live/ch39/178415102492336kosvlkkgofkijensjfmgllspekokokesfsdflskpweorwerk/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.madoball.com/upload/740.jpg" group-title="ช่องสารคดี",True Explore Wild
 https://godlivetv.io/madoball/740/playlist.m3u8|referer=https://madoball.com/
@@ -187,7 +187,7 @@ https://liveera.live/343live/716_backup/playlist.m3u8|referer=https://liveera.li
 https://godlivetv.io/343live/716/playlist.m3u8|referer=https://343live.com/
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png" group-title="ช่องสารคดี", อนิมอล โชว์
-https://godlivetv.io/madoball/712/playlist.m3u8|referer=https://madoball.com/
+https://godlivetv.io/madoball/710/playlist.m3u8|referer=https://madoball.com/
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///AnimalShow.png" group-title="ช่องสารคดี", อนิมอล โชว์ OM
 http://119.59.118.168/live/ch30/178190461527307/index.m3u8
@@ -197,18 +197,7 @@ http://119.59.118.168/live/ch30/178190461527307/index.m3u8
 https://godlivetv.io/madoball/1875/playlist.m3u8|referer=https://madoball.com/
 
 #EXTINF:-1 group-title="บันเทิง" tvg-logo="https://cdn.imgchest.com/files/63e9723855b8.webp", True Movie Hits
-http://54.37.19.157/moviehits/tracks-v1a1/playlist.m3u8
-
-https://liveera.live/liveeratest/1875/playlist.m3u8|referer=https://liveera.live/
-
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits EMBY
-https://github.com/cattv976/movies/raw/refs/heads/main/truemoviehits1.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits iptv+
-http://6395online.com:8080//Iptv6988/0905692638/148
-
-#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/4aa1bc465c6b.webp" group-title="บันเทิง",True Movie Hits
-http://54.37.19.157/moviehits/tracks-v1a1/playlist.m3u8
+http://119.59.118.168/live/ch59/178415102492336kosvlkkgofkijensjfmgllspekokokesfsdflskpweorwerk/index.m3u8
 
 
 
