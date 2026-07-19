@@ -1,0 +1,1324 @@
+#EXTM3U
+
+# Ausawin CH.2026
+# =======================================================
+# Playlist Name: Ausawin CH.2026
+# Last Update: 2026-07-06
+# =======================================================
+
+https://docs.google.com/uc?export=download&id=1x7KtxxiTsT8xcreSz5HwjuPuIsuvoTji
+
+
+============================ ThaiLand Digital TV ==============================
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://raw.githubusercontent.com/zaxacaasada/logotv/refs/heads/main/hd-ch3.png",CH3 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+#EXTVLCOPT:http-referrer=https://ch3plus.com/
+https://ch3-33-web.cdn.byteark.com/live/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://raw.githubusercontent.com/zaxacaasada/logotv/refs/heads/main/hd-ch3.png",CH3 HD
+https://live-us1.thaimomo.com/live-as/ch3hd-3/chunklist_w1630241822.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/c9a9a1b66280.webp",CH5
+http://45.144.166.242:1935/TV5/t3_tv5/playlist.m3u8  
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/7d23eb5e80b1.png",CH7HD
+https://live-cdn.ch7.com/out/v1/eafeb02c55b64a15b278b1e66c7fc776/playlist_9.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/7d23eb5e80b1.png",CH7HD
+https://tamfan46.github.io/MIA-IPTV/channels/ch7.html
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a46aa3aae303.png",Channel 8
+http://54c241893bf39.streamlock.net:1935/ch8/ch8/chunklist.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a46aa3aae303.png",Channel 8
+http://vip.login.in.th:1935/ch8/ch8/playlist.m3u8
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/27.png", CH8
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=4a0a9dd380b4409c8dad910691283a0d:1447c104caa244d9a367549534e0b807
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/27/27.mpd
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/27.png", CH8
+https://live-us1.thaimomo.com/live-as/cheight-3/chunklist_w808511203.m3u8
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/f377f853df9c.png",tnn16
+http://54.37.19.157/tnn16/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/f377f853df9c.png",tnn16
+https://live-us1.thaimomo.com/live-as/chtnn24-2/chunklist_w1251366243.m3u8
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/5/52/GMM_25_Logo_dai_truyen_hinh.png",gmm25
+http://54.37.19.157/gmm25/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/5/52/GMM_25_Logo_dai_truyen_hinh.png",gmm25
+https://live-us1.thaimomo.com/live-as/chgmmchannel-3/chunklist_w2068377954.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a982a08144e3.png",one31
+http://54.37.19.157/one31/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a982a08144e3.png",one31
+https://live-us1.thaimomo.com/live-as/chone-3/chunklist_w1288703719.m3u8
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/4e89b8a4aab4.png",MCOT30 HD
+http://45.144.166.242:1935/MCOT/t3_mcot/chunklist.m3u8 
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/4e89b8a4aab4.png",MCOT30 HD V2
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=edef8ba979d64acea3c827dcd51d21ed:1c9f0222e49da66fc785376c0645d86d
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/30/30.mpd
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/4e89b8a4aab4.png",MCOT30 HD V3
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=edef8ba979d64acea3c827dcd51d21ed:1c9f0222e49da66fc785376c0645d86d
+https://mcothd-streaming-edge-cdn.mcot.net/tencentmcot/smil:tencentmcot.smil/playlist.m3u8
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/f2555af1b86d.jpg",NBT HD
+https://cdn-edge.iiptvcdn.com/live_event/smil:f180-054a-38d7-ce66-f7cf.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="NBT11Central.th" tvg-logo="https://cdn.imgchest.com/files/f2555af1b86d.jpg" group-title="iPTVplus", NBT Central
+https://cdn-edge.iiptvcdn.com/live_event/smil:6ee0-5126-0cee-7ba2-18b7.smil/playlist.m3u8
+
+
+
+
+
+ 
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/74082a59eecf.png",MONO29 (Full)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=96a14b36335645b391bbbb48c424fec7:e6971b27837a4822832d8215156bb516
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/29/29.mpd
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/Mono29p.jpg",MONO29 Plus       
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/mono29plus/playlist.m3u8    
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/3b4041b10be2.jpg",Mono 29 Music station      
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/mono-29-music-station/playlist.m3u8    
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/da22c3cd9340.png",PPTV V1
+https://www.pptvhd36.com/live  
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/da22c3cd9340.png",PPTV V2
+https://tv.trueid.net/th-th/embed/pptv-hd?autoplay=yes&nopageview=yes
+
+
+#EXTINF:-1 tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/34.png" group-title="iPTVplus",AmarinTV HD 
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=0b898bb9530b4b0a97e444d1e1f8960e:dab1a7c035d94287ac64417ef809ed3b
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/34/34.mpd
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/8c7386887d4b.jpg",Thai PBS
+http://45.144.166.242:1935/ThaiPBS/t3_thaipbs/playlist.m3u8 
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/8c7386887d4b.jpg",THAI PBS
+https://thaipbs-ophctt.cdn.byteark.com/live/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/8c7386887d4b.jpg",THAI PBS
+https://thaipbs-live.cdn.byteark.com/live/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/8c7386887d4b.jpg",THAI PBS
+http://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8
+
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a31d18346fa4.jpg", ThaiRath TV
+http://45.144.166.242:1935/ThairathTV/t3_thairathtv/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a31d18346fa4.jpg", Thairath TV V2
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=4b2bff3e598043cfaf949305e3d153fa:545df84ff4c54af6b5385516e0f65956
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/32/32.mpd
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a31d18346fa4.jpg", Thairath TV V3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+#EXTVLCOPT:http-origin=https://www.thairath.co.th
+#EXTVLCOPT:http-referrer=https://www.thairath.co.th/
+https://ssai-streaming.thairath.co.th/bamm-csai/playlist.m3u8
+
+
+
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0015_R.png",Workpoint
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/23/23.mpd
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0015_R.png",Workpoint V2
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=8e66726c1191403588f95c0757613ff1:67c26ba7f9b84024944808e01bbe6f47
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/23/23.mpd
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/22_Nation_2025.png",Nation TV
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=88b44b9be186449ca5322053d975aa4c:b95b471541994278a1960fd4f85a7ee2
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/22/22.mpd
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/061c1eae0baf.jpg",Thai Parliament TV
+https://tv-live.tpchannel.org/live/tv.m3u8
+
+
+
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://i.postimg.cc/qMJ7ff5h/IMG-3145.png", TopNews FHD
+https://live.topnews.co.th/hls/topnews_a_FHD1080.m3u8
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/TOPNEWS.PNG", Topnews
+https://live.topnews.co.th/hls/topnews_a_720.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/b72d0df5f5ba.jpg", Thai Chaiyo
+https://live-iptv.thaichaiyo.tv/tcy/live-manifest.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/27.png",CH8 
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/ch8/playlist.m3u8       
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/5/52/GMM_25_Logo_dai_truyen_hinh.png",GMM25       
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/gmm25/playlist.m3u8            
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/f2555af1b86d.jpg",NBT 2 HD         
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/nbt2hd/playlist.m3u8        
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/22_Nation_2025.png",Nation TV    
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/nationtv/playlist.m3u8                                 
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0015_R.png",Workpoint TV        
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/workpointtv/playlist.m3u8  
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/f377f853df9c.png",TNN 16      
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/tnn/playlist.m3u8             
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/8c7386887d4b.jpg",Thai PBS       
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/thaipbs/playlist.m3u8     
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/2798cd56ed4d.webp",T Sport 7
+http://6395online.com:8080/live/Iptv6988/0905692638/231.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/2798cd56ed4d.webp",T Sport 7
+https://live-us1.thaimomo.com/live-as/chtsport-1/chunklist_w559439066.m3u8
+
+
+
+============================ TRUE Channel ==============================
+#EXTINF:-1 tvg-logo="https://cms.dmpcdn.com/livetv/2019/03/15/58ad8ef6-52ef-4609-a55b-9a18e8e89eec.png" group-title="iPTVplus" , True4U
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; arm_64; Android 9; MI 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 YaBrowser/20.2.1.120.00 Yptp/1.32 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://iptv36.vercel.app/
+https://iptv36.vercel.app/api/true.m3u8?channel=true4u
+#EXTINF:-1 tvg-logo="https://cms.dmpcdn.com/livetv/2019/03/15/58ad8ef6-52ef-4609-a55b-9a18e8e89eec.png" group-title="iPTVplus" , True4U
+https://live-us1.thaimomo.com/live-as/chTrue4u-2/chunklist_w249050767.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cms.dmpcdn.com/livetv/2019/03/15/58ad8ef6-52ef-4609-a55b-9a18e8e89eec.png",True 4 U         
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/true4u/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/ad173658975b.png",CINEMAX  
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/cinemax/playlist.m3u8   
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/2c898146ed07.jpg",HBO      
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/hbo/playlist.m3u8       
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/3b0fc88271d0.png",HBO Family      
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/hbo-family/playlist.m3u8   
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/fc/HBOHits-ASIA.png",HBO Hits         
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/hbo-hits/playlist.m3u8        
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://img2.pic.in.th/HBO_Signature.svg.png",HBO Signature         
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/hbo-signature/playlist.m3u8 
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/expreme.jpg",ROCK Action        
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/rock-action/playlist.m3u8        
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/rocken.jpg",ROCK ENTERTAINMENT        
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/rock-entertainment/playlist.m3u8 
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/356c688ee541.webp",True Film 1          
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/truefilm1/playlist.m3u8    
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/ecd875e7defa.webp",True Film 2         
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/truefilm2/playlist.m3u8             
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/74b7db6ef0f2.png",True X-Zyte         
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/truex-zyte/playlist.m3u8    
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/eaea5d2922a7.jpg",TLC        
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/tlc/playlist.m3u8  
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/88d24970f568.jpg",Thainess        
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/thainess/playlist.m3u8 
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/1c5a30042ffb.png",Food Network        
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/foodnetwork/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/e657dc52cdc8.jpg",afn
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/afn/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/4dca9bdefb12.webp",Asian Hits 
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/3bbasian/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/3d5a20113cb5.jpg",RUSH Stories       
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/rush-stories/playlist.m3u8 
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/3b5e527b3151.jfif",Yunnan International        
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/yunnan-international/playlist.m3u8          
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/30ffe19448b8.png",Hunan TV HD         
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/hunan-tv-hd/playlist.m3u8    
+
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/hd-asianmore.png" ,Asian More
+http://6395online.com:8080//Iptv6988/0905692638/123
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/hd-axn.png" ,AXN
+http://6395online.com:8080//Iptv6988/0905692638/129
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/hd-warnertv.png" tvg-id="channel28" ,Warner
+http://6395online.com:8080//Iptv6988/0905692638/130
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/hd-hbo-thai.png" tvg-id="channel22" ,HBO HD
+http://6395online.com:8080//Iptv6988/0905692638/133
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/hd-hbo-hit.png" tvg-id="channel24" ,HBO HITS HD
+http://6395online.com:8080//Iptv6988/0905692638/134
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/hbosignature.png" tvg-id="HBO Signature" ,HBO Signature
+http://6395online.com:8080//Iptv6988/0905692638/135
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/hbofamily.png" tvg-id="HBO Family" ,HBO Family HD
+http://6395online.com:8080//Iptv6988/0905692638/136
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/cinemax(2).png" tvg-id="channel26" ,CineMax
+http://6395online.com:8080//Iptv6988/0905692638/138
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/rocken.jpg" tvg-id="ROCK ENTERTAINMENT.th" ,BLUEANT ENTERTAINMENT 
+http://6395online.com:8080//Iptv6988/0905692638/139
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/expreme.jpg" tvg-id="ROCK Action.th" ,BLUEANT EXTREME
+http://6395online.com:8080//Iptv6988/0905692638/140
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/d31415aa904d.png" ,TRUE Thai Film 
+http://6395online.com:8080//Iptv6988/0905692638/141
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/beb0cc2ed4ae.webp" ,True Film 1HD
+http://6395online.com:8080//Iptv6988/0905692638/142
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/995564f66157.webp" ,True Film HD2
+http://6395online.com:8080//Iptv6988/0905692638/143
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/Mono29p.jpg" ,Mono29+
+http://6395online.com:8080//Iptv6988/0905692638/145
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/sd-series.png" ,True Series
+http://6395online.com:8080//Iptv6988/0905692638/146
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/filmasia.jpg" ,True Film Asia
+http://6395online.com:8080//Iptv6988/0905692638/147
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/moviehits.png" ,True Movie Hits
+http://6395online.com:8080//Iptv6988/0905692638/148
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/1719898154.png" tvg-id="TVBS News.th" ,TVB CLASSIC HD
+http://6395online.com:8080//Iptv6988/0905692638/150
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/ccm.png" ,CCM
+http://6395online.com:8080//Iptv6988/0905692638/151
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/ctb.png" ,CTB 
+http://6395online.com:8080//Iptv6988/0905692638/153
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/ch8.png" ,Channel 8 
+http://6395online.com:8080//Iptv6988/0905692638/155
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/ede5170ce062.jpg" , CHIANGRAI CHANNEL
+http://6395online.com:8080//Iptv6988/0905692638/158
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/3bbasian.png" ,3BB Asian
+http://6395online.com:8080//Iptv6988/0905692638/16857
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/universal.jpg" ,Universal
+http://6395online.com:8080//Iptv6988/0905692638/435625
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/Livesky11.png" ,Livesky 1
+http://6395online.com:8080//Iptv6988/0905692638/443073
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/Livesky22.png" ,Livesky 2
+http://6395online.com:8080//Iptv6988/0905692638/443074
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://6395online.com:8443/logotv/movie/ipm_series_plus_hd.png" ,SERIES
+http://6395online.com:8080//Iptv6988/0905692638/443075
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/8c4baf0bf347.jpg",Cool Channel
+https://live-iptv.cool-channel.com/cool/live-720P.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/8c4baf0bf347.jpg",Cool Channel
+https://live-gmmz.cool-channel.com/cool/live-720P.m3u8
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/ee2a8ab12fe8.png", TRUE X-ZYTE
+http://ultratv.one:2095/live/hCPtsREFtA/Xj25tg0ZXi/116072.m3u8
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/dfc88c57981e.png",AXN TH
+http://54.37.19.157/axn/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/6fdd20614992.png",cartoonnetwork
+http://54.37.19.157/cartoonnetwork/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/257a639ed998.png",history TH
+http://54.37.19.157/history/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/eaea5d2922a7.jpg",tlc TH
+http://54.37.19.157/tlc/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a12f29de4dee.png",warner TH
+http://54.37.19.157/warner/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/3eb7090c4cb3.jpg",animalshow TH
+http://54.37.19.157/animalshow/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/79d3c9fd42d8.webp",samrujlok TH
+http://54.37.19.157/samrujlok/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/ad173658975b.png",cinemax TH
+http://54.37.19.157/cinemax/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/ad173658975b.png",cinemax TH
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/cinemaxCAT.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/2c898146ed07.jpg", HBO TH
+http://54.37.19.157/hbohd/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://img2.pic.in.th/HBO_Signature.svg.png", HBO Signature TH
+http://54.37.19.157/hbos/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/3b0fc88271d0.png", HBO Family TH
+http://54.37.19.157/hbof/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/3b0fc88271d0.png", HBO Family TH
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/hbofamilyCAT.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/fc/HBOHits-ASIA.png", HBO Hits TH
+http://54.37.19.157/hboh/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/63e9723855b8.webp", True Movie Hits
+http://54.37.19.157/moviehits/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/7b0655ca9e0f.png", Discovery
+http://54.37.19.157/Discovery/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/5c397e694b90.webp", Discovery Asia TH
+http://54.37.19.157/Discovery_Asia/tracks-v1a1/playlist.m3u8
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/2c898146ed07.jpg", HBO (No SUB ENG)
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/HboID.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/ad173658975b.png",cinemax (No SUB ENG)
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/HbocinemaxID.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/3b0fc88271d0.png", HBO Family (No SUB ENG)
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/HbofamilyID.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/887b0c54ee92.png",Hbohits (No SUB ENG)
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/HbohitsID.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://img2.pic.in.th/HBO_Signature.svg.png", HBO Signature (No SUB ENG)
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/HbosignatureID.m3u8
+
+
+
+
+============================ Movies 24/7 Channel ==============================
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/684de7a1e380.jpg", Movie1
+#EXTVLCOPT:http-referrer=
+http://49.0.64.96:8007/IZAA
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/684de7a1e380.jpg", Movie2
+#EXTVLCOPT:http-referrer=
+http://49.0.64.96:8007/H-Channel
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/684de7a1e380.jpg", Movie3
+#EXTVLCOPT:http-referrer=
+http://49.0.64.96:8007/Cartoonumi 
+#EXTINF:-1 group-title=iPTVplus" tvg-logo="https://cdn.imgchest.com/files/684de7a1e380.jpg", Movie4
+#EXTVLCOPT:http-referrer=
+http://49.0.64.96:8007/PING
+#EXTINF:-1 group-title=iPTVplus" tvg-logo="https://cdn.imgchest.com/files/684de7a1e380.jpg", Movies5 
+http://49.0.64.96:8007/SERIES
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/684de7a1e380.jpg", Movie6
+http://43.229.132.25:80/play/bQ-fFu7dMOtIPDjoXbK1w5H53SITSMYtRd-Oqf6wLL0/m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/684de7a1e380.jpg", Movie7
+http://43.229.132.25:80/play/bQ-fFu7dMOtIPDjoXbK1w_5cOTPtf2-yuYVaNlq13GI/m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/684de7a1e380.jpg", Movie8
+http://43.229.132.25:80/play/bQ-fFu7dMOtIPDjoXbK1w0oWEYO_FOJVpIFrwrh9dqo/m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/684de7a1e380.jpg", Movie9
+http://43.229.132.25:80/play/bQ-fFu7dMOtIPDjoXbK1wwRB5fluemONXXZNwQoTE3k/m3u8
+
+
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/a8fb13caff4a.jfif" group-title="iPTVplus", Movies USA1
+http://23.237.104.106:8080/USA_HBO/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/a8fb13caff4a.jfif" group-title="iPTVplus", Movies USA2
+http://23.237.104.106:8080/USA_HBO2/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/a8fb13caff4a.jfif" group-title="iPTVplus", Movies USA3
+https://haus.webchnl.com/whiplash-cinema/index.m3u8
+
+
+ 
+ #EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cms-mvtv-app-v2.v2h-cdn.com:8001/uploads/channel/194_y_9BUVhAoK5Dzxwjdu2rgXWP8Sb7JOnFRt.png", MIXMAJOR
+https://mvtv.co.th/play/play_mvtv.php?no=194&channel=MIXMAJOR
+
+
+
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/f865570b6b5d.webp" group-title="iPTVplus", HBO Comedy
+http://23.237.104.106:8080/USA_HBO_COMEDY/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/7d96ee4ef1b6.webp" group-title="iPTVplus", HBO Zone
+http://23.237.104.106:8080/USA_HBO_ZONE/index.m3u8
+
+
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/232598ac1cfb.webp",Lifetime Movies East
+http://84.17.50.102/lmn/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/830a61e38e52.webp" group-title="iPTVplus", IFC Films
+https://423a4f21fb8d45a4a7e4bd304a14e2f0.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Plex_IFCFilmsPicks/playlist.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/307597f66cee.png", AMG TV
+https://2-fss-2.streamhoster.com/pl_138/201660-1270634-1/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/e04c2ef0d5b3.jpg" group-title="iPTVplus", her Sphere by Lionsgate
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00353-lionsgatestudio-hersphere-lgus/playlist.m3u8
+
+
+
+                             
+
+
+============================ inter Channel ==============================
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/0e7b93a79ed1.webp",Ninja Warrior
+#EXTVLCOPT:http-referrer=
+https://xumo-drct-ch812-n4996.fast.nbcuni.com/live/master.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/6fbef78787ac.jpg",Fear Factor
+https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99951130
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/9d7057e47c05.jfif", AFV Family | link 1
+https://linear-12.frequency.stream/dist/plex/12/hls/master/playlist.m3u8?ads.plex_token=Tog8X6wK6iweuzGFsz6p&ads.plex_id=5ef11486d33ab9004048a1cd&ads.device_id=62274240-07e7-5d94-8dc8-ef68cf19e175&ads.dnt=0&ads.us_privacy=1---
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/9d7057e47c05.jfif", AFV Family | link 2
+https://66fbef2650a94f95ad9eb85816482b11.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-12-AFV-PLEX/mt/plex/12/hls/master/playlist.m3u8?ads.plex_token=y4Rf78msRg4_dQbMaoax&ads.plex_id=5ef11486d33ab9004048a1cd&ads.device_id=62274240-07e7-5d94-8dc8-ef68cf19e175&ads.dnt=0&ads.us_privacy=1---
+
+#EXTINF:-1 tvg-id="x" group-title="iPTVplus" tvg-logo="https://i.postimg.cc/brt0yS2H/IMG-2953.png", Amazing Show
+http://49.0.64.96:8007/AMAZING
+
+
+
+
+
+
+============================ SAT ==============================
+
+#EXTINF:-1 group-title="iPTVplus" tvg-id="6" tvg-logo="https://i.imgur.com/Chx0AV9.png",White Channel
+http://symc-cdn.violin.co.th:1935/tndedge/whitechannel/chunklist.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/0eb3e10283c1.webp",WILD EARTH
+https://wildearth-plex.amagi.tv/masterR432p.m3u8
+
+#EXTINF:-1 tvg-id="iPTVplus" group-title="iPTVplus" tvg-logo="https://i.postimg.cc/t4vQNs2p/IMG-1852.png", Cable 37 
+http://www5.cabletv.co.th/StreamToCTV/cablechannel/playlist.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://i.imgur.com/ETgVyTy.png", Good Idea TV
+http://stream1.ai-net.net:1935/gtv1/_definst_/smil:gtv.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Cable.th" group-title="iPTVplus" tvg-logo="https://i.postimg.cc/vHFdNPh2/IMG-2579.png", Nat tv 
+https://livefta.malimarcdn.com/ftaedge00/nat.sdp/playlist.m3u8
+
+#EXTINF:0 channel-id="cars-1" channel-number="0" tvg-logo="https://cdn.imgchest.com/files/a8c8c10fc196.jpg"tvc-guide-title="Pluto TV Cars" group-title="iPTVplus", LTV Taiwan
+https://cdn8.163189.xyz/163189/lhjd
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://raw.githubusercontent.com/zaxacaasada/logotv/refs/heads/main/baanbaantv.png", บ้านบ้านทีวี
+https://vdo.plathong.net/live8794/live8794/chunklist_.m3u8
+
+#EXTINF:-1 group-title="iPTVplus"  tvg-logo="https://i.postimg.cc/MGHM4rTj/IMG-2560.png", ลั่นทุ่งทีวี
+https://live-us1.thaimomo.com/live-as/chlantung-2/chunklist_w1965870389.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://raw.githubusercontent.com/zaxacaasada/logotv/refs/heads/main/Siamnews.png",Siamnews
+https://live1.thaitvstream.com/play/siamnewstv/index.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://raw.githubusercontent.com/zaxacaasada/logotv/refs/heads/main/Thainews2025.png",Thainews
+https://live.thaitvstream.com/play/thainews/index.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://raw.githubusercontent.com/zaxacaasada/logotv/refs/heads/main/TVMass.png",มวลชนทีวี
+https://live2.thaitvstream.com/play/mounchontv/index.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://raw.githubusercontent.com/zaxacaasada/logotv/refs/heads/main/universal.png",Universal
+http://49.0.64.96:8007/H-Channel
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://i.imgur.com/pnbzE2V.png",Rama Channel
+https://ramach.ddns.net/live/ramalive/index.m3u8
+
+
+
+
+
+============================ RakutenTV ==============================
+
+
+#EXTINF:-1 tvg-id="RakutenTVTopMovies.es@UK" tvg-logo="https://cdn.imgchest.com/files/2129a15fd327.jpg" group-title="iPTVplus",Rakuten Top Movies UK (1080p)
+https://0145451975a64b35866170fd2e8fa486.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5987/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVActionMovies.es@UK" tvg-logo="https://cdn.imgchest.com/files/42a9bf51c500.jpg" group-title="iPTVplus",Rakuten TV Action Movies UK (1080p)
+https://54045f0c40fd442c8b06df076aaf1e85.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6065/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVComedyMovies.es@UK" tvg-logo="https://cdn.imgchest.com/files/5201066808b4.jpg" group-title="iPTVplus",Rakuten TV Comedy Movies UK (1080p)
+https://9be783d652cd4b099cf63e1dc134c4a3.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6181/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVDramaMovies.es@UK" tvg-logo="https://cdn.imgchest.com/files/578dd647766a.jpg" group-title="iPTVplus",Rakuten TV Drama Movies UK (1080p)
+https://fee09fd665814f51b939b6d106cf5f66.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6093/master.m3u8
+#EXTINF:-1 tvg-id="RakutenTVFamilyMovies.es@UK" tvg-logo="https://cdn.imgchest.com/files/20e0fabb43b8.png" group-title="iPTVplus",Rakuten TV Family Movies UK (1080p)
+https://e3207568b726401995c25670faaf32e4.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6203/master.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/c21da0ac870c.png",Rakuten Viki
+https://fd18f1cadd404894a31a3362c5f319bd.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_RakutenViki-1/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/c21da0ac870c.png",Rakuten Viki
+https://newidco-rakutenviki-2-eu.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/c21da0ac870c.png",RakutenViki (MX)
+https://newidco-rakutenviki-3-mx.lg.wurl.tv/playlist.m3u8
+
+
+
+
+============================ KIDS ==============================
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a16a7375534d.png", Mr. Bean Anime V1
+https://amg00627-amg00627c28-rakuten-uk-3984.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanukcc-rakutenuk/playlist.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a16a7375534d.png",Mr. Bean Anime V2
+https://amg00627-amg00627c23-samsung-th-5282.playouts.now.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Mr Bean" tvg-logo="https://cdn.imgchest.com/files/1591006581a0.png" group-title="iPTVplus",Banijay Mr Bean Classic
+https://amg00627-amg00627c40-rakuten-uk-5725.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanpopupcc-rakutenuk/playlist.m3u8
+
+#EXTINF:-1 tvg-id="iPTVplus" tvg-logo="https://i.postimg.cc/8CBnLpsM/IMG-3032.png" group-title="iPTVplus",Barbie and Friends
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=11075
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/4b48385771ac.png",nickjr TH
+http://54.37.19.157/nickjr/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/4b48385771ac.png",nickjr
+http://restream-live.realiptv.to:8080/monstercable/Dq6jjknxCr/74691
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/0ef50c2f1b1f.png", Cartoon Network
+http://23.237.104.106:8080/USA_CARTOON_NETWORK/index.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://dl.dropbox.com/s/9ow1yzygeqe90n0/Tom.png", Tom & Jerry
+https://bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/f12fb21af35f.png", Disney XD
+http://23.237.104.106:8080/USA_DISNEY_XD/index.m3u8
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/dc47216a6748.jpg", Boom TH
+https://live-us1.thaimomo.com/live-as/chboomerang-2/chunklist_w135479847.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cms-mvtv-app-v2.v2h-cdn.com:8001/uploads/channel/188_y_9itQ04ehdKRuspqr7o5HaWjAZnTk2lmI.jpg", Mango Mojito
+https://mvtv.co.th/play/play_mvtv.php?no=188&channel=Mango Mojito
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/4922410b739b.jfif",NICKELODEON (ENG)
+#EXTVLCOPT:http-referrer=
+http://23.237.104.106:8080/USA_NICKELODEON/index.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a5bbf8c61eda.png", USA_DISNEY_JUNIOR
+http://23.237.104.106:8080/USA_DISNEY_JUNIOR/index.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/77ce841564c4.webp", pbskids
+https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBA2300001S8_20241210T013828SQUARE.png",The LEGO Channel
+https://jmp2.uk/stvp-USBA2300001S8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US2900015RO_20250217T210812SQUARE.png",Kartoon Channel!
+https://jmp2.uk/stvp-US2900015RO
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US2200007QG_20240924T011005SQUARE.png",Ninja Kidz
+https://jmp2.uk/stvp-US2200007QG
+
+
+
+============================ JAPAN Channel ==============================
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/35cd1953aefd.jpg", CGNTV Japan
+https://d2p4mrcwl6ly4.cloudfront.net/out/v1/8d50f69fdbbf411a8d302743e4263716/CGNWebLiveJP.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/0b251a77a7bc.png",NHK World-Japan
+http://84.17.50.102/nhkworld/index.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/f9b7aaac78b6.png",NHK World
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/03e8a6669dd7.png", BS TBS
+http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs04&isp=6&bind=0&uin=159413&playseek=0&timestamp=1732368296&sign=8bda51d1ecb5ba8308d351801430df3ded3ae709c3836d243e2c24a59713dd16
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/3db10d1b140f.png",Weathernews JP (720p)
+https://rch01e-alive-hls.akamaized.net/38fb45b25cdb05a1/out/v1/4e907bfabc684a1dae10df8431a84d21/index.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/5a94ec1f0142.webp",BS Yoshimoto
+https://haru.charandom.blog/stream/jp/bs_yoshimoto/stream-output.m3u8?mode=hls
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/b060c5446d15.webp",BS 10
+https://haru.charandom.blog/stream/jp/bs10/stream-output.m3u8?mode=hls
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/fe1094c85bce.webp",DLife
+https://haru.charandom.blog/stream/jp/dlife/stream-output.m3u8?mode=hls
+
+
+============================ KOREA Channel ==============================
+
+#EXTINF:-1 tvg-id="CJ ENM" tvg-logo="https://cdn.imgchest.com/files/60797f81c953.jpg" group-title="iPTVplus", CJ ENM
+https://jmp2.uk/stvp-USBB2900001P9
+#EXTINF:-1 tvg-id="CJ ENM" tvg-logo="https://cdn.imgchest.com/files/60797f81c953.jpg" group-title="iPTVplus", CJ ENM
+https://d50a1g0nh14ou.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/CJ-ENM-prod/e91c6419_2e45_4f6c_a646_b912658d73b8/hls/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/c42b1a4e9f73.jpg", NEW KPOP (EU)
+https://newidco-newkid-1-eu.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://raw.githubusercontent.com/zaxacaasada/logotv/refs/heads/main/ShowChampion.png", Show Champion 
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=630	
+#EXTINF:-1 tvg-id="SBS KBC" tvg-logo="https://cdn.imgchest.com/files/d02f5ba10284.png" group-title="iPTVplus", RomCom K-Drama
+https://4df655f2.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctY2FfUm9tQ29tS0RyYW1hX0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-id=iPTVplus" tvg-logo="https://i.postimg.cc/tgZY1ck4/IMG-2189.png" group-title="iPTVplus", KMOVIES
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=595
+#EXTINF:-1 tvg-id="Ariang KOREA" tvg-logo="https://cdn.imgchest.com/files/ed631ead0049.jpg" group-title="iPTVplus", Arirang Korea
+https://amdlive-ch02-ctnd-com.akamaized.net/arirang_2ch/smil:arirang_2ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Ariang KOREA" tvg-logo="https://cdn.imgchest.com/files/1b7af52630f9.png" group-title="iPTVplus", Arirang V1
+http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/chunklist.m3u8
+#EXTINF:-1 tvg-id="Ariang KOREA" tvg-logo="https://cdn.imgchest.com/files/1b7af52630f9.png" group-title="iPTVplus", Arirang V2
+https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/HasBahCa.m3u8
+#EXTINF:-1 tvg-id="ArirangTV.kr@HD" tvg-logo="https://cdn.imgchest.com/files/1b7af52630f9.png" group-title="iPTVplus", Arirang V3
+https://dash3.antik.sk/live/test_arirang/playlist.m3u8
+#EXTINF:-1 tvg-id="Ariang KOREA" tvg-logo="https://cdn.imgchest.com/files/1b7af52630f9.png" group-title="iPTVplus", Arirang V4
+http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/1b7af52630f9.png" group-title="iPTVplus", Arirang V5
+http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/chunklis.m3u8
+
+#EXTINF:-1 group-title="iPTVplus",New K movies and Series
+https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991386
+
+#EXTINF:-1 tvg-id="SBS KBC" tvg-logo="https://cdn.imgchest.com/files/762b858b1c85.png" group-title="iPTVplus", SBS KBC
+https://vod.ikbc.co.kr/KBCTV/tv/playlist.m3u8
+#EXTVLCOPT:http-user-agent=(Windows NT 10.0; Win64; x64) PotPlayer/24.06.18
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/8fe2669c88ee.png", group-title="iPTVplus", tvN1 V1
+https://d2zyqoz1zsj2mq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-i9yul1lyegl6e-ssai-prd/6d07fe2a_003a_4879_acfc_44e3c3c10f03/hls/playlist.m3u8
+#EXTVLCOPT:http-user-agent=(Windows NT 10.0; Win64; x64) PotPlayer/24.06.18
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/8fe2669c88ee.png", group-title="iPTVplus", tvN1 V2
+https://d2zyqoz1zsj2mq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-i9yul1lyegl6e-ssai-prd/6d07fe2a_003a_4879_acfc_44e3c3c10f03/hls/playlist.m3u8
+#EXTVLCOPT:http-user-agent=(Windows NT 10.0; Win64; x64) PotPlayer/24.06.18
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/8fe2669c88ee.png", group-title="iPTVplus", tvN2
+https://d21dxaer0ypwk1.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-a6m2cy2rylsvo-ssai-prd/54ac8e25_eb5a_4f10_ba20_ffb254f0a16c/hls/playlist.m3u8
+#EXTVLCOPT:http-user-agent=(Windows NT 10.0; Win64; x64) PotPlayer/24.06.18
+#EXTINF:-1 tvg-logo="https://cdn.imgchest.com/files/8fe2669c88ee.png", group-title="iPTVplus", tvN3
+https://d25mdvvpht3395.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-p8ea370fl7r4f-ssai-prd/82f296fd_2916_45b7_b799_525a4226957a/hls/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/6543d5ae7264.png",ebs1family
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/chunklist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/6543d5ae7264.png",ebs2family
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://ebsonair.ebs.co.kr/ebs2familypc/familypc1m/chunklist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/6543d5ae7264.png",plus1family
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://ebsonair.ebs.co.kr/plus1familypc/familypc1m/chunklist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/6543d5ae7264.png",plus2family
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://ebsonair.ebs.co.kr/plus2familypc/familypc1m/chunklist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/6543d5ae7264.png",plus3family
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://ebsonair.ebs.co.kr/plus3familypc/familypc1m/chunklist.m3u8
+
+
+============================ Documentary ==============================
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/f44d99b7bd03.jpg", Love Nature
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://restream.pdtvhd.com/memfs/9e6205cb-2c2c-41ed-a7e5-831ccaade4d1_output_0.m3u8?session=Y4aTwJ4we6Prwex6nMW55z
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBA3400003IP_20251125T030751SQUARE.png",Love Nature 4K
+https://jmp2.uk/stvp-USBA3400003IP
+
+
+#EXTINF:-1 tvg-id="th" group-title="iPTVplus" tvg-logo="https://i.postimg.cc/rFscPFcF/IMG-2948.png", World Animal
+http://49.0.64.96:8007/Animal
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://i.postimg.cc/5yFyB8yK/IMG-3100.png", World Science
+http://49.0.64.96:8007/WSCI
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/933719ce893d.png",Animal Planet
+http://1tvnow.icu:8080/majoraries@yahoo.com/majoraries@2023/17870
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/bd55d6e58874.png",CTV wild Channel
+http://1tvnow.icu:8080/majoraries@yahoo.com/majoraries@2023/57377
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/CGTN_Documentary_logo.png", CGTN Documentary
+http://119.82.250.109:8080/nl.m3u8?id=1021
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/583d159f1a66.jpg", 5-Minute Craft
+https://soul-5mincrafteng-rakuten.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/f574a2bccd00.jpg", LIVE X LIVE TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; arm_64; Android 9; MI 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 YaBrowser/20.2.1.120.00 Yptp/1.32 Mobile Safari/53
+https://livexlive2.akamaized.net/hls/live/2013184/linear_1/master.m3u8
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/42b31bd3433c.jpg",Animal Show
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/animalshow/playlist.m3u8
+ 
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/5944e14c1b6f.webp",สำรวจโลก
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/samrujlok/playlist.m3u8
+
+
+
+
+============================ MIX ==============================
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/d77ee2e32f07.jpg",Kung Fu+ V1
+https://streams.sofast.tv/ptnr-yupptv/title-KUNG-FU-ENG_yupptv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/06862a07-6a92-4b4d-abc3-5fea131713b5/manifest.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/d77ee2e32f07.jpg",Kung Fu+ V2
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/06862a07-6a92-4b4d-abc3-5fea131713b5/manifest.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/4d111aec446e.webp",Action Hollywood Movies
+https://lightning-actionhollywood-xiaomi.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/e49be05a7f32.jpg",Horror TV V1
+https://streams.sofast.tv/ptnr-yupptv/title-HORROR-TV-ENG_yupptv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/93dc292b-cbcf-4988-ab97-94feced4c14b/master.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/e49be05a7f32.jpg",Horror TV V2
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/93dc292b-cbcf-4988-ab97-94feced4c14b/manifest.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/74fd657e2349.jpg",Alien Nation
+https://linear-888.frequency.stream/dist/xumo/888/hls/master/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/cf6dcc3adf20.png",21 Jump Street
+https://cb562753.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1XzIxSnVtcFN0cmVldF9ITFM/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/5aee6b6fca55.jpg",24 Hour Free Movies
+https://d15690s323oesy.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDUDigital-Production/145.m3u8
+#EXTINF:-1 tvg-id="Portlandia" tvg-logo="https://cdn.imgchest.com/files/f98e3b7a1fb8.png" group-title="iPTVplus",Portlandia
+https://amc-portlandia-1-us.xumo.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/32913e4babba.webp",Bang Bang TV
+https://streams.sofast.tv/ptnr-yupptv/title-BANG-BANG-TV-ENG_yupptv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/6a98fce2-bf4c-4bfb-91f4-c43851bb3801/manifest.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US2500009PQ_20250923T020542SQUARE.png",BET x Tyler Perry Comedy
+https://jmp2.uk/stvp-US2500009PQ
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US2500008CV_20250923T020544SQUARE.png",BET x Tyler Perry Drama
+https://jmp2.uk/stvp-US2500008CV
+
+
+
+
+============================ News Channel ==============================
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://m.media-amazon.com/images/I/31TqBcQUlcL.png",Al Jazeera English HD
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/al-jazeera-english-hd/playlist.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/ce01a5d2ab3a.webp",CCTV4 HD
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/cctv4/playlist.m3u8    
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/d1424714a38c.png",CCTV 4 SD
+https://cdnbal1.indihometv.com/atm/DASH/CCTV_4/CCTV_4-.mpd
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/d1424714a38c.png",CCTV 4 SD
+https://cdnbal1.indihometv.com/atm/DASH/CCTV_4/CCTV_4-avc7_2500000.mpd
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/20f066b6822f.png",CCTV5
+http://38.75.136.137:98/gslb/dsdqpub/cctv5hd.m3u8?auth=testpub
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/3230e245c32b.webp",WCPO-TV 9.1
+http://stream.cammonitorplus.net/1754/index.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a033224483f5.jpg",WLS-DT1
+http://stream.cammonitorplus.net/1750/index.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/de87a24c4234.jpg",WMAR-TV 2.1
+http://stream.cammonitorplus.net/1742/index.m3u8
+
+
+
+#EXTINF:-1 tvg-id="FOX Weather" tvg-logo="https://cdn.imgchest.com/files/c2f9e2e00f11.webp" group-title="iPTVplus",FOX Weather
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01542-foxweatherllc-weather-vizious/playlist.m3u8?did=%7bADID%7d&us_privacy=%7bUSPRIVACY%7d&ifa_type=%7bIFATYPE%7d&lmt=%7bLMT%7d&app_name=%7bAPP_NAME%7d&app_bundle=%7bAPP_BUNDLE%7d&app_store_url=%7bAPP_STORE_URL%7d&url=%7bDOMAIN%7d&dnt=%7bDNT%7d&coppa=%7bCOPPA%7d&device_make=%7bDEVICE_MAKE%7d&w=%7bWIDTH%7d&h=%7bHEIGHT%7d&skip=%7bSKIPPABLE%7d&vizdartoken=eyJhdWQiOiI5MyIsIndmcGNpZCI6MzgyNTA3NzYzNX0
+#EXTINF:-1 tvg-id="BBC News" tvg-logo="https://cdn.imgchest.com/files/3f8bba6b088a.webp" group-title="iPTVplus",BBC News
+https://b638a299.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/Vml6aW9fQkJDTmV3c19ITFM/playlist.m3u8?ads.wurl_channel=1655&ads.wurl_name=BBCNews&ads.coppa=0&ads.psid=%7bADID%7d&ads.targetopt=%7bTARGETOPT%7d&ads.us_privacy=%7bUSPRIVACY%7d&ads.ifa_type=%7bIFATYPE%7d&ads.lmt=%7bLMT%7d&ads.app_bundle=%7bAPP_BUNDLE%7d&ads.app_name=%7bAPP_NAME%7d&ads.app_store_url=%7bAPP_STORE_URL%7d&ads.url=%7bDOMAIN%7d&ads.w=%7bWIDTH%7d&ads.h=%7bHEIGHT%7d&ads.device_make=%7bDEVICE_MAKE%7d&ads.vizdartoken=eyJhdWQiOiI5OCIsIndmcGNpZCI6NDE5MjUxMjY1NX0
+#EXTINF:-1 tvg-id="BBC News" tvg-logo="https://cdn.imgchest.com/files/3f8bba6b088a.webp" group-title="iPTVplus",BBC News
+https://d3pxo1qcgzxtxs.cloudfront.net/10005/99951298/hls/playlist.m3u8?ads.xumo_channelId=99951298
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/e372b08dcb41.jpg",23 ABC
+https://content.uplynk.com/channel/ff809e6d9ec34109abfb333f0d4444b5.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0172.png" group-title="iPTVplus",CNN International
+https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/69e6034c8658.webp" group-title="iPTVplus",Global News
+http://live.corusdigitaldev.com/groupd/live/49a91e7f-1023-430f-8d66-561055f3d0f7/live.isml/.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE///channelicon/0121.png" group-title="iPTVplus",DW English
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE///channelicon/R_0122.png" group-title="iPTVplus",CNA
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUAFFJLPngPjCb-HsHDYvLn_2u3NLgkTmldTRSOCyPTvMQKfaBKdeGD1PZGtNpYbBD9JM&usqp=CAU" group-title="iPTVplus",TRT World
+http://tv-trtworld.medya.trt.com.tr/master_1080.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/f5921ecb6b1c.png" group-title="iPTVplus",Boomberg News
+https://www.bloomberg.com/media-manifest/streams/asia-event.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/10e56d216777.webp" group-title="iPTVplus",SkyNews
+https://skynewsau-live.akamaized.net/hls/live/2002691/skynewsau-extra3/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//RTChannel.png" group-title="iPTVplus",Rusia Today
+https://rt-glb.rttv.com/live/rtnews/playlist_4500Kb.m3u8
+
+
+
+
+
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/fa9bccc97361.png",  SEC Network (US)
+http://23.237.104.106:8080/USA_SEC_NETWORK/index.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/d5c514823c0a.png", USA_5STARMAX
+http://23.237.104.106:8080/USA_5STARMAX/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/48ded31978f9.png", USA_BOUNCE
+http://23.237.104.106:8080/USA_BOUNCE/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/b3a43b2f77fe.png", USA_DESTINATION_AMERICA
+http://23.237.104.106:8080/USA_DESTINATION_AMERICA/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/97ded107f281.jfif", cooking channel
+http://23.237.104.106:8080/USA_COOKING/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/b35f92a680cc.png", comedy central
+http://23.237.104.106:8080/USA_COMEDY_CENTRAL/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/eb6e50703112.png", cinemax
+http://23.237.104.106:8080/USA_CINEMAX/index.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/e7b486c28c07.webp", USA_MTV_LIVE
+http://23.237.104.106:8080/USA_MTV_LIVE/index.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/b922ab81c208.webp",MTV East
+http://84.17.50.102/mtv/index.m3u8
+
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/88daf499cc88.png", MaldivesTV
+https://lana.psm.mv/live/mtv.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/137ec38fabd6.jpg", NBC
+http://41.205.64.66/NBC/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/9f7c61e334df.jpg", ion
+http://app.horizonpanel.net:80/TimmyBrown22/a8Sg1N94/1004441
+
+
+
+
+
+
+
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a22bb8971765.jpg",  BBC NEWS
+http://23.237.104.106:8080/USA_BBC_NEWS/index.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/b6726f556448.jpg",  BBC impossible
+https://bbc-impossible-1-us.xumo.wurl.tv/1200.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/ad6068fddfe8.png",  BBC Antiquesroad Show
+https://bbc-antiquesroadshowuk-1-us.plex.wurl.tv/512.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/80bae36569d3.jpg",  BBC Comedy
+https://bbc-comedy-1-us.plex.wurl.tv/1200.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/11d22c6f2eaa.png",  IFC
+http://23.237.104.106:8080/USA_IFC/index.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/d397c7ea0643.webp", MOREMAX
+http://23.237.104.106:8080/USA_MOREMAX/index.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/6b5e183ac735.webp", YES Network
+http://23.237.104.106:8080/USA_YES_NETWORK/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/416c06f45fa0.webp",  We TV (US)
+http://23.237.104.106:8080/USA_WE_TV/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/99c46f6c5537.webp",  Vice TV (US)
+http://23.237.104.106:8080/USA_VICETV/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/627114ef6896.png",  VH1 (US)
+http://23.237.104.106:8080/USA_VH1/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/583ddef2ab91.png",  5 StarMax (US)
+http://23.237.104.106:8080/USA_5STARMAX/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/62bb932ca12d.png",  Starz (US)
+http://23.237.104.106:8080/USA_STARZ/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/db450a79b299.png",  Outdoor Channel (US)
+http://23.237.104.106:8080/USA_OUTDOOR/mpegts
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/f8369c346a93.jpg",  National Geographic (US)
+http://23.237.104.106:8080/USA_NAT_GEO/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/c019a2e35554.png",  MTV (US)
+http://23.237.104.106:8080/USA_MTV/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/b138bc7d5184.png",  MSG (US)
+http://23.237.104.106:8080/USA_MSG/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/fa4b9778cd77.png",  Syfy (US)
+http://23.237.104.106:8080/USA_SYFY/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/349090a57642.jpg",  Showtime (US)
+http://23.237.104.106:8080/USA_SHOWTIME/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/4b6988c19799.png",  Nickelodeon (US)
+http://23.237.104.106:8080/USA_NICKELODEON/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/6f60b12327dc.png",  Lifetime Movie Network (US)
+http://23.237.104.106:8080/USA_LMN/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/792c5b4baa3c.png",  HLN (US)
+http://23.237.104.106:8080/USA_HLN/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/7f7a51b50b66.png",  Paramount Network (US)
+http://23.237.104.106:8080/USA_PARAMOUNT_NETWORK/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/ebb8e115fa42.png",  HBO Zone (US)
+http://23.237.104.106:8080/USA_HBO_ZONE/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/172921fbdb31.png",  HBO 2 (US)
+http://23.237.104.106:8080/USA_HBO2/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/c5a369816033.jfif",  HBO (US)
+http://23.237.104.106:8080/USA_HBO/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/143afe1ac65c.png",  Cinemax (US)
+http://23.237.104.106:8080/USA_CINEMAX/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/26a1b21fec3c.jpg",BBC America
+https://bcovlive-a.akamaihd.net/7f5ec16d102f4b5d92e8e27bc95ff424/us-east-1/6240731308001/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/5f92abf3d389.png",  Hallmark Channel (US)
+http://23.237.104.106:8080/USA_HALLMARK/index.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/5f92abf3d389.png",Hallmark Channel East
+http://84.17.50.102/hallmark/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/6b3ef4f43f4f.png",  FXX (US)
+http://23.237.104.106:8080/USA_FXX/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/3214efd35478.png",  FX (US)
+http://23.237.104.106:8080/USA_FX/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/2fe34c46ee67.png",  FUSE (US)
+http://23.237.104.106:8080/USA_FUSE/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/1c5a30042ffb.png",  Food Network (US)
+http://23.237.104.106:8080/USA_FOOD_NETWORK/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/f61dcf0a7f03.png",  E! Entertainment (US)
+http://23.237.104.106:8080/USA_E/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/aa496726c25e.png",  Discovery Channel (US)
+http://23.237.104.106:8080/USA_DISCOVERY/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/87dc7f867ad3.png",  Crime & Investi...on Network (US)
+http://23.237.104.106:8080/USA_CRIME_INVESTIGATION/mpegts
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/433184107e33.png",  CMT (US)
+http://23.237.104.106:8080/USA_CMT/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/ae5ff8c59667.jpg",  Comedy Central (US)
+http://23.237.104.106:8080/USA_COMEDY_CENTRAL/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/43ec8df66801.jpg",  Disney Junior (US)
+http://23.237.104.106:8080/USA_DISNEY_JUNIOR/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/50fc70e92c5f.jpg",  Disney XD (US)
+http://23.237.104.106:8080/USA_DISNEY_XD/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/affd3035b8f9.jpg",  Cartoon Network (US)
+http://23.237.104.106:8080/USA_CARTOON_NETWORK/index.m3u8
+
+
+
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/d58ca77814cc.webp",National Geographic East
+http://84.17.50.102/nationalgeographic/index.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/887f386d476b.png",National Geographic Wild East
+http://84.17.50.102/natgeowild/index.m3u8
+
+
+
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/77b2361f0e39.webp", BET
+http://app.horizonpanel.net:80/TimmyBrown22/a8Sg1N94/1004471
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/58db20ac67a1.png", Pet Club
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-petclub-samsungnz/playlist.m3u8
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/afa49b6915a6.webp", Cartoonito
+http://rocketfx.uk:8080/live/AlexT/pBTQhu55mV/f20a48dc-d136-4bb4-9161-f61b6d06d317.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a504ba7aa7c8.jpg", BLAZE
+http://rocketfx.uk:8080/live/AlexT/pBTQhu55mV/851c0d8a-fbf0-4fc8-8634-27c75226a93d.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/57b0a8defcb4.png",BBC CBBC
+http://rocketfx.uk:8080/live/AlexT/pBTQhu55mV/4e696c7f-e64a-4eb7-b175-ebfcd7089fd8.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/642bc945305f.jpg",NBCSN
+http://84.17.50.102/nbcsports/index.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/f1e1d4fe0f2b.webp", FIFA+
+https://d2w9q46ikgrcwx.cloudfront.net/v1/sysdata_s_p_a_fifa_7/samsungheadend_us/latest/main/hls/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", Sport
+http://app.horizonpanel.net:80/TimmyBrown22/a8Sg1N94/1004405
+
+
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/72685324336d.png", CBS NY
+http://app.horizonpanel.net:80/TimmyBrown22/a8Sg1N94/1004467
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/0a0c96e6dc3e.png", TLC-HD
+https://cdn3.ayitistream.com/TLC-HD/index.m3u8
+
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/efd90f6d98c7.png", FILMBOX
+http://193.239.186.231/FILMBOX/index.m3u8
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/24950a0001ee.png", BBCTWO
+http://41.205.93.154/BBCTWO/index.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/e2477db1d520.png", BBCONE
+http://41.205.93.154/BBCONE/index.m3u8
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/0a69572fe55c.jpg", TATA Play
+http://66.102.126.10:8000/play/a076/index.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/2a80c510cfd4.webp", TYC Sport Fan
+https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/46e670d394f9.jpg",Al Iraqia Sport (720p)
+https://imn-live.esite-lab.com/hls/iraqia-sports-1.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/4467c88cdd56.webp",Africa 24 Sport (1080p)
+https://africa24.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
+
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/41898eb12278.png", Star Life
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://restream.pdtvhd.com/memfs/12e0742d-8262-44ba-aa3c-8317dbd35ac4_output_0.m3u8?session=GKvRdzbLhzeGS55DUAJoZ8
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/1fbe4d314ee4.jpg",espn
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://streamvidex.qzz.io/videx/espn/index.m3u8
+
+
+
+####################################################################################################
+####################################################################################################
+####################################################################################################
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/6d3b70101aff.webp",DOAC
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://d27cdwalt3313h.cloudfront.net/TheDiaryofACEO_GB.m3u8
+
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/159a40e147c6.png", godstands.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://online.godstands.tv:5443/WebRTCApp/streams/kidsenglish.m3u8
+
+
+
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/9ce5b09c2e95.png",TSC
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/master.m3u8
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/89ed80ad39a5.png", Montana PBS
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+http://restream-live.realiptv.to:8080/live/monstercable/Dq6jjknxCr/597139.ts
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/e60426ac59fe.jpeg", TENNISTV2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+http://41.205.93.154:80/TENNISTV/index.m3u8
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/4ebae67007da.webp",Grit Xtra
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01438-ewscrippscompan-gritxtra-tablo/playlist.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="",Star
+http://premiumclub.streamtv.to:8080/Fratila/VQlMIcx3iE/783
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/47ad6776c55e.webp", Telemundo 
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/3878
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/47ad6776c55e.webp", Telemundo Internacional
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+http://138.121.15.230:9002/TELEMUNDO/index.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/4a3dd192244b.png",Fox 29
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/2540
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/649dd5d17842.jpg",CarToon
+https://jmp2.uk/plu-5d14fb6c84dd37df3b4290c5.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/a9c74791a9a0.jpg", Toon (SUB.ENG)
+https://jmp2.uk/plu-5f7790b3ed0c88000720b241.m3u8
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="",Servus TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://rbmn-live.akamaized.net/hls/live/665268/Wetterpanorama/master_6692.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/25f20a4defa7.jpg",ESKA TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+http://88b9da48.kazmazpaz.ru:80/iptv/MVTMCC4UTAZVDT/19173/manifest.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/25f20a4defa7.jpg",ESKA TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+http://88b9da48.kazmazpaz.ru:80/iptv/MVTMCC4UTAZVDT/19172/manifest.m3u8
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/37896b0ceac1.png", 39 Extra
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://wpptdt.lls.pbs.org/wpptdt-hls.m3u8
+
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/c24ed4f5e755.png",Sport Channel
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://raw.githubusercontent.com/B-inal-123/olahraga-s/refs/heads/inal-22/Bulutangkis1.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================ Radio ==============================
+
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://i.postimg.cc/sxyZD7F8/IMG-3510.png", Hot Wave 
+https://atimehd.smartclick.co.th/hotwave/hls/hotwave.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://i.postimg.cc/g08JXjKP/IMG-3512.png", Green Wave 
+https://atimehd.smartclick.co.th/greenwave/hls/greenwave.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://i.postimg.cc/BvYhFZZM/IMG-3508.png", EFM 94
+https://atimevideo.smartclick.co.th/live/efmlive.sdp/chunklist_w696502376.m3u8
+#EXTINF:-1 tvg-id="Cable.th" group-title="iPTVplus" tvg-logo="https://i.postimg.cc/3wMR6SDt/IMG-2515.png", ลูกทุ่งเน็ตเวิร์ค
+http://vip.login.in.th:1935/looktungnetwork1/looktungnetwork1/playlist.m3u8
+
+
+
+ 
+       
+           
+        
+  
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/0aa84e109730.webp", indosiarTV
+https://raw.githubusercontent.com/B-inal-123/arabasta-s/refs/heads/main/indosiarTV.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/0aa84e109730.webp", indosiarTV
+https://raw.githubusercontent.com/B-inal-123/arabasta-s/refs/heads/main/timnas1.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/0aa84e109730.webp", indosiarTV
+https://raw.githubusercontent.com/B-inal-123/arabasta-s/refs/heads/main/timnas2.m3u8    
+
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/e340a0dd5de8.png", mysci
+#EXTVLCOPT:http-referrer=https://github.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/mysci.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="https://cdn.imgchest.com/files/18ba6a65e460.png", truethaifilm
+#EXTVLCOPT:http-referrer=https://github.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/truethaifilm1.m3u8
+
+
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", hgtv00
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/hgtv00.m3u8
+
+
+
+
+
+
+
+
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", toonami aftermath movies
+http://api.toonamiaftermath.com:3000/movies/playlist.m3u8?checkedby:iptvcat.com
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", Malhacao Fast
+https://dfr80qz435crc.cloudfront.net/EFGH/Amagi/Globo/Malhacao_Fast_BR/1080p-vtt/index.m3u8
+
+
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", Angrybird
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/Angrybird.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", MrBean
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/MrBean.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", Scoobybo
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/Scoobybo.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", Tom&Jerry
+https://raw.githubusercontent.com/AusawinNuang/AusawinChannel/refs/heads/main/Tom&Jerry.m3u8
+
+
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", Animalplanet
+https://raw.githubusercontent.com/AusawinNuang/kids/refs/heads/main/Animalplanet.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", Babytv
+https://raw.githubusercontent.com/AusawinNuang/kids/refs/heads/main/Babytv.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", Boomerang
+https://raw.githubusercontent.com/AusawinNuang/kids/refs/heads/main/Boomerang.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", Cartonito
+https://raw.githubusercontent.com/AusawinNuang/kids/refs/heads/main/Cartonito.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", CartoonNetwork
+https://raw.githubusercontent.com/AusawinNuang/kids/refs/heads/main/CartoonNetwork.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", Skykids
+https://raw.githubusercontent.com/AusawinNuang/kids/refs/heads/main/Skykids.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", /discovery00
+https://raw.githubusercontent.com/AusawinNuang/kids/refs/heads/main/discovery00.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", discoveryhistory00
+https://raw.githubusercontent.com/AusawinNuang/kids/refs/heads/main/discoveryhistory00.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", discoveryinvestigation00
+https://raw.githubusercontent.com/AusawinNuang/kids/refs/heads/main/discoveryinvestigation00.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", /discoveryscience00
+https://raw.githubusercontent.com/AusawinNuang/kids/refs/heads/main/discoveryscience00.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", discoveryturbo00
+https://raw.githubusercontent.com/AusawinNuang/kids/refs/heads/main/discoveryturbo00.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", disneyJR00
+https://raw.githubusercontent.com/AusawinNuang/kids/refs/heads/main/disneyJR00.m3u8
+#EXTINF:-1 tvg-id="TN.us" group-title="iPTVplus" tvg-logo="", disneyXD00
+https://raw.githubusercontent.com/AusawinNuang/kids/refs/heads/main/disneyXD00.m3u8
+
+
+
+
+
