@@ -37,6 +37,8 @@ http://103.114.203.129:8080/toom/12345/30
 http://103.114.203.129:8080/toom/12345/31
 #EXTINF:-1 tvg-id="iptv36.thairath" tvg-name="THAIRATH 32" tvg-logo="http://103.114.203.129:8080/images/c6aa3fec31946a704e1c60a747b001b0.jpg" group-title="ดิจิตอลทีวี",THAIRATH 32
 http://103.114.203.129:8080/toom/12345/17578
+#EXTINF:-1 group-title="ดิจิตอลทีวี" tvg-logo="https://cdn.imgchest.com/files/a31d18346fa4.jpg", Thairath TV V3
+http://45.144.166.242:1935/ThairathTV/t3_thairathtv/playlist.m3u8
 #EXTINF:-1 group-title="ดิจิตอลทีวี" tvg-logo="https://cdn.imgchest.com/files/a31d18346fa4.jpg", Thairath TV V2
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=4b2bff3e598043cfaf949305e3d153fa:545df84ff4c54af6b5385516e0f65956
