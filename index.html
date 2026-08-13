@@ -1,1140 +1,966 @@
-<!DOCTYPE html>
-<html lang="th">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>IPTV_turk</title>
-    
-
-  </head>
-    
-  <body>
-      
-      
-  <div id="loader">
-
-    <div class="pulse">ANIK BOSS</div>
-
-    <div style="color: #666; margin-top: 10px; font-size: 10px; letter-spacing: 2px;">LOADING SECURE IPTV...</div>
-
-  </div>
-
-  <nav class="top-nav">
-
-    <div class="logo">ANIK BOSS IPTV</div>
-
-    <div class="dashboard-stats">
-
-      <div class="stat-item"><i class="fas fa-location-arrow"></i><span id="location-name">...</span></div>
-
-      <div class="stat-item"><i class="fas fa-temperature-high"></i><span id="temp">--°C</span></div>
-
-      <div class="stat-item"><i class="fas fa-clock"></i><span id="clock">00:00</span></div>
-
-    </div>
-      
-  <!DOCTYPE html>
-<html lang="en">
+<!DOC PYE <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPTV Master: Sanalkanal Portal Edition</title>
-    
-    <link rel="preconnect" href="https://dlhd.link" crossorigin>
-    <link rel="dns-prefetch" href="https://dlhd.link">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.0/dist/hls.min.js"></script>
-    
-    <style>
-        :root {
-            --bg-deep: #050505;
-            --bg-glass: rgba(20, 20, 30, 0.95);
-            --bg-card: rgba(255, 255, 255, 0.05);
-            --bg-card-hover: rgba(255, 255, 255, 0.15);
-            --accent-yellow: #ffd700;
-            --accent-purple: #b983ff;
-            --accent-red: #ff4757;
-            --accent-cyan: #00e5ff;
-            --accent-green: #00b894; 
-            --accent-orange: #ff9f43;
-            --accent-gold: #e58e26; /* Premium Gold */
-            --text-main: #ffffff;
-            --text-dim: #aaaaaa;
-            --tv-bezel: #151515;
-            --font-ui: 'Segoe UI', system-ui, sans-serif;
-        }
-
-        * { box-sizing: border-box; outline: none; -webkit-tap-highlight-color: transparent; }
-
-        body {
-            margin: 0; padding: 0;
-            font-family: var(--font-ui);
-            background-color: var(--bg-deep);
-            background-image: radial-gradient(circle at 50% 0%, #1a1a2e 0%, #000000 80%);
-            color: var(--text-main);
-            height: 100vh;
-            display: flex; flex-direction: column; overflow: hidden;
-        }
-
-        /* --- LOAD SCREEN --- */
-        #loadScreen {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            z-index: 100;
-            display: flex; flex-direction: column; align-items: center; justify-content: center;
-            background: rgba(5,5,5,0.98);
-            padding: 20px;
-            transition: opacity 0.5s;
-        }
-
-        .load-box {
-            background: var(--bg-glass);
-            padding: 40px; border-radius: 24px;
-            width: 100%; max-width: 650px;
-            box-shadow: 0 0 60px rgba(0,0,0,0.6);
-            border: 1px solid rgba(255,255,255,0.08);
-            text-align: center;
-            max-height: 90vh; overflow-y: auto;
-        }
-
-        h2 { font-weight: 300; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 30px; font-size: 1.8rem; }
-        h2 span { font-weight: 800; color: var(--accent-yellow); text-shadow: 0 0 15px rgba(255, 215, 0, 0.4); }
-
-        .input-row { display: flex; gap: 10px; margin-bottom: 15px; }
-        .url-input {
-            flex: 1; background: rgba(0,0,0,0.5); border: 2px solid #333;
-            color: #fff; padding: 15px; border-radius: 12px; font-size: 1rem; transition: 0.3s;
-        }
-        .url-input:focus { border-color: var(--accent-cyan); box-shadow: 0 0 15px rgba(0, 229, 255, 0.2); }
-
-        /* Login Forms (Xtream & Stalker) */
-        .login-form {
-            display: none; background: rgba(255, 255, 255, 0.03);
-            padding: 20px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 20px; animation: slideDown 0.3s ease;
-        }
-        
-        #xtreamForm { border-color: rgba(0, 229, 255, 0.2); background: rgba(0, 229, 255, 0.05); }
-        #stalkerForm { border-color: rgba(255, 159, 67, 0.2); background: rgba(255, 159, 67, 0.05); }
-
-        @keyframes slideDown { from {opacity:0; transform:translateY(-10px);} to {opacity:1; transform:translateY(0);} }
-
-        .form-input {
-            width: 100%; background: #000; border: 1px solid #444;
-            color: #fff; padding: 12px; border-radius: 8px; margin-bottom: 10px;
-            font-size: 0.95rem; font-family: monospace;
-        }
-        .form-input:focus { border-color: var(--accent-cyan); }
-        
-        /* Specific styling for Stalker inputs */
-        .stalker-input:focus { border-color: var(--accent-orange); }
-
-        .btn-action {
-            width: 100%; padding: 16px; border-radius: 12px; border: none;
-            font-weight: 700; font-size: 1rem; cursor: pointer;
-            transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 10px;
-            margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;
-        }
-        .btn-action:hover { transform: translateY(-2px); filter: brightness(1.1); }
-        
-        .btn-yellow { background: var(--accent-yellow); color: #000; }
-        .btn-purple { background: linear-gradient(135deg, #a55eea, #8854d0); color: #fff; }
-        .btn-red { background: linear-gradient(135deg, #ff4757, #ff6b81); color: #fff; }
-        .btn-cyan { background: linear-gradient(135deg, #00e5ff, #00a8ff); color: #000; }
-        .btn-green { background: linear-gradient(135deg, #00b894, #00cec9); color: #000; }
-        .btn-orange { background: linear-gradient(135deg, #ff9f43, #ee5253); color: #000; }
-        .btn-gold { background: linear-gradient(135deg, #f1c40f, #e67e22); color: #000; }
-        .btn-dark { background: rgba(255,255,255,0.1); color: #fff; }
-        
-        .section-divider { 
-            display: flex; align-items: center; margin: 30px 0; color: var(--text-dim); font-size: 0.8rem; letter-spacing: 2px;
-        }
-        .section-divider::before, .section-divider::after {
-            content: ""; flex: 1; height: 1px; background: rgba(255,255,255,0.1); margin: 0 10px;
-        }
-
-        /* --- LIST VIEW --- */
-        #listView {
-            padding: 30px; height: 100%; width: 100%; max-width: 1400px; margin: 0 auto;
-            display: none; flex-direction: column;
-        }
-
-        .search-container { position: relative; margin-bottom: 25px; }
-        .search-input {
-            width: 100%; background: var(--bg-card); border: 1px solid rgba(255,255,255,0.1);
-            padding: 18px 25px 18px 50px; border-radius: 50px; color: #fff; font-size: 1.1rem;
-            backdrop-filter: blur(5px);
-        }
-        .search-icon { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); color: var(--text-dim); }
-
-        .list-content { 
-            flex: 1; overflow-y: auto; 
-            display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
-            gap: 15px; padding-bottom: 20px;
-            transform: translateZ(0); 
-        }
-        .list-content::-webkit-scrollbar { width: 6px; }
-        .list-content::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; }
-
-        .channel-card {
-            background: var(--bg-card);
-            border: 1px solid rgba(255,255,255,0.05);
-            border-radius: 12px; padding: 15px;
-            display: flex; align-items: center; gap: 15px;
-            transition: 0.2s; cursor: pointer;
-            position: relative; overflow: hidden;
-        }
-        .channel-card:hover { background: var(--bg-card-hover); border-color: rgba(255,255,255,0.3); transform: scale(1.02); }
-
-        .card-logo {
-            width: 50px; height: 50px; border-radius: 10px;
-            background: #000; display: flex; align-items: center; justify-content: center;
-            font-weight: bold; color: #555; overflow: hidden; flex-shrink: 0;
-        }
-        .card-logo img { width: 100%; height: 100%; object-fit: cover; }
-
-        .card-info { flex: 1; min-width: 0; }
-        .card-title { 
-            font-weight: 600; font-size: 1rem; margin-bottom: 4px; 
-            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; 
-        }
-        .card-meta { display: flex; gap: 6px; font-size: 0.75rem; }
-        
-        .badge { padding: 3px 8px; border-radius: 4px; font-weight: 700; text-transform: uppercase; font-size: 0.65rem; }
-        .bg-cyan { background: rgba(0, 229, 255, 0.15); color: var(--accent-cyan); }
-        .bg-purple { background: rgba(185, 131, 255, 0.15); color: var(--accent-purple); }
-        .bg-green { background: rgba(0, 184, 148, 0.15); color: var(--accent-green); }
-        .bg-orange { background: rgba(255, 159, 67, 0.15); color: var(--accent-orange); }
-        .bg-gold { background: rgba(255, 215, 0, 0.15); color: var(--accent-yellow); border: 1px solid rgba(255,215,0,0.3); }
-        .bg-gray { background: rgba(255,255,255,0.1); color: #aaa; }
-
-        /* --- PLAYER VIEW --- */
-        #playerView { display: none; height: 100vh; flex-direction: column; }
-        
-        .player-header {
-            height: 80px; display: flex; align-items: center; justify-content: space-between; 
-            padding: 0 40px; background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
-            z-index: 10;
-        }
-        .btn-back {
-            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.1); color: #fff;
-            padding: 10px 25px; border-radius: 30px; cursor: pointer;
-            display: flex; align-items: center; gap: 10px; font-weight: 600;
-            transition: 0.2s; backdrop-filter: blur(5px);
-        }
-        .btn-back:hover { background: rgba(255,255,255,0.25); }
-
-        #channelTitle {
-            font-size: 1.5rem; font-weight: 800; letter-spacing: 1px;
-            color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.8);
-            display: flex; align-items: center; gap: 10px;
-        }
-        #channelTitle span {
-            font-size: 0.8rem; background: var(--accent-yellow); color: #000;
-            padding: 2px 6px; border-radius: 4px; vertical-align: middle;
-        }
-
-        .player-body { flex: 1; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
-
-        .tv-frame {
-            background: var(--tv-bezel);
-            padding: 15px; border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.8);
-            position: relative; transition: all 0.5s ease;
-            width: 90%; max-width: 1200px;
-            transform: translateZ(0);
-            background-image: radial-gradient(#222 15%, transparent 16%), radial-gradient(#222 15%, transparent 16%);
-            background-size: 4px 4px;
-        }
-        
-        .screen-glass {
-            background: #000; border-radius: 8px; overflow: hidden;
-            border: 2px solid #000; position: relative;
-            width: 100%; aspect-ratio: 16/9;
-            box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
-        }
-
-        /* Scanlines */
-        .screen-glass::after {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%);
-            background-size: 100% 4px; pointer-events: none; opacity: 0.1; z-index: 5;
-        }
-
-        video, iframe { width: 100%; height: 100%; border: none; display: block; }
-        
-        #foxContainer, #daddyContainer { 
-            display: none; width: 100%; height: 100%; background: #000; 
-        }
-
-        .res-badge {
-            position: absolute; top: 15px; left: 15px; z-index: 20;
-            background: rgba(0,0,0,0.7); color: #00ff00; 
-            padding: 4px 8px; border-radius: 4px; font-family: monospace; font-size: 0.8rem;
-            pointer-events: none; border: 1px solid rgba(0,255,0,0.3);
-        }
-        
-        .screen-controls {
-            position: absolute; top: 15px; right: 15px; z-index: 20; display: flex; gap: 10px;
-        }
-        .ctl-btn {
-            background: rgba(0,0,0,0.7); border: 1px solid rgba(255,255,255,0.2);
-            color: #fff; width: 36px; height: 36px; border-radius: 50%;
-            cursor: pointer; display: flex; align-items: center; justify-content: center;
-            transition: 0.2s; backdrop-filter: blur(4px);
-        }
-        .ctl-btn:hover { background: #fff; color: #000; transform: scale(1.1); }
-        
-        /* Decorations */
-        .tv-speaker {
-            position: absolute; bottom: 15px; left: 35px; width: 120px; height: 15px;
-            background-image: linear-gradient(to right, #050505 50%, transparent 50%);
-            background-size: 4px 100%; opacity: 0.5;
-        }
-        .tv-knob {
-            width: 20px; height: 20px; background: #111; border-radius: 50%;
-            box-shadow: inset 0 1px 2px rgba(255,255,255,0.1), 0 2px 5px #000;
-            position: absolute; bottom: 15px; right: 35px;
-        }
-        
-        .player-body.is-fullscreen .tv-frame {
-            padding: 0; border-radius: 0; background: none; box-shadow: none; width: 100%; height: 100%; max-width: none;
-        }
-        .player-body.is-fullscreen .screen-glass { border-radius: 0; border: none; width: 100%; height: 100%; }
-        .player-body.is-fullscreen .tv-speaker, .player-body.is-fullscreen .tv-knob { display: none; }
-
-        @media (max-width: 768px) {
-            .load-box { padding: 20px; width: 95%; }
-            #listView { padding: 10px; }
-            .list-content { grid-template-columns: 1fr; gap: 10px; }
-            .player-header { padding: 0 15px; height: 60px; }
-            #channelTitle { font-size: 1.1rem; }
-            .tv-frame { padding: 0; width: 100%; border-radius: 0; }
-            .screen-glass { border-radius: 0; }
-            .tv-speaker, .tv-knob { display: none; }
-        }
-             {
-    margin: 0;
-    padding: 0;
-    background: black;
-    height: 100%;
-    overflow: hidden;
-  }
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* ครอบคลุมเต็มจอ */
-  }
-    </style>
-</head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <title>Fullscreen Video</title>
 <body>
 
-    <div id="loadScreen">
-        <div class="load-box">
-            <h2><span>SANALKANAL</span> IPTV <span>MASTER</span></h2>
-            
-            <div id="inputContainer">
-                <div class="input-row">
-                    <input type="text" class="url-input" value="https://iptv-org.github.io/iptv/index.m3u" placeholder="Playlist URL...">
-                    <button class="btn-action btn-red" onclick="removeRow(this)" style="width:50px; margin:0;"><i class="fa-solid fa-times"></i></button>
-                </div>
-            </div>
-            
-            <button class="btn-action btn-dark" onclick="addInputRow()">
-                <i class="fa-solid fa-plus"></i> Add M3U URL
-            </button>
+<font color="white">
+วันนี้
+<script>
+<!-- START HIDE
+print1="";
+print2="";
+print3="";
+today = new Date();
+weekday = today.getDay();
+if (weekday == 6) print1='วันเสาร์';
+if (weekday == 0) print1='วันอาทิตย์';
+if (weekday == 1) print1='วันจันทร์';
+if (weekday == 2) print1='วันอังคาร';
+if (weekday == 3) print1='วันพุธ';
+if (weekday == 4) print1='วันพฤหัสบดี';
+if (weekday == 5) print1='วันศุกร์';
+month = today.getMonth();
+if (month == 0) print2='เดือนมกราคม';
+if (month == 1) print2='เดือนกุมภาพันธ์';
+if (month == 2) print2='เดือนมีนาคม';
+if (month == 3) print2='เดือนเมษายน';
+if (month == 4) print2='เดือนพฤษภาคม';
+if (month == 5) print2='เดือนมิถุนายน';
+if (month == 6) print2='เดือนกรกฎาคม';
+if (month == 7) print2='เดือนสิงหาคม';
+if (month == 8) print2='เดือนกันยายน';
+if (month == 9) print2='เดือนตุลาคม';
+if (month == 10) print2='เดือนพฤศจิกายน';
+if (month == 11) print2='เดือนธันวาคม';
+date = today.getDate();
+year=today.getYear();
+document.write (print1,'ที่ ',date, ' ', print2,' พศ. ',year+2443);
+// STOP HIDE --></script>
 
-            <button class="btn-action btn-cyan" onclick="toggleForm('xtreamForm')">
-                <i class="fa-solid fa-server"></i> Connect via Xtream Codes
-            </button>
 
-            <div id="xtreamForm" class="login-form">
-                <input type="text" id="xcUrl" class="form-input" placeholder="URL (e.g. http://server.com:8080)">
-                <input type="text" id="xcUser" class="form-input" placeholder="Username">
-                <input type="text" id="xcPass" class="form-input" placeholder="Password">
-                <button class="btn-action btn-yellow" onclick="connectXtream()">LOGIN & LOAD</button>
-            </div>
+<hr>
+</font>
 
-            <button class="btn-action btn-orange" onclick="toggleForm('stalkerForm')">
-                <i class="fa-solid fa-microchip"></i> Connect Stalker / MAG
-            </button>
 
-            <div id="stalkerForm" class="login-form">
-    <div style="text-align: left; margin-bottom: 10px; font-size: 0.8rem; color: var(--accent-orange);">
-        <i class="fa-solid fa-info-circle"></i> Requires proxy.php in same folder
-    </div>
-    <input type="text" id="stPortal" class="form-input stalker-input" placeholder="Portal Address (e.g. http://mag.portal.com/c/)">
-    <input type="text" id="stMac" class="form-input stalker-input" placeholder="MAC Address (00:1A:79:...)" onkeyup="formatMac(this)" maxlength="17">
-    <input type="text" id="stSn" class="form-input stalker-input" placeholder="Serial Number (sn)">
-    
-    <input type="text" id="stDevId" class="form-input stalker-input" placeholder="Device ID">
-    <input type="text" id="stDevId2" class="form-input stalker-input" placeholder="Device ID 2 (Optional/Same as ID 1)">
-    
-    <button class="btn-action btn-orange" onclick="connectStalker()">
-        <i class="fa-solid fa-plug"></i> CONNECT PORTAL
-    </button>
+<font color="green">
+<p id="time"></p>
+<script>
+  const today = new Date();
+
+  // แสดงเวลา
+  document.getElementById("time").textContent = today.toLocaleTimeString();
+
+</script>
+
+</font><style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #121212;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  header {
+    background-color: #111;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    gap: 16px;
+  }
+
+  .running-text-container {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 48px;
+  }
+  .running-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 48px;
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  #videoContainer {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #000;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  #videoPlayer {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #000;
+  }
+  .input-area {
+    margin: 10px 0;
+    display: flex;
+    gap: 8px;
+  }
+  .input-area input {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .button {
+    cursor: pointer;
+    padding: 8px 14px;
+    border: none;
+    background: #0f62fe;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.2s;
+  }
+  .button:hover { background: #005fcc; }
+
+  /* === ส่วนหมวดหมู่ === */
+  .category-tab {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+  }
+  .category-btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #444;
+    background: #222;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  .category-btn:hover,
+  .category-btn.active {
+    background: #0f62fe;
+    color: #fff;
+    border-color: #0f62fe;
+  }
+
+  /* === รายการช่อง === */
+  #channelList {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    padding: 10px;
+  }
+  .channel-item {
+    cursor: pointer;
+    background: #222;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.25s ease;
+  }
+  .channel-item:hover,
+  .channel-item.active {
+    background-color: #0f62fe;
+    transform: scale(1.03);
+  }
+  .channel-item img {
+    width: 60px;
+    height: 36px;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+  .channel-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #eee;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ซ่อนกลุ่มที่ไม่ได้เลือก */
+  .channel-group { display: contents; }
+  .channel-group.hidden { display: none; }
+
+  @media (max-width: 600px) {
+    #channelList { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+    .channel-item img { width: 48px; height: 28px; }
+    .channel-name { font-size: 13px; }
+  }
+</style>
+
+    <font color="blue">
+<div id="videoContainer">
+    <video id="videoPlayer" controls>
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+ 
+
+
+  <div class="input-area">
+    <input type="text" id="videoInput" placeholder="📋 วางลิงก์ .m3u8 หรือ URL วิดีโอ แล้วกด ▶ เล่น" />
+    <button class="button" id="loadVideoBtn">▶ เล่น</button>
+  </div>
+  <div class="controls">
+    <button class="button" id="stretch">Stretch</button>
+    <button class="button" id="crop">Crop</button>
+    <button class="button" id="zoom">Zoom</button>
+    <button class="button" id="fullscreen">เต็มจอ</button>
+  </div>
 </div>
 
-            <input type="file" id="fileInput" accept=".m3u,.m3u8" style="display:none;" onchange="handleFileUpload(this)">
-            <button class="btn-action btn-green" onclick="document.getElementById('fileInput').click()">
-                <i class="fa-solid fa-file-arrow-up"></i> Upload .M3U File
-            </button>
 
-            <button class="btn-action btn-yellow" onclick="loadAllPlaylists()">
-                LOAD URL PLAYLISTS
-            </button>
 
-            <div class="section-divider">PREMIUM LIBRARIES</div>
+<!-- แถบเลือกหมวดหมู่ -->
+<div class="category-tab" id="categoryTab">
+  <button class="category-btn active" data-category="all">ทั้งหมด</button>
+</div>
 
-            <button class="btn-action btn-purple" onclick="loadDaddyLive()">
-                <i class="fa-solid fa-satellite-dish"></i> DADDY LIVE (ULTIMATE)
-            </button>
+<!-- รายการช่อง แยกตามกลุ่ม -->
+<div id="channelList"></div>
 
-            <button class="btn-action btn-red" onclick="loadFoxTV()">
-                <i class="fa-solid fa-tv"></i> TV LIVE
-            </button>
+  <div id="channelList" aria-label="รายการช่อง"></div>
 
-            <button class="btn-action btn-gold" onclick="loadPremium()">
-                <i class="fa-solid fa-crown"></i> TÜRK IPTV PREMIUM (WORKING)
-            </button>
+<div id="slideShow" aria-label="ภาพสไลด์"></div>
 
-            <div id="statusLog" style="margin-top:20px; text-align:left; color:var(--text-dim); font-size:0.8rem; font-family:monospace;"></div>
-        </div>
-    </div>
 
-    <div id="listView">
-        <div class="search-container">
-            <i class="fa-solid fa-search search-icon"></i>
-            <input type="text" id="channelSearch" class="search-input" placeholder="Find a channel..." oninput="handleSearch()">
-        </div>
-        <div id="listContent" class="list-content"></div>
-    </div>
+<script>
+  const m3uData = `
+#EXTM3U
 
-    <div id="playerView">
-        <div class="player-header">
-            <button class="btn-back" onclick="goBack()">
-                <i class="fa-solid fa-arrow-left"></i> Back
-            </button>
-            
-            <div id="channelTitle">
-                CHANNEL NAME <span>LIVE</span>
-            </div>
-        </div>
+#EXTINF:-1 tvg-chno="2" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/7161.jpg",🟣 7 HD
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7161/playlist.m3u8
+#EXTINF:-1 tvg-chno="3" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/6328.jpg",🟢 Amarin TV
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/6328/playlist.m3u8
+#EXTINF:-1 tvg-chno="5" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/497.jpg",🔴 CH 8
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/497/playlist.m3u8
+#EXTINF:-1 tvg-chno="6" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/6332.jpg",🔵 MCOT HD
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/6332/playlist.m3u8
+#EXTINF:-1 tvg-chno="7" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/6339.jpg",🟠 Nation
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/6339/playlist.m3u8
+#EXTINF:-1 tvg-chno="8" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/1450.jpg",🟡 NBT Channel
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1450/playlist.m3u8
+#EXTINF:-1 tvg-chno="9" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/1664.jpg",🟣 PPTV HD
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1664/playlist.m3u8
+#EXTINF:-1 tvg-chno="11" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/1698.jpg",🟢 Thai PBS
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1698/playlist.m3u8
+#EXTINF:-1 tvg-chno="13" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/6345.jpg",🔴 TNN 16
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/6345/playlist.m3u8
+#EXTINF:-1 tvg-chno="14" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/430.jpg",🔵 TPTV
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/430/playlist.m3u8
+#EXTINF:-1 tvg-chno="18" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/6337.jpg",🟠 True4U
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/6337/playlist.m3u8
+#EXTINF:-1 tvg-chno="19" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/6335.jpg",🟡 Workpoint TV
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/6335/playlist.m3u8
+#EXTINF:-1 tvg-chno="20" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/716.jpg",🟣 ของดีประเทศไทย
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/716/playlist.m3u8
+#EXTINF:-1 tvg-chno="21" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/7348.jpg",🟢 ช่อง 3 HD
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7348/playlist.m3u8
+#EXTINF:-1 tvg-chno="22" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/7347.jpg",🔴 ช่อง 5 HD
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7347/playlist.m3u8
+#EXTINF:-1 tvg-chno="24" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/6330.jpg",🔵 ไทยรัฐ TV HD
+http://45.144.166.242:1935/ThairathTV/t3_thairathtv/playlist.m3u8
+#EXTINF:-1 tvg-chno="25" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/563.jpg",🟠 สำรวจโลก
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/563/playlist.m3u8
+#EXTINF:-1 tvg-chno="26" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/1243.jpg",🟡 สุวรรณภูมิทีวี
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1243/playlist.m3u8
+#EXTINF:-1 tvg-chno="55" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/6336.jpg",🟣 GMM 25
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/6336/playlist.m3u8
+#EXTINF:-1 tvg-chno="60" group-title="🇹🇭 ไทย" tvg-logo="https://madoball.com/upload/461.jpg",🟢 One Channel
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/461/playlist.m3u8
+# =============================================
+# 📰 หมวดหมู่: ข่าวสาร (News)
+# =============================================
+#EXTINF:-1 tvg-chno="27" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/6638.jpg",🔴 BBC World News
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/6638/playlist.m3u8
+#EXTINF:-1 tvg-chno="28" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/2814.jpg",🔵 Bloomberg
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2814/playlist.m3u8
+#EXTINF:-1 tvg-chno="29" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/3026.jpg",🟠 CBS News
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/3026/playlist.m3u8
+#EXTINF:-1 tvg-chno="30" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/2100.jpg",🟡 CGTN
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2100/playlist.m3u8
+#EXTINF:-1 tvg-chno="31" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/433.jpg",🟣 Channel NewsAsia
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/433/playlist.m3u8
+#EXTINF:-1 tvg-chno="32" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/6639.jpg",🟢 CNN
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/6639/playlist.m3u8
+#EXTINF:-1 tvg-chno="33" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/2145.jpg",🔴 DW News
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2145/playlist.m3u8
+#EXTINF:-1 tvg-chno="34" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/4337.jpg",🔵 Euronews
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/4337/playlist.m3u8
+#EXTINF:-1 tvg-chno="35" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/7839.jpg",🟠 FOX Business
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7839/playlist.m3u8
+#EXTINF:-1 tvg-chno="36" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/9196.jpg",🟡 FOX NEWS
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/9196/playlist.m3u8
+#EXTINF:-1 tvg-chno="37" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/394.jpg",🟣 France 24
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/394/playlist.m3u8
+#EXTINF:-1 tvg-chno="38" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/408.jpg",🟢 NEWS1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/408/playlist.m3u8
+#EXTINF:-1 tvg-chno="39" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/1497.jpg",🔴 RT News
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1497/playlist.m3u8
+#EXTINF:-1 tvg-chno="40" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/1730.jpg",🔵 Top News
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1730/playlist.m3u8
+#EXTINF:-1 tvg-chno="41" group-title="📰 ข่าวสาร" tvg-logo="https://madoball.com/upload/1404.jpg",🟠 TV5MONDE
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1404/playlist.m3u8
+# =============================================
+# 🎬 หมวดหมู่: ภาพยนตร์ (Movies)
+# =============================================
+#EXTINF:-1 tvg-chno="1" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/2821.jpg",🔴 3BB Asian
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2821/playlist.m3u8
+#EXTINF:-1 tvg-chno="10" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/1642.jpg",🔵 Rama Channel
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1642/playlist.m3u8
+#EXTINF:-1 tvg-chno="17" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/1873.jpg",🟠 True Asian More
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1873/playlist.m3u8
+#EXTINF:-1 tvg-chno="42" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/1913.jpg",🟡 Celestial Classic Movies
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1913/playlist.m3u8
+#EXTINF:-1 tvg-chno="43" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/2815.jpg",🟣 CINEMAX
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2815/playlist.m3u8
+#EXTINF:-1 tvg-chno="44" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/2820.jpg",🟢 HBO
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2820/playlist.m3u8
+#EXTINF:-1 tvg-chno="45" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/2816.jpg",🔴 HBO Family
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2816/playlist.m3u8
+#EXTINF:-1 tvg-chno="46" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/2819.jpg",🔵 HBO Hits
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2819/playlist.m3u8
+#EXTINF:-1 tvg-chno="47" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/2818.jpg",🟠 HBO Signature
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2818/playlist.m3u8
+#EXTINF:-1 tvg-chno="48" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/1877.jpg",🟡 True Film 1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1877/playlist.m3u8
+#EXTINF:-1 tvg-chno="49" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/1915.jpg",🟣 True Film Asia
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1915/playlist.m3u8
+#EXTINF:-1 tvg-chno="50" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/1875.jpg",🟢 True Movie Hits
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1875/playlist.m3u8
+#EXTINF:-1 tvg-chno="51" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/1874.jpg",🔴 True Thai Film
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1874/playlist.m3u8
+#EXTINF:-1 tvg-chno="52" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/2650.jpg",🔵 AXN HD
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2650/playlist.m3u8
+#EXTINF:-1 tvg-chno="53" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/1416.jpg",🟠 Cool Channel
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1416/playlist.m3u8
+#EXTINF:-1 tvg-chno="62" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/2929.jpg",🟡 Rock Entertainment
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2929/playlist.m3u8
+#EXTINF:-1 tvg-chno="63" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/261622.jpg",🟣 ROCK X Stream
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/261622/playlist.m3u8
+#EXTINF:-1 tvg-chno="64" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/1916.jpg",🟢 True Series
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1916/playlist.m3u8
+#EXTINF:-1 tvg-chno="65" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/2056.jpg",🔴 True X-Zyte
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2056/playlist.m3u8
+#EXTINF:-1 tvg-chno="66" group-title="🎬 ภาพยนตร์" tvg-logo="https://madoball.com/upload/2739.jpg",🔵 Warner TV
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2739/playlist.m3u8
+# =============================================
+# 📺 หมวดหมู่: การ์ตูน (Cartoon)
+# =============================================
+#EXTINF:-1 tvg-chno="" group-title="🎨 การ์ตูน" tvg-logo="https://cdn.madoball.com/upload/8999.jpg",🟠 ช่อง Boom
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/8999/chunks.m3u8
+#EXTINF:-1 tvg-chno="" group-title="🎨 การ์ตูน" tvg-logo="https://cdn.madoball.com/upload/8007.jpg",🟡 ช่อง CN
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/8007/chunks.m3u8
+#EXTINF:-1 tvg-chno="" group-title="🎨 การ์ตูน" tvg-logo="https://cdn.madoball.com/upload/477.jpg",🟣 Cartoonito
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/477/chunks.m3u8
+# =============================================
+# 🎭 หมวดหมู่: บันเทิง (Entertainment)
+# =============================================
+#EXTINF:-1 tvg-chno="54" group-title="🎭 บันเทิง" tvg-logo="https://madoball.com/upload/1418.jpg",🟢 Fashion TV
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1418/playlist.m3u8
+#EXTINF:-1 tvg-chno="56" group-title="🎭 บันเทิง" tvg-logo="https://madoball.com/upload/8738.jpg",🔴 ITV1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/8738/playlist.m3u8
+#EXTINF:-1 tvg-chno="57" group-title="🎭 บันเทิง" tvg-logo="https://madoball.com/upload/8737.jpg",🔵 ITV2
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/8737/playlist.m3u8
+#EXTINF:-1 tvg-chno="58" group-title="🎭 บันเทิง" tvg-logo="https://madoball.com/upload/8736.jpg",🟠 ITV3
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/8736/playlist.m3u8
+#EXTINF:-1 tvg-chno="59" group-title="🎭 บันเทิง" tvg-logo="https://madoball.com/upload/8735.jpg",🟡 ITV4
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/8735/playlist.m3u8
+# =============================================
+# 🌍 หมวดหมู่: สารคดี (Documentary)
+# =============================================
+#EXTINF:-1 tvg-chno="12" group-title="🌍 สารคดี" tvg-logo="https://madoball.com/upload/715.jpg",🟣 Thainess TV
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/715/playlist.m3u8
+#EXTINF:-1 tvg-chno="67" group-title="🌍 สารคดี" tvg-logo="https://madoball.com/upload/710.jpg",🟢 Animal Show
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/710/playlist.m3u8
+#EXTINF:-1 tvg-chno="68" group-title="🌍 สารคดี" tvg-logo="https://madoball.com/upload/1854.jpg",🔴 Asian Food Network
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1854/playlist.m3u8
+#EXTINF:-1 tvg-chno="69" group-title="🌍 สารคดี" tvg-logo="https://madoball.com/upload/1689.jpg",🔵 BBC Lifestyle
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1689/playlist.m3u8
+#EXTINF:-1 tvg-chno="70" group-title="🌍 สารคดี" tvg-logo="https://madoball.com/upload/1606.jpg",🟠 Discovery Asia
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1606/playlist.m3u8
+#EXTINF:-1 tvg-chno="71" group-title="🌍 สารคดี" tvg-logo="https://madoball.com/upload/1546.jpg",🟡 Discovery Channel
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1546/playlist.m3u8
+#EXTINF:-1 tvg-chno="72" group-title="🌍 สารคดี" tvg-logo="https://madoball.com/upload/2347.jpg",🟣 DreamWorks
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2347/playlist.m3u8
+#EXTINF:-1 tvg-chno="73" group-title="🌍 สารคดี" tvg-logo="https://madoball.com/upload/1845.jpg",🟢 Food Network
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1845/playlist.m3u8
+#EXTINF:-1 tvg-chno="74" group-title="🌍 สารคดี" tvg-logo="https://madoball.com/upload/1667.jpg",🔴 History Channel
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1667/playlist.m3u8
+#EXTINF:-1 tvg-chno="75" group-title="🌍 สารคดี" tvg-logo="https://madoball.com/upload/555.jpg",🔵 Mysci
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/555/playlist.m3u8
+#EXTINF:-1 tvg-chno="76" group-title="🌍 สารคดี" tvg-logo="https://madoball.com/upload/1496.jpg",🟠 TLC
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1496/playlist.m3u8
+#EXTINF:-1 tvg-chno="77" group-title="🌍 สารคดี" tvg-logo="https://madoball.com/upload/722.jpg",🟡 True Explore SCI
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/722/playlist.m3u8
+#EXTINF:-1 tvg-chno="78" group-title="🌍 สารคดี" tvg-logo="https://madoball.com/upload/740.jpg",🟣 True Explore WILD
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/740/playlist.m3u8
+#EXTINF:-1 group-title="🌍 สารคดี" tvg-logo="https://cdn.imgchest.com/files/5944e14c1b6f.webp",🟣 สำรวจโลก
+#EXTVLCOPT:http-referrer=https://atmflix.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Chromecast) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+https://cdn2.stream.atmflix.live/atmflixlive/samrujlok/playlist.m3u8
+# =============================================
+# 🎲 หมวดหมู่: อื่นๆ (Others)
+# =============================================
+#EXTINF:-1 tvg-chno="79" group-title="🎲 อื่นๆ" tvg-logo="https://madoball.com/upload/1600.jpg",🟢 ABC Australia
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1600/playlist.m3u8
+#EXTINF:-1 tvg-chno="80" group-title="🎲 อื่นๆ" tvg-logo="https://madoball.com/upload/61286.jpg",🔴 Bein France 1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/61286/playlist.m3u8
+#EXTINF:-1 tvg-chno="81" group-title="🎲 อื่นๆ" tvg-logo="https://madoball.com/upload/61283.jpg",🔵 Bein France 2
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/61283/playlist.m3u8
+#EXTINF:-1 tvg-chno="82" group-title="🎲 อื่นๆ" tvg-logo="https://madoball.com/upload/61281.jpg",🟠 Bein France 3
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/61281/playlist.m3u8
+#EXTINF:-1 tvg-chno="83" group-title="🎲 อื่นๆ" tvg-logo="https://madoball.com/upload/8999.jpg",🟡 Boomerang
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/8999/playlist.m3u8
+#EXTINF:-1 tvg-chno="84" group-title="🎲 อื่นๆ" tvg-logo="https://madoball.com/upload/8007.jpg",🟣 Cartoon Network
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/8007/playlist.m3u8
+#EXTINF:-1 tvg-chno="85" group-title="🎲 อื่นๆ" tvg-logo="https://madoball.com/upload/477.jpg",🟢 Cartoonito
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/477/playlist.m3u8
+#EXTINF:-1 tvg-chno="86" group-title="🎲 อื่นๆ" tvg-logo="https://madoball.com/upload/402.jpg",🔴 CCTV-4
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/402/playlist.m3u8
+#EXTINF:-1 tvg-chno="87" group-title="🎲 อื่นๆ" tvg-logo="https://madoball.com/upload/2875.jpg",🔵 Nick Jr.
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2875/playlist.m3u8
+#EXTINF:-1 tvg-chno="88" group-title="🎲 อื่นๆ" tvg-logo="https://madoball.com/upload/2029.jpg",🟠 Nickelodeon
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2029/playlist.m3u8
+# =============================================
+# ⚽ หมวดหมู่: กีฬา (Sports)
+# =============================================
+#EXTINF:-1 tvg-chno="89" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/13918.jpg",🟡 Arena Sport 1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/13918/playlist.m3u8
+#EXTINF:-1 tvg-chno="90" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/13917.jpg",🟣 Arena Sport 2
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/13917/playlist.m3u8
+#EXTINF:-1 tvg-chno="91" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/13916.jpg",🟢 Arena Sport 3
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/13916/playlist.m3u8
+#EXTINF:-1 tvg-chno="92" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/13915.jpg",🔴 Arena Sport 4
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/13915/playlist.m3u8
+#EXTINF:-1 tvg-chno="93" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/13071.jpg",🔵 Arena Sport 5
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/13071/playlist.m3u8
+#EXTINF:-1 tvg-chno="94" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/7424.jpg",🟠 beIN SPORTS 1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7424/playlist.m3u8
+#EXTINF:-1 tvg-chno="95" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/7423.jpg",🟡 beIN SPORTS 2
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7423/playlist.m3u8
+#EXTINF:-1 tvg-chno="96" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/7422.jpg",🟣 beIN SPORTS 3
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7422/playlist.m3u8
+#EXTINF:-1 tvg-chno="97" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/7421.jpg",🟢 beIN SPORTS 4
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7421/playlist.m3u8
+#EXTINF:-1 tvg-chno="98" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/7420.jpg",🔴 beIN SPORTS 5
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7420/playlist.m3u8
+#EXTINF:-1 tvg-chno="99" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/7419.jpg",🔵 beIN SPORTS 6
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7419/playlist.m3u8
+#EXTINF:-1 tvg-chno="100" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/7418.jpg",🟠 beIN SPORTS 7
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7418/playlist.m3u8
+#EXTINF:-1 tvg-chno="101" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/7417.jpg",🟡 beIN SPORTS 8
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7417/playlist.m3u8
+#EXTINF:-1 tvg-chno="102" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/7416.jpg",🟣 beIN SPORTS 9
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7416/playlist.m3u8
+#EXTINF:-1 tvg-chno="103" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/7415.jpg",🟢 beIN SPORTS 10
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7415/playlist.m3u8
+#EXTINF:-1 tvg-chno="104" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/10331.jpg",🔴 Being Sport USA
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/10331/playlist.m3u8
+#EXTINF:-1 tvg-chno="105" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1260.jpg",🔵 BG Sports 1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1260/playlist.m3u8
+#EXTINF:-1 tvg-chno="106" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1259.jpg",🟠 BG Sports 2
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1259/playlist.m3u8
+#EXTINF:-1 tvg-chno="107" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1258.jpg",🟡 BG Sports 3
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1258/playlist.m3u8
+#EXTINF:-1 tvg-chno="108" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1257.jpg",🟣 BG Sports 4
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1257/playlist.m3u8
+#EXTINF:-1 tvg-chno="109" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11921.jpg",🟢 CBS Sports
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11921/playlist.m3u8
+#EXTINF:-1 tvg-chno="110" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11924.jpg",🔴 ESPN 1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11924/playlist.m3u8
+#EXTINF:-1 tvg-chno="111" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11923.jpg",🔵 ESPN 2
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11923/playlist.m3u8
+#EXTINF:-1 tvg-chno="112" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1368.jpg",🟠 Eurosport
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1368/playlist.m3u8
+#EXTINF:-1 tvg-chno="113" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11936.jpg",🟡 EuroSport 1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11936/playlist.m3u8
+#EXTINF:-1 tvg-chno="114" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11935.jpg",🟣 EuroSport 2
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11935/playlist.m3u8
+#EXTINF:-1 tvg-chno="115" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/61289.jpg",🟢 Fight Sports
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/61289/playlist.m3u8
+#EXTINF:-1 tvg-chno="116" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11926.jpg",🔴 Fox Sports 1 USA
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11926/playlist.m3u8
+#EXTINF:-1 tvg-chno="117" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11925.jpg",🔵 Fox Sports 2 USA
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11925/playlist.m3u8
+#EXTINF:-1 tvg-chno="118" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/7203.jpg",🟠 Golf +
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/7203/playlist.m3u8
+#EXTINF:-1 tvg-chno="119" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/12684.jpg",🟡 Liverpool TV
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/12684/playlist.m3u8
+#EXTINF:-1 tvg-chno="120" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/10330.jpg",🟣 MLB Network
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/10330/playlist.m3u8
+#EXTINF:-1 tvg-chno="121" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1239.jpg",🟢 MUTV
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1239/playlist.m3u8
+#EXTINF:-1 tvg-chno="122" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/12682.jpg",🔴 MUTV
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/12682/playlist.m3u8
+#EXTINF:-1 tvg-chno="123" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/8739.jpg",🔵 NBA
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/8739/playlist.m3u8
+#EXTINF:-1 tvg-chno="124" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11920.jpg",🟠 NBC Sports
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11920/playlist.m3u8
+#EXTINF:-1 tvg-chno="125" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11922.jpg",🟡 NFL
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11922/playlist.m3u8
+#EXTINF:-1 tvg-chno="127" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/81433.jpg",🟣 ONE Championship
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/81433/playlist.m3u8
+#EXTINF:-1 tvg-chno="128" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1485.jpg",🟢 Play Sports 41
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1485/playlist.m3u8
+#EXTINF:-1 tvg-chno="129" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1439.jpg",🔴 Play Sports 48
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1439/playlist.m3u8
+#EXTINF:-1 tvg-chno="130" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1484.jpg",🔵 Play Sports 55
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1484/playlist.m3u8
+#EXTINF:-1 tvg-chno="131" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1483.jpg",🟠 Play Sports 56
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1483/playlist.m3u8
+#EXTINF:-1 tvg-chno="132" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1441.jpg",🟡 Play Sports 57
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1441/playlist.m3u8
+#EXTINF:-1 tvg-chno="133" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1440.jpg",🟣 Play Sports 58
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1440/playlist.m3u8
+#EXTINF:-1 tvg-chno="134" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1482.jpg",🟢 Play Sports 61
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1482/playlist.m3u8
+#EXTINF:-1 tvg-chno="135" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1481.jpg",🔴 Play Sports 62
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1481/playlist.m3u8
+#EXTINF:-1 tvg-chno="136" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1480.jpg",🔵 Play Sports 63
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1480/playlist.m3u8
+#EXTINF:-1 tvg-chno="137" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1438.jpg",🟠 Play Sports 64
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1438/playlist.m3u8
+#EXTINF:-1 tvg-chno="138" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1479.jpg",🟡 Play Sports 66
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1479/playlist.m3u8
+#EXTINF:-1 tvg-chno="139" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1437.jpg",🟣 Play Sports 67
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1437/playlist.m3u8
+#EXTINF:-1 tvg-chno="140" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1478.jpg",🟢 Play Sports 69
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1478/playlist.m3u8
+#EXTINF:-1 tvg-chno="141" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1477.jpg",🔴 Play Sports 71
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1477/playlist.m3u8
+#EXTINF:-1 tvg-chno="142" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1476.jpg",🔵 Play Sports 72
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1476/playlist.m3u8
+#EXTINF:-1 tvg-chno="143" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1475.jpg",🟠 Play Sports 73
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1475/playlist.m3u8
+#EXTINF:-1 tvg-chno="144" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1433.jpg",🟡 Play Sports 74
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1433/playlist.m3u8
+#EXTINF:-1 tvg-chno="145" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1432.jpg",🟣 Play Sports 75
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1432/playlist.m3u8
+#EXTINF:-1 tvg-chno="146" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1436.jpg",🟢 Play Sports 90
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1436/playlist.m3u8
+#EXTINF:-1 tvg-chno="147" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1431.jpg",🔴 Premier Sports
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1431/playlist.m3u8
+#EXTINF:-1 tvg-chno="148" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1231.jpg",🔵 Realmadrid TV
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1231/playlist.m3u8
+#EXTINF:-1 tvg-chno="149" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1373.jpg",🟠 RED BULL
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1373/playlist.m3u8
+#EXTINF:-1 tvg-chno="150" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11972.jpg",🟡 Sky Sports +
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11972/playlist.m3u8
+#EXTINF:-1 tvg-chno="151" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11952.jpg",🟣 Sky Sports Action
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11952/playlist.m3u8
+#EXTINF:-1 tvg-chno="152" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11951.jpg",🟢 Sky Sports Cricket
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11951/playlist.m3u8
+#EXTINF:-1 tvg-chno="153" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11973.jpg",🔴 Sky Sports F1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11973/playlist.m3u8
+#EXTINF:-1 tvg-chno="154" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11974.jpg",🔵 Sky Sports Football
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11974/playlist.m3u8
+#EXTINF:-1 tvg-chno="155" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11950.jpg",🟠 Sky Sports Golf
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11950/playlist.m3u8
+#EXTINF:-1 tvg-chno="156" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11949.jpg",🟡 Sky Sports Main Event
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11949/playlist.m3u8
+#EXTINF:-1 tvg-chno="157" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11975.jpg",🟣 Sky Sports Mix
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11975/playlist.m3u8
+#EXTINF:-1 tvg-chno="158" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11976.jpg",🟢 Sky Sports News
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11976/playlist.m3u8
+#EXTINF:-1 tvg-chno="159" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11948.jpg",🔴 Sky Sports Premier League
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11948/playlist.m3u8
+#EXTINF:-1 tvg-chno="160" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11977.jpg",🔵 Sky Sports Racing
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11977/playlist.m3u8
+#EXTINF:-1 tvg-chno="161" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/63481.jpg",🟠 Sport TV 1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/63481/playlist.m3u8
+#EXTINF:-1 tvg-chno="162" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/63478.jpg",🟡 Sport TV 2
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/63478/playlist.m3u8
+#EXTINF:-1 tvg-chno="163" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/63475.jpg",🟣 Sport TV 3
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/63475/playlist.m3u8
+#EXTINF:-1 tvg-chno="164" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/63472.jpg",🟢 Sport TV 4
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/63472/playlist.m3u8
+#EXTINF:-1 tvg-chno="165" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/63471.jpg",🔴 Sport TV 5
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/63471/playlist.m3u8
+#EXTINF:-1 tvg-chno="166" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/15787.jpg",🔵 Sportsnet 360
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/15787/playlist.m3u8
+#EXTINF:-1 tvg-chno="167" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/16299.jpg",🟠 Sportsnet ONE
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/16299/playlist.m3u8
+#EXTINF:-1 tvg-chno="168" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/14975.jpg",🟡 Sportsnet Ontario
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/14975/playlist.m3u8
+#EXTINF:-1 tvg-chno="169" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/16302.jpg",🟣 Sportsnet West
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/16302/playlist.m3u8
+#EXTINF:-1 tvg-chno="170" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/16304.jpg",🟢 Sportsnet World
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/16304/playlist.m3u8
+#EXTINF:-1 tvg-chno="171" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/2027.jpg",🔴 SPOTV 1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2027/playlist.m3u8
+#EXTINF:-1 tvg-chno="172" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/2023.jpg",🔵 SPOTV 2
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2023/playlist.m3u8
+#EXTINF:-1 tvg-chno="173" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/435.jpg",🟠 T Sport Channel
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/435/playlist.m3u8
+#EXTINF:-1 tvg-chno="174" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/10332.jpg",🟡 Tennis Channel
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/10332/playlist.m3u8
+#EXTINF:-1 tvg-chno="175" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11947.jpg",🟣 TNT Sport 1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11947/playlist.m3u8
+#EXTINF:-1 tvg-chno="176" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11941.jpg",🟢 TNT Sport 2
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11941/playlist.m3u8
+#EXTINF:-1 tvg-chno="177" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11940.jpg",🔴 TNT Sport 3
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11940/playlist.m3u8
+#EXTINF:-1 tvg-chno="178" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11939.jpg",🔵 TNT Sport 4
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11939/playlist.m3u8
+#EXTINF:-1 tvg-chno="179" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/2892.jpg",🟠 True Sport 1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2892/playlist.m3u8
+#EXTINF:-1 tvg-chno="180" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/2891.jpg",🟡 True Sport 2
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2891/playlist.m3u8
+#EXTINF:-1 tvg-chno="181" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/2890.jpg",🟣 True Sport 3
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2890/playlist.m3u8
+#EXTINF:-1 tvg-chno="182" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/2889.jpg",🟢 True Sport 4
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2889/playlist.m3u8
+#EXTINF:-1 tvg-chno="183" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/2888.jpg",🔴 True Sport 5
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2888/playlist.m3u8
+#EXTINF:-1 tvg-chno="184" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/2829.jpg",🔵 True Sport 7
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2829/playlist.m3u8
+#EXTINF:-1 tvg-chno="185" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/2101.jpg",🟠 True Tennis
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/2101/playlist.m3u8
+#EXTINF:-1 tvg-chno="186" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11904.jpg",🟡 TSN 1
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11904/playlist.m3u8
+#EXTINF:-1 tvg-chno="187" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11903.jpg",🟣 TSN 2
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11903/playlist.m3u8
+#EXTINF:-1 tvg-chno="188" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11902.jpg",🟢 TSN 3
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11902/playlist.m3u8
+#EXTINF:-1 tvg-chno="189" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11901.jpg",🔴 TSN 4
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11901/playlist.m3u8
+#EXTINF:-1 tvg-chno="190" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/11900.jpg",🔵 TSN 5
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/11900/playlist.m3u8
+#EXTINF:-1 tvg-chno="191" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/1498.jpg",🟠 W-sport
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/1498/playlist.m3u8
+#EXTINF:-1 tvg-chno="192" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/8740.jpg",🟡 Willow Cricket
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/8740/playlist.m3u8
+#EXTINF:-1 tvg-chno="193" group-title="⚽ กีฬา" tvg-logo="https://cdn.madoball.com/upload/10329.jpg",🟣 WWE Network
+#EXTVLCOPT:http-referrer=https://madoball.com
+https://godlivetv.io/madoball/10329/playlist.m3u8
 
-        <div class="player-body" id="playerBody">
-            <div class="tv-frame">
-                <div class="screen-glass">
-                    <div id="resBadge" class="res-badge">Ready</div>
-                    <div class="screen-controls">
-                        <button class="ctl-btn" onclick="reloadStream()" title="Reload"><i class="fa-solid fa-rotate-right"></i></button>
-                        <button class="ctl-btn" onclick="toggleCustomFullscreen()" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
-                    </div>
 
-                    <video id="videoPlayer" controls></video>
-                    <div id="foxContainer"></div>
-                    <div id="daddyContainer"></div>
-                </div>
-                
-                <div class="tv-speaker"></div>
-                <div class="tv-knob"></div>
-            </div>
-        </div>
-    </div>
+  `;
 
-    <script>
-        // --- CORE VARIABLES ---
-        let allChannels = [];
-        const video = document.getElementById('videoPlayer');
-        const foxContainer = document.getElementById('foxContainer');
-        const daddyContainer = document.getElementById('daddyContainer');
-        const playerBody = document.getElementById('playerBody');
-        const resBadge = document.getElementById('resBadge');
-        let hls;
-        let searchTimer;
-        const RENDER_LIMIT = 100;
-
-        // --- DADDYLIVE DATA ---
-        const dlChannels = [
-    { name: "NFL Live", customUrl: "https://absicka4aicqaaayi4twpsc2ept75.live-cf.cdn.hotstar.com/hls/live/2012609/inallow-nfl-2025-26/eng/1540061229/15mindvrm01829c3eed9ac14308b8c963a6f547074218january2026/master_ap_1080_6.m3u8", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png" },
-    { name: "Star Jalsha HD", customUrl: "https://cdn.stmify.com/embed-free/v1/star-jalsha-hd-in-jw", logo: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Star_Jalsha_logo_2023.png" },
-    { name: "Jalsha Movies Hd", customUrl: "https://cdn.stmify.com/embed-free/v1/jalsha-movies-hd-in-jw", logo: "https://static.wikia.nocookie.net/logopedia/images/6/61/Jalsha_Movies.png/revision/latest/scale-to-width-down/221?cb=20240320100114" },
-    { name: "Zee Bangla", customUrl: "https://softbd24.com/vip/play.php?id=1743848504024" },
-    { name: "Ind VS Usa", customUrl: "https://live15p.hotstar.com/hls/live/2116748/inallow-icct20wc-2026/ben/1540062322/15mindvrm0118ba48ab59034e4b9dbc9285e29e083507february2026/master_apmf_360_1.m3u8", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-sN5te7jsC9YTazKRH6RgQCxTAqs60oWZMw&s" },
-    { name: "Zee Cinema", customUrl: "https://softbd24.com/vip/play.php?id=12" },
-    { name: "Zee Tv", customUrl: "https://softbd24.com/vip/play.php?id=11" },
-    { name: "Zee Cinema 2", customUrl: "https://softbd24.com/vip/play.php?id=1743844111058" },
-    { name: "Zee Bangla Cinema", customUrl: "https://softbd24.com/vip/play.php?id=2" },
-    
-    // Original DaddyLive IDs
-    { id: 51, name: "ABC USA" }, { id: 206, name: "AHC USA" }, { id: 283, name: "Antenna TV" }, { id: 302, name: "A&E USA" }, { id: 303, name: "AMC USA" }, { id: 304, name: "Animal Planet" }, 
-    { id: 123, name: "Astro SuperSport 1" }, { id: 124, name: "Astro SuperSport 2" }, { id: 125, name: "Astro SuperSport 3" }, { id: 126, name: "Astro SuperSport 4" },
-    { id: 134, name: "Arena Sport 1 Premium" }, { id: 135, name: "Arena Sport 2 Premium" }, { id: 139, name: "Arena Sport 3 Premium" }, 
-    { id: 429, name: "Arena Sport 1 Serbia" }, { id: 430, name: "Arena Sport 2 Serbia" }, { id: 431, name: "Arena Sport 3 Serbia" }, { id: 581, name: "Arena Sport 4 Serbia" }, 
-    { id: 940, name: "Arena Sport 5 Serbia" }, { id: 941, name: "Arena Sport 6 Serbia" }, { id: 942, name: "Arena Sport 7 Serbia" }, { id: 943, name: "Arena Sport 8 Serbia" }, { id: 944, name: "Arena Sport 9 Serbia" }, { id: 945, name: "Arena Sport 10 Serbia" },
-    { id: 432, name: "Arena Sport 1 Croatia" }, { id: 433, name: "Arena Sport 2 Croatia" }, { id: 434, name: "Arena Sport 3 Croatia" }, { id: 580, name: "Arena Sport 4 Croatia" }, 
-    { id: 579, name: "Arena Sport 1 BiH" }, { id: 612, name: "Arena Sports Tenis" },
-    { id: 781, name: "Alkass One" }, { id: 782, name: "Alkass Two" }, { id: 783, name: "Alkass Three" }, { id: 784, name: "Alkass Four" }, 
-    { id: 600, name: "Abu Dhabi Sports 1 UAE" }, { id: 601, name: "Abu Dhabi Sports 2 UAE" }, { id: 609, name: "Abu Dhabi Sports 1 Premium" }, { id: 610, name: "Abu Dhabi Sports 2 Premium" }, 
-    { id: 370, name: "Astro Cricket" }, { id: 531, name: "Antena 3 Spain" }, { id: 664, name: "ACC Network" }, { id: 295, name: "Adult Swim" }, { id: 269, name: "A Sport PK" }, 
-    { id: 717, name: "AXN Movies" }, { id: 725, name: "Arte DE" }, { id: 958, name: "Arte France" }, { id: 742, name: "AXS TV USA" }, { id: 766, name: "ABC NY" }, 
-    { id: 844, name: "Azteca 7" }, { id: 934, name: "Azteca Uno" }, { id: 923, name: "Altitude Sports" }, { id: 961, name: "Automoto" }, { id: 1000, name: "ATV Turkey" }, { id: 1011, name: "A Spor Turkey" }, 
-    { id: 61, name: "beIN Sports MENA 1 Eng" }, { id: 90, name: "beIN Sports MENA 2 Eng" }, 
-    { id: 91, name: "beIN Sports 1 Arabic" }, { id: 92, name: "beIN Sports 2 Arabic" }, { id: 93, name: "beIN Sports 3 Arabic" }, { id: 94, name: "beIN Sports 4 Arabic" }, { id: 95, name: "beIN Sports 5 Arabic" }, { id: 96, name: "beIN Sports 6 Arabic" }, { id: 97, name: "beIN Sports 7 Arabic" }, { id: 98, name: "beIN Sports 8 Arabic" }, { id: 99, name: "beIN Sports 9 Arabic" }, { id: 100, name: "beIN SPORTS XTRA 1" }, 
-    { id: 494, name: "beIN Sports MAX 4" }, { id: 495, name: "beIN Sports MAX 5" }, { id: 496, name: "beIN Sports MAX 6" }, { id: 497, name: "beIN Sports MAX 7" }, { id: 498, name: "beIN Sports MAX 8" }, { id: 499, name: "beIN Sports MAX 9" }, { id: 500, name: "beIN Sports MAX 10" }, { id: 597, name: "beIN SPORTS MAX AR" },
-    { id: 116, name: "beIN SPORTS 1 FR" }, { id: 117, name: "beIN SPORTS 2 FR" }, { id: 118, name: "beIN SPORTS 3 FR" }, 
-    { id: 62, name: "beIN SPORTS 1 TR" }, { id: 63, name: "beIN SPORTS 2 TR" }, { id: 64, name: "beIN SPORTS 3 TR" }, { id: 67, name: "beIN SPORTS 4 TR" }, { id: 1010, name: "bein Sports 5 TR" },
-    { id: 712, name: "beIN Sports 1 MY" }, { id: 713, name: "beIN Sports 2 MY" }, { id: 714, name: "beIN Sports 3 MY" },
-    { id: 578, name: "BeIN Sports HD Qatar" }, { id: 425, name: "BeIN SPORTS USA" }, { id: 372, name: "beIN Español" }, 
-    { id: 491, name: "beIN Australia 1" }, { id: 492, name: "beIN Australia 2" }, { id: 493, name: "beIN Australia 3" }, 
-    { id: 522, name: "Barca TV" }, { id: 380, name: "Benfica TV" }, { id: 648, name: "Boomerang" }, 
-    { id: 476, name: "BNT 1" }, { id: 477, name: "BNT 2" }, { id: 478, name: "BNT 3" }, 
-    { id: 737, name: "BR Fernsehen" }, { id: 479, name: "bTV" }, { id: 481, name: "bTV Action" }, { id: 484, name: "bTV Lady" }, 
-    { id: 305, name: "BBC America" }, { id: 306, name: "BET USA" }, { id: 307, name: "Bravo USA" }, { id: 349, name: "BBC News" }, 
-    { id: 356, name: "BBC One" }, { id: 357, name: "BBC Two" }, { id: 358, name: "BBC Three" }, { id: 359, name: "BBC Four" }, 
-    { id: 397, name: "BIG TEN Network" }, { id: 275, name: "Bandsports" }, { id: 957, name: "BFM TV" },
-    { id: 271, name: "Canal+ MotoGP" }, { id: 273, name: "Canal+ Formula 1" }, { id: 280, name: "CW PIX 11" }, { id: 52, name: "CBS USA" }, { id: 281, name: "Court TV" }, { id: 300, name: "CW USA" }, { id: 309, name: "CNBC" }, { id: 310, name: "Comedy Central" }, { id: 339, name: "Cartoon Network" }, { id: 345, name: "CNN USA" }, { id: 374, name: "Cinemax" }, 
-    { id: 535, name: "Cuatro Spain" }, { id: 354, name: "Channel 4 UK" }, { id: 355, name: "Channel 5 UK" }, { id: 308, name: "CBS Sports Network" }, { id: 910, name: "CBS Sports Golazo" },
-    { id: 121, name: "Canal+ FR" }, { id: 122, name: "Canal+ Sport FR" }, { id: 463, name: "Canal+ Foot" }, { id: 464, name: "Canal+ Sport360" }, { id: 540, name: "Canal 11" }, 
-    { id: 48, name: "Canal+ Sport PL" }, { id: 73, name: "Canal+ Sport 2 PL" }, { id: 259, name: "Canal+ Sport 3 PL" }, { id: 75, name: "Canal+ Sport 5 PL" }, { id: 566, name: "Canal+ Premium" }, { id: 567, name: "Canal+ Family" }, { id: 570, name: "Canal+ Seriale" }, 
-    { id: 983, name: "Canal+ Extra 1 PL" }, { id: 984, name: "Canal+ Extra 2 PL" }, { id: 985, name: "Canal+ Extra 3 PL" }, { id: 986, name: "Canal+ Extra 4 PL" }, { id: 987, name: "Canal+ Extra 5 PL" }, { id: 988, name: "Canal+ Extra 6 PL" }, { id: 989, name: "Canal+ Extra 7 PL" },
-    { id: 486, name: "Canal+ Sport 1 Afr" }, { id: 487, name: "Canal+ Sport 2 Afr" }, { id: 488, name: "Canal+ Sport 3 Afr" }, { id: 489, name: "Canal+ Sport 4 Afr" }, { id: 490, name: "Canal+ Sport 5 Afr" }, 
-    { id: 805, name: "CANAL 9 DK" }, { id: 89, name: "Combate" }, 
-    { id: 622, name: "Cosmote Sport 1" }, { id: 623, name: "Cosmote Sport 2" }, { id: 624, name: "Cosmote Sport 3" }, { id: 625, name: "Cosmote Sport 4" }, { id: 626, name: "Cosmote Sport 5" }, { id: 627, name: "Cosmote Sport 6" }, { id: 628, name: "Cosmote Sport 7" }, { id: 629, name: "Cosmote Sport 8" }, { id: 630, name: "Cosmote Sport 9" }, 
-    { id: 546, name: "Channel 9 IL" }, { id: 547, name: "Channel 10 IL" }, { id: 548, name: "Channel 11 IL" }, { id: 549, name: "Channel 12 IL" }, { id: 551, name: "Channel 13 IL" }, { id: 552, name: "Channel 14 IL" }, 
-    { id: 812, name: "C More First" }, { id: 813, name: "C More Hits" }, { id: 814, name: "C More Series" }, 
-    { id: 748, name: "COZI TV" }, { id: 647, name: "CMT" }, { id: 602, name: "CTV Canada" }, { id: 838, name: "CTV 2 Canada" }, { id: 669, name: "Crime+ Investigation" }, { id: 696, name: "Comet" }, { id: 697, name: "Cooking Channel" }, { id: 715, name: "Cleo TV" }, { id: 750, name: "C SPAN 1" }, { id: 767, name: "CBS NY" }, { id: 776, name: "Chicago Sports" }, { id: 831, name: "Citytv" }, { id: 832, name: "CBC CA" }, 
-    { id: 933, name: "Claro Sports" }, { id: 936, name: "Canal 5 MX" }, { id: 956, name: "C8 France" }, { id: 964, name: "CNews" }, { id: 284, name: "CricLife 1" }, { id: 866, name: "CW Philly" }, { id: 790, name: "CMTV" },
-    { id: 1020, name: "Canal+ Sport CZ" }, { id: 1043, name: "Canal+ Sport 2 CZ" }, { id: 1044, name: "Canal+ Sport 3 CZ" }, { id: 1045, name: "Canal+ Sport 4 CZ" }, { id: 1046, name: "Canal+ Sport 5 CZ" }, { id: 1047, name: "Canal+ Sport 6 CZ" }, { id: 1048, name: "Canal+ Sport 7 CZ" }, { id: 1049, name: "Canal+ Sport 8 CZ" }, { id: 1063, name: "Canal+ Sport SK" }, { id: 1064, name: "Canal+ Sport 2 SK" }, { id: 1065, name: "Canal+ Sport 3 SK" }, { id: 1066, name: "Canal+ Sport 4 SK" }, { id: 1033, name: "CT Sport" }, { id: 1035, name: "CT1 HD" }, { id: 1036, name: "CT2 HD" },
-    { id: 911, name: "Cytavision 1" }, { id: 912, name: "Cytavision 2" }, { id: 913, name: "Cytavision 3" }, { id: 914, name: "Cytavision 4" }, { id: 915, name: "Cytavision 5" }, { id: 916, name: "Cytavision 6" }, { id: 917, name: "Cytavision 7" }, 
-    { id: 230, name: "DAZN 1 UK" }, { id: 426, name: "DAZN 1 Bar DE" }, { id: 427, name: "DAZN 2 Bar DE" }, 
-    { id: 445, name: "DAZN 1 ES" }, { id: 446, name: "DAZN 2 ES" }, { id: 447, name: "DAZN 3 ES" }, { id: 448, name: "DAZN 4 ES" }, { id: 537, name: "DAZN F1 ES" }, { id: 538, name: "DAZN LaLiga" }, 
-    { id: 877, name: "DAZN ZONA IT" }, { id: 960, name: "DAZN Ligue 1 FR" }, { id: 918, name: "DAZN PT FIFA" },
-    { id: 285, name: "Discovery Velocity" }, { id: 311, name: "Discovery Life" }, { id: 313, name: "Discovery Channel" }, { id: 657, name: "Discovery Family" }, { id: 661, name: "Discovery Turbo" },
-    { id: 312, name: "Disney Channel" }, { id: 314, name: "Disney XD" }, { id: 652, name: "Disney JR" }, 
-    { id: 801, name: "DR1 DK" }, { id: 802, name: "DR2 DK" }, 
-    { id: 400, name: "Digi Sport 1" }, { id: 401, name: "Digi Sport 2" }, { id: 402, name: "Digi Sport 3" }, { id: 403, name: "Digi Sport 4" }, 
-    { id: 465, name: "Diema Sport 1" }, { id: 466, name: "Diema Sport 2" }, { id: 467, name: "Diema Sport 3" }, { id: 482, name: "Diema" }, { id: 485, name: "Diema Family" }, 
-    { id: 604, name: "Dubai Sports 1" }, { id: 605, name: "Dubai Sports 2" }, { id: 606, name: "Dubai Sports 3" }, { id: 608, name: "Dubai Racing 2" }, 
-    { id: 786, name: "DSTV Mzansi" }, { id: 827, name: "DSTV M-Net" }, { id: 828, name: "DSTV kykNET" }, 
-    { id: 651, name: "Destination America" }, { id: 348, name: "Dave" }, { id: 1051, name: "Dajto" },
-    { id: 44, name: "ESPN USA" }, { id: 45, name: "ESPN2 USA" }, { id: 316, name: "ESPNU" }, { id: 375, name: "ESPN Deportes" }, { id: 288, name: "ESPNews" }, 
-    { id: 379, name: "ESPN 1 NL" }, { id: 386, name: "ESPN 2 NL" }, { id: 888, name: "ESPN 3 NL" }, 
-    { id: 81, name: "ESPN Brasil" }, { id: 82, name: "ESPN2 Brasil" }, { id: 83, name: "ESPN3 Brasil" }, { id: 85, name: "ESPN4 Brasil" }, 
-    { id: 149, name: "ESPN Argentina" }, { id: 150, name: "ESPN2 Argentina" }, { id: 798, name: "ESPN3 Argentina" },
-    { id: 925, name: "ESPN 1 MX" }, { id: 926, name: "ESPN 2 MX" }, { id: 927, name: "ESPN 3 MX" }, { id: 928, name: "ESPN 4 MX" },
-    { id: 71, name: "Eleven Sports 1 PL" }, { id: 72, name: "Eleven Sports 2 PL" }, { id: 428, name: "Eleven Sports 3 PL" }, { id: 999, name: "Eleven Sports 4 PL" },
-    { id: 455, name: "Eleven Sports 1 PT" }, { id: 456, name: "Eleven Sports 2 PT" }, { id: 457, name: "Eleven Sports 3 PT" }, { id: 458, name: "Eleven Sports 4 PT" }, { id: 459, name: "Eleven Sports 5 PT" }, 
-    { id: 41, name: "EuroSport 1 GR" }, { id: 42, name: "EuroSport 2 GR" }, 
-    { id: 57, name: "EuroSport 1 PL" }, { id: 58, name: "EuroSport 2 PL" }, 
-    { id: 231, name: "Eurosport 1 SW" }, { id: 232, name: "Eurosport 2 SW" }, 
-    { id: 233, name: "Eurosport 1 NL" }, { id: 234, name: "Eurosport 2 NL" }, 
-    { id: 524, name: "EuroSport 1 ES" }, { id: 525, name: "EuroSport 2 ES" }, 
-    { id: 878, name: "EuroSport 1 IT" }, { id: 879, name: "EuroSport 2 IT" }, 
-    { id: 772, name: "Eurosport 1 FR" }, { id: 773, name: "Eurosport 2 FR" }, 
-    { id: 387, name: "Eurosport 1 BG" }, 
-    { id: 315, name: "E! Entertainment" }, { id: 363, name: "E4 Channel" }, { id: 774, name: "ERT 1" },
-    { id: 279, name: "FUSE TV" }, { id: 39, name: "Fox Sports 1" }, { id: 758, name: "Fox Sports 2" }, { id: 756, name: "FOX Soccer Plus" }, { id: 369, name: "Fox Cricket" }, { id: 643, name: "FOX Deportes" }, { id: 297, name: "Fox Business" }, { id: 54, name: "FOX USA" }, { id: 347, name: "Fox News" }, { id: 768, name: "FOX NY" }, { id: 775, name: "Fox Weather" }, 
-    { id: 820, name: "FOX Sports 502 AU" }, { id: 821, name: "FOX Sports 503 AU" }, { id: 822, name: "FOX Sports 504 AU" }, { id: 823, name: "FOX Sports 505 AU" }, { id: 824, name: "FOX Sports 506 AU" }, { id: 825, name: "FOX Sports 507 AU" }, 
-    { id: 787, name: "Fox Sports AR" }, { id: 788, name: "Fox Sports 2 AR" }, { id: 789, name: "Fox Sports 3 AR" }, 
-    { id: 929, name: "Fox Sports 1 MX" }, { id: 930, name: "Fox Sports 2 MX" }, { id: 931, name: "Fox Sports 3 MX" }, { id: 830, name: "Fox Premium MX" }, 
-    { id: 483, name: "FOX HD BG" }, 
-    { id: 317, name: "FX USA" }, { id: 298, name: "FXX USA" }, { id: 301, name: "Freeform" }, { id: 381, name: "FX Movie Channel" }, 
-    { id: 568, name: "FilmBox Premium" }, { id: 757, name: "Fight Network" }, { id: 665, name: "FYI" }, { id: 688, name: "Film4 UK" }, { id: 744, name: "Fashion TV" }, { id: 751, name: "FETV" }, 
-    { id: 890, name: "FanDuel Arizona" }, { id: 891, name: "FanDuel Detroit" }, { id: 892, name: "FanDuel Florida" }, { id: 893, name: "FanDuel Grt Lakes" }, { id: 894, name: "FanDuel Indiana" }, { id: 895, name: "FanDuel KC" }, { id: 896, name: "FanDuel Midwest" }, { id: 897, name: "FanDuel NOLA" }, { id: 898, name: "FanDuel North" }, { id: 899, name: "FanDuel Ohio" }, { id: 900, name: "FanDuel OK" }, { id: 902, name: "FanDuel SoCal" }, { id: 903, name: "FanDuel South" }, { id: 904, name: "FanDuel Southeast" }, { id: 905, name: "FanDuel Sun" }, { id: 906, name: "FanDuel West" }, { id: 907, name: "FanDuel Wisc" }, 
-    { id: 950, name: "France 2" }, { id: 951, name: "France 3" }, { id: 952, name: "France 4" }, { id: 953, name: "France 5" }, 
-    { id: 530, name: "GOL PLAY" }, { id: 318, name: "GOLF Channel" }, { id: 319, name: "Game Show Net" }, { id: 687, name: "Gold UK" }, { id: 699, name: "GAC Family" }, { id: 743, name: "Galavision" }, { id: 752, name: "Grit" }, { id: 836, name: "Global CA" }, 
-    { id: 760, name: "Globo SP" }, { id: 761, name: "Globo RIO" }, 
-    { id: 320, name: "Hallmark Channel" }, { id: 296, name: "Hallmark M&M" }, { id: 282, name: "Heroes & Icons" }, { id: 322, name: "History" }, { id: 323, name: "HLN" }, { id: 382, name: "HGTV" }, { id: 846, name: "Happy TV" }, { id: 553, name: "HOT3" }, 
-    { id: 321, name: "HBO USA" }, { id: 689, name: "HBO2" }, { id: 690, name: "HBO Comedy" }, { id: 691, name: "HBO Family" }, { id: 692, name: "HBO Latino" }, { id: 693, name: "HBO Signature" }, { id: 694, name: "HBO Zone" }, { id: 569, name: "HBO Poland" }, 
-    { id: 350, name: "ITV 1" }, { id: 351, name: "ITV 2" }, { id: 352, name: "ITV 3" }, { id: 353, name: "ITV 4" }, { id: 876, name: "ITV Quiz" }, 
-    { id: 854, name: "Italia 1" }, { id: 324, name: "Invest. Discovery" }, { id: 325, name: "ION" }, { id: 656, name: "IFC TV" }, 
-    { id: 803, name: "Kanal 4 DK" }, { id: 804, name: "Kanal 5 DK" }, { id: 731, name: "Kabel Eins" }, { id: 1001, name: "Kanal D" }, 
-    { id: 276, name: "LaLigaTV UK" }, { id: 539, name: "LaLiga SmartBank" }, { id: 278, name: "Law & Crime" }, { id: 645, name: "L'Equipe" }, { id: 534, name: "La Sexta" }, { id: 826, name: "LFC TV" }, { id: 849, name: "Logo TV" }, { id: 924, name: "Las Estrellas" }, { id: 962, name: "LCI" }, { id: 326, name: "Lifetime" }, { id: 389, name: "Lifetime Movies" }, { id: 855, name: "La7" }, { id: 856, name: "LA7d" }, 
-    { id: 136, name: "Match Football 1" }, { id: 137, name: "Match Football 2" }, { id: 138, name: "Match Football 3" }, { id: 573, name: "Match Premier" }, { id: 127, name: "Match TV" }, { id: 395, name: "Match Boets" }, 
-    { id: 84, name: "Movistar Laliga" }, { id: 435, name: "Movistar Liga" }, { id: 437, name: "Movistar Supercopa" }, { id: 436, name: "Movistar Deportes" }, { id: 438, name: "Movistar Deportes 2" }, { id: 526, name: "Movistar Deportes 3" }, { id: 527, name: "Movistar Deportes 4" }, { id: 528, name: "Movistar Golf" }, 
-    { id: 563, name: "Motowizja" }, { id: 765, name: "MSG" }, { id: 327, name: "MSNBC" }, { id: 299, name: "Magnolia Network" }, { id: 265, name: "M4 Sports" }, { id: 470, name: "M6 France" }, { id: 646, name: "Racer TV" }, { id: 770, name: "Marquee Sports" }, { id: 399, name: "MLB Network" }, { id: 829, name: "MASN" }, { id: 654, name: "MY9TV" }, { id: 661, name: "Discovery Turbo" }, { id: 662, name: "METV" }, { id: 733, name: "MDR DE" }, { id: 749, name: "Mundotoro TV" }, { id: 778, name: "Monumental Sports" }, { id: 806, name: "MTV Denmark" }, { id: 791, name: "MGM+ / Epix" }, { id: 990, name: "MTV Poland" }, { id: 367, name: "MTV UK" }, { id: 371, name: "MTV USA" }, { id: 377, name: "MUTV" }, 
-    { id: 779, name: "Max Sport 1" }, { id: 780, name: "Max Sport 2" }, { id: 472, name: "Max Sport 1 BG" }, { id: 473, name: "Max Sport 2 BG" }, { id: 474, name: "Max Sport 3 BG" }, { id: 475, name: "Max Sport 4 BG" }, 
-    { id: 53, name: "NBC USA" }, { id: 404, name: "NBA TV" }, { id: 405, name: "NFL Network" }, { id: 663, name: "NHL Network" }, { id: 667, name: "NFL RedZone" }, { id: 277, name: "NBC10 Philly" }, { id: 777, name: "NBC Philadelphia" }, { id: 753, name: "NBC Boston" }, { id: 754, name: "NBC Bay Area" }, { id: 755, name: "NBC California" }, { id: 769, name: "NBC NY" }, { id: 845, name: "NBC Universo" }, { id: 762, name: "NESN" }, 
-    { id: 468, name: "Nova Sport BG" }, { id: 480, name: "Nova TV BG" }, { id: 582, name: "Nova Sport SRB" }, { id: 847, name: "Nova S" }, 
-    { id: 631, name: "Nova Sports 1" }, { id: 632, name: "Nova Sports 2" }, { id: 633, name: "Nova Sports 3" }, { id: 634, name: "Nova Sports 4" }, { id: 635, name: "Nova Sports 5" }, { id: 636, name: "Nova Sports 6" }, { id: 599, name: "Nova Premier" }, { id: 637, name: "Nova Start" }, { id: 638, name: "Nova Prime" }, { id: 639, name: "Nova News" }, 
-    { id: 1021, name: "Nova Sport 1 CZ" }, { id: 1022, name: "Nova Sport 2 CZ" }, { id: 1023, name: "Nova Sport 3 CZ" }, { id: 1024, name: "Nova Sport 4 CZ" }, { id: 1025, name: "Nova Sport 5 CZ" }, { id: 1026, name: "Nova Sport 6 CZ" }, { id: 1060, name: "Nova Sport 3 SK" }, { id: 1061, name: "Nova Sport 4 SK" }, { id: 1062, name: "Nova Sport 5 SK" }, { id: 1034, name: "Nova HD" }, { id: 1003, name: "NOW TV" }, 
-    { id: 328, name: "Nat Geo" }, { id: 745, name: "Nat Geo Wild" }, { id: 329, name: "NICK JR" }, { id: 330, name: "NICK" }, { id: 649, name: "Nicktoons" }, { id: 666, name: "Nick Music" }, { id: 650, name: "TeenNick" }, 
-    { id: 736, name: "NDR" }, { id: 292, name: "NewsNation" }, { id: 613, name: "Newsmax" }, { id: 835, name: "Noovo" }, 
-    { id: 611, name: "OnTime Sports" }, { id: 541, name: "ONE 1" }, { id: 542, name: "ONE 2" }, 
-    { id: 439, name: "Orange Sport 1" }, { id: 440, name: "Orange Sport 2" }, { id: 441, name: "Orange Sport 3" }, { id: 442, name: "Orange Sport 4" }, 
-    { id: 1027, name: "Oneplay Sport 1" }, { id: 1028, name: "Oneplay Sport 2" }, { id: 1029, name: "Oneplay Sport 3" }, { id: 1038, name: "OnePlay Sport 4" }, { id: 1039, name: "OnePlay MD2" }, { id: 1040, name: "OnePlay MD3" }, { id: 1041, name: "OnePlay MD4" }, 
-    { id: 331, name: "OWN" }, { id: 332, name: "Oxygen" }, { id: 848, name: "Outdoor Channel" }, 
-    { id: 562, name: "Polsat" }, { id: 47, name: "Polsat Sport 1" }, { id: 50, name: "Polsat Sport 2" }, { id: 129, name: "Polsat Sport 3" }, { id: 443, name: "Polsat News" }, { id: 564, name: "Polsat Film" }, { id: 991, name: "Polsat Premium 1" }, { id: 992, name: "Polsat Premium 2" }, { id: 993, name: "Polsat Extra 1" }, { id: 994, name: "Polsat Extra 2" }, { id: 995, name: "Polsat Extra 3" }, { id: 996, name: "Polsat Extra 4" }, { id: 997, name: "Polsat Fight" }, { id: 998, name: "Polsat News HD" }, 
-    { id: 771, name: "Premier Sports 1" }, { id: 799, name: "Premier Sports 2" }, { id: 88, name: "Premier Brasil" }, { id: 1030, name: "Premier Sport 1" }, { id: 1031, name: "Premier Sport 2" }, { id: 1032, name: "Premier Sport 3" }, 
-    { id: 583, name: "Prima Sport 1" }, { id: 584, name: "Prima Sport 2" }, { id: 585, name: "Prima Sport 3" }, { id: 586, name: "Prima Sport 4" }, { id: 843, name: "Prima TV" }, 
-    { id: 718, name: "Porto Canal" }, { id: 730, name: "ProSieben" }, { id: 450, name: "PTV Sports" }, { id: 43, name: "PDC TV" }, { id: 334, name: "Paramount" }, { id: 653, name: "POP TV" }, { id: 287, name: "Pac-12 Network" }, { id: 210, name: "PBS" }, 
-    { id: 293, name: "Reelz" }, { id: 364, name: "RTE 1" }, { id: 365, name: "RTE 2" }, { id: 119, name: "RMC Sport 1" }, { id: 120, name: "RMC Sport 2" }, { id: 954, name: "RMC Story" }, 
-    { id: 719, name: "RTP 1" }, { id: 720, name: "RTP 2" }, { id: 721, name: "RTP 3" }, 
-    { id: 850, name: "Rai 1" }, { id: 851, name: "Rai 2" }, { id: 852, name: "Rai 3" }, { id: 853, name: "Rai 4" }, { id: 882, name: "Rai Sport" }, { id: 858, name: "Rai Premium" }, 
-    { id: 523, name: "Real Madrid TV" }, { id: 740, name: "RTL DE" }, { id: 390, name: "RTL7 NL" }, { id: 839, name: "RDS" }, { id: 840, name: "RDS 2" }, { id: 841, name: "RDS Info" }, 
-    { id: 471, name: "Ring BG" }, { id: 555, name: "Racing TV" }, { id: 607, name: "Rally TV" }, { id: 920, name: "Root Sports" }, 
-    { id: 31, name: "TNT Sports 1" }, { id: 32, name: "TNT Sports 2" }, { id: 33, name: "TNT Sports 3" }, { id: 34, name: "TNT Sports 4" }, 
-    { id: 35, name: "Sky Sports Football" }, { id: 36, name: "Sky Sports+" }, { id: 37, name: "Sky Sports Action" }, { id: 38, name: "Sky Sports Main Event" }, { id: 46, name: "Sky Sports Tennis" }, { id: 130, name: "Sky Sports PL" }, { id: 60, name: "Sky Sports F1" }, { id: 65, name: "Sky Sports Cricket" }, { id: 70, name: "Sky Sports Golf" }, { id: 366, name: "Sky Sports News" }, { id: 449, name: "Sky Sports MIX" }, { id: 554, name: "Sky Sports Racing" }, 
-    { id: 240, name: "Sky Sports 1 DE" }, { id: 241, name: "Sky Sports 2 DE" }, { id: 556, name: "Sky Top Event DE" }, { id: 557, name: "Sky Mix DE" }, { id: 785, name: "Sky Golf DE" }, { id: 274, name: "Sky F1 DE" }, { id: 884, name: "Sky Tennis DE" }, { id: 558, name: "Sky Bundesliga 1" }, { id: 946, name: "Sky Bundesliga 2" }, { id: 947, name: "Sky Bundesliga 3" }, { id: 948, name: "Sky Bundesliga 4" }, { id: 949, name: "Sky Bundesliga 5" }, { id: 559, name: "Sky Sport Austria 1" }, 
-    { id: 574, name: "Sky Sports Golf IT" }, { id: 575, name: "Sky Sport MotoGP" }, { id: 576, name: "Sky Sport Tennis IT" }, { id: 577, name: "Sky Sport F1 IT" }, { id: 460, name: "Sky Sport MAX IT" }, { id: 461, name: "Sky Sport UNO" }, { id: 462, name: "Sky Sport Arena" }, { id: 881, name: "Sky UNO" }, { id: 869, name: "Sky Sport 24" }, { id: 870, name: "Sky Sport Calcio" }, { id: 875, name: "Sky Sport Basket" }, { id: 880, name: "Sky Serie" }, 
-    { id: 871, name: "Sky Calcio 1" }, { id: 872, name: "Sky Calcio 2" }, { id: 873, name: "Sky Calcio 3" }, { id: 874, name: "Sky Calcio 4" }, 
-    { id: 588, name: "Sky Sport 1 NZ" }, { id: 589, name: "Sky Sport 2 NZ" }, { id: 590, name: "Sky Sport 3 NZ" }, { id: 591, name: "Sky Sport 4 NZ" }, { id: 592, name: "Sky Sport 5 NZ" }, { id: 593, name: "Sky Sport 6 NZ" }, { id: 594, name: "Sky Sport 7 NZ" }, { id: 595, name: "Sky Sport 8 NZ" }, { id: 596, name: "Sky Sport 9 NZ" }, { id: 587, name: "Sky Sport Select NZ" }, 
-    { id: 671, name: "Sky Cinema Premiere" }, { id: 672, name: "Sky Cinema Select" }, { id: 673, name: "Sky Cinema Hits" }, { id: 674, name: "Sky Cinema Greats" }, { id: 675, name: "Sky Cinema Animation" }, { id: 676, name: "Sky Cinema Family" }, { id: 677, name: "Sky Cinema Action" }, { id: 678, name: "Sky Cinema Comedy" }, { id: 679, name: "Sky Cinema Thriller" }, { id: 680, name: "Sky Cinema Drama" }, { id: 681, name: "Sky Cinema Sci-Fi" }, 
-    { id: 859, name: "Sky Cinema Collection" }, { id: 860, name: "Sky Cinema Uno" }, { id: 861, name: "Sky Cinema Action IT" }, { id: 862, name: "Sky Cinema Comedy IT" }, { id: 863, name: "Sky Cinema Uno +24" }, { id: 864, name: "Sky Cinema Romance" }, { id: 865, name: "Sky Cinema Family IT" }, { id: 867, name: "Sky Cinema Drama IT" }, { id: 868, name: "Sky Cinema Suspense" }, 
-    { id: 682, name: "Sky Showcase" }, { id: 683, name: "Sky Arts" }, { id: 684, name: "Sky Comedy" }, { id: 685, name: "Sky Crime" }, { id: 686, name: "Sky History" }, { id: 708, name: "Sky MAX" }, { id: 361, name: "Sky Witness" }, { id: 362, name: "Sky Atlantic" }, 
-    { id: 885, name: "SONY TEN 1" }, { id: 886, name: "SONY TEN 2" }, { id: 887, name: "SONY TEN 3" }, 
-    { id: 759, name: "SNY" }, { id: 965, name: "Sport en France" }, { id: 982, name: "Spectrum SportsNet" }, { id: 921, name: "Space City Home" }, { id: 922, name: "SportsNet Pitt" }, { id: 764, name: "Spectrum Sportsnet" }, 
-    { id: 970, name: "Starz Cinema" }, { id: 971, name: "Starz Comedy" }, { id: 972, name: "Starz Edge" }, { id: 973, name: "Starz In Black" }, { id: 974, name: "Starz Kids & Family" }, { id: 975, name: "Starz Encore" }, { id: 976, name: "Starz Encore Action" }, { id: 977, name: "Starz Encore Black" }, { id: 978, name: "Starz Encore Classic" }, { id: 979, name: "Starz Encore Family" }, { id: 980, name: "Starz Encore Suspense" }, { id: 981, name: "Starz Encore Westerns" }, { id: 335, name: "Starz" }, 
-    { id: 614, name: "SSC Sport 1" }, { id: 615, name: "SSC Sport 2" }, { id: 616, name: "SSC Sport 3" }, { id: 617, name: "SSC Sport 4" }, { id: 618, name: "SSC Sport 5" }, { id: 619, name: "SSC Extra 1" }, { id: 620, name: "SSC Extra 2" }, { id: 621, name: "SSC Extra 3" }, 
-    { id: 140, name: "Sport 1 IL" }, { id: 141, name: "Sport 2 IL" }, { id: 142, name: "Sport 3 IL" }, { id: 143, name: "Sport 4 IL" }, { id: 144, name: "Sport 5 IL" }, { id: 145, name: "Sport 5 PLUS" }, { id: 146, name: "Sport 5 Live" }, { id: 147, name: "Sport 5 Star" }, { id: 148, name: "Sport 5 Gold" }, 
-    { id: 333, name: "Showtime" }, { id: 792, name: "Showtime 2" }, { id: 793, name: "Showtime Showcase" }, { id: 794, name: "Showtime Extreme" }, { id: 795, name: "Showtime Family" }, { id: 796, name: "Showtime Next" }, { id: 797, name: "Showtime Women" }, { id: 695, name: "SHOxBET" }, 
-    { id: 267, name: "Star Sports 1" }, { id: 268, name: "Star Sports Hindi" }, 
-    { id: 49, name: "Sport TV1" }, { id: 74, name: "Sport TV2" }, { id: 454, name: "Sport TV3" }, { id: 289, name: "Sport TV4" }, { id: 290, name: "Sport TV5" }, { id: 291, name: "Sport TV6" }, 
-    { id: 78, name: "SporTV" }, { id: 79, name: "SporTV 2" }, { id: 80, name: "SporTV 3" }, 
-    { id: 101, name: "Sport Klub 1" }, { id: 102, name: "Sport Klub 2" }, { id: 103, name: "Sport Klub 3" }, { id: 104, name: "Sport Klub 4" }, { id: 453, name: "Sport Klub HD" }, { id: 710, name: "Sport Klub Golf" }, 
-    { id: 406, name: "Sportsnet Ontario" }, { id: 411, name: "Sportsnet One" }, { id: 407, name: "Sportsnet West" }, { id: 408, name: "Sportsnet East" }, { id: 409, name: "Sportsnet 360" }, { id: 410, name: "Sportsnet World" }, 
-    { id: 412, name: "SuperSport Grandstand" }, { id: 413, name: "SuperSport PSL" }, { id: 414, name: "SuperSport PL" }, { id: 415, name: "SuperSport LaLiga" }, { id: 416, name: "SuperSport Variety 1" }, { id: 417, name: "SuperSport Variety 2" }, { id: 418, name: "SuperSport Variety 3" }, { id: 419, name: "SuperSport Variety 4" }, { id: 420, name: "SuperSport Action" }, { id: 421, name: "SuperSport Rugby" }, { id: 422, name: "SuperSport Golf" }, { id: 423, name: "SuperSport Tennis" }, { id: 424, name: "SuperSport Motorsport" }, { id: 56, name: "Supersport Football" }, { id: 368, name: "SuperSport Cricket" }, { id: 572, name: "SuperSport MaXimo 1" }, 
-    { id: 716, name: "Sporting TV" }, { id: 571, name: "SportDigital" }, { id: 640, name: "Sportdigital 1+" }, { id: 641, name: "Sport1 DE" }, { id: 294, name: "Science Channel" }, { id: 732, name: "Sixx" }, { id: 373, name: "SYFY" }, { id: 658, name: "Sundance TV" }, { id: 735, name: "SWR" }, { id: 738, name: "SUPER RTL" }, { id: 739, name: "SR Fernsehen" }, { id: 603, name: "Smithsonian" }, { id: 883, name: "SBS6" }, { id: 811, name: "SEE DK" }, { id: 1002, name: "Show TV" }, { id: 1004, name: "Star TV" }, { id: 385, name: "SEC Network" }, { id: 722, name: "SIC" }, { id: 670, name: "S4C" }, { id: 729, name: "SAT.1" },
-    { id: 111, name: "TSN1" }, { id: 112, name: "TSN2" }, { id: 113, name: "TSN3" }, { id: 114, name: "TSN4" }, { id: 115, name: "TSN5" }, 
-    { id: 565, name: "TVN HD" }, { id: 444, name: "TVN24" }, { id: 560, name: "TVP1" }, { id: 561, name: "TVP2" }, { id: 128, name: "TVP Sport" }, { id: 452, name: "TVP INFO" }, 
-    { id: 532, name: "Telecinco" }, { id: 533, name: "TVE La 1" }, { id: 536, name: "TVE La 2" }, { id: 529, name: "Teledeporte" }, 
-    { id: 723, name: "TVI" }, { id: 724, name: "TVI Reality" }, 
-    { id: 746, name: "TYC Sports" }, { id: 87, name: "TNT Brasil" }, { id: 388, name: "TNT Sports AR" }, { id: 642, name: "TNT Sports Chile" }, 
-    { id: 40, name: "Tennis Channel" }, { id: 741, name: "Ten Sports" }, { id: 66, name: "TUDN USA" }, { id: 935, name: "TUDN MX" }, { id: 131, name: "Telemundo" }, { id: 336, name: "TBS" }, { id: 337, name: "TLC" }, { id: 338, name: "TNT USA" }, { id: 469, name: "TF1" }, { id: 955, name: "TMC" }, { id: 698, name: "TMC USA" }, 
-    { id: 833, name: "TVA Sports" }, { id: 834, name: "TVA Sports 2" }, { id: 932, name: "TVC Deportes" }, 
-    { id: 340, name: "Travel Channel" }, { id: 341, name: "TruTV" }, { id: 342, name: "TVLAND" }, { id: 644, name: "TCM" }, { id: 384, name: "Food Network" }, { id: 394, name: "Weather Channel" }, { id: 650, name: "TeenNick" }, { id: 660, name: "TV ONE" }, 
-    { id: 807, name: "TV2 Bornholm" }, { id: 808, name: "TV2 Sport X" }, { id: 809, name: "TV3 Sport" }, { id: 810, name: "TV2 Sport" }, { id: 817, name: "TV2 DK" }, { id: 818, name: "TV2 Zulu" }, { id: 819, name: "TV3+ DK" }, { id: 223, name: "TV3 Max" }, 
-    { id: 842, name: "TVO CA" }, { id: 1005, name: "TV8 Turkey" }, { id: 270, name: "T Sports" }, { id: 889, name: "TRT Spor" }, 
-    { id: 700, name: "TV4 Hockey" }, { id: 701, name: "TV4 Tennis" }, { id: 702, name: "TV4 Motor" }, { id: 703, name: "TV4 Live 1" }, { id: 704, name: "TV4 Live 2" }, { id: 705, name: "TV4 Live 3" }, { id: 706, name: "TV4 Live 4" }, { id: 707, name: "TV4 Sportkanalen" }, { id: 747, name: "TV4 Football" }, 
-    { id: 709, name: "Tennis+ 10" }, { id: 711, name: "Tennis+ 12" }, 
-    { id: 343, name: "USA Network" }, { id: 668, name: "Universal Kids" }, { id: 132, name: "Univision" }, { id: 133, name: "Unimas" }, 
-    { id: 451, name: "Viaplay Sports 1" }, { id: 550, name: "Viaplay Sports 2" }, { id: 521, name: "#Vamos" }, 
-    { id: 815, name: "V Film Premiere" }, { id: 816, name: "V Film Family" }, { id: 272, name: "V Sport Motor" }, { id: 260, name: "Vodafone Sport" }, 
-    { id: 344, name: "VH1" }, { id: 378, name: "Veronica" }, { id: 391, name: "VTV+ Uruguay" }, { id: 659, name: "VICE TV" }, 
-    { id: 346, name: "Willow Cricket" }, { id: 598, name: "Willow 2" }, { id: 376, name: "WWE Network" }, { id: 392, name: "Win Sports+" }, { id: 655, name: "WETV" }, { id: 734, name: "WDR" }, { id: 959, name: "W9" }, 
-    { id: 286, name: "YTV" }, { id: 763, name: "YES Network" }, { id: 543, name: "Yes Action" }, { id: 544, name: "Yes Kids" }, { id: 545, name: "Yes Comedy" }, { id: 837, name: "Yes TV" }, 
-    { id: 393, name: "Ziggo Sport" }, { id: 398, name: "Ziggo Sport 2" }, { id: 919, name: "Ziggo Sport 3" }, { id: 396, name: "Ziggo Sport 4" }, { id: 383, name: "Ziggo Sport 5" }, { id: 901, name: "Ziggo Sport 6" }, 
-    { id: 727, name: "ZDF" }, { id: 728, name: "ZDF Info" }, { id: 726, name: "3sat" }, { id: 963, name: "6ter" }, { id: 857, name: "20 Mediaset" }, { id: 800, name: "6'eren" }, { id: 360, name: "5 USA" }
-];
-
-        // --- UI UTILS ---
-        function toggleForm(id) {
-            ['xtreamForm', 'stalkerForm'].forEach(fid => {
-                if(fid !== id) document.getElementById(fid).style.display = 'none';
-            });
-            const form = document.getElementById(id);
-            form.style.display = (form.style.display === 'block') ? 'none' : 'block';
-        }
-
-        function formatMac(input) {
-            let r = input.value.replace(/[^0-9a-fA-F]/g,"");
-            if(r.length > 2) {
-                let groups = [];
-                for(let i=0; i<r.length; i+=2) groups.push(r.substr(i,2));
-                input.value = groups.join(":").toUpperCase();
-            } else {
-                input.value = r.toUpperCase();
-            }
-        }
-
-        // --- XTREAM LOGIC ---
-        async function connectXtream() {
-            const url = document.getElementById('xcUrl').value.trim();
-            const user = document.getElementById('xcUser').value.trim();
-            const pass = document.getElementById('xcPass').value.trim();
-
-            if(!url || !user || !pass) return alert("Please fill in all Xtream fields.");
-
-            const btn = document.querySelector('#xtreamForm .btn-action');
-            btn.innerText = "CONNECTING...";
-            const apiUrl = `${url}/player_api.php?username=${user}&password=${pass}&action=get_live_streams`;
-            logStatus("Contacting Xtream Server...", 'info');
-
-            try {
-                // Use a proxy for CORS
-                const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(apiUrl);
-                const response = await fetch(proxyUrl);
-                if(!response.ok) throw new Error("Server connection failed");
-                const data = await response.json();
-                
-                if(data.length === 0) throw new Error("No channels found or invalid credentials");
-
-                allChannels = data.map(channel => ({
-                    name: channel.name,
-                    group: "XTREAM LIVE",
-                    source: "XC",
-                    logo: channel.stream_icon,
-                    url: `${url}/live/${user}/${pass}/${channel.stream_id}.m3u8`
-                }));
-
-                logStatus(`Xtream Connected! Loaded ${allChannels.length} channels`, 'success');
-                switchToListView();
-
-            } catch (e) {
-                console.error(e);
-                logStatus(`Xtream Error: ${e.message}`, 'error');
-                alert("Connection failed. Check URL/Credentials or CORS restriction.");
-            } finally {
-                btn.innerText = "LOGIN & LOAD";
-            }
-        }
-
-        // --- STALKER PORTAL LOGIC (MODIFIED FOR PROXY) ---
-        async function connectStalker() {
-    const portal = document.getElementById('stPortal').value.trim();
-    const mac = document.getElementById('stMac').value.trim();
-    const sn = document.getElementById('stSn').value.trim();
-    // Capture the new IDs
-    const devId = document.getElementById('stDevId').value.trim();
-    const devId2 = document.getElementById('stDevId2').value.trim();
-
-    if (!portal || !mac) return alert("Portal Address and MAC are required.");
-
-    const btn = document.querySelector('#stalkerForm .btn-action');
-    btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> CONNECTING...';
-    
-    const proxyBase = "proxy.php"; 
-
-    try {
-        logStatus("Authenticating with Stalker Middleware...", 'info');
-
-        // Pass all IDs to the backend
-        const fetchUrl = `${proxyBase}?action=get_channels` +
-                         `&portal=${encodeURIComponent(portal)}` +
-                         `&mac=${encodeURIComponent(mac)}` +
-                         `&sn=${encodeURIComponent(sn)}` +
-                         `&device_id=${encodeURIComponent(devId)}` +
-                         `&device_id2=${encodeURIComponent(devId2)}`;
-        
-        const response = await fetch(fetchUrl);
-        if(!response.ok) throw new Error("Proxy connection failed.");
-        const data = await response.json();
-
-        const channels = data.js ? data.js.data : (data.items ? data.items : []);
-
-        if (!channels || channels.length === 0) {
-            throw new Error("Authentication failed or no channels found.");
-        }
-
-        allChannels = channels.map(ch => ({
-            name: ch.name,
-            group: "STALKER TV",
-            source: "MAG",
-            logo: ch.logo, 
-            cmd: ch.cmd,        
-            portal_url: portal, 
-            mac_address: mac,
-            // We don't strictly need to save devId here for the link generation, 
-            // but the proxy handles it via session/cookies usually.
-            isStalker: true
-        }));
-
-        logStatus(`Stalker Connected! Loaded ${allChannels.length} channels`, 'success');
-        toggleForm('stalkerForm');
-        switchToListView();
-
-    } catch (e) {
-        console.error(e);
-        logStatus(`Stalker Error: ${e.message}`, 'error');
-        alert("Connection Failed. Check credentials or proxy.");
-    } finally {
-        btn.innerHTML = '<i class="fa-solid fa-plug"></i> CONNECT PORTAL';
+  
+// === แปลงข้อมูล M3U ===
+function parseM3U(data) {
+  const lines = data.trim().split('\n');
+  const channels = [];
+  for (let i = 0; i < lines.length; i++) {
+    if (lines[i].startsWith('#EXTINF')) {
+      const infoLine = lines[i];
+      const urlLine = (lines[i+1] || '').trim();
+      const logoMatch = infoLine.match(/tvg-logo="([^"]+)"/);
+      const groupMatch = infoLine.match(/group-title="([^"]+)"/);
+      const nameMatch = infoLine.match(/,\s*(.*)$/);
+      channels.push({
+        name: nameMatch ? nameMatch[1].trim() : 'ไม่ระบุ',
+        logo: logoMatch ? logoMatch[1] : '',
+        group: groupMatch ? groupMatch[1].trim() : 'อื่นๆ',
+        url: urlLine
+      });
     }
+  }
+  return channels;
 }
 
-        function switchToListView() {
-            if(allChannels.length > 0) {
-                renderList(allChannels);
-                document.getElementById('loadScreen').style.display = 'none';
-                document.getElementById('listView').style.display = 'flex';
-            }
-        }
+// === ตัวแปรหลัก ===
+const channels = parseM3U(m3uData);
+const videoPlayer = document.getElementById('videoPlayer');
+const channelList = document.getElementById('channelList');
+const categoryTab = document.getElementById('categoryTab');
+let currentCategory = 'all';
+let currentChannelIndex = -1;
 
-        // --- FILE UPLOAD LOGIC ---
-        function handleFileUpload(input) {
-            const file = input.files[0];
-            if (!file) return;
-            logStatus(`Reading file: ${file.name}...`, 'info');
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                const content = e.target.result;
-                const newChannels = parseM3U(content, "LOCAL FILE");
-                if (newChannels.length > 0) {
-                    allChannels = newChannels;
-                    logStatus(`Loaded ${allChannels.length} channels from file`, 'success');
-                    switchToListView();
-                } else {
-                    logStatus("No channels found in file", 'error');
-                    alert("Invalid M3U file");
-                }
-            };
-            reader.readAsText(file);
-        }
+// === จัดกลุ่มช่องตามหมวดหมู่ ===
+const groups = {};
+channels.forEach((ch, idx) => {
+  if (!groups[ch.group]) groups[ch.group] = [];
+  groups[ch.group].push({ ...ch, index: idx });
+});
 
-        // --- DADDYLIVE LOGIC (UPDATED WITH CORS PROXY) ---
-        function loadDaddyLive() {
-            allChannels = dlChannels.map((item) => {
-                let finalUrl = item.customUrl ? item.customUrl : `https://dlhd.link/stream/stream-${item.id}.php`;
-                
-                // DETECT: If the link is .m3u8, we must NOT use an iframe
-                const isHls = finalUrl.includes('.m3u8');
-                
-                // IF it is HLS, route it through a CORS proxy to bypass restrictions
-                if(isHls) {
-                    finalUrl = 'https://corsproxy.io/?' + encodeURIComponent(finalUrl);
-                }
+// === สร้างปุ่มหมวดหมู่ ===
+Object.keys(groups).forEach(groupName => {
+  const btn = document.createElement('button');
+  btn.className = 'category-btn';
+  btn.dataset.category = groupName;
+  btn.textContent = groupName;
+  btn.onclick = () => switchCategory(groupName);
+  categoryTab.appendChild(btn);
+});
 
-                return {
-                    name: item.name,
-                    group: "DADDYLIVE",
-                    source: "DLHD",
-                    url: finalUrl,
-                    logo: item.logo ? item.logo : null,
-                    // If it is HLS, set isIframe to false so the native player handles it
-                    isIframe: !isHls,
-                    isDaddy: !isHls // Only treat as Daddy embed if it's not HLS
-                };
-            });
-            switchToListView();
-        }
+// === เปลี่ยนหมวดหมู่ที่แสดง ===
+function switchCategory(catName) {
+  currentCategory = catName;
+  // อัปเดตสถานะปุ่ม
+  document.querySelectorAll('.category-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.category === catName);
+  });
+  // แสดง/ซ่อน กลุ่มช่อง
+  document.querySelectorAll('.channel-group').forEach(grp => {
+    grp.classList.toggle('hidden', catName !== 'all' && grp.dataset.group !== catName);
+  });
+}
 
-        // --- FOX TV LOGIC ---
-        function loadFoxTV() {
-            document.getElementById('loadScreen').style.display = 'none';
-            document.getElementById('listView').style.display = 'none';
-            document.getElementById('playerView').style.display = 'flex';
-            playIframe("https://dlhd.link/stream/stream-54.php", "FOX LIVE", "fox");
-        }
+// === สร้างรายการช่อง แยกตามกลุ่ม ===
+Object.entries(groups).forEach(([groupName, items]) => {
+  const groupDiv = document.createElement('div');
+  groupDiv.className = 'channel-group';
+  groupDiv.dataset.group = groupName;
 
-        // --- PREMIUM LOAD LOGIC ---
-        async function loadPremium() {
-            logStatus("Fetching latest WORKING Turk channels...", 'info');
-            
-            const staticChannels = [
-                // Star Jalsha MOVED to DaddyLive list above as requested
-                { name: "CNN Türk", url: "https://dsmartgo-live.ercdn.net/dsmartgo/cnnturk/cnnturk.isml/cnnturk.m3u8", logo: "https://imgur.com/n08cPYF.png", group: "News" },
-                { name: "4TürkPop TV", url: "https://cdn-4turkpop.yayin.com.tr/4turkpop/4turkpop/playlist.m3u8", logo: ".png", group: "News" },
-                { name: "4Kurd Music", url: "https:\/\/4kuhls.persiana.live\/hls\/stream.m3u8", logo: ".jpg", group: "Music" },
-                { name: "BesteFM", url: "https://host.onlineradyotv.net:8081/esfatv/tracks-v1a1/mono.m3u8", logo: ".png", group: "Music" }
-            ];
+  items.forEach(ch => {
+    const div = document.createElement('div');
+    div.className = 'channel-item';
+    div.setAttribute('tabindex', '0');
+    div.setAttribute('role', 'button');
+    div.setAttribute('aria-label', `ช่อง ${ch.name}`);
+    div.innerHTML = `
+      <img src="${ch.logo}" alt="${ch.name}" onerror="this.src='https://via.placeholder.com/60x36?text=📺'">
+      <div class="channel-name">${ch.name}</div>
+    `;
+    div.onclick = () => selectChannel(ch.index, div);
+    groupDiv.appendChild(div);
+  });
 
-            try {
-                // Try to load dynamic list, but keep our static ones at the top
-                const response = await fetchSmart('https://url.in.th/dTPxJ');
-                const dynamicChannels = parseM3U(response, "PREMIUM");
-                allChannels = [...staticChannels, ...dynamicChannels];
-                logStatus(`Loaded ${allChannels.length} Premium Channels`, 'success');
-                switchToListView();
-            } catch (e) {
-                logStatus("Failed to fetch dynamic list, loading static only...", 'error');
-                allChannels = staticChannels;
-                switchToListView();
-            }
-        }
+  channelList.appendChild(groupDiv);
+});
 
-        // --- UTILS ---
-        function addInputRow() {
-            const container = document.getElementById('inputContainer');
-            const div = document.createElement('div');
-            div.className = 'input-row';
-            div.innerHTML = `
-                <input type="text" class="url-input" placeholder="Another Playlist URL...">
-                <button class="btn-action btn-red" onclick="removeRow(this)" style="width:50px; margin:0;"><i class="fa-solid fa-times"></i></button>
-            `;
-            container.appendChild(div);
-        }
-        function removeRow(btn) { btn.parentElement.remove(); }
-        
-        function logStatus(msg, type='info') {
-            const log = document.getElementById('statusLog');
-            const color = type === 'error' ? 'var(--accent-red)' : (type === 'success' ? 'var(--accent-cyan)' : 'var(--text-dim)');
-            log.innerHTML += `<div style="color:${color}; margin-bottom:4px;">> ${msg}</div>`;
-            log.scrollTop = log.scrollHeight;
-        }
+// === เล่นช่องที่เลือก ===
+function selectChannel(index, element) {
+  if (index < 0 || index >= channels.length) return;
+  currentChannelIndex = index;
+  const ch = channels[index];
+  videoPlayer.src = ch.url;
+  videoPlayer.play().catch(e => console.log('Autoplay blocked:', e));
+  // ไฮไลต์
+  document.querySelectorAll('.channel-item').forEach(el => el.classList.remove('active'));
+  if (element) element.classList.add('active');
+}
 
-        async function fetchSmart(url) {
-            try {
-                const response = await fetch(url);
-                if (response.ok) return await response.text();
-                throw new Error("Direct failed");
-            } catch (e) {
-                try {
-                    const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(url);
-                    const response = await fetch(proxyUrl);
-                    if (response.ok) return await response.text();
-                    throw new Error("Proxy failed");
-                } catch (e2) {
-                    const proxyUrl2 = 'https://corsproxy.io/?' + encodeURIComponent(url);
-                    const response = await fetch(proxyUrl2);
-                    if (response.ok) return await response.text();
-                    throw new Error("All proxies failed");
-                }
-            }
-        }
+// === ปุ่มควบคุมวิดีโอ ===
+document.getElementById('loadVideoBtn').addEventListener('click', () => {
+  const url = document.getElementById('videoInput').value.trim();
+  if (!url) return alert('กรุณากรอก URL ก่อนครับ');
+  videoPlayer.src = url;
+  videoPlayer.play().catch(e => alert('ไม่สามารถเล่นได้: ' + e.message));
+});
 
-        async function loadAllPlaylists() {
-            const inputs = document.querySelectorAll('.url-input');
-            document.getElementById('statusLog').innerHTML = '';
-            let urls = [];
-            inputs.forEach(input => { if(input.value.trim()) urls.push(input.value.trim()); });
-            if(urls.length === 0) return alert("Please enter a URL.");
-
-            allChannels = []; 
-            logStatus("Connecting...", 'info');
-
-            for (let i = 0; i < urls.length; i++) {
-                let url = urls[i];
-                let sourceLabel = 'Source ' + (i+1);
-                try {
-                    const content = await fetchSmart(url);
-                    const newChannels = parseM3U(content, sourceLabel);
-                    if(newChannels.length > 0) {
-                        logStatus(`Loaded ${newChannels.length} channels`, 'success');
-                        allChannels = allChannels.concat(newChannels);
-                    } else {
-                        logStatus(`Empty playlist: ${sourceLabel}`, 'error');
-                    }
-                } catch (e) {
-                    logStatus(`Failed to load: ${sourceLabel}`, 'error');
-                }
-            }
-            if(allChannels.length > 0) switchToListView();
-            else alert("No channels found. Check logs.");
-        }
-
-        function parseM3U(content, sourceLabel) {
-            const lines = content.split('\n');
-            const channels = [];
-            let current = {};
-            lines.forEach(line => {
-                line = line.trim();
-                if(line.startsWith('#EXTINF:')) {
-                    const logo = line.match(/tvg-logo="([^"]*)"/);
-                    const group = line.match(/group-title="([^"]*)"/);
-                    const name = line.substring(line.lastIndexOf(',') + 1).trim();
-                    current.logo = logo ? logo[1] : null;
-                    current.group = group ? group[1] : 'General';
-                    current.name = name || 'Unknown Channel';
-                } else if(line.startsWith('http') || line.endsWith('.m3u8') || line.endsWith('.ts')) {
-                    current.url = line;
-                    current.source = sourceLabel;
-                    current.isIframe = false;
-                    if(current.name) channels.push(current);
-                    current = {};
-                }
-            });
-            return channels;
-        }
-
-        // --- RENDER LOGIC ---
-        function renderList(channels) {
-            const container = document.getElementById('listContent');
-            container.innerHTML = ''; 
-            const subset = channels.slice(0, RENDER_LIMIT);
-            const fragment = document.createDocumentFragment();
-
-            subset.forEach(ch => {
-                const card = document.createElement('div');
-                card.className = 'channel-card';
-                // IMPORTANT: Pass the entire 'ch' object now
-                card.onclick = () => decidePlayer(ch.url || ch.cmd, ch.isIframe, ch.isDaddy, ch.name, ch);
-                
-                let badgeClass = 'bg-cyan';
-                if(ch.group === 'DADDYLIVE') badgeClass = 'bg-purple';
-                if(ch.group === 'XTREAM LIVE') badgeClass = 'bg-green';
-                if(ch.source === 'MAG') badgeClass = 'bg-orange';
-                if(ch.source === 'PREMIUM') badgeClass = 'bg-gold';
-                
-                const logoHtml = ch.logo 
-                    ? `<img src="${ch.logo}" onerror="this.style.display='none'">` 
-                    : `${ch.name.substring(0,2)}`;
-
-                card.innerHTML = `
-                    <div class="card-logo">${logoHtml}</div>
-                    <div class="card-info">
-                        <div class="card-title">${ch.name}</div>
-                        <div class="card-meta">
-                            <span class="badge ${badgeClass}">${ch.source || 'LIVE'}</span>
-                            <span class="badge bg-gray">${ch.group || 'CH'}</span>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-play play-icon"></i>
-                `;
-                fragment.appendChild(card);
-            });
-            container.appendChild(fragment);
-
-            if(channels.length > RENDER_LIMIT) {
-                const info = document.createElement('div');
-                info.style.textAlign = 'center';
-                info.style.color = 'var(--text-dim)';
-                info.style.padding = '20px';
-                info.innerText = `Showing top ${RENDER_LIMIT} of ${channels.length} channels...`;
-                container.appendChild(info);
-            }
-        }
-
-        function handleSearch() {
-            clearTimeout(searchTimer);
-            searchTimer = setTimeout(() => {
-                const term = document.getElementById('channelSearch').value.toLowerCase();
-                const filtered = allChannels.filter(ch => 
-                    ch.name.toLowerCase().includes(term) || 
-                    (ch.group && ch.group.toLowerCase().includes(term))
-                );
-                renderList(filtered);
-            }, 300);
-        }
-
-        // --- PLAYER LOGIC (UPDATED FOR STALKER) ---
-        async function decidePlayer(urlOrCmd, isIframe, isDaddy, name, channelObj) {
-            document.getElementById('listView').style.display = 'none';
-            document.getElementById('playerView').style.display = 'flex';
-            
-            const titleHtml = name ? `${name} <span>LIVE</span>` : `LIVE STREAM <span>ON AIR</span>`;
-            document.getElementById('channelTitle').innerHTML = titleHtml;
-
-            // --- STALKER LOGIC ---
-            if (channelObj && channelObj.isStalker) {
-                resBadge.innerText = "GENERATING LINK...";
-                resBadge.style.color = "var(--accent-orange)";
-                resBadge.style.borderColor = "var(--accent-orange)";
-                
-                try {
-                    const proxyBase = "proxy.php";
-                    // Ask backend to create a temp stream link
-                    const genUrl = `${proxyBase}?action=create_link&cmd=${encodeURIComponent(channelObj.cmd)}&portal=${encodeURIComponent(channelObj.portal_url)}&mac=${encodeURIComponent(channelObj.mac_address)}`;
-                    
-                    const response = await fetch(genUrl);
-                    const data = await response.json();
-                    
-                    // Stalker response usually puts the link in js.cmd
-                    let streamUrl = data.js ? data.js.cmd : null;
-                    
-                    if(streamUrl) {
-                        // Clean up ffmpeg prefixes if present
-                        streamUrl = streamUrl.replace('ffmpeg ', '').replace('auto ', '');
-                        logStatus(`Generated Link: ${streamUrl}`, 'success');
-                        playHLS(streamUrl);
-                    } else {
-                        throw new Error("Server returned no stream link.");
-                    }
-                } catch(e) {
-                    console.error(e);
-                    alert("Error playing channel: Link expired or server blocked IP.");
-                    goBack();
-                }
-                return;
-            }
-
-            // --- NORMAL LOGIC ---
-            if(isIframe) {
-                playIframe(urlOrCmd, isDaddy ? "DADDY LIVE" : "LIVE STREAM", isDaddy ? "daddy" : "iframe");
-            } else {
-                playHLS(urlOrCmd);
-            }
-        }
-
-        // --- UPDATED PLAY IFRAME FUNCTION ---
-        function playIframe(url, label, type) {
-            video.style.display = 'none';
-            video.pause();
-            foxContainer.style.display = 'none';
-            daddyContainer.style.display = 'none';
-            
-            let target = (type === 'fox') ? foxContainer : daddyContainer;
-            target.style.display = 'block';
-            
-            // AUTOMATIC DETECTION:
-            // 1. If it's a DaddyLive link (dlhd.link), we MUST add referrer policy "no-referrer"
-            // 2. If it's a StarJalsha link, we MUST NOT add it (to mimic standard browser behavior)
-            const isDaddyLink = url.includes('dlhd.link');
-            const referrerAttr = isDaddyLink ? 'referrerpolicy="no-referrer"' : '';
-
-            target.innerHTML = `<iframe src="${url}" width="100%" height="500px" marginheight="0" marginwidth="0" scrolling="no" frameborder="0" allowfullscreen allow="encrypted-media" ${referrerAttr}></iframe>`;
-            
-            resBadge.innerText = label;
-            resBadge.style.color = "var(--accent-red)";
-            resBadge.style.borderColor = "var(--accent-red)";
-        }
-
-        function playHLS(url) {
-            foxContainer.innerHTML = '';
-            daddyContainer.innerHTML = '';
-            foxContainer.style.display = 'none';
-            daddyContainer.style.display = 'none';
-            
-            video.style.display = 'block';
-            resBadge.innerText = "CANLI | STREAM";
-            resBadge.style.color = "var(--accent-yellow)";
-            resBadge.style.borderColor = "var(--accent-yellow)";
-
-            if(Hls.isSupported()) {
-                if(hls) hls.destroy();
-                hls = new Hls({maxBufferLength: 30});
-                hls.loadSource(url);
-                hls.attachMedia(video);
-                hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
-            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                video.src = url;
-                video.play();
-            }
-        }
-
-        function toggleCustomFullscreen() {
-            if (!document.fullscreenElement) {
-                playerBody.requestFullscreen();
-                playerBody.classList.add('is-fullscreen');
-            } else {
-                document.exitFullscreen();
-                playerBody.classList.remove('is-fullscreen');
-            }
-        }
-
-        function reloadStream() {
-            const isIframe = (foxContainer.style.display === 'block' || daddyContainer.style.display === 'block');
-            if(isIframe) {
-               const target = (daddyContainer.style.display === 'block') ? daddyContainer : foxContainer;
-               const currentIframe = target.querySelector('iframe');
-               if(currentIframe) {
-                   const src = currentIframe.src;
-                   // CHECK AGAIN FOR RELOAD
-                   const isDaddyLink = src.includes('dlhd.link');
-                   const referrerAttr = isDaddyLink ? 'referrerpolicy="no-referrer"' : '';
-
-                   target.innerHTML = '';
-                   setTimeout(() => {
-                       target.innerHTML = `<iframe src="${src}" width="100%" height="100%" marginheight="0" marginwidth="0" scrolling="no" frameborder="0" allowfullscreen allow="encrypted-media" ${referrerAttr}></iframe>`;
-                   }, 100);
-               }
-            } else {
-                if(hls) { hls.stopLoad(); hls.startLoad(); video.play(); }
-            }
-        }
-
-        document.addEventListener('fullscreenchange', () => { 
-            if (!document.fullscreenElement) playerBody.classList.remove('is-fullscreen'); 
-        });
-
-        function goBack() {
-            video.pause();
-            foxContainer.innerHTML = '';
-            daddyContainer.innerHTML = '';
-            if(hls) hls.destroy();
-            document.getElementById('playerView').style.display = 'none';
-            
-            if (foxContainer.style.display === 'block') {
-                 document.getElementById('loadScreen').style.display = 'flex';
-            } else {
-                document.getElementById('listView').style.display = 'flex';
-            }
-        }
-    </script>
-</body>
-</html>
-    
-  </body>
-  
+document.getElementById('stretch').onclick = () => videoPlayer.style.objectFit = 'fill';
+document.getElementById('crop').onclick = () => videoPlayer.style.objectFit = 'cover';
+document.getElementById('zoom').onclick = () => {
+  videoPlayer.style.objectFit = (videoPlayer.style.objectFit === 'none') ? 'contain' : 'none';
+};
+document.getElementById('fullscreen').onclick = () => {
+  if (videoPlayer.requestFullscreen) videoPlayer.requestFullscreen();
+  else if (videoPlayer.webkitRequestFullscreen) videoPlayer.webkitRequestFullscreen();
+};
+</script></body>
 </html>
