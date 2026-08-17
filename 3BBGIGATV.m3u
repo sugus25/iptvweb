@@ -1,0 +1,102 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-chno="8" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/1450.jpg",🟡 NBT Channel
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/2/2.mpd
+
+#EXTINF:-1 tvg-chno="11" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/1698.jpg",🟢 Thai PBS
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/3/3.mpd
+
+#EXTINF:-1 tvg-chno="22" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/7347.jpg",🔴 ช่อง 5 HD
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/5/5.mpd
+
+#EXTINF:-1 group-title="ช่อง3BBTV" tvg-logo="https://58-64-52-73-rewriter.ais-vidnt.com/ais/play/origin/LIVE/channelicon/T-SPorts_7_Final.png",TSPORTS 7
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/7/7.mpd
+
+#EXTINF:-1 tvg-chno="14" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/430.jpg",🔵 TPTV
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/10/10.mpd
+#EXTINF:-1 tvg-chno="13" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/6345.jpg",🔴 TNN 16
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/16/16.mpd
+#EXTINF:-1 tvg-id="JKN 18.th" tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/18.png" group-title="ช่อง3BBTV", JKN 18
+
+
+
+=333de6034a1d45fe91c829539caf1149:2710efc048ca44bba4c2b57397989a26
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/18/18.mpd
+#EXTINF:-1 tvg-chno="7" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/6339.jpg",🟠 Nation
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/22/22.mpd
+https://godlivetv.io/madoball/6337/playlist.m3u8
+#EXTINF:-1 tvg-chno="19" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/6335.jpg",🟡 Workpoint TV
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/23/23.mpd
+#EXTINF:-1 tvg-chno="18" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/6337.jpg",🟠 True4U
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/24/24.mpd
+#EXTINF:-1 tvg-chno="55" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/6336.jpg",🟣 GMM 25
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/25/25.mpd
+
+#EXTINF:-1 tvg-chno="5" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/497.jpg",🔴 CH 8
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/27/27.mpd
+
+#EXTINF:-1 tvg-id="Mono 29.th" tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/29.png" group-title="🇹🇭 3BB_TV", 🔴Mono 29 
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/29/29.mpd
+
+#EXTINF:-1 tvg-chno="6" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/6332.jpg",🔵 MCOT HD
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/30/30.mpd
+#EXTINF:-1 tvg-chno="60" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/461.jpg",🟢 One Channel
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/31/31.mpd
+
+#EXTINF:-1 tvg-chno="24" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/6330.jpg",🔵 ไทยรัฐ TV HD
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/32/32.mpd
+
+#EXTINF:-1 tvg-chno="21" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/7348.jpg",🟢 ช่อง 3 HD
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/33/33.mpd
+
+#EXTINF:-1 tvg-chno="3" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/6328.jpg",🟢 Amarin TV
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/34/34.mpd
+
+#EXTINF:-1 tvg-chno="2" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/7161.jpg",🟣 7 HD      🇹🇭 3BB_TV
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/35/35.mpd
+
+#EXTINF:-1 tvg-chno="9" group-title="🇹🇭 3BB_TV" tvg-logo="https://madoball.com/upload/1664.jpg",🟣 PPTV HD
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/36/36.mpd
+
+#EXTINF:-1 tvg-id="3BB Asian.th" tvg-name="" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE///channelicon//3BBAsian_new.png" group-title="🇹🇭 3BB_TV",3BB Asian
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/101/101.mpd
+
+#EXTINF:-0 group-title="🇹🇭 3BB_TV" tvg-id="hbo.th" tvg-logo="https://58-64-52-73-rewriter.ais-vidnt.com/ais/play/origin/LIVE//channelicon/R_0148.png", HBO TH
+https://cnt1-streamer9.cdn.3bbtv.com:8443/3bb/live/103/103.mpd
+
+#EXTINF:-0 group-title="🇹🇭 3BB_TV" tvg-id="hbosignature.th" tvg-logo="https://i.postimg.cc/rw9GnR69/hbos.png", HBO Signature
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/104/104.mpd
+
+#EXTINF:-0 group-title="🇹🇭 3BB_TV" tvg-id="HBOHits.th" tvg-logo="https://i.postimg.cc/tJhns8pz/hitsth.png", HBO Hits
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/105/105.mpd
+
+#EXTINF:-0 group-title="🇹🇭 3BB_TV" tvg-id="HBOFamily.th" tvg-logo="https://i.postimg.cc/x8rbT9DC/lfdvs017.png",HBO FAMILY
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/106/106.mpd
+
+#EXTINF:-1 group-title="🇹🇭 3BB_TV" tvg-id="cinemaxasia.sg" tvg-logo="https://58-64-52-73-rewriter.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0147.png",CINEMAX
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/107/107.mpd?ck=eyJmNDhjYWJhNDY2Mzk0ZTkzYjUwNzgwZjIxNzk4Nzg3YSI6IjlhMDc0YTEwZGI0MzQyZTc5MzcwNzZiM2U1MmY2MDI5In0%3D&headers=eyJvcmlnaW4iOiJodHRwczovL2F5YS1zdHJlYW1lcjIuY2RuLjNiYnR2LmNvbTo4NDQzLzNiYi9saXZlLzEwNy8xMDcubXBkIn0%3D&image=aHR0cHM6Ly8zYmJ0di5jby50aC93cC1jb250ZW50L3RoZW1lcy9jaGFuZ3dhdHRhbmEvaW1nL2NoYW5uZWwvbmV3MjAyMi9DaW5lbWF4LnBuZw%3D%3D&title=CINEMAX
+
+#EXTINF:-1 tvg-id="MONO29 Plus.th" tvg-name="MonoPlus" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE///channelicon//Mono29Plus_new.png" group-title="🇹🇭 3BB_TV", 3BB-MONO PLUS
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/109/109.mpd
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f4/Food_Network_-_Logo_2016.png" group-title="🇹🇭 3BB_TV",Food Network
+https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/205/205.mpd
+#EXTINF:-1 group-title="🇹🇭 3BB_TV" tvg-id="" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE///channelicon//0171.png",CARTOON NETWORK
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/301/301.mpd
+
+#EXTINF:-1 group-title="🇹🇭 3BB_TV" tvg-id="" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE/channelicon//Cartoonito.png",CARTOONITO
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/302/302.mpd
+
+#EXTINF:-1 group-title="🇹🇭 3BB_TV" tvg-id="" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE//channelicon/LOGO_Nickelodeon2.png",NICKELODEON
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/303/303.mpd
+#EXTINF:-1 group-title="🇹🇭 3BB_TV" tvg-id="" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE//channelicon/Nickjr_2024.png",NICK JR
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/304/304.mpd
+
+#EXTINF:-1 tvg-id="3BB Sports One.th" tvg-name="3BB Sports One.th" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE///channelicon//3BBsports1_new.png" group-title="🇹🇭 3BB_TV", 3BB Sport One
+https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/401/401.mpd
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f0/Discovery-asia.png" group-title="ช่อง3BBTV",Discovery Asia
+https://cco-streamer1.cdn.3bbtv.com:8443/3bb/live/505/505.mpd
+
+#EXTINF:-1 group-title="🇹🇭 3BB_TV" tvg-id="" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE/channelicon//Discovery.png", DISCOVER
+https://github.com/bestcommt2/m3u8/raw/refs/heads/master/aisDiscover.m3u8
