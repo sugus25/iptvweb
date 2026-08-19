@@ -307,6 +307,125 @@ https://hls.iptv-th.workers.dev/live/2652/playlist.m3u8
 https://hls.iptv-th.workers.dev/live/2650/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://goodiptv.site/images/tv/hwlqMfGYykYbQxa2INjot4HL3974ezW20240418211443SamRujLok.jpg" group-title="🌍 สารคดี",สำรวจโลก
 https://hls.iptv-th.workers.dev/live/2648/playlist.m3u8
+
+# =============================================
+# 🎲 หมวดหมู่: ช่องภาพยนตร์
+# =============================================
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/R_0148.png" group-title="ช่องภาพยนตร์",HBO
+https://github.com/cattv976/movies/raw/refs/heads/main/hbo1.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0151.png" group-title="ช่องภาพยนตร์",HBOHits
+https://github.com/cattv976/movies/raw/refs/heads/main/hbohits1.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0149.png" group-title="ช่องภาพยนตร์",HBOSignature
+https://github.com/cattv976/movies/raw/refs/heads/main/hbosignature1.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0105.png" group-title="ช่องภาพยนตร์",Warnertv
+https://github.com/cattv976/movies/raw/refs/heads/main/warnertv1.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://cms.dmpcdn.com/livetv/2019/01/24/a1e34189-e612-4afa-b784-6a01215bc592.png" group-title="ช่องภาพยนตร์",Axn
+https://github.com/cattv976/movies/raw/refs/heads/main/trueaxn1.m3u8
+#EXTINF:-1 tvg-id="channel28" tvg-logo="https://6395online.com:8443/logotv/movie/hd-warnertv.png" group-title="ช่องภาพยนตร์",Warner
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/F65BX3TKGTCBZQ/7033/index.m3u8
+#EXTINF:-1 tvg-id="channel22" tvg-logo="https://6395online.com:8443/logotv/movie/hd-hbo-thai.png" group-title="ช่องภาพยนตร์",HBO HD
+https://cnt1-streamer9.cdn.3bbtv.com:8443/3bb/live/103/103.mpd
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/B53tBWkh/logoizaamovie.png" group-title="ช่องภาพยนตร์",IZAAMOVIE
+http://49.0.64.96:8007/IZAA
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/MxZHkhvV/logo-universal.png" group-title="ช่องภาพยนตร์",Universal
+http://49.0.64.96:8007/H-Channel
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/wFSYqgpG/logo-fuckseries.png" group-title="ช่องภาพยนตร์",FuckIDSeries
+http://49.0.64.96:8007/SERIES
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/qYGcDkdc/logo-fuck-toon.png" group-title="ช่องภาพยนตร์",FuckIDTOON
+http://49.0.64.96:8007/Cartoonumi
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9VHn7Q8iuuVmvWnnwTkrayYNs0L92eFXWqUt9a60kcS7AXczewxTVMxo&s=10" group-title="ช่องภาพยนตร์",Super Joke
+http://49.0.64.96:8007/SUPERJOKE
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/63sPMnRJ/IMG-1854.png" group-title="ช่องภาพยนตร์",Cool Channel
+https://live-iptv.cool-channel.com/cool/live-720P.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/Nfz0ggHC/IMG-2079.png" group-title="ช่องภาพยนตร์",Hi-Yah!
+https://linear-59.frequency.stream/dist/plex/59/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/ht0kPvk9/IMG-2077.png" group-title="ช่องภาพยนตร์",Asian Crush
+https://cineverse.g-mana.live/media/1ebfbe30-c35c-4404-8bc5-0339d750eb58/mainManifest.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/tgZY1ck4/IMG-2189.png" group-title="ช่องภาพยนตร์",KMOVIES
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=595
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/LsZY2QdY/IMG-2573.png" group-title="ช่องภาพยนตร์",SBS Drama
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=425
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/sXvFMV42/IMG-2996.png" group-title="ช่องภาพยนตร์",Free Movies
+https://amg01553-amg01553c2-samsung-th-7164.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/3w3SJ64N/IMG-2998.png" group-title="ช่องภาพยนตร์",Zee Cinema
+https://amg17931-zee-amg17931c5-samsung-th-5696.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeecinema-samsungth/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/5tNz40VZ/IMG-2795.png" group-title="ช่องภาพยนตร์",Miramax Movies
+https://linear-798.frequency.stream/dist/tcltv/798/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://mono29.com/app/themes/mono29-2017/assets/images/tumb_mono29.png" group-title="ช่องภาพยนตร์",Mono29
+https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/29/29.mpd
+#EXTINF:-1 tvg-id="" tvg-logo="https://dl.dropbox.com/scl/fi/e5xherd4srouybp676xwv/nung.png?rlkey=6lnckppxir36l9yi92ksrmshl&st=7zapwav1&dl=0" group-title="ช่องภาพยนตร์",Movies1
+http://49.0.64.96:8007/IZAA
+#EXTINF:-1 tvg-id="" tvg-logo="https://dl.dropbox.com/scl/fi/e5xherd4srouybp676xwv/nung.png?rlkey=6lnckppxir36l9yi92ksrmshl&st=7zapwav1&dl=0" group-title="ช่องภาพยนตร์",Movies2
+http://49.0.64.96:8007/H-Channel
+#EXTINF:-1 tvg-id="" tvg-logo="https://dl.dropbox.com/scl/fi/e5xherd4srouybp676xwv/nung.png?rlkey=6lnckppxir36l9yi92ksrmshl&st=7zapwav1&dl=0" group-title="ช่องภาพยนตร์",Movies3
+http://49.0.64.96:8007/Cartoonumi
+#EXTINF:-1 tvg-id="" tvg-logo="https://dl.dropbox.com/scl/fi/e5xherd4srouybp676xwv/nung.png?rlkey=6lnckppxir36l9yi92ksrmshl&st=7zapwav1&dl=0" group-title="ช่องภาพยนตร์",Series1
+http://49.0.64.96:8007/PING
+#EXTINF:-1 tvg-id="ช่องภาพยนตร์" tvg-logo="https://dl.dropbox.com/scl/fi/e5xherd4srouybp676xwv/nung.png?rlkey=6lnckppxir36l9yi92ksrmshl&st=7zapwav1&dl=0" group-title="ช่องภาพยนตร์",Series2
+http://49.0.64.96:8007/SERIES
+#EXTINF:-1 group-title="ช่องภาพยนตร์" tvg-logo="https://www.onetvasia.com/sites/onetvasia.com/files/ONEStandard-Thumb.jpg", Sony One 1080p
+https://d1x87j1jmcypab.cloudfront.net/playlist.m3u8
+#EXTINF:-1 group-title="ช่องภาพยนตร์" tvg-logo="https://www.onetvasia.com/sites/onetvasia.com/files/ONEStandard-Thumb.jpg",Sony One Hits Action 1080p
+https://d1tvu4639eiqii.cloudfront.net/playlist.m3u8
+#EXTINF:-1 group-title="ช่องภาพยนตร์" tvg-logo="https://www.onetvasia.com/sites/onetvasia.com/files/ONEStandard-Thumb.jpg",Sony One Favoris 1080p
+https://d21fkiqbljd83t.cloudfront.net/playlist.m3u8
+#EXTINF:-1 group-title="ช่องภาพยนตร์"️ tvg-logo="https://www.onetvasia.com/sites/onetvasia.com/files/ONEStandard-Thumb.jpg",Sony One Series Thriller 1080p
+https://d1573iiyr4aa7c.cloudfront.net/playlist.m3u8
+#EXTINF:-1 xui-id="38" tvg-id="" tvg-name="IPLAYMEDIA" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqjmKEP-Y6j74dAlPG9fBp7LWQ66F6Z257kjWGbjAalg&s=10" group-title="ช่องภาพยนตร์",IPLAYMEDIA
+http://43.229.132.25:80/play/QzERbTGVoGZwbDYGCMoxHgshZ1Z8foGdCDHiSclvnD1EHTNroAo_ziJPjVP4TI-a/ts
+#EXTINF:-1 xui-id="39" tvg-id="" tvg-name="THAIMOVIE" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQINw8Tk1ITzXG7SNZYl_8ggoddl7NGCcwfi0GfvVEYzA&s=10" group-title="ช่องภาพยนตร์",THAIMOVIE
+http://43.229.132.25:80/play/QzERbTGVoGZwbDYGCMoxHgshZ1Z8foGdCDHiSclvnD3HbwKeTfQOAfde0Yq6nB4R/ts
+#EXTINF:-1 xui-id="40" tvg-id="" tvg-name="ASIANMOVIE" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIyOy6fdGcfJT6F7scSMSS5Z0pIv-irutYFXiGbaICjw&s=10" group-title="ช่องภาพยนตร์",ASIANMOVIE
+http://43.229.132.25:80/play/QzERbTGVoGZwbDYGCMoxHgshZ1Z8foGdCDHiSclvnD0hg4Gs2jd1iXYXcS21RzWF/ts
+#EXTINF:-1 xui-id="41" tvg-id="" tvg-name="INTERMOVIE" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShr504ZjfEbXlRXCYhGzX1-b3fKgDqD92HZiQn9JZb9w&s=10" group-title="ช่องภาพยนตร์",INTERMOVIE
+http://43.229.132.25:80/play/QzERbTGVoGZwbDYGCMoxHgshZ1Z8foGdCDHiSclvnD3_KM4YkgSnGtAVRvW0dCOl/ts
+#EXTINF:-1 xui-id="42" tvg-id="" tvg-name="THAISERIES" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbR4VOx7T8jypAtQeKo0PPGgiKnyspqUibcxmGAMBVFg&s=10" group-title="ช่องภาพยนตร์",THAISERIES
+http://43.229.132.25:80/play/QzERbTGVoGZwbDYGCMoxHgshZ1Z8foGdCDHiSclvnD25HYA1IFukGHKeezKo5D5D/ts
+#EXTINF:-1 xui-id="43" tvg-id="" tvg-name="INTERSERIES" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMKVa8r3A54VT2QitZbO_LU-QAnN1gZP913Kbvro-PQg&s=10" group-title="ช่องภาพยนตร์",INTERSERIES
+http://43.229.132.25:80/play/QzERbTGVoGZwbDYGCMoxHgshZ1Z8foGdCDHiSclvnD1miPXcY4ojlIQc_lnl8GAz/ts
+#EXTINF:-1 xui-id="44" tvg-id="" tvg-name="ASIANSERIES" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUi_J_PLZHcSukJ-DnTmq8Rm4N6aIBKFGWoWIiS6_rg&s=10" group-title="ช่องภาพยนตร์",ASIANSERIES
+http://43.229.132.25:80/play/QzERbTGVoGZwbDYGCMoxHgshZ1Z8foGdCDHiSclvnD1g5vIgHfN-EcoVjgAsNK-e/ts
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://lh3.googleusercontent.com/proxy/F8j5vaSEZFxgS0uTQl14JpNq0it64JmH9JmVq9yy8TA2hqPWIkngxc1rod8or-timxdb6g8SEzk3hyF8xbvMfUVYhncIqL3m5V_QRUAi04M-xfkiKjJUgHLcefodoRTIDrx350_WRq2pKqX8hwHcJmgkntiyNU5GZWv-cHvObw" group-title="ช่องภาพยนตร์",Channel8thailandสำรอง1
+http://54c241893bf39.streamlock.net:1935/ch8/ch8/chunklist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/MxZHkhvV/logo-universal.png" group-title="ช่องภาพยนตร์",Universal
+http://49.0.64.96:8007/H-Channel
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr-oJ_rWPFW0yRAPCQoKKi0Mg3yVt8iKkLQPJHJWEBpc4bx4P4OrCTQF0diJjrcuWi4R8&usqp=CAU" group-title="ช่องภาพยนตร์",Movies1
+http://49.0.64.96:8007/Cartoonumi
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr-oJ_rWPFW0yRAPCQoKKi0Mg3yVt8iKkLQPJHJWEBpc4bx4P4OrCTQF0diJjrcuWi4R8&usqp=CAU" group-title="ช่องภาพยนตร์",Movies2
+http://49.0.64.96:8007/IZAA
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr-oJ_rWPFW0yRAPCQoKKi0Mg3yVt8iKkLQPJHJWEBpc4bx4P4OrCTQF0diJjrcuWi4R8&usqp=CAU" group-title="ช่องภาพยนตร์",Movies3
+http://49.0.64.96:8007/SERIES
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr-oJ_rWPFW0yRAPCQoKKi0Mg3yVt8iKkLQPJHJWEBpc4bx4P4OrCTQF0diJjrcuWi4R8&usqp=CAU" group-title="ช่องภาพยนตร์",Movies4
+http://49.0.64.96:8007/PING
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/wFSYqgpG/logo-fuckseries.png" group-title="ช่องภาพยนตร์",FuckIDSeries
+http://49.0.64.96:8007/SERIES
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/qYGcDkdc/logo-fuck-toon.png" group-title="ช่องภาพยนตร์",FuckIDTOON
+http://49.0.64.96:8007/Cartoonumi
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/nqWvLRYF/logo-fuckmovie.png" group-title="ช่องภาพยนตร์",FuckIDMovie
+http://49.0.64.96:8007/PING
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT19ub-DTS73CFIjvSjIwRTIKYdhqwAWlk1XoEClNpRLe-moPNNl1zgVLKi&s=10" group-title="ช่องภาพยนตร์",ASIA SERIES
+http://49.0.64.96:8007/SERIES
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThuMYAveaoyGctdvwldsn_dMtBsoiYvgced8E1vaEWqpDxxo5bLBa5FgY&s=10" group-title="ช่องภาพยนตร์",universal
+http://49.0.64.96:8007/H-Channel
+#EXTINF:-1 tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaGB2pA7hcsQ6BaWYgQKeist-p0-lqGid26g&usqp=CAU" group-title="ช่องภาพยนตร์",Movie
+https://a28dc5e3f24c4a8da3a67c68be729c2c.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-59-HIYAH-PLEX/mt/plex/59/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0054.png" group-title="ช่องภาพยนตร์",true4U
+https://iptv36.vercel.app/api/true.m3u8?channel=true4u
+#EXTINF:-1 tvg-id="" tvg-logo="https://cms.dmpcdn.com/livetv/2023/07/18/7c07f020-2515-11ee-ac34-39c66cab230f_webp_original.webp" group-title="ช่องภาพยนตร์",Cool Channel
+https://live-iptv.cool-channel.com/cool/live-720P.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://thaitvstream.com/streaming/thainews/thainews.png" group-title="ช่องภาพยนตร์",Thainews
+https://live.thaitvstream.com/play/thainews/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://thaitvstream.com/streaming/siamnewstv/siamnewstv.png" group-title="ช่องภาพยนตร์",Siamnewstv
+https://live1.thaitvstream.com/play/siamnewstv/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://thaitvstream.com/streaming/chiangrai/chiangrai.png" group-title="ช่องภาพยนตร์",Chiangrai
+https://live.thaitvstream.com/play/chiangrai/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://www.i-pic.info/i/6CRS654262.png" group-title="ช่องภาพยนตร์",Mounchon TV
+https://live2.thaitvstream.com/play/mounchontv/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://lh3.googleusercontent.com/proxy/F8j5vaSEZFxgS0uTQl14JpNq0it64JmH9JmVq9yy8TA2hqPWIkngxc1rod8or-timxdb6g8SEzk3hyF8xbvMfUVYhncIqL3m5V_QRUAi04M-xfkiKjJUgHLcefodoRTIDrx350_WRq2pKqX8hwHcJmgkntiyNU5GZWv-cHvObw" group-title="ช่องภาพยนตร์",Channel8thailand
+https://cdn-th-vip.login.in.th/ch8/ch8/chunklist_w238145399.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/Action24-logo-small.png" group-title="ช่องภาพยนตร์",Action 24 (1080p)
+http://actionlive.siliconweb.com/actionabr/actiontv/playlist.m3u8
 # =============================================
 # 🎲 หมวดหมู่: อื่นๆ (Others)
 # =============================================
