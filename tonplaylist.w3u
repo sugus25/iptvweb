@@ -1,0 +1,68 @@
+{
+  "name": "🅻🅸🆅🅴 ➌",
+  "author": "🅻🅸🆅🅴 ➌ Visitor to Day 🧑‍🤝‍🧑 35",
+  "url": "",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q\u003dtbn:ANd9GcTsuUP4LcZio6qOWoctvJskiBtlPxV9qT037s8RHVevfbKz96v0wIdXnSLx\u0026s\u003d10",
+  "groups": [
+    {
+      "name": "kicksball",
+      "image": "https://c.tenor.com/Dr_w8whfTlsAAAAC/refresh-repeat-refresh.gif",
+      "stations": [
+        {
+          "name": "trueexplorewild",
+          "type": "web_url",
+          "image": "https://dookeela.live/uploads/1724166218.png",
+          "url": "https://kicksball.com/player/trueexplorewild",
+          "referer": "https://kicksball.com",
+          "userAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.140",
+          "info": "trueexplorewild"
+        },
+        {
+          "name": "trueexploresci",
+          "type": "web_url",
+          "image": "https://dookeela.live/uploads/1724167268.png",
+          "url": "https://kicksball.com/player/trueexploresci",
+          "referer": "https://kicksball.com",
+          "userAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.140",
+          "info": "trueexploresci"
+        },
+        {
+          "name": "samrujlok",
+          "type": "web_url",
+          "image": "https://dookeela.live/uploads/1705536821.png",
+          "url": "https://dov.streaming-api.xyz/kicksballcom/samrujlok/playlist.m3u8?wmsAuthSign\u003dc2VydmVyX3RpbWU9OC8xMC8yMDI2IDQ6NDc6NDggUE0maGFzaF92YWx1ZT0rY2FjTC9ZUEJ4OWNzZnpHcWZVdVpnPT0mdmFsaWRtaW51dGVzPTIw",
+          "referer": "https://kicksball.com",
+          "userAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.140",
+          "info": "samrujlok"
+        },
+        {
+          "name": "cinemax",
+          "type": "web_url",
+          "image": "https://dookeela.live/uploads/1703786799.png",
+          "url": "https://kicksball.com/player/cinemax",
+          "referer": "https://kicksball.com",
+          "userAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.140",
+          "info": "cinemax"
+        },
+        {
+          "name": "truemoviehits",
+          "type": "web_url",
+          "image": "https://dookeela.live/uploads/1719803882.png",
+          "url": "https://kicksball.com/player/truemoviehits",
+          "referer": "https://kicksball.com",
+          "userAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.140",
+          "info": "truemoviehits"
+        },
+        {
+          "name": "thairathtv",
+          "type": "web_url",
+          "image": "https://dookeela.live/uploads/1686800227.png",
+          "url": "https://kicksball.com/player/thairathtv",
+          "referer": "https://kicksball.com",
+          "userAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.140",
+          "info": "thairathtv"
+        }
+      ]
+    }
+  ]
+}
