@@ -1,0 +1,2066 @@
+{
+"name": "🅻🅸🆅🅴 ➊",
+"author": "🅻🅸🆅🅴 ➊ Visitor to Day 🧑‍🤝‍🧑 248",
+"url": "",
+"image": "http://guflix.streaming-fast.com/logo/2tvonline.jpg",
+"groups": [
+{
+"name": "madoball",
+"image": "http://guflix.streaming-fast.com/logo/2tvonline.jpg",
+"stations": [
+{
+"name": "3BB Asian",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2821.jpg",
+"url": "https://godlivetv.io/madoball/2821/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "3BB Asian"
+},
+{
+"name": "7 HD",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7161.jpg",
+"url": "https://godlivetv.io/madoball/7161/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "7 HD"
+},
+{
+"name": "ABC Australia",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1600.jpg",
+"url": "https://godlivetv.io/madoball/1600/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ABC Australia"
+},
+{
+"name": "Al Jazeera",
+"type": "m3u8",
+"image": "https://madoball.com/upload/404.jpg",
+"url": "https://godlivetv.io/madoball/404/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Al Jazeera"
+},
+{
+"name": "Amarin TV",
+"type": "m3u8",
+"image": "https://madoball.com/upload/6328.jpg",
+"url": "https://godlivetv.io/madoball/6328/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Amarin TV"
+},
+{
+"name": "Animal Show",
+"type": "m3u8",
+"image": "https://madoball.com/upload/710.jpg",
+"url": "https://godlivetv.io/madoball/710/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Animal Show"
+},
+{
+"name": "Arena Sport 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/13918.jpg",
+"url": "https://godlivetv.io/madoball/13918/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Arena Sport 1"
+},
+{
+"name": "Arena Sport 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/13917.jpg",
+"url": "https://godlivetv.io/madoball/13917/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Arena Sport 2"
+},
+{
+"name": "Arena Sport 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/13916.jpg",
+"url": "https://godlivetv.io/madoball/13916/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Arena Sport 3"
+},
+{
+"name": "Arena Sport 4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/13915.jpg",
+"url": "https://godlivetv.io/madoball/13915/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Arena Sport 4"
+},
+{
+"name": "Arena Sport 5",
+"type": "m3u8",
+"image": "https://madoball.com/upload/13071.jpg",
+"url": "https://godlivetv.io/madoball/13071/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Arena Sport 5"
+},
+{
+"name": "Asian Food Network",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1854.jpg",
+"url": "https://godlivetv.io/madoball/1854/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Asian Food Network"
+},
+{
+"name": "AXN HD",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2650.jpg",
+"url": "https://godlivetv.io/madoball/2650/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "AXN HD"
+},
+{
+"name": "Ball Thai 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1389.jpg",
+"url": "https://godlivetv.io/madoball/1389/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Ball Thai 1"
+},
+{
+"name": "BBC Lifestyle",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1689.jpg",
+"url": "https://godlivetv.io/madoball/1689/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "BBC Lifestyle"
+},
+{
+"name": "BBC World News",
+"type": "m3u8",
+"image": "https://madoball.com/upload/6638.jpg",
+"url": "https://godlivetv.io/madoball/6638/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "BBC World News"
+},
+{
+"name": "Bein France 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/61286.jpg",
+"url": "https://godlivetv.io/madoball/61286/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Bein France 1"
+},
+{
+"name": "Bein France 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/61283.jpg",
+"url": "https://godlivetv.io/madoball/61283/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Bein France 2"
+},
+{
+"name": "Bein France 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/61281.jpg",
+"url": "https://godlivetv.io/madoball/61281/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Bein France 3"
+},
+{
+"name": "Being Sport USA",
+"type": "m3u8",
+"image": "https://madoball.com/upload/10331.jpg",
+"url": "https://godlivetv.io/madoball/10331/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Being Sport USA"
+},
+{
+"name": "beIN SPORTS 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7424.jpg",
+"url": "https://godlivetv.io/madoball/7424/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "beIN SPORTS 1"
+},
+{
+"name": "beIN SPORTS 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7423.jpg",
+"url": "https://godlivetv.io/madoball/7423/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "beIN SPORTS 2"
+},
+{
+"name": "beIN SPORTS 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7422.jpg",
+"url": "https://godlivetv.io/madoball/7422/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "beIN SPORTS 3"
+},
+{
+"name": "beIN SPORTS 4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7421.jpg",
+"url": "https://godlivetv.io/madoball/7421/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "beIN SPORTS 4"
+},
+{
+"name": "beIN SPORTS 5",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7420.jpg",
+"url": "https://godlivetv.io/madoball/7420/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "beIN SPORTS 5"
+},
+{
+"name": "beIN SPORTS 6",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7419.jpg",
+"url": "https://godlivetv.io/madoball/7419/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "beIN SPORTS 6"
+},
+{
+"name": "beIN SPORTS 7",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7418.jpg",
+"url": "https://godlivetv.io/madoball/7418/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "beIN SPORTS 7"
+},
+{
+"name": "beIN SPORTS 8",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7417.jpg",
+"url": "https://godlivetv.io/madoball/7417/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "beIN SPORTS 8"
+},
+{
+"name": "beIN SPORTS 9",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7416.jpg",
+"url": "https://godlivetv.io/madoball/7416/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "beIN SPORTS 9"
+},
+{
+"name": "beIN SPORTS 10",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7415.jpg",
+"url": "https://godlivetv.io/madoball/7415/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "beIN SPORTS 10"
+},
+{
+"name": "BG Sports 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1260.jpg",
+"url": "https://godlivetv.io/madoball/1260/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "BG Sports 1"
+},
+{
+"name": "BG Sports 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1259.jpg",
+"url": "https://godlivetv.io/madoball/1259/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "BG Sports 2"
+},
+{
+"name": "BG Sports 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1258.jpg",
+"url": "https://godlivetv.io/madoball/1258/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "BG Sports 3"
+},
+{
+"name": "BG Sports 4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1257.jpg",
+"url": "https://godlivetv.io/madoball/1257/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "BG Sports 4"
+},
+{
+"name": "Bloomberg",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2814.jpg",
+"url": "https://godlivetv.io/madoball/2814/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Bloomberg"
+},
+{
+"name": "Boomerang",
+"type": "m3u8",
+"image": "https://madoball.com/upload/8999.jpg",
+"url": "https://godlivetv.io/madoball/8999/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Boomerang"
+},
+{
+"name": "Cartoonito",
+"type": "m3u8",
+"image": "https://madoball.com/upload/477.jpg",
+"url": "https://godlivetv.io/madoball/477/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Cartoonito"
+},
+{
+"name": "Cartoon Network",
+"type": "m3u8",
+"image": "https://madoball.com/upload/8007.jpg",
+"url": "https://godlivetv.io/madoball/8007/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Cartoon Network"
+},
+{
+"name": "CBS News (CBSN)",
+"type": "m3u8",
+"image": "https://madoball.com/upload/3026.jpg",
+"url": "https://godlivetv.io/madoball/3026/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "CBS News (CBSN)"
+},
+{
+"name": "CBS Sports",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11921.jpg",
+"url": "https://godlivetv.io/madoball/11921/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "CBS Sports"
+},
+{
+"name": "CCTV-4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/402.jpg",
+"url": "https://godlivetv.io/madoball/402/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "CCTV-4"
+},
+{
+"name": "Celestial Classic Movies (CCM)",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1913.jpg",
+"url": "https://godlivetv.io/madoball/1913/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Celestial Classic Movies (CCM)"
+},
+{
+"name": "CGTN",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2100.jpg",
+"url": "https://godlivetv.io/madoball/2100/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "CGTN"
+},
+{
+"name": "CH 8",
+"type": "m3u8",
+"image": "https://madoball.com/upload/497.jpg",
+"url": "https://godlivetv.io/madoball/497/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "CH 8"
+},
+{
+"name": "Channel NewsAsia",
+"type": "m3u8",
+"image": "https://madoball.com/upload/433.jpg",
+"url": "https://godlivetv.io/madoball/433/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Channel NewsAsia"
+},
+{
+"name": "CINEMAX",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2815.jpg",
+"url": "https://godlivetv.io/madoball/2815/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "CINEMAX"
+},
+{
+"name": "CNN",
+"type": "m3u8",
+"image": "https://madoball.com/upload/6639.jpg",
+"url": "https://godlivetv.io/madoball/6639/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "CNN"
+},
+{
+"name": "Cool Channel",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1416.jpg",
+"url": "https://godlivetv.io/madoball/1416/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Cool Channel"
+},
+{
+"name": "Deutsche Welle DW",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2145.jpg",
+"url": "https://godlivetv.io/madoball/2145/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Deutsche Welle DW"
+},
+{
+"name": "Discovery Asia",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1606.jpg",
+"url": "https://godlivetv.io/madoball/1606/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Discovery Asia"
+},
+{
+"name": "Discovery Channel",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1546.jpg",
+"url": "https://godlivetv.io/madoball/1546/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Discovery Channel"
+},
+{
+"name": "DLTV1 ประถมศึกษาปีที่ 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/159.jpg",
+"url": "https://godlivetv.io/madoball/159/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV1 ประถมศึกษาปีที่ 1"
+},
+{
+"name": "DLTV1 ประถมศึกษาปีที่ 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/144.jpg",
+"url": "https://godlivetv.io/madoball/144/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV1 ประถมศึกษาปีที่ 2"
+},
+{
+"name": "DLTV3 ประถมศึกษาปีที่ 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/112.jpg",
+"url": "https://godlivetv.io/madoball/112/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV3 ประถมศึกษาปีที่ 3"
+},
+{
+"name": "DLTV4 ประถมศึกษาปีที่ 4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/61.jpg",
+"url": "https://godlivetv.io/madoball/61/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV4 ประถมศึกษาปีที่ 4"
+},
+{
+"name": "DLTV5 ประถมศึกษาปีที่ 5",
+"type": "m3u8",
+"image": "https://madoball.com/upload/21.jpg",
+"url": "https://godlivetv.io/madoball/21/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV5 ประถมศึกษาปีที่ 5"
+},
+{
+"name": "DLTV5 ประถมศึกษาปีที่ 6",
+"type": "m3u8",
+"image": "https://madoball.com/upload/20.jpg",
+"url": "https://godlivetv.io/madoball/20/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV5 ประถมศึกษาปีที่ 6"
+},
+{
+"name": "DLTV7 มัธยมศึกษาปีที่ 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/19.jpg",
+"url": "https://godlivetv.io/madoball/19/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV7 มัธยมศึกษาปีที่ 1"
+},
+{
+"name": "DLTV8 มัธยมศึกษาปีที่ 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/18.jpg",
+"url": "https://godlivetv.io/madoball/18/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV8 มัธยมศึกษาปีที่ 2"
+},
+{
+"name": "DLTV9 มัธยมศึกษาปีที่ 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/17.jpg",
+"url": "https://godlivetv.io/madoball/17/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV9 มัธยมศึกษาปีที่ 3"
+},
+{
+"name": "DLTV10 อนุบาลศึกษาปีที่ 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/16.jpg",
+"url": "https://godlivetv.io/madoball/16/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV10 อนุบาลศึกษาปีที่ 1"
+},
+{
+"name": "DLTV11 อนุบาลศึกษาปีที่ 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/15.jpg",
+"url": "https://godlivetv.io/madoball/15/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV11 อนุบาลศึกษาปีที่ 2"
+},
+{
+"name": "DLTV12 อนุบาลศึกษาปีที่ 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7.jpg",
+"url": "https://godlivetv.io/madoball/7/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV12 อนุบาลศึกษาปีที่ 3"
+},
+{
+"name": "DLTV13 มัธยมศึกษาปีที่ 4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/6.jpg",
+"url": "https://godlivetv.io/madoball/6/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV13 มัธยมศึกษาปีที่ 4"
+},
+{
+"name": "DLTV14 มัธยมศึกษาปีที่ 5",
+"type": "m3u8",
+"image": "https://madoball.com/upload/5.jpg",
+"url": "https://godlivetv.io/madoball/5/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV14 มัธยมศึกษาปีที่ 5"
+},
+{
+"name": "DLTV15 มัธยมศึกษาปีที่ 6",
+"type": "m3u8",
+"image": "https://madoball.com/upload/4.jpg",
+"url": "https://godlivetv.io/madoball/4/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DLTV15 มัธยมศึกษาปีที่ 6"
+},
+{
+"name": "DreamWorks",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2347.jpg",
+"url": "https://godlivetv.io/madoball/2347/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "DreamWorks"
+},
+{
+"name": "ESPN 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11924.jpg",
+"url": "https://godlivetv.io/madoball/11924/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ESPN 1"
+},
+{
+"name": "ESPN 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11923.jpg",
+"url": "https://godlivetv.io/madoball/11923/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ESPN 2"
+},
+{
+"name": "Euronews",
+"type": "m3u8",
+"image": "https://madoball.com/upload/4337.jpg",
+"url": "https://godlivetv.io/madoball/4337/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Euronews"
+},
+{
+"name": "Eurosport",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1368.jpg",
+"url": "https://godlivetv.io/madoball/1368/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Eurosport"
+},
+{
+"name": "EuroSport 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11936.jpg",
+"url": "https://godlivetv.io/madoball/11936/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "EuroSport 1"
+},
+{
+"name": "EuroSport 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11935.jpg",
+"url": "https://godlivetv.io/madoball/11935/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "EuroSport 2"
+},
+{
+"name": "Fashion TV",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1418.jpg",
+"url": "https://godlivetv.io/madoball/1418/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Fashion TV"
+},
+{
+"name": "Fight Sports",
+"type": "m3u8",
+"image": "https://madoball.com/upload/61289.jpg",
+"url": "https://godlivetv.io/madoball/61289/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Fight Sports"
+},
+{
+"name": "Food Network",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1845.jpg",
+"url": "https://godlivetv.io/madoball/1845/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Food Network"
+},
+{
+"name": "FOX Business",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7839.jpg",
+"url": "https://godlivetv.io/madoball/7839/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "FOX Business"
+},
+{
+"name": "FOX NEWS",
+"type": "m3u8",
+"image": "https://madoball.com/upload/9196.jpg",
+"url": "https://godlivetv.io/madoball/9196/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "FOX NEWS"
+},
+{
+"name": "Fox Sports 1 USA",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11926.jpg",
+"url": "https://godlivetv.io/madoball/11926/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Fox Sports 1 USA"
+},
+{
+"name": "Fox Sports 2 USA",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11925.jpg",
+"url": "https://godlivetv.io/madoball/11925/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Fox Sports 2 USA"
+},
+{
+"name": "France 24",
+"type": "m3u8",
+"image": "https://madoball.com/upload/394.jpg",
+"url": "https://godlivetv.io/madoball/394/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "France 24"
+},
+{
+"name": "GMM 25",
+"type": "m3u8",
+"image": "https://madoball.com/upload/6336.jpg",
+"url": "https://godlivetv.io/madoball/6336/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "GMM 25"
+},
+{
+"name": "Golf +",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7203.jpg",
+"url": "https://godlivetv.io/madoball/7203/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Golf +"
+},
+{
+"name": "HBO",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2820.jpg",
+"url": "https://godlivetv.io/madoball/2820/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "HBO"
+},
+{
+"name": "HBO Family",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2816.jpg",
+"url": "https://godlivetv.io/madoball/2816/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "HBO Family"
+},
+{
+"name": "HBO Hits",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2819.jpg",
+"url": "https://godlivetv.io/madoball/2819/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "HBO Hits"
+},
+{
+"name": "HBO Signature",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2818.jpg",
+"url": "https://godlivetv.io/madoball/2818/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "HBO Signature"
+},
+{
+"name": "History Channel",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1667.jpg",
+"url": "https://godlivetv.io/madoball/1667/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "History Channel"
+},
+{
+"name": "ITV1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/8738.jpg",
+"url": "https://godlivetv.io/madoball/8738/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ITV1"
+},
+{
+"name": "ITV2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/8737.jpg",
+"url": "https://godlivetv.io/madoball/8737/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ITV2"
+},
+{
+"name": "ITV3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/8736.jpg",
+"url": "https://godlivetv.io/madoball/8736/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ITV3"
+},
+{
+"name": "ITV4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/8735.jpg",
+"url": "https://godlivetv.io/madoball/8735/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ITV4"
+},
+{
+"name": "Liverpool TV",
+"type": "m3u8",
+"image": "https://madoball.com/upload/12684.jpg",
+"url": "https://godlivetv.io/madoball/12684/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Liverpool TV"
+},
+{
+"name": "MCOT HD",
+"type": "m3u8",
+"image": "https://madoball.com/upload/6332.jpg",
+"url": "https://godlivetv.io/madoball/6332/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "MCOT HD"
+},
+{
+"name": "MLB Network",
+"type": "m3u8",
+"image": "https://madoball.com/upload/10330.jpg",
+"url": "https://godlivetv.io/madoball/10330/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "MLB Network"
+},
+{
+"name": "MONO 29",
+"type": "m3u8",
+"image": "https://madoball.com/upload/6333.jpg",
+"url": "https://godlivetv.io/madoball/6333/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "MONO 29"
+},
+{
+"name": "Mono29 Music Station",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2824.jpg",
+"url": "https://godlivetv.io/madoball/2824/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Mono29 Music Station"
+},
+{
+"name": "Mono29 Plus",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2823.jpg",
+"url": "https://godlivetv.io/madoball/2823/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Mono29 Plus"
+},
+{
+"name": "Monomax 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/82290.jpg",
+"url": "https://godlivetv.io/madoball/82290/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Monomax 1"
+},
+{
+"name": "Mono MAX 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1495.jpg",
+"url": "https://godlivetv.io/madoball/1495/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Mono MAX 1"
+},
+{
+"name": "Monomax 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/82079.jpg",
+"url": "https://godlivetv.io/madoball/82079/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Monomax 2"
+},
+{
+"name": "Mono MAX 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1494.jpg",
+"url": "https://godlivetv.io/madoball/1494/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Mono MAX 2"
+},
+{
+"name": "Monomax 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/82044.jpg",
+"url": "https://godlivetv.io/madoball/82044/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Monomax 3"
+},
+{
+"name": "Mono MAX 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1493.jpg",
+"url": "https://godlivetv.io/madoball/1493/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Mono MAX 3"
+},
+{
+"name": "Monomax 4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/81912.jpg",
+"url": "https://godlivetv.io/madoball/81912/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Monomax 4"
+},
+{
+"name": "Mono MAX 4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1492.jpg",
+"url": "https://godlivetv.io/madoball/1492/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Mono MAX 4"
+},
+{
+"name": "Monomax 5",
+"type": "m3u8",
+"image": "https://madoball.com/upload/81779.jpg",
+"url": "https://godlivetv.io/madoball/81779/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Monomax 5"
+},
+{
+"name": "Mono MAX 5",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1491.jpg",
+"url": "https://godlivetv.io/madoball/1491/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Mono MAX 5"
+},
+{
+"name": "Monomax 6",
+"type": "m3u8",
+"image": "https://madoball.com/upload/81741.jpg",
+"url": "https://godlivetv.io/madoball/81741/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Monomax 6"
+},
+{
+"name": "Mono MAX 6",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1490.jpg",
+"url": "https://godlivetv.io/madoball/1490/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Mono MAX 6"
+},
+{
+"name": "Monomax 7",
+"type": "m3u8",
+"image": "https://madoball.com/upload/81639.jpg",
+"url": "https://godlivetv.io/madoball/81639/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Monomax 7"
+},
+{
+"name": "Mono MAX 7",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1489.jpg",
+"url": "https://godlivetv.io/madoball/1489/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Mono MAX 7"
+},
+{
+"name": "Monomax 8",
+"type": "m3u8",
+"image": "https://madoball.com/upload/81611.jpg",
+"url": "https://godlivetv.io/madoball/81611/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Monomax 8"
+},
+{
+"name": "Mono MAX 8",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1488.jpg",
+"url": "https://godlivetv.io/madoball/1488/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Mono MAX 8"
+},
+{
+"name": "Mono MAX 9",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1487.jpg",
+"url": "https://godlivetv.io/madoball/1487/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Mono MAX 9"
+},
+{
+"name": "Mono MAX 10",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1486.jpg",
+"url": "https://godlivetv.io/madoball/1486/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Mono MAX 10"
+},
+{
+"name": "MUTV",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1239.jpg",
+"url": "https://godlivetv.io/madoball/1239/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "MUTV"
+},
+{
+"name": "MUTV",
+"type": "m3u8",
+"image": "https://madoball.com/upload/12682.jpg",
+"url": "https://godlivetv.io/madoball/12682/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "MUTV"
+},
+{
+"name": "Mysci",
+"type": "m3u8",
+"image": "https://madoball.com/upload/555.jpg",
+"url": "https://godlivetv.io/madoball/555/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Mysci"
+},
+{
+"name": "Nation",
+"type": "m3u8",
+"image": "https://madoball.com/upload/6339.jpg",
+"url": "https://godlivetv.io/madoball/6339/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Nation"
+},
+{
+"name": "NBA",
+"type": "m3u8",
+"image": "https://madoball.com/upload/8739.jpg",
+"url": "https://godlivetv.io/madoball/8739/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "NBA"
+},
+{
+"name": "NBC Sports",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11920.jpg",
+"url": "https://godlivetv.io/madoball/11920/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "NBC Sports"
+},
+{
+"name": "NBT Channel",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1450.jpg",
+"url": "https://godlivetv.io/madoball/1450/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "NBT Channel"
+},
+{
+"name": "NEWS1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/408.jpg",
+"url": "https://godlivetv.io/madoball/408/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "NEWS1"
+},
+{
+"name": "NFL",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11922.jpg",
+"url": "https://godlivetv.io/madoball/11922/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "NFL"
+},
+{
+"name": "NHL",
+"type": "m3u8",
+"image": "https://madoball.com/upload/14972.jpg",
+"url": "https://godlivetv.io/madoball/14972/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "NHL"
+},
+{
+"name": "Nickelodeon",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2029.jpg",
+"url": "https://godlivetv.io/madoball/2029/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Nickelodeon"
+},
+{
+"name": "Nick Jr.",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2875.jpg",
+"url": "https://godlivetv.io/madoball/2875/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Nick Jr."
+},
+{
+"name": "ONE Championship",
+"type": "m3u8",
+"image": "https://madoball.com/upload/81433.jpg",
+"url": "https://godlivetv.io/madoball/81433/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ONE Championship"
+},
+{
+"name": "One Channel",
+"type": "m3u8",
+"image": "https://madoball.com/upload/461.jpg",
+"url": "https://godlivetv.io/madoball/461/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "One Channel"
+},
+{
+"name": "Play Sports 41",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1485.jpg",
+"url": "https://godlivetv.io/madoball/1485/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 41"
+},
+{
+"name": "Play Sports 48",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1439.jpg",
+"url": "https://godlivetv.io/madoball/1439/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 48"
+},
+{
+"name": "Play Sports 55",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1484.jpg",
+"url": "https://godlivetv.io/madoball/1484/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 55"
+},
+{
+"name": "Play Sports 56",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1483.jpg",
+"url": "https://godlivetv.io/madoball/1483/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 56"
+},
+{
+"name": "Play Sports 57",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1441.jpg",
+"url": "https://godlivetv.io/madoball/1441/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 57"
+},
+{
+"name": "Play Sports 58",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1440.jpg",
+"url": "https://godlivetv.io/madoball/1440/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 58"
+},
+{
+"name": "Play Sports 61",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1482.jpg",
+"url": "https://godlivetv.io/madoball/1482/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 61"
+},
+{
+"name": "Play Sports 62",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1481.jpg",
+"url": "https://godlivetv.io/madoball/1481/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 62"
+},
+{
+"name": "Play Sports 63",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1480.jpg",
+"url": "https://godlivetv.io/madoball/1480/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 63"
+},
+{
+"name": "Play Sports 64",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1438.jpg",
+"url": "https://godlivetv.io/madoball/1438/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 64"
+},
+{
+"name": "Play Sports 66",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1479.jpg",
+"url": "https://godlivetv.io/madoball/1479/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 66"
+},
+{
+"name": "Play Sports 69",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1478.jpg",
+"url": "https://godlivetv.io/madoball/1478/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 69"
+},
+{
+"name": "Play Sports 71",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1477.jpg",
+"url": "https://godlivetv.io/madoball/1477/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 71"
+},
+{
+"name": "Play Sports 72",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1476.jpg",
+"url": "https://godlivetv.io/madoball/1476/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 72"
+},
+{
+"name": "Play Sports 73",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1475.jpg",
+"url": "https://godlivetv.io/madoball/1475/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 73"
+},
+{
+"name": "Play Sports 74",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1433.jpg",
+"url": "https://godlivetv.io/madoball/1433/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 74"
+},
+{
+"name": "Play Sports 75",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1432.jpg",
+"url": "https://godlivetv.io/madoball/1432/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Play Sports 75"
+},
+{
+"name": "PPTV HD",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1664.jpg",
+"url": "https://godlivetv.io/madoball/1664/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "PPTV HD"
+},
+{
+"name": "Premier Sports",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1431.jpg",
+"url": "https://godlivetv.io/madoball/1431/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Premier Sports"
+},
+{
+"name": "Rama Channel",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1642.jpg",
+"url": "https://godlivetv.io/madoball/1642/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Rama Channel"
+},
+{
+"name": "Realmadrid TV",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1231.jpg",
+"url": "https://godlivetv.io/madoball/1231/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Realmadrid TV"
+},
+{
+"name": "RED BULL",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1373.jpg",
+"url": "https://godlivetv.io/madoball/1373/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "RED BULL"
+},
+{
+"name": "Rock Action",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2930.jpg",
+"url": "https://godlivetv.io/madoball/2930/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Rock Action"
+},
+{
+"name": "Rock Entertainment",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2929.jpg",
+"url": "https://godlivetv.io/madoball/2929/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Rock Entertainment"
+},
+{
+"name": "ROCK X Stream",
+"type": "m3u8",
+"image": "https://madoball.com/upload/261622.jpg",
+"url": "https://godlivetv.io/madoball/261622/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ROCK X Stream"
+},
+{
+"name": "RT News",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1497.jpg",
+"url": "https://godlivetv.io/madoball/1497/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "RT News"
+},
+{
+"name": "Sky Sports +",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11972.jpg",
+"url": "https://godlivetv.io/madoball/11972/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sky Sports +"
+},
+{
+"name": "Sky Sports Action",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11952.jpg",
+"url": "https://godlivetv.io/madoball/11952/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sky Sports Action"
+},
+{
+"name": "Sky Sports Cricket",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11951.jpg",
+"url": "https://godlivetv.io/madoball/11951/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sky Sports Cricket"
+},
+{
+"name": "Sky Sports F1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11973.jpg",
+"url": "https://godlivetv.io/madoball/11973/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sky Sports F1"
+},
+{
+"name": "Sky Sports Football",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11974.jpg",
+"url": "https://godlivetv.io/madoball/11974/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sky Sports Football"
+},
+{
+"name": "Sky Sports Golf",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11950.jpg",
+"url": "https://godlivetv.io/madoball/11950/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sky Sports Golf"
+},
+{
+"name": "Sky Sports Main Event",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11949.jpg",
+"url": "https://godlivetv.io/madoball/11949/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sky Sports Main Event"
+},
+{
+"name": "Sky Sports Mix",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11975.jpg",
+"url": "https://godlivetv.io/madoball/11975/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sky Sports Mix"
+},
+{
+"name": "Sky Sports News",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11976.jpg",
+"url": "https://godlivetv.io/madoball/11976/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sky Sports News"
+},
+{
+"name": "Sky Sports Premier League",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11948.jpg",
+"url": "https://godlivetv.io/madoball/11948/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sky Sports Premier League"
+},
+{
+"name": "Sky Sports Racing",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11977.jpg",
+"url": "https://godlivetv.io/madoball/11977/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sky Sports Racing"
+},
+{
+"name": "Sportsnet 360",
+"type": "m3u8",
+"image": "https://madoball.com/upload/15787.jpg",
+"url": "https://godlivetv.io/madoball/15787/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sportsnet 360"
+},
+{
+"name": "Sportsnet ONE",
+"type": "m3u8",
+"image": "https://madoball.com/upload/16299.jpg",
+"url": "https://godlivetv.io/madoball/16299/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sportsnet ONE"
+},
+{
+"name": "Sportsnet Ontario",
+"type": "m3u8",
+"image": "https://madoball.com/upload/14975.jpg",
+"url": "https://godlivetv.io/madoball/14975/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sportsnet Ontario"
+},
+{
+"name": "Sportsnet West",
+"type": "m3u8",
+"image": "https://madoball.com/upload/16302.jpg",
+"url": "https://godlivetv.io/madoball/16302/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sportsnet West"
+},
+{
+"name": "Sportsnet World",
+"type": "m3u8",
+"image": "https://madoball.com/upload/16304.jpg",
+"url": "https://godlivetv.io/madoball/16304/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sportsnet World"
+},
+{
+"name": "Sport TV 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/63481.jpg",
+"url": "https://godlivetv.io/madoball/63481/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sport TV 1"
+},
+{
+"name": "Sport TV 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/63478.jpg",
+"url": "https://godlivetv.io/madoball/63478/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sport TV 2"
+},
+{
+"name": "Sport TV 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/63475.jpg",
+"url": "https://godlivetv.io/madoball/63475/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sport TV 3"
+},
+{
+"name": "Sport TV 4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/63472.jpg",
+"url": "https://godlivetv.io/madoball/63472/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sport TV 4"
+},
+{
+"name": "Sport TV 5",
+"type": "m3u8",
+"image": "https://madoball.com/upload/63471.jpg",
+"url": "https://godlivetv.io/madoball/63471/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Sport TV 5"
+},
+{
+"name": "SPOTV 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2027.jpg",
+"url": "https://godlivetv.io/madoball/2027/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "SPOTV 1"
+},
+{
+"name": "SPOTV 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2023.jpg",
+"url": "https://godlivetv.io/madoball/2023/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "SPOTV 2"
+},
+{
+"name": "Tennis Channel",
+"type": "m3u8",
+"image": "https://madoball.com/upload/10332.jpg",
+"url": "https://godlivetv.io/madoball/10332/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Tennis Channel"
+},
+{
+"name": "Thainess TV",
+"type": "m3u8",
+"image": "https://madoball.com/upload/715.jpg",
+"url": "https://godlivetv.io/madoball/715/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Thainess TV"
+},
+{
+"name": "Thai PBS",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1698.jpg",
+"url": "https://godlivetv.io/madoball/1698/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Thai PBS"
+},
+{
+"name": "TLC",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1496.jpg",
+"url": "https://godlivetv.io/madoball/1496/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "TLC"
+},
+{
+"name": "TNN 16",
+"type": "m3u8",
+"image": "https://madoball.com/upload/6345.jpg",
+"url": "https://godlivetv.io/madoball/6345/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "TNN 16"
+},
+{
+"name": "TNT Sport 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11947.jpg",
+"url": "https://godlivetv.io/madoball/11947/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "TNT Sport 1"
+},
+{
+"name": "TNT Sport 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11941.jpg",
+"url": "https://godlivetv.io/madoball/11941/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "TNT Sport 2"
+},
+{
+"name": "TNT Sport 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11940.jpg",
+"url": "https://godlivetv.io/madoball/11940/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "TNT Sport 3"
+},
+{
+"name": "TNT Sport 4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11939.jpg",
+"url": "https://godlivetv.io/madoball/11939/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "TNT Sport 4"
+},
+{
+"name": "Top News",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1730.jpg",
+"url": "https://godlivetv.io/madoball/1730/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Top News"
+},
+{
+"name": "TPTV",
+"type": "m3u8",
+"image": "https://madoball.com/upload/430.jpg",
+"url": "https://godlivetv.io/madoball/430/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "TPTV"
+},
+{
+"name": "True4U",
+"type": "m3u8",
+"image": "https://madoball.com/upload/6337.jpg",
+"url": "https://godlivetv.io/madoball/6337/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True4U"
+},
+{
+"name": "True Asian More",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1873.jpg",
+"url": "https://godlivetv.io/madoball/1873/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Asian More"
+},
+{
+"name": "True Explore SCI",
+"type": "m3u8",
+"image": "https://madoball.com/upload/722.jpg",
+"url": "https://godlivetv.io/madoball/722/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Explore SCI"
+},
+{
+"name": "True Explore WILD",
+"type": "m3u8",
+"image": "https://madoball.com/upload/740.jpg",
+"url": "https://godlivetv.io/madoball/740/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Explore WILD"
+},
+{
+"name": "True Film 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1877.jpg",
+"url": "https://godlivetv.io/madoball/1877/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Film 1"
+},
+{
+"name": "True Film Asia",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1915.jpg",
+"url": "https://godlivetv.io/madoball/1915/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Film Asia"
+},
+{
+"name": "True Movie Hits",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1875.jpg",
+"url": "https://godlivetv.io/madoball/1875/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Movie Hits"
+},
+{
+"name": "True Premier HD 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2018.jpg",
+"url": "https://godlivetv.io/madoball/2018/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Premier HD 3"
+},
+{
+"name": "True Premier HD 4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2017.jpg",
+"url": "https://godlivetv.io/madoball/2017/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Premier HD 4"
+},
+{
+"name": "True Series",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1916.jpg",
+"url": "https://godlivetv.io/madoball/1916/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Series"
+},
+{
+"name": "True Sport 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2892.jpg",
+"url": "https://godlivetv.io/madoball/2892/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Sport 1"
+},
+{
+"name": "True Sport 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2891.jpg",
+"url": "https://godlivetv.io/madoball/2891/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Sport 2"
+},
+{
+"name": "True Sport 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2890.jpg",
+"url": "https://godlivetv.io/madoball/2890/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Sport 3"
+},
+{
+"name": "True Sport 4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2889.jpg",
+"url": "https://godlivetv.io/madoball/2889/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Sport 4"
+},
+{
+"name": "True Sport 5",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2888.jpg",
+"url": "https://godlivetv.io/madoball/2888/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Sport 5"
+},
+{
+"name": "True Sport 7",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2829.jpg",
+"url": "https://godlivetv.io/madoball/2829/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Sport 7"
+},
+{
+"name": "True Tennis",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2101.jpg",
+"url": "https://godlivetv.io/madoball/2101/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Tennis"
+},
+{
+"name": "True Thai Film",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1874.jpg",
+"url": "https://godlivetv.io/madoball/1874/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True Thai Film"
+},
+{
+"name": "True X-Zyte",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2056.jpg",
+"url": "https://godlivetv.io/madoball/2056/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "True X-Zyte"
+},
+{
+"name": "TSN 1",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11904.jpg",
+"url": "https://godlivetv.io/madoball/11904/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "TSN 1"
+},
+{
+"name": "TSN 2",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11903.jpg",
+"url": "https://godlivetv.io/madoball/11903/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "TSN 2"
+},
+{
+"name": "TSN 3",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11902.jpg",
+"url": "https://godlivetv.io/madoball/11902/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "TSN 3"
+},
+{
+"name": "TSN 4",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11901.jpg",
+"url": "https://godlivetv.io/madoball/11901/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "TSN 4"
+},
+{
+"name": "TSN 5",
+"type": "m3u8",
+"image": "https://madoball.com/upload/11900.jpg",
+"url": "https://godlivetv.io/madoball/11900/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "TSN 5"
+},
+{
+"name": "T Sport Channel",
+"type": "m3u8",
+"image": "https://madoball.com/upload/435.jpg",
+"url": "https://godlivetv.io/madoball/435/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "T Sport Channel"
+},
+{
+"name": "TV5MONDE",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1404.jpg",
+"url": "https://godlivetv.io/madoball/1404/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "TV5MONDE"
+},
+{
+"name": "W-sport",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1498.jpg",
+"url": "https://godlivetv.io/madoball/1498/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "W-sport"
+},
+{
+"name": "Warner TV",
+"type": "m3u8",
+"image": "https://madoball.com/upload/2739.jpg",
+"url": "https://godlivetv.io/madoball/2739/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Warner TV"
+},
+{
+"name": "Willow Cricket",
+"type": "m3u8",
+"image": "https://madoball.com/upload/8740.jpg",
+"url": "https://godlivetv.io/madoball/8740/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Willow Cricket"
+},
+{
+"name": "Workpoint TV",
+"type": "m3u8",
+"image": "https://madoball.com/upload/6335.jpg",
+"url": "https://godlivetv.io/madoball/6335/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "Workpoint TV"
+},
+{
+"name": "WWE Network",
+"type": "m3u8",
+"image": "https://madoball.com/upload/10329.jpg",
+"url": "https://godlivetv.io/madoball/10329/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "WWE Network"
+},
+{
+"name": "ของดีประเทศไทย",
+"type": "m3u8",
+"image": "https://madoball.com/upload/716.jpg",
+"url": "https://godlivetv.io/madoball/716/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ของดีประเทศไทย"
+},
+{
+"name": "ช่อง 3 HD",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7348.jpg",
+"url": "https://godlivetv.io/madoball/7348/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ช่อง 3 HD"
+},
+{
+"name": "ช่อง 5 HD",
+"type": "m3u8",
+"image": "https://madoball.com/upload/7347.jpg",
+"url": "https://godlivetv.io/madoball/7347/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ช่อง 5 HD"
+},
+{
+"name": "ถิ่นใต้ IPTV",
+"type": "m3u8",
+"image": "https://madoball.com/upload/24.jpg",
+"url": "https://godlivetv.io/madoball/24/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ถิ่นใต้ IPTV"
+},
+{
+"name": "สำรวจโลก",
+"type": "m3u8",
+"image": "https://madoball.com/upload/563.jpg",
+"url": "https://godlivetv.io/madoball/563/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "สำรวจโลก"
+},
+{
+"name": "สุวรรณภูมิทีวี",
+"type": "m3u8",
+"image": "https://madoball.com/upload/1243.jpg",
+"url": "https://godlivetv.io/madoball/1243/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "สุวรรณภูมิทีวี"
+},
+{
+"name": "ไทยรัฐ TV HD",
+"type": "m3u8",
+"image": "https://madoball.com/upload/6330.jpg",
+"url": "https://godlivetv.io/madoball/6330/playlist.m3u8",
+"referer": "https://madoball.com/",
+"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+"info": "ไทยรัฐ TV HD"
+}
+]
+}
+]
+}
