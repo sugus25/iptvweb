@@ -3,542 +3,427 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <title>📺 IPTV Player — M3U/JSON/W3U + เลือกแอปเอง</title>
-  
+  <title>Portal Heaven — IPTV Player</title>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.21/dist/hls.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dashjs@4.7.4/dist/dash.all.min.js"></script>
-  
   <style>
     :root {
-      --bg: #12121f; --s1: #1e1e2f; --s2: #2a2a3f; --s3: #353550;
-      --b1: rgba(255,255,255,0.08); --b2: rgba(255,255,255,0.12);
-      --accent: #00c8ff; --accent2: #7b2ffd;
-      --t1: #f0f0ff; --t2: #a0a0c0; --t3: #606080;
-      --ok: #00d887; --danger: #ff4757; --warn: #ffa502;
-      --blue: #2563eb;
-      --nav-height: 56px;
+      --bg: #07070f; --s1: #0f0f1c; --s2: #16162a; --s3: #1d1d35;
+      --b1: rgba(255,255,255,0.06); --b2: rgba(255,255,255,0.11);
+      --accent: #00d4ff; --accent2: #7c3aed;
+      --t1: #dde0f5; --t2: #8080aa; --t3: #44445a;
+      --danger: #ff4466; --ok: #00cc88;
+      --sidebar-w: 260px;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
-    body { 
-      background: var(--bg); color: var(--t1); min-height: 100vh; 
-      padding-top: calc(var(--nav-height) + 16px); padding-bottom: 24px; 
-      padding-left: 16px; padding-right: 16px;
-      position: relative;
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+    body { background: var(--bg); color: var(--t1); min-height: 100vh; }
+    .app { display: flex; min-height: 100vh; }
+    .sidebar {
+      width: var(--sidebar-w); background: var(--s1);
+      border-right: 1px solid var(--b1); padding: 20px 12px;
+      display: flex; flex-direction: column; gap: 24px;
+      position: fixed; top: 0; bottom: 0; left: 0; overflow-y: auto;
+      transition: transform 0.3s ease; z-index: 100;
+      transform: translateX(-100%);
     }
-
-    /* ============================================== */
-    /* 🧭 NAVIGATION BAR — แก้ไข: z-index สูงขึ้น, แตะได้แน่นอน */
-    /* ============================================== */
-    .navbar {
-      position: fixed; top: 0; left: 0; right: 0; height: var(--nav-height);
-      background: linear-gradient(135deg, rgba(18,18,31,0.98), rgba(30,30,47,0.98));
-      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--b1);
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 16px; 
-      z-index: 9999; /* ✅ สูงแน่นอน ไม่มีอะไรบัง */
-      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
-    }
-    .navbar-brand {
-      display: flex; align-items: center; gap: 8px;
-      font-size: 18px; font-weight: 700; color: var(--accent); 
-      text-decoration: none; cursor: pointer;
-      position: relative; z-index: 10;
-    }
-    .navbar-brand span { font-size: 22px; }
-    .nav-links {
-      display: flex; gap: 4px; align-items: center;
-      position: relative; z-index: 10;
-    }
-    .nav-link {
-      padding: 10px 14px; border-radius: 8px; color: var(--t2);
-      text-decoration: none; font-size: 14px; font-weight: 500;
-      transition: all 0.25s ease; cursor: pointer;
-      border: 1px solid transparent;
-      -webkit-tap-highlight-color: transparent; /* ✅ ลบจุดสีเทาตอนแตะบนมือถือ */
-      user-select: none; /* ✅ ป้องกันการเลือกข้อความ */
-      position: relative; z-index: 10;
-    }
-    .nav-link:hover {
-      color: var(--accent); background: rgba(0,200,255,0.08);
-      border-color: rgba(0,200,255,0.2);
-    }
-    .nav-link.active {
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      color: #fff; border-color: transparent;
-      box-shadow: 0 2px 10px rgba(0,200,255,0.25);
-    }
-    /* 📱 เมนูมือถือ */
-    .menu-toggle { 
-      display: flex; flex-direction: column; gap: 4px; 
-      cursor: pointer; padding: 8px; z-index: 10;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .menu-toggle span { 
-      width: 24px; height: 2px; background: var(--t1); 
-      border-radius: 2px; transition: 0.2s;
-      transform-origin: center;
-    }
-    /* เปลี่ยนรูปปุ่มเมื่อเปิด */
-    .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-    .menu-toggle.active span:nth-child(2) { opacity: 0; }
-    .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-
-    .nav-links-mobile {
-      position: fixed; top: var(--nav-height); left: 0; right: 0;
+    .sidebar.open { transform: translateX(0); }
+    .content { flex: 1; margin-left: 0; padding: 70px 16px 20px; }
+    .mob-topbar {
+      display: flex; position: fixed; top: 0; left: 0; right: 0; height: 56px;
       background: var(--s1); border-bottom: 1px solid var(--b1);
-      flex-direction: column; padding: 12px; gap: 8px;
-      z-index: 9998; /* ✅ อยู่ใต้ navbar แต่เหนือเนื้อหา */
-      transform: translateY(-100%);
-      opacity: 0;
-      transition: all 0.3s ease;
-      pointer-events: none;
+      align-items: center; padding: 0 16px; gap: 12px; z-index: 101;
     }
-    .nav-links-mobile.show { 
-      transform: translateY(0); 
-      opacity: 1;
-      pointer-events: auto; /* ✅ เปิดให้คลิกได้เมื่อแสดง */
+    .mob-hamburger { background: none; border: none; color: var(--t1); font-size: 22px; cursor: pointer; }
+    .mob-topbar-title { font-weight: 600; font-size: 16px; }
+    .mob-topbar-section { color: var(--accent); margin-left: auto; font-size: 14px; }
+    .mob-overlay {
+      display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 99;
+      opacity: 0; transition: opacity 0.3s;
     }
-    .nav-links-mobile .nav-link { width: 100%; text-align: center; }
-
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
+    .mob-overlay.show { display: block; opacity: 1; }
+    .s-logo { font-size: 22px; font-weight: 700; color: var(--accent); text-align: center; margin-bottom: 8px; }
+    .conn-card {
+      background: var(--s2); border-left: 3px solid var(--accent);
+      border-radius: 8px; padding: 12px; margin-bottom: 8px; cursor: pointer; transition: 0.2s;
     }
-    @media (min-width: 769px) {
-      .menu-toggle { display: none; }
-      .nav-links-mobile { display: none !important; }
+    .conn-card:hover { background: var(--s3); }
+    .conn-card-row { display: flex; align-items: center; gap: 10px; }
+    .conn-card-icon { font-size: 20px; }
+    .conn-card-label { font-size: 13px; color: var(--t1); }
+    .conn-card-stats { font-size: 11px; color: var(--t2); margin-top: 2px; }
+    .s-sect { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--t3); margin: 16px 0 8px 10px; }
+    .nav {
+      display: flex; align-items: center; gap: 10px; padding: 10px 12px;
+      border-radius: 8px; color: var(--t2); cursor: pointer; transition: 0.2s; margin-bottom: 2px;
+      user-select: none;
+    }
+    .nav:hover { background: var(--s2); color: var(--t1); }
+    .nav.on { background: rgba(0,212,255,0.1); color: var(--accent); border-left: 2px solid var(--accent); }
+    .nav-icon { font-size: 18px; width: 24px; text-align: center; }
+    .c-header { margin-bottom: 24px; }
+    .c-title { font-size: 24px; font-weight: 700; }
+    .page { display: none; }
+    .page.active { display: block; }
+    .fg { margin-bottom: 16px; }
+    .fl { display: block; margin-bottom: 6px; color: var(--t2); font-size: 13px; }
+    .fi {
+      width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--b2);
+      background: var(--s2); color: var(--t1); font-size: 15px; outline: none; transition: 0.2s;
+    }
+    .fi:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(0,212,255,0.15); }
+    .btn-primary {
+      width: 100%; padding: 14px; border-radius: 10px; border: none;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff; font-size: 16px; font-weight: 600; cursor: pointer; transition: 0.3s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,212,255,0.2); }
+
+    .upload-area {
+      border: 2px dashed var(--b2); border-radius: 12px; padding: 32px 20px;
+      text-align: center; cursor: pointer; transition: 0.3s; margin-bottom: 20px;
+      background: rgba(0,212,255,0.02);
+      position: relative; z-index: 10;
+    }
+    .upload-area:hover, .upload-area.dragover {
+      border-color: var(--accent); background: rgba(0,212,255,0.08);
+    }
+    .upload-icon { font-size: 40px; margin-bottom: 12px; }
+    .upload-text { font-size: 15px; color: var(--t1); margin-bottom: 4px; }
+    .upload-hint { font-size: 12px; color: var(--t2); }
+    #fileInput {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      opacity: 0; font-size: 1px; cursor: pointer; z-index: 20;
+    }
+    .file-info {
+      margin-top: 12px; padding: 10px 14px; background: var(--s2); border-radius: 8px;
+      font-size: 14px; display: none; align-items: center; gap: 10px;
+    }
+    .file-info.show { display: flex; }
+    .file-name { color: var(--accent); font-weight: 500; }
+    .file-clear { 
+      margin-left: auto; background: none; border: none; color: var(--danger); 
+      cursor: pointer; font-size: 20px; padding: 4px 8px;
     }
 
-    .container { max-width: 600px; margin: 0 auto; position: relative; z-index: 1; }
-    h1 { text-align: center; margin-bottom: 20px; color: var(--accent); font-size: 22px; }
-    .page-section { display: none; }
-    .page-section.active { display: block; }
-
-    /* ===== 🎬 เครื่องเล่น ===== */
-    .video-box { background: #000; border-radius: 12px; overflow: hidden; margin-bottom: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.5); display: none; }
-    .video-wrap { width: 100%; aspect-ratio: 16/9; background: #000; position: relative; overflow: hidden; }
-    video, iframe { width: 100%; height: 100%; display: block; border: none; }
-    video { object-fit: contain; }
-    .web-view { width: 100%; height: 100%; border: none; }
-
-    /* ===== 📐 ปรับขนาดหน้าจอ ===== */
-    .mode-bar { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px; background: var(--s2); border-top: 1px solid var(--b1); }
-    .mode-label { width: 100%; font-size: 12px; color: var(--t2); margin-bottom: 4px; }
-    .mode-btn { flex: 1; min-width: 75px; padding: 8px 6px; border-radius: 6px; border: 1px solid var(--b1); background: var(--s3); color: var(--t2); cursor: pointer; font-size: 12px; transition: 0.2s; }
-    .mode-btn:hover { border-color: var(--accent); color: var(--accent); }
-    .mode-btn.active { background: linear-gradient(135deg, var(--accent), var(--accent2)); border-color: transparent; color: #fff; }
-
-    /* ===== ฟอร์มและส่วนอื่นๆ ===== */
-    .form-card { background: var(--s1); border-radius: 12px; padding: 20px; border: 1px solid var(--b1); margin-bottom: 16px; }
-    .section-title { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: var(--accent); }
-    .type-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
-    .type-btn { padding: 8px 12px; border-radius: 6px; border: 2px solid transparent; background: var(--s2); color: var(--t2); cursor: pointer; font-size: 13px; font-weight: 500; transition: 0.2s; }
-    .type-btn:hover, .type-btn.active { border-color: var(--accent); color: #fff; background: var(--blue); border-color: var(--blue); }
-    .input-group { margin-bottom: 14px; }
-    .label { display: block; margin-bottom: 6px; color: var(--t2); font-size: 13px; }
-    .input-wrap { position: relative; display: flex; align-items: center; }
-    .input-field { width: 100%; padding: 12px 44px 12px 14px; border-radius: 8px; border: 1px solid var(--b2); background: var(--s2); color: var(--t1); font-size: 14px; outline: none; font-family: monospace; }
-    .input-field:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(0,200,255,0.15); }
-    .paste-btn { position: absolute; right: 6px; padding: 8px 10px; border-radius: 6px; border: none; background: var(--accent2); color: #fff; cursor: pointer; font-size: 13px; }
-    .play-btn { width: 100%; padding: 14px; border-radius: 10px; border: none; background: linear-gradient(135deg, #00c8ff, #7b2ffd); color: #fff; font-size: 16px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 4px; }
-    .status { margin-top: 14px; padding: 12px 16px; border-radius: 8px; font-size: 14px; display: none; }
-    .status.show { display: block; }
-    .status.ok { background: rgba(0,216,135,0.1); border: 1px solid var(--ok); color: var(--ok); }
-    .status.err { background: rgba(255,71,87,0.1); border: 1px solid var(--danger); color: var(--danger); }
-    .status.warn { background: rgba(255,165,2,0.1); border: 1px solid var(--warn); color: var(--warn); }
-    .category-bar { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; padding-bottom: 12px; border-bottom: 1px solid var(--b1); }
-    .category-btn { padding: 8px 14px; border-radius: 20px; border: 1px solid var(--b1); background: var(--s2); color: var(--t2); cursor: pointer; font-size: 13px; }
-    .category-btn:hover, .category-btn.active { background: var(--accent2); color: #fff; border-color: var(--accent2); }
+    .category-bar {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;
+      padding-bottom: 16px; border-bottom: 1px solid var(--b1);
+    }
+    .category-btn {
+      padding: 8px 14px; border-radius: 20px; border: 1px solid var(--b1);
+      background: var(--s2); color: var(--t2); cursor: pointer;
+      font-size: 13px; transition: 0.2s; white-space: nowrap;
+    }
+    .category-btn:hover, .category-btn.on {
+      background: var(--accent2); color: #fff; border-color: var(--accent2);
+    }
     .category-all { background: linear-gradient(135deg, var(--accent), var(--accent2)); border: none; color: #fff; }
-    .playlist-box { background: var(--s1); border-radius: 12px; padding: 16px; border: 1px solid var(--b1); margin-top: 16px; display: none; }
-    .playlist-box.show { display: block; }
-    .playlist-title { font-size: 16px; font-weight: 600; margin-bottom: 8px; color: var(--accent); }
-    .ch-item { padding: 12px 14px; border-radius: 8px; background: var(--s2); border: 1px solid var(--b1); cursor: pointer; margin-bottom: 8px; font-size: 14px; }
-    .ch-item.hidden { display: none; }
-    .ch-item:hover { background: var(--s3); border-color: var(--accent); transform: translateX(4px); }
-    .ch-item.playing { border-color: var(--accent); background: rgba(0,200,255,0.1); }
-    .ext-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 16px; }
-    .ext-btn { padding: 14px 8px; border-radius: 10px; border: none; cursor: pointer; font-size: 14px; font-weight: 600; color: #fff; transition: 0.2s; }
-    .ext-open { background: linear-gradient(135deg, #f97316, #ea580c); }
+    .category-all.on { box-shadow: 0 2px 8px rgba(0,212,255,0.3); }
+    .playlist-container { margin-top: 24px; display: none; }
+    .playlist-container.show { display: block; }
+    .playlist-title { font-size: 18px; font-weight: 600; margin-bottom: 12px; color: var(--accent); }
+    .channels { display: flex; flex-wrap: wrap; gap: 10px; }
+    .ch-btn {
+      background: var(--s2); color: var(--t1); padding: 12px; border-radius: 8px;
+      border: 1px solid var(--b1); cursor: pointer; flex: 1 1 calc(50% - 5px);
+      min-width: 140px; font-size: 14px; transition: 0.2s;
+      text-align: left;
+    }
+    .ch-btn:hover { background: var(--s3); border-color: var(--accent); transform: translateY(-2px); }
+    .ch-btn.hidden { display: none; }
+
+    .video-wrap { 
+      margin-top: 24px; background: #000; border-radius: 12px; overflow: hidden; 
+      display: none; position: relative; width: 100%;
+      min-height: 250px;
+    }
+    .video-wrap.show { display: block !important; }
+    .video-inner {
+      width: 100%; aspect-ratio: 16/9; background: #000;
+      position: relative; overflow: hidden;
+    }
+    video {
+      width: 100%; height: 100%; display: block;
+      object-fit: contain; background: #000;
+    }
+    .aspect-bar {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding: 12px;
+      background: var(--s2); border-radius: 8px; display: none;
+    }
+    .aspect-bar.show { display: flex; }
+    .aspect-label { font-size: 12px; color: var(--t2); width: 100%; margin-bottom: 4px; }
+    .aspect-btn {
+      padding: 8px 12px; border-radius: 6px; border: 1px solid var(--b1);
+      background: var(--s3); color: var(--t2); cursor: pointer; font-size: 12px; transition: 0.2s;
+    }
+    .aspect-btn:hover, .aspect-btn.on { border-color: var(--accent); background: rgba(0,212,255,0.15); color: var(--accent); }
+    .status-bar { 
+      margin-top: 12px; padding: 12px 14px; border-radius: 8px; 
+      font-size: 14px; display: none; font-weight: 500;
+    }
+    .status-bar.show { display: block !important; }
+    .status-bar.ok { background: rgba(0,204,136,0.1); border: 1px solid var(--ok); color: var(--ok); }
+    .status-bar.err { background: rgba(255,68,102,0.1); border: 1px solid var(--danger); color: var(--danger); }
+    .status-bar.info { background: rgba(0,212,255,0.1); border: 1px solid var(--accent); color: var(--accent); }
+    .ext-bar { 
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; 
+      margin-top: 20px; display: none;
+    }
+    .ext-bar.show { display: grid !important; }
+    .ext-btn {
+      padding: 12px 8px; border-radius: 10px; border: none; 
+      cursor: pointer; font-size: 13px; font-weight: 600; 
+      color: #fff; transition: 0.2s;
+    }
+    .ext-btn:hover { transform: translateY(-2px); }
+    .ext-drm { background: linear-gradient(135deg, #7c3aed, #5b21b6); }
+    .ext-yamby { background: linear-gradient(135deg, #ea4335, #d33426); }
+    .ext-win { background: linear-gradient(135deg, #0ea5e9, #0284c7); }
     .ext-copy { background: linear-gradient(135deg, #10b981, #059669); }
     .ext-copy.copied { background: #4ade80; color: #000; }
-    .about-card { background: var(--s1); border-radius: 12px; padding: 24px; border: 1px solid var(--b1); text-align: center; }
-    .about-card h2 { color: var(--accent); margin-bottom: 16px; font-size: 20px; }
-    .about-card p { color: var(--t2); line-height: 1.8; margin-bottom: 12px; }
-    .about-card .feature-list { text-align: left; margin: 20px 0; list-style: none; }
-    .about-card .feature-list li { padding: 8px 0; color: var(--t1); border-bottom: 1px solid var(--b1); }
-    .about-card .version { margin-top: 20px; font-size: 13px; color: var(--t3); }
-    @media (max-width: 480px) {
-      body { padding: 12px; padding-top: calc(var(--nav-height) + 12px); }
+    @media (min-width: 901px) {
+      .sidebar { transform: translateX(0); }
+      .content { margin-left: var(--sidebar-w); padding: 30px; }
+      .mob-topbar { display: none; }
+      .ext-bar { grid-template-columns: repeat(4, 1fr); }
     }
   </style>
 </head>
 <body>
-
-<!-- ============================================== -->
-<!-- 🧭 NAVIGATION BAR — แก้ไข: แตะได้แน่นอน -->
-<!-- ============================================== -->
-<nav class="navbar">
-  <div class="navbar-brand" data-page="home" onclick="switchPage('home')">
-    <span>📺</span> IPTV Player
+  <div class="mob-topbar">
+    <button class="mob-hamburger" id="menuBtn">☰</button>
+    <span class="mob-topbar-title">Portal Heaven</span>
+    <span class="mob-topbar-section" id="pageTitle">M3U Playlist</span>
   </div>
-  
-  <!-- เมนูหน้าจอใหญ่ -->
-  <div class="nav-links">
-    <div class="nav-link active" data-page="home" onclick="switchPage('home')">🏠 หน้าแรก</div>
-    <div class="nav-link" data-page="direct" onclick="switchPage('direct')">▶ เล่นตรง</div>
-    <div class="nav-link" data-page="playlist" onclick="switchPage('playlist')">📋 เพลย์ลิสต์</div>
-    <div class="nav-link" data-page="about" onclick="switchPage('about')">ℹ️ เกี่ยวกับ</div>
-  </div>
+  <div class="mob-overlay" id="overlay"></div>
 
-  <!-- ปุ่มเมนูมือถือ -->
-  <div class="menu-toggle" id="menuToggle" onclick="toggleMobileMenu()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<!-- เมนูมือถือ -->
-<div class="nav-links-mobile" id="navLinksMobile">
-  <div class="nav-link active" data-page="home" onclick="switchPage('home'); closeMobileMenu();">🏠 หน้าแรก</div>
-  <div class="nav-link" data-page="direct" onclick="switchPage('direct'); closeMobileMenu();">▶ เล่นตรง</div>
-  <div class="nav-link" data-page="playlist" onclick="switchPage('playlist'); closeMobileMenu();">📋 เพลย์ลิสต์</div>
-  <div class="nav-link" data-page="about" onclick="switchPage('about'); closeMobileMenu();">ℹ️ เกี่ยวกับ</div>
-</div>
-
-<div class="container">
-
-  <!-- ============================================== -->
-  <!-- 🏠 หน้าแรก -->
-  <!-- ============================================== -->
-  <div class="page-section active" id="page-home">
-    <h1>📺 IPTV Player — เครื่องเล่นครบวงจร</h1>
-    <div class="form-card" style="text-align: center; padding: 30px 20px;">
-      <span style="font-size: 60px; display: block; margin-bottom: 20px;">📺</span>
-      <h2 style="color: var(--accent); margin-bottom: 12px;">ยินดีต้อนรับ</h2>
-      <p style="color: var(--t2); margin-bottom: 24px; line-height: 1.8;">
-        รองรับ HLS (.m3u8) / DASH (.mpd) / MP4<br>
-        โหลดเพลย์ลิสต์ .m3u / .json / .w3u<br>
-        เปิดในแอปอื่นได้ทุกแอปในเครื่อง
-      </p>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px;">
-        <button class="play-btn" style="background: linear-gradient(135deg, #2563eb, #7b2ffd);" onclick="switchPage('direct')">
-          ▶ เล่นวิดีโอเลย
-        </button>
-        <button class="play-btn" style="background: linear-gradient(135deg, #10b981, #059669);" onclick="switchPage('playlist')">
-          📋 โหลดเพลย์ลิสต์
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ============================================== -->
-  <!-- ▶ เล่นตรง -->
-  <!-- ============================================== -->
-  <div class="page-section" id="page-direct">
-    <h1>▶ เล่นวิดีโอโดยตรง</h1>
-    <div class="video-box" id="videoBox">
-      <div class="video-wrap">
-        <video id="video" controls playsinline preload="metadata" style="display: none;"></video>
-        <iframe id="webIframe" class="web-view" style="display: none;" allow="autoplay; fullscreen"></iframe>
-      </div>
-      <div class="mode-bar">
-        <span class="mode-label">📐 โหมดแสดงภาพ</span>
-        <button class="mode-btn active" data-mode="contain" onclick="setMode('contain')">⚙ Contain</button>
-        <button class="mode-btn" data-mode="cover" onclick="setMode('cover')">🔍 Cover</button>
-        <button class="mode-btn" data-mode="fill" onclick="setMode('fill')">↔️ Stretch</button>
-        <button class="mode-btn" data-mode="16:9" onclick="setMode('16:9')">📺 16:9</button>
-        <button class="mode-btn" data-mode="full" onclick="setMode('full')">⛶ เต็มจอ</button>
-      </div>
-    </div>
-    <div class="form-card">
-      <div class="section-title">เลือกประเภทลิงก์</div>
-      <div class="type-bar">
-        <button class="type-btn" data-type="web_url" onclick="setType('web_url')">🌐 เว็บ</button>
-        <button class="type-btn active" data-type="m3u8" onclick="setType('m3u8')">📹 m3u8</button>
-        <button class="type-btn" data-type="mp4" onclick="setType('mp4')">🎥 mp4</button>
-        <button class="type-btn" data-type="mpd" onclick="setType('mpd')">📊 mpd</button>
-      </div>
-      <div class="input-group">
-        <label class="label">🔗 ลิงก์วิดีโอ</label>
-        <div class="input-wrap">
-          <input type="text" class="input-field" id="urlInput" placeholder="วางลิงก์ที่นี่...">
-          <button class="paste-btn" onclick="pasteTo('urlInput')">วาง</button>
+  <div class="app">
+    <div class="sidebar" id="sidebar">
+      <div class="s-logo">Portal Heaven</div>
+      <div class="conn-card">
+        <div class="conn-card-row">
+          <span class="conn-card-icon">📡</span>
+          <div class="conn-card-info">
+            <div class="conn-card-label" id="connLabel">ไม่ได้เชื่อมต่อ</div>
+            <div class="conn-card-stats" id="connStats">0 items</div>
+          </div>
         </div>
       </div>
-      <div class="input-group">
-        <label class="label">Referer (ถ้ามี)</label>
-        <div class="input-wrap">
-          <input type="text" class="input-field" id="refererInput" placeholder="https://example.com">
-          <button class="paste-btn" onclick="pasteTo('refererInput')">วาง</button>
+      <div class="s-sect">Watch</div>
+      <div class="nav" data-page="live"><span class="nav-icon">📺</span><span>Live TV</span></div>
+      <div class="nav" data-page="direct"><span class="nav-icon">▶</span><span>Direct Play</span></div>
+      <div class="nav on" data-page="m3u"><span class="nav-icon">📋</span><span>M3U Playlist</span></div>
+      <div class="nav" data-page="settings"><span class="nav-icon">⚙</span><span>Settings</span></div>
+    </div>
+
+    <div class="content">
+      <div class="page active" id="page-m3u">
+        <div class="c-header"><h1 class="c-title">📋 M3U Playlist</h1></div>
+        <div class="upload-area" id="uploadArea">
+          <input type="file" id="fileInput" accept=".m3u,.m3u8,.txt">
+          <div class="upload-icon">📁</div>
+          <div class="upload-text">👆 แตะเพื่อเลือกไฟล์ .m3u จากเครื่อง</div>
+          <div class="upload-hint">รองรับ .m3u / .m3u8 / .txt</div>
+        </div>
+        <div class="file-info" id="fileInfo">
+          <span>✅</span>
+          <span class="file-name" id="fileName">playlist.m3u</span>
+          <button class="file-clear" id="clearFileBtn">×</button>
+        </div>
+        <div style="text-align:center; color:var(--t2); margin:24px 0; font-size:14px;">─── หรือ ใส่ลิงก์ M3U ───</div>
+        <div class="fg"><label class="fl">🔗 M3U URL (ลิงก์เพลย์ลิสต์)</label><input class="fi" id="m3u_url" placeholder="https://example.com/playlist.m3u"></div>
+        <button class="btn-primary" id="loadM3uBtn">📥 โหลดเพลย์ลิสต์</button>
+      </div>
+
+      <div class="page" id="page-live">
+        <div class="c-header"><h1 class="c-title">📺 รายการช่อง</h1></div>
+        <p style="color:var(--t2); margin-bottom:16px;">เลือกช่องเพื่อเริ่มเล่นครับ</p>
+        <div class="category-bar" id="categoryBar">
+          <button class="category-btn category-all on" data-category="all">📺 ทุกช่อง</button>
+        </div>
+        <div class="channels" id="channelsList"></div>
+      </div>
+
+      <div class="page" id="page-direct">
+        <div class="c-header"><h1 class="c-title">▶ Direct Play</h1></div>
+        <div class="fg"><label class="fl">🔗 ลิงก์วิดีโอ (.m3u8 / .mpd / .mp4)</label><input class="fi" id="streamUrl" placeholder="https://.../playlist.m3u8"></div>
+        <button class="btn-primary" id="playBtn">▶ เล่นทันที</button>
+      </div>
+
+      <div class="page" id="page-settings"><div class="c-header"><h1 class="c-title">⚙ Settings</h1></div></div>
+
+      <div class="video-wrap" id="videoWrap">
+        <div class="video-inner">
+          <video id="video" controls playsinline controlslist="nodownload" disablepictureinpicture oncontextmenu="return false"></video>
         </div>
       </div>
-      <button class="play-btn" id="testBtn" onclick="playDirect()">
-        <span>▶</span> ทดสอบเล่น
-      </button>
-      <div class="status" id="statusDirect"></div>
-      <div class="ext-bar" id="extBar" style="display: none;">
-        <button class="ext-btn ext-open" onclick="openInApp()">📱 เปิดในแอปอื่น</button>
-        <button class="ext-btn ext-copy" id="copyBtn" onclick="copyUrl()">📋 คัดลอก</button>
+
+      <div class="aspect-bar" id="aspectBar">
+        <span class="aspect-label">📐 ขนาดหน้าจอ</span>
+        <button class="aspect-btn on" data-mode="contain">Contain</button>
+        <button class="aspect-btn" data-mode="cover">Cover</button>
+        <button class="aspect-btn" data-mode="fill">Stretch</button>
+        <button class="aspect-btn" data-mode="full">⛶ เต็มจอ</button>
+      </div>
+
+      <div class="status-bar info" id="statusBar">
+        💡 กดเลือกช่องเพื่อเริ่มเล่นครับ
+      </div>
+
+      <!-- ✅ ปุ่มภายนอก — แก้ไขใหม่ -->
+      <div class="ext-bar" id="extBar">
+        <button class="ext-btn ext-drm" id="openInAppBtn">📲 เปิดในแอปอื่น</button>
+        <button class="ext-btn ext-yamby" id="yambyBtn">📱 Yamby</button>
+        <button class="ext-btn ext-win" id="winBtn">🖥️ เบราว์เซอร์</button>
+        <button class="ext-btn ext-copy" id="copyBtn">📋 คัดลอกลิงก์</button>
+      </div>
+
+      <div class="playlist-container show" id="playlistContainer">
+        <div class="playlist-title">📋 รายการช่อง</div>
+        <div class="channels" id="channelsList"></div>
       </div>
     </div>
   </div>
-
-  <!-- ============================================== -->
-  <!-- 📋 เพลย์ลิสต์ -->
-  <!-- ============================================== -->
-  <div class="page-section" id="page-playlist">
-    <h1>📋 โหลดเพลย์ลิสต์</h1>
-    <div class="video-box" id="videoBox2">
-      <div class="video-wrap">
-        <video id="video2" controls playsinline preload="metadata" style="display: none;"></video>
-        <iframe id="webIframe2" class="web-view" style="display: none;" allow="autoplay; fullscreen"></iframe>
-      </div>
-      <div class="mode-bar">
-        <span class="mode-label">📐 โหมดแสดงภาพ</span>
-        <button class="mode-btn active" onclick="setMode2('contain')">⚙ Contain</button>
-        <button class="mode-btn" onclick="setMode2('cover')">🔍 Cover</button>
-        <button class="mode-btn" onclick="setMode2('fill')">↔️ Stretch</button>
-        <button class="mode-btn" onclick="setMode2('16:9')">📺 16:9</button>
-        <button class="mode-btn" onclick="setMode2('full')">⛶ เต็มจอ</button>
-      </div>
-    </div>
-    <div class="form-card">
-      <div class="section-title">📥 โหลดเพลย์ลิสต์ — .m3u / .json / .w3u</div>
-      <div class="input-group">
-        <label class="label">🔗 ลิงก์ไฟล์เพลย์ลิสต์</label>
-        <div class="input-wrap">
-          <input type="text" class="input-field" id="playlistUrlInput" placeholder="วางลิงก์ที่นี่...">
-          <button class="paste-btn" onclick="pasteTo('playlistUrlInput')">วาง</button>
-        </div>
-      </div>
-      <button class="play-btn" onclick="loadPlaylist()">
-        <span>📥</span> โหลดเพลย์ลิสต์
-      </button>
-      <div class="status" id="statusPlaylist"></div>
-      <div class="ext-bar" id="extBar2" style="display: none;">
-        <button class="ext-btn ext-open" onclick="openInApp2()">📱 เปิดในแอปอื่น</button>
-        <button class="ext-btn ext-copy" onclick="copyUrl2()">📋 คัดลอก</button>
-      </div>
-    </div>
-    <div class="playlist-box" id="playlistBox">
-      <div class="playlist-title">📋 รายการช่อง <span id="chCount"></span></div>
-      <div class="category-bar" id="categoryBar">
-        <button class="category-btn category-all active" onclick="filterCategory('all')">📺 ทุกช่อง</button>
-      </div>
-      <div id="channelsList"></div>
-    </div>
-  </div>
-
-  <!-- ============================================== -->
-  <!-- ℹ️ เกี่ยวกับ -->
-  <!-- ============================================== -->
-  <div class="page-section" id="page-about">
-    <h1>ℹ️ เกี่ยวกับ</h1>
-    <div class="about-card">
-      <h2>📺 IPTV Player</h2>
-      <p>เครื่องเล่น IPTV แบบครบวงจร<br>รองรับทุกรูปแบบไฟล์และสตรีม</p>
-      <ul class="feature-list">
-        <li>✅ รองรับเพลย์ลิสต์ .m3u / .m3u8 / .json / .w3u</li>
-        <li>✅ เล่นวิดีโอ HLS (.m3u8) / DASH (.mpd) / MP4</li>
-        <li>✅ จัดหมวดหมู่อัตโนมัติจาก group-title</li>
-        <li>✅ ปรับโหมดภาพ — กำจัดขอบดำ</li>
-        <li>✅ เปิดในแอปอื่นได้ทุกแอปในเครื่อง</li>
-        <li>✅ รองรับ Referer และลิงก์พิเศษ</li>
-      </ul>
-      <p class="version">เวอร์ชัน: 2.1.0<br>อัพเดทล่าสุด: 20 สิงหาคม 2568</p>
-      <p style="font-size: 12px; color: var(--t3); margin-top: 16px;">
-        ใช้เพื่อการศึกษาและทดสอบเท่านั้น
-      </p>
-    </div>
-  </div>
-
-</div>
 
 <script>
-// ==============================================
-// 🧭 NAVIGATION — ทำงานแน่นอน!
-// ==============================================
-function switchPage(pageName) {
-  // ซ่อนทุกหน้า
-  document.querySelectorAll('.page-section').forEach(p => p.classList.remove('active'));
-  // แสดงหน้าที่เลือก
-  document.getElementById(`page-${pageName}`).classList.add('active');
-  
-  // อัปเดตสถานะเมนู
-  document.querySelectorAll('.nav-link').forEach(lnk => {
-    lnk.classList.toggle('active', lnk.dataset.page === pageName);
-  });
+const video = document.getElementById('video');
+const videoWrap = document.getElementById('videoWrap');
+const aspectBar = document.getElementById('aspectBar');
+const statusBar = document.getElementById('statusBar');
+const extBar = document.getElementById('extBar');
+const playlistContainer = document.getElementById('playlistContainer');
+const categoryBar = document.getElementById('categoryBar');
+const channelsList = document.getElementById('channelsList');
+const pageTitle = document.getElementById('pageTitle');
+const connLabel = document.getElementById('connLabel');
+const connStats = document.getElementById('connStats');
 
-  // เลื่อนขึ้นด้านบน
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  
-  console.log('✅ เปิดหน้า:', pageName); // ✅ เช็คว่าทำงาน
-}
-
-// 📱 เปิด/ปิดเมนูมือถือ
-function toggleMobileMenu() {
-  const menu = document.getElementById('navLinksMobile');
-  const btn = document.getElementById('menuToggle');
-  menu.classList.toggle('show');
-  btn.classList.toggle('active');
-}
-
-function closeMobileMenu() {
-  document.getElementById('navLinksMobile').classList.remove('show');
-  document.getElementById('menuToggle').classList.remove('active');
-}
-
-// ปิดเมนูเมื่อกดภายนอก
-document.addEventListener('click', (e) => {
-    const menu = document.getElementById('navLinksMobile');
-  const btn = document.getElementById('menuToggle');
-  if (!menu.contains(e.target) && !btn.contains(e.target)) {
-    menu.classList.remove('show');
-    btn.classList.remove('active');
-  }
-});
-
-// ==============================================
-// 🎯 ตัวแปรหลัก
-// ==============================================
 let hls = null, dashPlayer = null;
-let currentType = 'm3u8';
-let currentUrl = '';
-let currentReferer = '';
+let currentStreamUrl = '';
 let allChannels = [];
 let categories = [];
-let activeCategory = 'all';
 
-// ==============================================
-// 📐 ปรับโหมดภาพ
-// ==============================================
-function setMode(mode) {
-  const v = document.getElementById('video');
-  const wrap = v.closest('.video-wrap');
-  v.style.objectFit = 'contain';
-  wrap.style.aspectRatio = '16/9';
-  wrap.style.borderRadius = '12px';
-  switch(mode) {
-    case 'contain': v.style.objectFit = 'contain'; break;
-    case 'cover': v.style.objectFit = 'cover'; break;
-    case 'fill': v.style.objectFit = 'fill'; break;
-    case '16:9': v.style.objectFit = 'contain'; wrap.style.aspectRatio = '16/9'; break;
-    case 'full':
-      v.style.objectFit = 'contain';
-      wrap.style.aspectRatio = 'unset';
-      wrap.style.borderRadius = '0';
-      if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
-      break;
-  }
-  document.querySelectorAll('#page-direct .mode-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
-}
+document.getElementById('menuBtn').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('overlay').classList.toggle('show');
+});
+document.getElementById('overlay').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('overlay').classList.remove('show');
+});
 
-function setMode2(mode) {
-  const v = document.getElementById('video2');
-  const wrap = v.closest('.video-wrap');
-  v.style.objectFit = 'contain';
-  wrap.style.aspectRatio = '16/9';
-  switch(mode) {
-    case 'contain': v.style.objectFit = 'contain'; break;
-    case 'cover': v.style.objectFit = 'cover'; break;
-    case 'fill': v.style.objectFit = 'fill'; break;
-    case '16:9': v.style.objectFit = 'contain'; wrap.style.aspectRatio = '16/9'; break;
-    case 'full':
-      v.style.objectFit = 'contain';
-      wrap.style.aspectRatio = 'unset';
-      wrap.style.borderRadius = '0';
-      if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
-      break;
-  }
-  document.querySelectorAll('#page-playlist .mode-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
-}
+const pageNames = {
+  live: 'Live TV', m3u: 'M3U Playlist', direct: 'Direct Play', settings: 'Settings'
+};
+document.querySelectorAll('.nav').forEach(nav => {
+  nav.addEventListener('click', () => {
+    document.querySelectorAll('.nav').forEach(n => n.classList.remove('on'));
+    nav.classList.add('on');
+    const pageId = nav.dataset.page;
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(`page-${pageId}`).classList.add('active');
+    pageTitle.textContent = pageNames[pageId] || pageId;
+    document.getElementById('sidebar').classList.remove('open');
+    document.getElementById('overlay').classList.remove('show');
+  });
+});
 
-// ==============================================
-// 📋 เลือกประเภทลิงก์
-// ==============================================
-function setType(type) {
-  currentType = type;
-  document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
-  showStatus(`✅ เลือกประเภท: ${type}`, 'ok', 'statusDirect');
-}
+const uploadArea = document.getElementById('uploadArea');
+const fileInput = document.getElementById('fileInput');
+const fileInfo = document.getElementById('fileInfo');
+const fileName = document.getElementById('fileName');
+const clearFileBtn = document.getElementById('clearFileBtn');
 
-// ==============================================
-// 📋 ปุ่มวางข้อมูล
-// ==============================================
-async function pasteTo(inputId) {
-  try {
-    const text = await navigator.clipboard.readText();
-    document.getElementById(inputId).value = text.trim();
-    showStatus('✅ วางข้อมูลแล้ว', 'ok', 'statusDirect');
-  } catch (e) {
-    showStatus('⚠️ ไม่สามารถอ่านคลิปบอร์ดได้', 'warn', 'statusDirect');
-  }
-}
+fileInput.addEventListener('change', (e) => {
+  if (e.target.files.length > 0) handleFile(e.target.files[0]);
+});
 
-// ==============================================
-// ▶️ ทดสอบเล่น — หน้าเล่นตรง
-// ==============================================
-function playDirect() {
-  const url = document.getElementById('urlInput').value.trim();
-  const referer = document.getElementById('refererInput').value.trim();
-  if (!url) return showStatus('⚠️ กรุณาใส่ลิงก์ URL', 'err', 'statusDirect');
-  currentUrl = url;
-  currentReferer = referer;
-  showStatus('⏳ กำลังโหลด...', 'warn', 'statusDirect');
-  stopAll();
-  document.getElementById('videoBox').style.display = 'none';
-  document.getElementById('extBar').style.display = 'none';
-  
-  const u = url.toLowerCase();
-  if (u.includes('.m3u8')) playHLS(url, referer, 'video', 'webIframe', 'videoBox', 'extBar', 'statusDirect');
-  else if (u.includes('.mpd')) playDASH(url, 'video', 'webIframe', 'videoBox', 'extBar', 'statusDirect');
-  else if (u.includes('.mp4')) playMP4(url, 'video', 'webIframe', 'videoBox', 'extBar', 'statusDirect');
-  else playWebUrl(url, 'video', 'webIframe', 'videoBox', 'extBar', 'statusDirect');
-}
+uploadArea.addEventListener('dragover', (e) => {
+  e.preventDefault();
+  uploadArea.classList.add('dragover');
+});
+uploadArea.addEventListener('dragleave', () => uploadArea.classList.remove('dragover'));
+uploadArea.addEventListener('drop', (e) => {
+  e.preventDefault();
+  uploadArea.classList.remove('dragover');
+  if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+});
 
-// ==============================================
-// 📥 โหลดเพลย์ลิสต์
-// ==============================================
-async function loadPlaylist() {
-  const url = document.getElementById('playlistUrlInput').value.trim();
-  if (!url) return showStatus('⚠️ กรุณาใส่ลิงก์ไฟล์เพลย์ลิสต์', 'err', 'statusPlaylist');
-  showStatus('⏳ กำลังโหลด...', 'warn', 'statusPlaylist');
+clearFileBtn.addEventListener('click', () => {
+  fileInput.value = '';
+  fileInfo.classList.remove('show');
   allChannels = []; categories = [];
-  document.getElementById('playlistBox').classList.remove('show');
-  
-  try {
-    const res = await fetch(url);
-    if (!res.ok) throw new Error('Load failed');
-    const text = await res.text();
-    
-    if (url.endsWith('.m3u') || url.endsWith('.m3u8') || text.startsWith('#EXTM3U')) {
-      parseM3U(text);
-      showStatus(`✅ โหลด M3U สำเร็จ! ${allChannels.length} ช่อง`, 'ok', 'statusPlaylist');
-    } else {
-      try {
-        const json = JSON.parse(text);
-        parseJsonW3U(json);
-        showStatus(`✅ โหลด JSON/W3U สำเร็จ! ${allChannels.length} ช่อง`, 'ok', 'statusPlaylist');
-      } catch (e) {
-        showStatus('❌ รูปแบบไฟล์ไม่ถูกต้อง', 'err', 'statusPlaylist');
+  connLabel.textContent = 'ไม่ได้เชื่อมต่อ';
+  connStats.textContent = '0 items';
+  playlistContainer.classList.remove('show');
+  resetPlayer();
+  showStatus('✅ ล้างข้อมูลแล้ว', 'info');
+});
+
+function handleFile(file) {
+  if (!file.name.match(/\.(m3u|m3u8|txt)$/i)) {
+    return showStatus('⚠️ รองรับเฉพาะไฟล์ .m3u / .m3u8 / .txt ครับ', 'err');
+  }
+  fileName.textContent = file.name;
+  fileInfo.classList.add('show');
+  connLabel.textContent = '📂 ไฟล์ในเครื่อง';
+  showStatus('⏳ กำลังอ่านไฟล์...', 'info');
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      const text = e.target.result;
+      if (!text.includes('#EXTM3U')) {
+        showStatus('⚠️ ไฟล์ไม่ใช่รูปแบบ M3U ครับ', 'err');
         return;
       }
+      parseM3U(text);
+      connStats.textContent = `${allChannels.length} ช่อง`;
+      showStatus(`✅ อ่านสำเร็จ! พบ ${allChannels.length} ช่อง`, 'ok');
+      renderCategories();
+      renderChannels();
+      document.querySelectorAll('.nav').forEach(n => n.classList.remove('on'));
+      document.querySelector('.nav[data-page="live"]').classList.add('on');
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById('page-live').classList.add('active');
+      pageTitle.textContent = '📺 Live TV';
+    } catch (err) {
+      showStatus('❌ อ่านไฟล์ไม่ได้: ' + err.message, 'err');
     }
+  };
+  reader.readAsText(file, 'UTF-8');
+}
+
+document.getElementById('loadM3uBtn').addEventListener('click', async () => {
+  const url = document.getElementById('m3u_url').value.trim();
+  if (!url) return showStatus('⚠️ กรุณาใส่ URL ครับ', 'err');
+  connLabel.textContent = '🔗 M3U URL';
+  showStatus('⏳ กำลังโหลดเพลย์ลิสต์...', 'info');
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const text = await res.text();
+    if (!text.includes('#EXTM3U')) return showStatus('⚠️ ไม่ใช่ไฟล์ M3U ครับ', 'err');
+    parseM3U(text);
+    connStats.textContent = `${allChannels.length} ช่อง`;
+    showStatus(`✅ โหลดสำเร็จ! ${allChannels.length} ช่อง`, 'ok');
     renderCategories();
     renderChannels();
-    document.getElementById('playlistBox').classList.add('show');
+    document.querySelectorAll('.nav').forEach(n => n.classList.remove('on'));
+    document.querySelector('.nav[data-page="live"]').classList.add('on');
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-live').classList.add('active');
+    pageTitle.textContent = '📺 Live TV';
   } catch (e) {
-    showStatus('⚠️ ถูกบล็อก CORS หรือลิงก์ไม่ถูกต้อง', 'err', 'statusPlaylist');
+    showStatus('❌ โหลดไม่ได้ — อาจถูกบล็อก CORS หรือ URL ผิดครับ', 'err');
   }
-}
+});
 
 function parseM3U(text) {
   allChannels = [];
   const lines = text.split('\n');
-  let ch = { name: '', url: '', logo: '', group: 'ทั่วไป' };
+  let ch = { name: '', url: '', group: 'ทั่วไป' };
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
     if (line.startsWith('#EXTINF:')) {
@@ -552,1146 +437,182 @@ function parseM3U(text) {
     } else if (line && !line.startsWith('#') && line.startsWith('http')) {
       ch.url = line;
       allChannels.push({ ...ch });
-      ch = { name: '', url: '', logo: '', group: 'ทั่วไป' };
+      ch = { name: '', url: '', group: 'ทั่วไป' };
     }
   }
-  categories = [...new Set(allChannels.map(c => c.group))].sort();
-}
-
-function parseJsonW3U(json) {
-  allChannels = [];
-  let groups = json.groups || (Array.isArray(json) ? json : [json]);
-  groups.forEach(group => {
-    const groupName = group.name || 'ทั่วไป';
-    const stations = group.stations || group.channels || [];
-    stations.forEach(st => {
-      let streamUrl = (st.url || st.link || '').split('|')[0];
-      if (streamUrl && streamUrl.startsWith('http')) {
-        allChannels.push({
-          name: st.name || 'ไม่ระบุ',
-          url: streamUrl,
-          group: groupName
-        });
-      }
-    });
-  });
   categories = [...new Set(allChannels.map(c => c.group))].sort();
 }
 
 function renderCategories() {
-  const bar = document.getElementById('categoryBar');
-  bar.innerHTML = `<button class="category-btn category-all active" onclick="filterCategory('all')">📺 ทุกช่อง</button>`;
+  if (!allChannels.length) return;
+  categoryBar.innerHTML = `<button class="category-btn category-all on" data-category="all">📺 ทุกช่อง</button>`;
   categories.forEach(cat => {
     const btn = document.createElement('button');
     btn.className = 'category-btn';
     btn.textContent = cat;
-    btn.onclick = () => filterCategory(cat);
-    bar.appendChild(btn);
+    btn.dataset.category = cat;
+    btn.addEventListener('click', () => filterByCategory(cat));
+    categoryBar.appendChild(btn);
   });
+  document.querySelector('.category-all').addEventListener('click', () => filterByCategory('all'));
 }
 
-function filterCategory(cat) {
-  activeCategory = cat;
-  document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
-  document.querySelectorAll('#channelsList .ch-item').forEach((item, idx) => {
-    item.classList.toggle('hidden', cat !== 'all' && allChannels[idx].group !== cat);
+function filterByCategory(cat) {
+  document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('on'));
+  document.querySelector(`[data-category="${cat}"]`).classList.add('on');
+  const buttons = channelsList.querySelectorAll('.ch-btn');
+  buttons.forEach((btn, idx) => {
+    const ch = allChannels[idx];
+    if (cat === 'all' || (ch.group || 'ทั่วไป') === cat) btn.classList.remove('hidden');
+    else btn.classList.add('hidden');
   });
 }
 
 function renderChannels() {
-  document.getElementById('chCount').textContent = `(${allChannels.length} ช่อง)`;
-  const list = document.getElementById('channelsList');
-  list.innerHTML = '';
-  allChannels.forEach((ch, idx) => {
-    const item = document.createElement('div');
-    item.className = 'ch-item';
-    item.textContent = ch.name;
-    item.onclick = () => playChannel(idx);
-    list.appendChild(item);
-  });
-}
-
-function playChannel(index) {
-  const ch = allChannels[index];
-  currentUrl = ch.url;
-  document.getElementById('urlInput').value = ch.url;
-  document.querySelectorAll('.ch-item').forEach((item, idx) => {
-    item.classList.toggle('playing', idx === index);
-  });
-  stopAll();
-  document.getElementById('videoBox2').style.display = 'block';
-  document.getElementById('extBar2').style.display = 'grid';
-  const u = ch.url.toLowerCase();
-  if (u.includes('.m3u8')) playHLS(ch.url, '', 'video2', 'webIframe2', 'videoBox2', 'extBar2', 'statusPlaylist');
-  else if (u.includes('.mpd')) playDASH(ch.url, 'video2', 'webIframe2', 'videoBox2', 'extBar2', 'statusPlaylist');
-  else if (u.includes('.mp4')) playMP4(ch.url, 'video2', 'webIframe2', 'videoBox2', 'extBar2', 'statusPlaylist');
-  else playWebUrl(ch.url, 'video2', 'webIframe2', 'videoBox2', 'extBar2', 'statusPlaylist');
-}
-
-// ==============================================
-// 🎬 ฟังก์ชันเล่นวิดีโอ
-// ==============================================
-function playWebUrl(url, videoId, iframeId, boxId, extId, statusId) {
-  document.getElementById(boxId).style.display = 'block';
-  document.getElementById(extId).style.display = 'grid';
-  document.getElementById(videoId).style.display = 'none';
-  document.getElementById(iframeId).style.display = 'block';
-  document.getElementById(iframeId).src = url;
-  showStatus('✅ กำลังโหลดหน้าเว็บ...', 'ok', statusId);
-}
-
-function playHLS(url, referer, videoId, iframeId, boxId, extId, statusId) {
-  document.getElementById(boxId).style.display = 'block';
-  document.getElementById(extId).style.display = 'grid';
-  document.getElementById(videoId).style.display = 'block';
-  document.getElementById(iframeId).style.display = 'none';
-  const v = document.getElementById(videoId);
-  
-  if (v.canPlayType('application/vnd.apple.mpegurl')) {
-    v.src = url;
-    v.play().then(() => showStatus('✅ กำลังเล่น (Native HLS)', 'ok', statusId));
+  playlistContainer.classList.add('show');
+  channelsList.innerHTML = '';
+  if (!allChannels.length) {
+    channelsList.innerHTML = '<p style="color:var(--t2); grid-column:1/-1;">ไม่พบรายการช่องครับ</p>';
     return;
   }
-  
+  allChannels.forEach((ch, idx) => {
+    const btn = document.createElement('button');
+    btn.className = 'ch-btn';
+    btn.innerHTML = `<strong>${idx + 1}.</strong> ${ch.name}`;
+    btn.addEventListener('click', () => playStream(ch.url, ch.name));
+    channelsList.appendChild(btn);
+  });
+}
+
+function playStream(url, name = '') {
+  if (!url) return showStatus('⚠️ ไม่พบลิงก์วิดีโอครับ', 'err');
+  currentStreamUrl = url;
+  videoWrap.classList.add('show');
+  aspectBar.classList.add('show');
+  extBar.classList.add('show');
+  showStatus(`⏳ กำลังโหลด: ${name || url}`, 'info');
+  resetPlayer();
+  const u = url.toLowerCase();
+  if (u.includes('.m3u8')) playHLS(url);
+  else if (u.includes('.mpd')) playDASH(url);
+  else if (u.includes('.mp4')) playMP4(url);
+  else playHLS(url);
+}
+
+function playHLS(url) {
+  if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = url;
+    video.load();
+    video.play().then(() => showStatus('✅ กำลังเล่น (Native HLS)', 'ok')).catch(() => showStatus('⚠️ กดเพื่อเริ่มเล่น', 'info'));
+    return;
+  }
   if (Hls.isSupported()) {
     hls = new Hls({ maxBufferLength: 30, maxMaxBufferLength: 60 });
     hls.loadSource(url);
-    hls.attachMedia(v);
+    hls.attachMedia(video);
     hls.on(Hls.Events.MANIFEST_PARSED, () => {
-      showStatus('✅ กำลังเล่น (HLS.js)', 'ok', statusId);
-      v.play();
+      showStatus('✅ กำลังเล่น (HLS.js)', 'ok');
+      video.play().catch(() => showStatus('⚠️ กดเพื่อเริ่มเล่น', 'info'));
     });
-    hls.on(Hls.Events.ERROR, (_, data) => {
-      if (data.fatal) showStatus('❌ ไม่สามารถโหลดได้', 'err', statusId);
+    hls.on(Hls.Events.ERROR, (_, d) => {
+      if (d.fatal) showStatus('❌ เล่นไม่ได้ — ลองเปิดในแอปภายนอกครับ', 'err');
     });
+  } else {
+    showStatus('❌ เบราว์เซอร์ไม่รองรับ HLS ครับ', 'err');
   }
 }
 
-function playDASH(url, videoId, iframeId, boxId, extId, statusId) {
-  document.getElementById(boxId).style.display = 'block';
-  document.getElementById(extId).style.display = 'grid';
-  document.getElementById(videoId).style.display = 'block';
-  document.getElementById(iframeId).style.display = 'none';
-  const v = document.getElementById(videoId);
+function playDASH(url) {
   dashPlayer = dashjs.MediaPlayer().create();
-  dashPlayer.initialize(v, url, true);
-  dashPlayer.on('streamInitialized', () => showStatus('✅ กำลังเล่น DASH', 'ok', statusId));
+  dashPlayer.initialize(video, url, true);
+  dashPlayer.on('streamInitialized', () => showStatus('✅ กำลังเล่น (DASH)', 'ok'));
 }
 
-function playMP4(url, videoId, iframeId, boxId, extId, statusId) {
-  document.getElementById(boxId).style.display = 'block';
-  document.getElementById(extId).style.display = 'grid';
-  document.getElementById(videoId).style.display = 'block';
-  document.getElementById(iframeId).style.display = 'none';
-  const v = document.getElementById(videoId);
-  v.src = url;
-  v.play().then(() => showStatus('✅ กำลังเล่น MP4', 'ok', statusId));
+function playMP4(url) {
+  video.src = url;
+  video.load();
+  video.play().then(() => showStatus('✅ กำลังเล่น (MP4)', 'ok')).catch(() => showStatus('⚠️ กดเพื่อเริ่มเล่น', 'info'));
 }
 
-function stopAll() {
+document.querySelectorAll('.aspect-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.aspect-btn').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    const mode = btn.dataset.mode;
+    if (mode === 'contain') video.style.objectFit = 'contain';
+    else if (mode === 'cover') video.style.objectFit = 'cover';
+    else if (mode === 'fill') video.style.objectFit = 'fill';
+    else if (mode === 'full' && document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
+  });
+});
+
+function resetPlayer() {
   if (hls) { hls.destroy(); hls = null; }
   if (dashPlayer) { dashPlayer.reset(); dashPlayer = null; }
-  const v1 = document.getElementById('video');
-  const v2 = document.getElementById('video2');
-  if (v1) { v1.removeAttribute('src'); v1.load(); }
-  if (v2) { v2.removeAttribute('src'); v2.load(); }
-  const w1 = document.getElementById('webIframe');
-  const w2 = document.getElementById('webIframe2');
-  if (w1) w1.src = 'about:blank';
-  if (w2) w2.src = 'about:blank';
+  video.removeAttribute('src');
+  video.pause();
+}
+
+function showStatus(text, type = 'info') {
+  statusBar.textContent = text;
+  statusBar.className = `status-bar show ${type}`;
 }
 
 // ==============================================
-// 📱 เปิดในแอปอื่น
+// ✅ ปุ่มภายนอก — แก้ไขใหม่ทั้งหมด
 // ==============================================
-function openInApp() {
-  if (!currentUrl) return alert('⚠️ ไม่มีลิงก์ กดทดสอบเล่นก่อนครับ');
-  let cleanUrl = decodeURIComponent(currentUrl).split('|')[0].split('#')[0];
-  let intentUrl = `intent:${encodeURI(cleanUrl)}#Intent;action=android.intent.action.VIEW;type=video/*;end`;
+function getMimeType(url) {
+  const u = url.toLowerCase();
+  if (u.includes('.m3u8')) return 'application/vnd.apple.mpegurl';
+  if (u.includes('.mpd')) return 'application/dash+xml';
+  if (u.includes('.mp4')) return 'video/mp4';
+  if (u.includes('.webm')) return 'video/webm';
+  return 'video/*';
+}
+
+// 📲 เปิดหน้าต่างเลือกทุกแอปที่รองรับวิดีโอ
+document.getElementById('openInAppBtn').addEventListener('click', () => {
+  if (!currentStreamUrl) return showStatus('⚠️ เลือกช่องก่อนครับ', 'err');
+  const type = getMimeType(currentStreamUrl);
+  // ✅ ไม่ล็อกแอปเดียว — ให้ระบบแสดงรายการทุกแอปที่รองรับ
+  const intentUrl = `intent:${currentStreamUrl}#Intent;action=android.intent.action.VIEW;type=${type};end`;
   window.location.href = intentUrl;
   setTimeout(() => {
-    if (confirm('❌ เปิดไม่ได้? คัดลอกลิงก์ไปวางในแอปเองไหม?')) {
-      navigator.clipboard.writeText(cleanUrl);
-      alert('✅ คัดลอกแล้วครับ!');
+    if (document.hasFocus()) {
+      showStatus('💡 ไม่มีแอปแสดง → คัดลอกลิงก์ แล้วเปิดในแอปโดยตรงครับ', 'info');
     }
-  }, 1200);
-}
+  }, 800);
+});
 
-function openInApp2() {
-  if (!currentUrl) return alert('⚠️ ไม่มีลิงก์ กดเลือกช่องก่อนครับ');
-  let cleanUrl = decodeURIComponent(currentUrl).split('|')[0].split('#')[0];
-  window.location.href = `intent:${encodeURI(cleanUrl)}#Intent;action=android.intent.action.VIEW;type=video/*;end`;
-  setTimeout(() => {
-    if (confirm('❌ เปิดไม่ได้? คัดลอกลิงก์ไปวางในแอปเองไหม?')) {
-      navigator.clipboard.writeText(cleanUrl);
-      alert('✅ คัดลอกแล้วครับ!');
-    }
-  }, 1200);
-}
+// 📱 เปิดเฉพาะ Yamby
+document.getElementById('yambyBtn').addEventListener('click', () => {
+  if (!currentStreamUrl) return showStatus('⚠️ เลือกช่องก่อนครับ', 'err');
+  const intentUrl = `intent:${currentStreamUrl}#Intent;package=com.hush.yamby;action=android.intent.action.VIEW;type=video/*;S.userAgent=exo_player;end`;
+  window.location.href = intentUrl;
+});
 
-function copyUrl() {
-  if (!currentUrl) return alert('⚠️ ไม่มีลิงก์ให้คัดลอกครับ');
-  navigator.clipboard.writeText(currentUrl).then(() => {
-    const btn = document.getElementById('copyBtn');
-    btn.classList.add('copied');
-    btn.innerHTML = '✅ คัดลอก!';
-    setTimeout(() => {
-      btn.classList.remove('copied');
-      btn.innerHTML = '📋 คัดลอก';
-    }, 2000);
+// 🖥️ เปิดในเบราว์เซอร์ใหม่
+document.getElementById('winBtn').addEventListener('click', () => {
+  if (!currentStreamUrl) return showStatus('⚠️ เลือกช่องก่อนครับ', 'err');
+  window.open(currentStreamUrl, '_blank');
+});
+
+// 📋 คัดลอกลิงก์
+document.getElementById('copyBtn').addEventListener('click', () => {
+  if (!currentStreamUrl) return showStatus('⚠️ เลือกช่องก่อนครับ', 'err');
+  navigator.clipboard.writeText(currentStreamUrl).then(() => {
+    showStatus('✅ คัดลอกลิงก์แล้ว', 'ok');
+    document.getElementById('copyBtn').classList.add('copied');
+    setTimeout(() => document.getElementById('copyBtn').classList.remove('copied'), 2000);
   });
-}
+});
 
-function copyUrl2() {
-  if (!currentUrl) return alert('⚠️ ไม่มีลิงก์ให้คัดลอกครับ');
-  navigator.clipboard.writeText(currentUrl).then(() => alert('✅ คัดลอกแล้วครับ!'));
-}
-
-// ==============================================
-// 📊 แสดงสถานะ
-// ==============================================
-function showStatus(text, type, id) {
-  const el = document.getElementById(id);
-  el.textContent = text;
-  el.className = `status show ${type}`;
-  if (type === 'ok') setTimeout(() => el.classList.remove('show'), 5000);
-}
+// ▶ Direct Play
+document.getElementById('playBtn').addEventListener('click', () => {
+  const url = document.getElementById('streamUrl').value.trim();
+  if (!url) return showStatus('⚠️ กรุณาใส่ URL ครับ', 'err');
+  playStream(url);
+});
 </script>
-
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="profile" href="https://gmpg.org/xfn/11"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&amp;display=swap" rel="stylesheet"><link rel="dns-prefetch" href="//cdnjs.cloudflare.com"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/regular.min.css" integrity="sha512-d2x1oQUT6HACW9UlXxWI6XrIBDrEE5z2tit/+kWEdXdVYuift7sm+Q6ucfGWQr1F0+GD9/6eYoYDegw2nm05Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css" integrity="sha512-tk4nGrLxft4l30r9ETuejLU0a3d7LwMzj0eXjzc16JQj+5U1IeVoCuGLObRDc
-3+eQMUcEQY1RIDPGvuA7SNQ2w==" crossorigin="anonymous" referrerpolicy="no-referrer"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"> <script src="//e.dtscout.com/e/?v=1a&amp;pid=5200&amp;site=1&amp;l=https%3A%2F%2Fwarpsport24.xyz%2Ftv-online%2F&amp;j=https%3A%2F%2Fwarpsport24.xyz%2Ftv-online%2F" async="" type="text/javascript"></script><script type="text/javascript">window['Bonn'] = {
-            boots: [],
-            inits: []
-        };</script> <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><link media="all" href="https://warpsport24.online/wp-content/cache/autoptimize/css/autoptimize_fa54f49613560d4d3ed9cc1c837a08a2.css" rel="stylesheet"><title>ดูทีวีออนไลน์ - Warpsport24</title><link rel="canonical" href="https://coffee-spark-ai-barista-ceb7e.web.app"><meta property="og:locale" content="th_TH"><meta property="og:type" content="article"><meta property="og:title" content="ดูทีวีออนไลน์ - Warpsport24"><meta property="og:url" content="https://coffee-spark-ai-barista-ceb7e.web.app"><meta property="og:site_name" content="Warpsport24">
-    <meta property="article:modified_time" content="2023-09-07T07:10:42+00:00"><meta name="twitter:card" content="summary_large_image"> <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/warpsport24.online\/tv-online\/","url":"https://media.portalheaven.stream/app","name":"ดูทีวีออนไลน์ - Warpsport24","isPartOf":{"@id":"https:\/\/warpsport24.online\/#website"},"datePublished":"2023-09-07T07:10:28+00:00","dateModified":"2023-09-07T07:10:42+00:00","breadcrumb":{"@id":"https:\/\/warpsport24.online\/tv-online\/#breadcrumb"},"inLanguage":"th","potentialAction":[{"@type":"ReadAction","target":["https:\/\/warpsport24.online\/tv-online\/"]}]},{"@type":"BreadcrumbList","@id":"https:\/\/warpsport24.online\/tv-online\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/warpsport24.online\/"},{"@type":"ListItem","position":2,"name":"ดูทีวีออนไลน์"}]},{"@type":"WebSite","@id":"https:\/\/warpsport24.online\/#website","url":"https:\/\/warpsport24.online\/","name":"Warpsport24","description":"","publisher":{"@id":"https:\/\/warpsport24.online\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/warpsport24.online\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"th"},{"@type":"Organization","@id":"https:\/\/warpsport24.online\/#organization","name":"Warpsport24","url":"https:\/\/warpsport24.online\/","logo":{"@type":"ImageObject","inLanguage":"th","@id":"https:\/\/warpsport24.online\/#\/schema\/logo\/image\/","url":"https:\/\/warpsport24.online\/wp-content\/uploads\/2023\/08\/warpsport.png","contentUrl":"https:\/\/warpsport24.online\/wp-content\/uploads\/2023\/08\/warpsport.png","width":1041,"height":304,"caption":"Warpsport24"},"image":{"@id":"https:\/\/warpsport24.online\/#\/schema\/logo\/image\/"}}]}</script> <link rel="dns-prefetch" href="//warpsport24.online">
-    
-    <link rel="alternate" type="application/rss+xml" title="Warpsport24 » ฟีด" href="https://warpsport24.online/feed/">
-    
-    <link rel="alternate" type="application/rss+xml" title="Warpsport24 » ฟีดความเห็น" href="https://warpsport24.online/comments/feed/">
-    
-    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://warpsport24.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwarpsport24.online%2Ftv-online%2F"><link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://warpsport24.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwarpsport24.online%2Ftv-online%2F&amp;format=xml">
-    
-    <style id="wp-img-auto-sizes-contain-inline-css">img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
-/*# sourceURL=wp-img-auto-sizes-contain-inline-css */</style>
-
-<style id="wp-emoji-styles-inline-css">img.wp-smiley, img.emoji {
-		display: inline !important;
-		border: none !important;
-		box-shadow: none !important;
-		height: 1em !important;
-		width: 1em !important;
-		margin: 0 0.07em !important;
-		vertical-align: -0.1em !important;
-		background: none !important;
-		padding: 0 !important;
-	}
-/*# sourceURL=wp-emoji-styles-inline-css */</style>
-
-       <style id="wp-block-library-inline-css">:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
-
-/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */</style>
-
-      <style id="classic-theme-styles-inline-css">/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-/*# sourceURL=/wp-includes/css/classic-themes.min.css */</style>
-          <style id="global-styles-inline-css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-/*# sourceURL=global-styles-inline-css */</style><style id="generateblocks-inline-css">:root{--gb-container-width:1100px;}.gb-container .wp-block-image img{vertical-align:middle;}.gb-grid-wrapper .wp-block-image{margin-bottom:0;}.gb-highlight{background:none;}.gb-shape{line-height:0;}
-/*# sourceURL=generateblocks-inline-css */</style> <script id="jquery-core-js" src="https://warpsport24.online/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script> <script id="jquery-migrate-js" src="https://warpsport24.online/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script> <link rel="https://api.w.org/" href="https://warpsport24.online/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://warpsport24.online/wp-json/wp/v2/pages/1531"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://warpsport24.online/xmlrpc.php?rsd">  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7TQLBVZ8NN"></script> <script>window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7TQLBVZ8NN');</script> <script type="text/javascript" async="" src="//s10.histats.com/js15_as.js"></script>
-  <style id="sb_dark_style">img{-webkit-filter:brightness(70%);}</style><style id="sb_cln_style">ins[class*="adsbygoogle"],ins[class*="adsbyadop"],[id*="div-gpt-ad"],amp-ad{display:none !important;}</style>
-  
-
-  
-  </head>
-  
-  <body data-rsssl="1" class="wp-singular page-template page-template-page-templates page-template-tv-page page-template-page-templatestv-page-php page page-id-1531 wp-custom-logo wp-theme-dooball no-sidebar"><div id="histats_counter">
-      
-
-  
-  <script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,5033985,4,9,110,60,00011111']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script> <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5033985&101" alt="" border="0"></a></noscript> 
-
-         <style>.dooball-banner-container {
-            position: relative;
-            margin: 0 auto 15px auto;
-            text-align: center;
-            display: block;
-            width: 100%;
-        }
-
-        .dooball-banner-container.banner-pos-above_match_table {
-            max-width: 72px;
-            margin-top: calc(4.5rem + var(--wc-banner-h, 60px)) !important;
-        }
-
-        .dooball-banner-container.banner-pos-below_player {
-            max-width: 28px;
-        }
-
-        .dooball-banner-container.banner-pos-below_match_table,
-        .dooball-banner-group.banner-pos-below_match_table {
-            position: fixed;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1060;
-            max-width: 728px;
-            width: 100%;
-            margin: 0;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
-            background: rgba(17, 17, 17, 0.9);
-            padding: 5px;
-            border-radius: 4px 4px 0 0;
-            box-sizing: border-box;
-        }
-
-        /* Inner containers inside group: reset fixed positioning */
-        .dooball-banner-group .dooball-banner-container {
-            position: relative !important;
-            bottom: auto !important;
-            left: auto !important;
-            transform: none !important;
-            z-index: auto !important;
-            box-shadow: none !important;
-            background: transparent !important;
-            padding: 0 !important;
-            border-radius: 0 !important;
-            margin: 0 0 8px 0 !important;
-            max-width: 100% !important;
-        }
-
-        .dooball-banner-group .dooball-banner-container:last-child {
-            margin-bottom: 0 !important;
-        }
-
-        @media (max-width: 767.98px) {
-            .dooball-banner-container.banner-pos-below_match_table,
-            .dooball-banner-group.banner-pos-below_match_table {
-                bottom: 50px;
-                /* Offset to clear mobile bottom navigation menu */
-                width: calc(100% - 10px);
-                border-radius: 4px;
-            }
-        }
-
-        .dooball-banner-container a {
-            display: block;
-            width: 100%;
-        }
-
-        .dooball-banner-container img {
-            max-width: 10%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            border-radius: 4px;
-        }
-
-        .dooball-banner-container .close-banner-btn {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            background: rgba(0, 0, 0, 0.65);
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            width: 22px;
-            height: 22px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            font-weight: bold;
-            line-height: 1;
-            z-index: 1;
-            transition: background 0.2s, transform 0.1s;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .dooball-banner-container .close-banner-btn:hover {
-            background: rgba(220, 53, 69, 0.95);
-            transform: scale(1.05);
-        }
-
-        .dooball-banner-container .close-banner-btn:active {
-            transform: scale(0.95);
-        }
-        </style>
-        
-        <link rel="icon" href="" sizes="32x32">
-        <link rel="icon" href="" sizes="192x192">
-        <link rel="apple-touch-icon" href="">
-        <meta name="msapplication-TileImage" content="">
-        
-        <style id="wp-custom-css">.x-header .navbar-brand .-logo {
-    width: 10px;
-}
-.dooball-banner-container.banner-pos-above_match_table + .dooball-banner-container.banner-pos-above_match_table {
-	margin-top: .5em !important;
-}
-@media (max-width: 991.98px){
-	.x-header .navbar-brand .-logo {
-    width: 120px;
-	}
-}
-           </style>
-
-    
-    <div id="page" class="site"> <a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
-    
-        <div class="wc-banner-wrapper" id="wc-banner-2026">
-        <div class="ff-banner" id="world-cup-banner-desktop">
-        <div class="ff-banner-inner">
-
-    
-    <div class="banner-spacer-left"></div><div class="banner-countdown-container"><div class="countdown-label">สิ้นสุดใน</div><div class="countdown-timer"><div class="timer-box">
-        <div class="timer-number" id="countdown-days">19</div> <span class="timer-text">วัน</span></div>
-        <div class="timer-box"><div class="timer-number" id="countdown-hours">15</div> <span class="timer-text">ชั่วโมง</span></div>
-        <div class="timer-box">
-        <div class="timer-number" id="countdown-minutes">15</div> <span class="timer-text">นาที</span></div>
-        <div class="timer-box"><div class="timer-number" id="countdown-seconds">31</div> <span class="timer-text">วินาที</span></div></div>
-    
-     <div class="banner-countries"> <span class="country-item"> <img src="https://warpsport24.online/wp-content/themes/dooball/images/canada.svg" alt="Canada" class="flag-icon"> Canada </span> <span class="country-separator">|</span> <span class="country-item"> <img src="https://warpsport24.online/wp-content/themes/dooball/images/mexico.svg" alt="Mexico" class="flag-icon"> Mexico </span> <span class="country-separator">|</span> <span class="country-item"> <img src="https://warpsport24.online/wp-content/themes/dooball/images/usa.svg" alt="USA" class="flag-icon"> USA </span></div></div>
-    
-    <img src="" alt="World Cup 2026" class="banner-text-img"><div class="banner-spacer-right"></div></div></div>
-   
-    
-    <div class="ff-banner-mobile" id="world-cup-banner-mobile"><div role="presentation">
-        <div class="mobile-banner-content-wrapper"><div class="mobile-countdown-box"><h2 class="mobile-banner-title">ฟุตบอล โลก 2026</h2
-        ><div class="mobile-countdown-label">สิ้นสุดใน</div><div class="mobile-timer-grid"><div class="mobile-timer-box"><div class="mobile-timer-number" id="countdown-days-mb">19</div> <span class="mobile-timer-text">วัน</span></div>
-    <div class="mobile-timer-box">
-        <div class="mobile-timer-number" id="countdown-hours-mb">15</div> <span class="mobile-timer-text">ชั่วโมง</span></div><div class="mobile-timer-box"><div class="mobile-timer-number" id="countdown-minutes-mb">15</div> <span class="mobile-timer-text">นาที</span></div><div class="mobile-timer-box"><div class="mobile-timer-number" id="countdown-seconds-mb">31</div> <span class="mobile-timer-text">วินาที</span></div></div>
-        
-        <div class="mobile-banner-countries"> <span class="mobile-country-item"> <img src="https://warpsport24.online/wp-content/themes/dooball/images/canada.svg" alt="Canada" class="mobile-flag-icon"> Canada </span> <span class="mobile-country-separator">|</span> <span class="mobile-country-item"> <img src="https://warpsport24.online/wp-content/themes/dooball/images/mexico.svg" alt="Mexico" class="mobile-flag-icon"> Mexico </span> <span class="mobile-country-separator">|</span> <span class="mobile-country-item"> <img src="https://warpsport24.online/wp-content/themes/dooball/images/usa.svg" alt="USA" class="mobile-flag-icon"> USA </span></div></div></div><div class="mobile-extra-spacer"></div></div></div></div>
-    
-    <header id="masthead" class="site-header"><nav class="x-header navbar navbar-expand-lg -normal -sticky"><div class="container-fluid container-lg"><div id="headerContent"><div class="-hamburger-wrapper animated fadeIn" data-animatable="fadeIn" data-delay="100"> <button type="button" class="btn bg-transparent p-0 x-hamburger -normal d-block d-lg-none" data-overlay-page-target=".x-theme-switcher-page-container" data-header-inside="close" data-header-inside-target=".x-base-overlay-screen" data-header-inside-target-class="-show"> <span></span> <span></span> <span></span> </button></div> 
-    
-    <a href="https://warpsport24.online" class="navbar-brand"> <img alt="" class="-logo animated fadeInLeftShortly" width="400" height="107" data-animatable="fadeInLeftShortly" data-delay="100" src=""> </a>
-    
-    <div class="-menu-wrapper"><ul id="menu-main" class="nav x-menus-container"><li id="menu-item-1015" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1015 nav-item"><a href="https://warpsport24.online/" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2" data-v-ebd68cb9=""><path stroke-linecap="round" stroke-linejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z" data-v-ebd68cb9=""></path></svg>portalheaven</a></li><li id="menu-item-12936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12936 nav-item"><a href="https://warpsport24.online/muaythai/" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><svg id="Layer_1" style="fill:#fff;width:2.5em;margin-right:5px;" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 74.57"><defs>
-        
-        <style>.cls-1{fill-rule:evenodd;}</style></defs><title>fight-dispute</title><path class="cls-1" d="M102.43,64.39a31.59,31.59,0,0,0,1.62-6.34,28.23,28.23,0,0,0,.16-5.11,31.42,31.42,0,0,0-2.79-11,32.16,32.16,0,0,0-4.67-4.37,26,26,0,0,0-5.13-3,28.07,28.07,0,0,0-6.12-1.88,20.31,20.31,0,0,0-5.64-.3A12,12,0,0,0,75,34,4,4,0,0,0,73,36.36c-.25,1.36,2.25,2.4,5.09,3.15l.23,0A41,41,0,0,1,85,41a1.34,1.34,0,0,1-.64,2.59l-1.28-.25c-1.44-.26-3.33-.62-5.22-1.13-3.7-.42-6.62,0-8.78,1.18a9.11,9.11,0,0,0-4.32,5.72,17.06,17.06,0,0,0-.54,2.69,33.92,33.92,0,0,0,.25,8.66,16,16,0,0,0,2,6.11A10.51,10.51,0,0,0,71,70.23a20.21,20.21,0,0,0,7.4,1.66h0c1.27,0,2.56,0,3.85-.11s2.57-.23,3.85-.43a41.48,41.48,0,0,0,7-1.53,26,26,0,0,0,6.25-3l.07-.05a27.49,27.49,0,0,0,3.08-2.35Zm-83.6-6.32a32.1,32.1,0,0,0,1.62,6.32,27.49,27.49,0,0,0,3.08,2.35l.07.05a26,26,0,0,0,6.25,3,41.48,41.48,0,0,0,6.95,1.53c1.28.2,2.57.34,3.85.43s2.58.13,3.85.11h0a20.21,20.21,0,0,0,7.4-1.66,10.51,10.51,0,0,0,4.44-3.7,16,16,0,0,0,2-6.11,33.92,33.92,0,0,0,.25-8.66,17.06,17.06,0,0,0-.54-2.69,9.11,9.11,0,0,0-4.32-5.72c-2.16-1.18-5.09-1.6-8.78-1.18-1.89.52-3.78.87-5.22,1.13l-1.28.25A1.34,1.34,0,0,1,37.84,41a41.24,41.24,0,0,1,6.68-1.42l.23,0c2.83-.75,5.34-1.79,5.09-3.15A4,4,0,0,0,47.9,34,12,12,0,0,0,43,32.31a20.31,20.31,0,0,0-5.64.3,28.07,28.07,0,0,0-6.12,1.88,26,26,0,0,0-5.13,3,32.16,32.16,0,0,0-4.67,4.37,31.42,31.42,0,0,0-2.79,11,28.45,28.45,0,0,0,.16,5.13Zm-.42,8.07c-.81,0-1.72.1-2.66.17-5.32.38-11.66.84-14-3.48C.46,60.59-.19,55.66.05,51.14c.22-4,1.13-7.7,3-9.33a6.72,6.72,0,0,1,2.05-1.25A8.75,8.75,0,0,1,7.38,40l12.4-.21a34.32,34.32,0,0,1,4.74-4.38,28.53,28.53,0,0,1,5.67-3.35A30.41,30.41,0,0,1,36.9,30a22.57,22.57,0,0,1,6.39-.33,15.05,15.05,0,0,1,6.05,2.11,6.43,6.43,0,0,1,3.12,4.12,3.73,3.73,0,0,1-1.63,3.71A13.5,13.5,0,0,1,55,41a11.66,11.66,0,0,1,5.61,7.31,18.64,18.64,0,0,1,.63,3.13c.09.73.14,1.56.17,2.45h0c0-.89.08-1.72.17-2.45a18.64,18.64,0,0,1,.63-3.13A11.63,11.63,0,0,1,67.85,41a13.5,13.5,0,0,1,4.2-1.41,3.73,3.73,0,0,1-1.63-3.71,6.43,6.43,0,0,1,3.12-4.12,15.05,15.05,0,0,1,6-2.11A22.57,22.57,0,0,1,86,30a30.41,30.41,0,0,1,6.71,2.07,28.82,28.82,0,0,1,5.67,3.35,34.32,34.32,0,0,1,4.74,4.38l12.29.2h.11a8.75,8.75,0,0,1,2.32.56,6.84,6.84,0,0,1,2.05,1.25c1.83,1.63,2.74,5.38,3,9.33.24,4.52-.41,9.45-1.65,11.69-2.39,4.32-8.73,3.86-14.05,3.48-.94-.07-1.85-.14-2.66-.17A30.33,30.33,0,0,1,100.82,69l-.07.05a28.7,28.7,0,0,1-6.88,3.36A45.66,45.66,0,0,1,86.48,74c-1.33.2-2.69.35-4.07.44s-2.68.13-4.07.11h-.13a23,23,0,0,1-8.38-1.91A13.13,13.13,0,0,1,64.31,68a18.59,18.59,0,0,1-2.43-7.2A36.72,36.72,0,0,1,61.44,56h0A36.72,36.72,0,0,1,61,60.82,18.59,18.59,0,0,1,58.57,68a13.13,13.13,0,0,1-5.52,4.63,23,23,0,0,1-8.38,1.91h-.13c-1.39,0-2.75,0-4.07-.11s-2.74-.24-4.07-.44A45.66,45.66,0,0,1,29,72.37,28.7,28.7,0,0,1,22.13,69L22.06,69a30.33,30.33,0,0,1-3.65-2.82ZM11.14,41.2,17,41c-3.36,3-4,3.88-4.58,8.19-.17,1.29-.29,2.63-.35,4,.29,2.19-.47,3.34-2.39,3.32l-1,0c-1.36-.32-2.38-1.15-2.23-3.79l.5-4.19c.22-1.88.15-4,1.49-5.46a8.52,8.52,0,0,1,2.74-1.93ZM73,52.27a1.19,1.19,0,0,1,2.3-.63,22.33,22.33,0,0,1,.82,5,17.68,17.68,0,0,1-.45,5A1.19,1.19,0,0,1,73.38,61a15.1,15.1,0,0,0,.4-4.29A20.11,20.11,0,0,0,73,52.27Zm6.44,0a1.19,1.19,0,0,1,2.29-.63,23,23,0,0,1,.83,5,17.33,17.33,0,0,1-.46,5A1.19,1.19,0,1,1,79.82,61a15.09,15.09,0,0,0,.39-4.29,20.69,20.69,0,0,0-.74-4.45Zm-31.92-.63a1.19,1.19,0,0,1,2.3.63,20,20,0,0,0-.75,4.45A15.1,15.1,0,0,0,49.5,61a1.19,1.19,0,1,1-2.32.56,17.68,17.68,0,0,1-.45-5,22.33,22.33,0,0,1,.82-5Zm-6.43,0a1.19,1.19,0,0,1,2.29.63,20.58,20.58,0,0,0-.74,4.45A15.09,15.09,0,0,0,43.06,61a1.2,1.2,0,0,1-.88,1.44,1.19,1.19,0,0,1-1.43-.88,17.33,17.33,0,0,1-.46-5,23,23,0,0,1,.83-5Zm12.45-23.7a1.66,1.66,0,0,1-2.12,2.55L37.23,18.67,53.48,19,50.81,5.21l11.76,7.84L68.88,0l4.41,13.55,13.39-7-4.9,14.09,14,1.32-6.59,7a1.66,1.66,0,0,1-2.42-2.27l2-2.09L77.25,23.51l3.54-10.16-9.45,5L68.28,8.88l-4.38,9-8.32-5.55,1.94,10-10.89-.22,6.94,5.77Zm50.87,14.25a33.56,33.56,0,0,1,2.43,10.61,32.72,32.72,0,0,1-1.27,11l1.7.12c4.63.34,10.15.74,11.79-2.25,1-1.89,1.59-6.28,1.36-10.42-.18-3.39-.86-6.51-2.17-7.67a4.28,4.28,0,0,0-1.33-.82,6.67,6.67,0,0,0-1.68-.4l-1.63,0a6.36,6.36,0,0,1,.84.79c1.34,1.49,1.27,3.58,1.49,5.46l.5,4.19c.15,2.64-.87,3.47-2.23,3.79l-1,0c-1.92,0-2.68-1.13-2.39-3.32-.06-1.39-.18-2.73-.35-4-.47-3.65-1-4.86-3.21-7l-2.86,0Z"></path></svg> ต้นทีวี</a></li><li id="menu-item-1040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1040 nav-item"><a href="https://warpsport24.online/favorite/" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><span class="badge badge-favorite"></span> <i class="far fa-star mr-1" style="font-size: 1.47rem;"></i> เกมติดตาม</a></li><li id="menu-item-11061" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11061 nav-item"><a href="https://warpsport24.online/sport-other/" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><i class="fas fa-futbol mr-1" style="font-size: 1.47rem;"></i> กีฬาอื่น</a></li><li id="menu-item-1017" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1017 nav-item"><a href="https://www.jokerzone68.com/list-games/" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2" data-v-ebd68cb9=""><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" data-v-ebd68cb9=""></path></svg>บทความ</a></li><li id="menu-item-1016" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1016 nav-item">
-  <a href="intent://m7smarter.ddns.net#Intent;scheme=http;launchFlags=0x14000000;package=com.mycompany.app.soulbrowser;component=com.mycompany.app.soulbrowser/com.mycompany.app.web.WebLauncher;end" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6 mr-2" data-v-ebd68cb9=""><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" data-v-ebd68cb9=""></path>
-  
-  <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" data-v-ebd68cb9=""></path></svg>M7SMARTER</a></li><li id="menu-item-1158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1158 nav-item"><a href="intent://poid0020.trueddns.com:54336/web/?fbclid=IwVERDUATrzElwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHjO4c0-aD2TPFRVgVyt19oZtONyXQ1C7h3juTlj2Uj6WhCij2yt05cmNtl9u_aem_KzuFFvnqV2q3I3R80sMXUg#/movies?topParentId=9a461091f124286bc2ca031795a73c16&collectionType=movies#Intent;scheme=http;launchFlags=0x14400000;package=com.mycompany.app.soulbrowser;end" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><i class="fas fa-futbol mr-1" style="font-size: 1.47rem;"></i> JELLYFIN</a></li><li id="menu-item-11757" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11757 nav-item"><a target="_blank" href="intent://movie911hd.com#Intent;scheme=https;launchFlags=0x14000000;package=com.mycompany.app.soulbrowser;end" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 4l0 16"></path><path d="M16 4l0 16"></path><path d="M4 8l4 0"></path><path d="M4 16l4 0"></path><path d="M4 12l16 0"></path><path d="M16 8l4 0"></path><path d="M16 16l4 0"></path></svg> ดูหนัง</a></li><li id="menu-item-21620" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21620 nav-item"><a target="_blank" href="https://t.me/kkvindoo" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(255, 255, 255)" d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM435 240.7C431.3 279.9 415.1 375.1 406.9 419C403.4 437.6 396.6 443.8 390 444.4C375.6 445.7 364.7 434.9 350.7 425.7C328.9 411.4 316.5 402.5 295.4 388.5C270.9 372.4 286.8 363.5 300.7 349C304.4 345.2 367.8 287.5 369 282.3C369.2 281.6 369.3 279.2 367.8 277.9C366.3 276.6 364.2 277.1 362.7 277.4C360.5 277.9 325.6 300.9 258.1 346.5C248.2 353.3 239.2 356.6 231.2 356.4C222.3 356.2 205.3 351.4 192.6 347.3C177.1 342.3 164.7 339.6 165.8 331C166.4 326.5 172.5 322 184.2 317.3C256.5 285.8 304.7 265 328.8 255C397.7 226.4 412 221.4 421.3 221.2C423.4 221.2 427.9 221.7 430.9 224.1C432.9 225.8 434.1 228.2 434.4 230.8C434.9 234 435 237.3 434.8 240.6z"></path></svg> ติดต่อเรา</a></li></ul></div></div> <button type="button" class="btn -btn-inside -btn-inside-back" data-header-inside-back="" aria-label=""> <i class="fas fa-chevron-left"></i> <i class="fas fa-chevron-left -ic-2"></i> </button> <button type="button" class="btn -btn-inside -btn-inside-close" data-header-inside-dismiss="" aria-label=""> <i class="fas fa-times"></i> </button></div></nav></header> <script>(function() {
-                const banner = document.getElementById('wc-banner-2026');
-
-                // Keep the layout offset in sync with the banner's actual (responsive) height
-                function syncBannerHeight() {
-                    if (!banner) return;
-                    document.documentElement.style.setProperty('--wc-banner-h', banner.offsetHeight + 'px');
-                }
-                syncBannerHeight();
-                window.addEventListener('resize', syncBannerHeight);
-                window.addEventListener('load', syncBannerHeight);
-                if (window.ResizeObserver) {
-                    new ResizeObserver(syncBannerHeight).observe(banner);
-                }
-
-                // Target Date: July 19, 2026, at 20:00:00 UTC (Simulating World Cup Final)
-                const targetDate = new Date('2026-07-19T20:00:00Z').getTime();
-
-                // Desktop DOM Elements
-                const daysEl = document.getElementById('countdown-days');
-                const hoursEl = document.getElementById('countdown-hours');
-                const minutesEl = document.getElementById('countdown-minutes');
-                const secondsEl = document.getElementById('countdown-seconds');
-
-                // Mobile DOM Elements
-                const daysMbEl = document.getElementById('countdown-days-mb');
-                const hoursMbEl = document.getElementById('countdown-hours-mb');
-                const minutesMbEl = document.getElementById('countdown-minutes-mb');
-                const secondsMbEl = document.getElementById('countdown-seconds-mb');
-
-                function updateCountdown() {
-                    const now = new Date().getTime();
-                    let distance = targetDate - now;
-
-                    // Fallback: if the countdown has passed, simulate a rolling countdown for demo purposes
-                    if (distance < 0) {
-                        // Keep it active by setting target to 30 days from now
-                        const newTarget = new Date();
-                        newTarget.setDate(newTarget.getDate() + 30);
-                        distance = newTarget.getTime() - now;
-                    }
-
-                    // Calculations for days, hours, minutes and seconds
-                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                    const formattedDays = String(days).padStart(2, '0');
-                    const formattedHours = String(hours).padStart(2, '0');
-                    const formattedMinutes = String(minutes).padStart(2, '0');
-                    const formattedSeconds = String(seconds).padStart(2, '0');
-
-                    // Update Desktop elements
-                    if (daysEl) daysEl.textContent = formattedDays;
-                    if (hoursEl) hoursEl.textContent = formattedHours;
-                    if (minutesEl) minutesEl.textContent = formattedMinutes;
-                    if (secondsEl) secondsEl.textContent = formattedSeconds;
-
-                    // Update Mobile elements
-                    if (daysMbEl) daysMbEl.textContent = formattedDays;
-                    if (hoursMbEl) hoursMbEl.textContent = formattedHours;
-                    if (minutesMbEl) minutesMbEl.textContent = formattedMinutes;
-                    if (secondsMbEl) secondsMbEl.textContent = formattedSeconds;
-                }
-
-                // Run once immediately to avoid initial delay
-                updateCountdown();
-
-                // Update countdown every second
-                setInterval(updateCountdown, 1000);
-            })();</script> <style>#wc-banner-2026 {
-                --db-bg-dark: #0f0f11;
-                --db-bg-card: rgba(255, 255, 255, 0.1);
-                --db-text-white: #ffffff;
-                --db-text-muted: rgba(255, 255, 255, 0.7);
-                --db-text-dim: rgba(255, 255, 255, 0.4);
-                --db-border-radius-lg: 12px;
-                --db-border-radius-sm: 4px;
-                --db-font-primary: "Kanit", "Inter", sans-serif;
-                --db-transition-speed: 0.3s;
-
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 1030;
-                width: 100%;
-                background-color: var(--db-bg-dark);
-                box-sizing: border-box;
-                overflow: hidden;
-            }
-
-            /* Desktop layout hidden by default, visible on >=768px */
-            .ff-banner {
-                display: none;
-                width: 100%;
-                height: 70px;
-                position: relative;
-                cursor: pointer;
-                background-image: url("https://warpsport24.online/wp-content/themes/dooball/images/wc-banner-bg.webp");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-            }
-
-            .ff-banner-inner {
-                height: 100%;
-                position: relative;
-                z-index: 10;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0 24px;
-            }
-
-            /* Left: Players Graphic */
-            .banner-players-container {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: auto;
-                aspect-ratio: 761 / 322;
-                pointer-events: none;
-                overflow: hidden;
-                z-index: 5;
-            }
-
-            .banner-players-img {
-                height: 100%;
-                width: auto;
-                object-fit: contain;
-                object-position: left;
-                filter: drop-shadow(5px 0 15px rgba(0, 0, 0, 0.5));
-            }
-
-            /* Spacers for Content Avoidance */
-            .banner-spacer-left {
-                width: 150px;
-                flex-shrink: 0;
-            }
-
-            .banner-spacer-right {
-                width: 12px;
-                flex-shrink: 0;
-            }
-
-            /* Center: Countdown Section */
-            .banner-countdown-container {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 2px;
-                z-index: 20;
-            }
-
-            .countdown-label {
-                color: var(--db-text-muted);
-                font-size: 11px;
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                margin-bottom: -2px;
-            }
-
-            .countdown-timer {
-                display: flex;
-                align-items: flex-end;
-                gap: 4px;
-            }
-
-            .timer-box {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-color: var(--db-bg-card);
-                backdrop-filter: blur(8px);
-                -webkit-backdrop-filter: blur(8px);
-                width: 38px;
-                height: 40px;
-                border-radius: var(--db-border-radius-sm);
-                justify-content: center;
-                border: 1px solid rgba(255, 255, 255, 0.05);
-                box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
-            }
-
-            .timer-number {
-                font-family: "Inter", sans-serif;
-                font-size: 16px;
-                font-weight: 700;
-                color: var(--db-text-white);
-                line-height: 1.1;
-            }
-
-            .timer-text {
-                font-size: 8px;
-                font-weight: 500;
-                color: var(--db-text-muted);
-                margin-top: 1px;
-            }
-
-            /* Host countries list */
-            .banner-countries {
-                display: flex;
-                align-items: center;
-                color: var(--db-text-muted);
-                font-size: 8px;
-                font-weight: 600;
-                letter-spacing: 0.5px;
-            }
-
-            .country-item {
-                display: flex;
-                align-items: center;
-                gap: 4px;
-            }
-
-            .flag-icon {
-                width: 12px;
-                height: 8px;
-                object-fit: cover;
-                border-radius: 1px;
-            }
-
-            .country-separator {
-                color: var(--db-text-dim);
-                margin: 0 8px;
-            }
-
-            /* Right: Text & CTA Image */
-            .banner-text-img {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 24px;
-                height: 65%;
-                width: auto;
-                object-fit: contain;
-                pointer-events: none;
-                filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
-                z-index: 5;
-            }
-
-            /* Mobile Banner Styles */
-            .ff-banner-mobile {
-                display: block;
-                width: 100%;
-                height: 90px;
-                position: relative;
-                cursor: pointer;
-                background-image: url("https://warpsport24.online/wp-content/themes/dooball/images/wc-banner-mb.webp");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-            }
-
-            .mobile-banner-content-wrapper {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                margin-top: 4px;
-            }
-
-            .mobile-countdown-box {
-                margin-right: 8%;
-                width: 150px;
-                display: flex;
-                flex-direction: column;
-                gap: 2px;
-                z-index: 10;
-            }
-
-            .mobile-banner-title {
-                background: radial-gradient(circle at 3.89% 25%, #ffffff 0%, #ffd453 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                font-size: 12px;
-                font-weight: 700;
-                text-align: center;
-                line-height: 1.2;
-                font-family: var(--db-font-primary);
-            }
-
-            .mobile-countdown-label {
-                text-transform: uppercase;
-                font-weight: 700;
-                font-size: 8px;
-                color: rgba(255, 255, 255, 0.6);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                letter-spacing: 0.5px;
-                font-family: var(--db-font-primary);
-            }
-
-            .mobile-timer-grid {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                width: 100%;
-                gap: 3px;
-            }
-
-            .mobile-timer-box {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-color: rgba(255, 255, 255, 0.1);
-                height: 28px;
-                width: 100%;
-                border-radius: 2px;
-                padding-top: 1px;
-                backdrop-filter: blur(4px);
-                -webkit-backdrop-filter: blur(4px);
-                box-shadow: inset 0 0.5px 0.5px rgba(255, 255, 255, 0.1);
-            }
-
-            .mobile-timer-number {
-                font-family: "Inter", sans-serif;
-                font-size: 13px;
-                font-weight: 700;
-                color: #ffffff;
-                line-height: 16px;
-            }
-
-            .mobile-timer-text {
-                font-size: 7px;
-                font-weight: 600;
-                color: #ffffff;
-                line-height: 1;
-                font-family: var(--db-font-primary);
-            }
-
-            .mobile-banner-countries {
-                position: relative;
-                z-index: 10;
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                color: rgba(255, 255, 255, 0.8);
-                font-size: 7px;
-                font-weight: 600;
-                margin: 1px 0;
-                font-family: var(--db-font-primary);
-            }
-
-            .mobile-country-item {
-                display: flex;
-                align-items: center;
-                gap: 3px;
-            }
-
-            .mobile-flag-icon {
-                width: 12px;
-                height: 8px;
-                object-fit: cover;
-                border-radius: 0.5px;
-            }
-
-            .mobile-country-separator {
-                color: rgba(255, 255, 255, 0.4);
-                padding: 0 4px;
-            }
-
-            .mobile-cta-button {
-                width: 100%;
-                height: 24px;
-                background-image: url("https://warpsport24.online/wp-content/themes/dooball/images/bet-now-button.webp");
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                font-weight: 700;
-                font-size: 12px;
-                color: #3b2307;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 3px;
-                text-shadow: 0 0.5px 0 rgba(255, 255, 255, 0.3);
-                font-family: var(--db-font-primary);
-            }
-
-            .mobile-extra-spacer {
-                display: none;
-            }
-
-            /* Pin the banner at the very top; push the fixed header below it */
-            .x-header {
-                top: var(--wc-banner-h, 60px) !important;
-            }
-
-            #primary {
-                margin-top: calc(4.5rem + var(--wc-banner-h, 60px)) !important;
-            }
-
-            /* Mobile slide-out menu must clear the banner + header */
-            .x-base-overlay-screen {
-                padding-top: calc(60px + var(--wc-banner-h, 60px)) !important;
-            }
-
-            @media (max-width: 767.98px) {
-                .x-base-overlay-screen {
-                    padding-top: calc(46px + var(--wc-banner-h, 60px)) !important;
-                }
-            }
-
-            /* Responsive Control Media Queries */
-            @media (max-width: 395px) {
-                .ff-banner-mobile {
-                    height: 80px;
-                }
-
-                .mobile-countdown-box {
-                    margin-right: 3%;
-                }
-            }
-
-            @media (max-width: 391px) {
-                .mobile-banner-title {
-                    font-size: 12px;
-                }
-            }
-
-            /* Switch Breakpoint (768px) */
-            @media (min-width: 768px) {
-                .ff-banner-mobile {
-                    display: none;
-                }
-
-                .ff-banner {
-                    display: block;
-                }
-            }
-
-            /* Large Screens (1024px and above) */
-            @media (min-width: 1024px) {
-                .ff-banner {
-                    height: 90px;
-                    margin-bottom: 0px;
-                }
-
-                .ff-banner-inner {
-                    padding: 0 32px;
-                }
-
-                .banner-text-img {
-                    right: 32px;
-                    height: 55px;
-                }
-
-                .banner-spacer-left {
-                    width: 180px;
-                }
-
-                .banner-spacer-right {
-                    width: 150px;
-                }
-
-                .banner-countdown-container {
-                    gap: 4px;
-                }
-
-                .countdown-label {
-                    font-size: 13px;
-                }
-
-                .countdown-timer {
-                    gap: 6px;
-                }
-
-                .timer-box {
-                    width: 46px;
-                    height: 50px;
-                    border-radius: 8px;
-                }
-
-                .timer-number {
-                    font-size: 22px;
-                    line-height: 28px;
-                }
-
-                .timer-text {
-                    font-size: 10px;
-                    margin-top: 0;
-                }
-
-                .banner-countries {
-                    font-size: 10px;
-                }
-
-                .flag-icon {
-                    width: 14px;
-                    height: 10px;
-                }
-
-                .country-separator {
-                    margin: 0 12px;
-                }
-            }</style><div class="container"><div class="dooball-banner-container banner-pos-above_match_table" id="banner-ce2aa5ae356c40b2dabfd5164a486312" data-banner-id="ce2aa5ae356c40b2dabfd5164a486312"> <script>if (localStorage.getItem('dooball-banner-closed-ce2aa5ae356c40b2dabfd5164a486312')) {
-                        var expiry = localStorage.getItem('dooball-banner-closed-expiry-ce2aa5ae356c40b2dabfd5164a486312');
-                        if (!expiry || Date.now() < parseInt(expiry)) {
-                            document.write('<style>#banner-ce2aa5ae356c40b2dabfd5164a486312 { display: none !important; }</style>');
-                        } else {
-                            localStorage.removeItem('dooball-banner-closed-ce2aa5ae356c40b2dabfd5164a486312');
-                            localStorage.removeItem('dooball-banner-closed-expiry-ce2aa5ae356c40b2dabfd5164a486312');
-                                                        document.write('<style>#primary { margin-top: 15px !important; }</style>');
-                                                    }
-                    } else {
-                                                document.write('<style>#primary { margin-top: 15px !important; }</style>');
-                                            }</script><style>#primary { margin-top: 15px !important; }</style> <button type="button" class="close-banner-btn" aria-label="Close Ad">×</button> <a href="https://reffpa.com/L?tag=d_5739496m_14243c_&amp;site=5739496&amp;ad=14243&amp;r=promotions/world-win-26" target="_blank" rel="noopener"> <img src="https://img1.pic.in.th/images/banner_770x260_scale_crop6097ecd277de4029.gif" alt="reffpa"> </a></div><div class="dooball-banner-container banner-pos-above_match_table" id="banner-4ee6f52930e9747b1fdea71a097f4e44" data-banner-id="4ee6f52930e9747b1fdea71a097f4e44"> <script>if (localStorage.getItem('dooball-banner-closed-4ee6f52930e9747b1fdea71a097f4e44')) {
-                        var expiry = localStorage.getItem('dooball-banner-closed-expiry-4ee6f52930e9747b1fdea71a097f4e44');
-                        if (!expiry || Date.now() < parseInt(expiry)) {
-                            document.write('<style>#banner-4ee6f52930e9747b1fdea71a097f4e44 { display: none !important; }</style>');
-                        } else {
-                            localStorage.removeItem('dooball-banner-closed-4ee6f52930e9747b1fdea71a097f4e44');
-                            localStorage.removeItem('dooball-banner-closed-expiry-4ee6f52930e9747b1fdea71a097f4e44');
-                                                        document.write('<style>#primary { margin-top: 15px !important; }</style>');
-                                                    }
-                    } else {
-                                                document.write('<style>#primary { margin-top: 15px !important; }</style>');
-                                            }</script><style>#primary { margin-top: 15px !important; }</style> <button type="button" class="close-banner-btn" aria-label="Close Ad">×</button> <a href="" target="_blank" rel="noopener"> <img src="https://warpsport24.online/wp-content/uploads/2026/06/772X260_THAI-WC.gif" alt="FIFA WORLD 8xbet205"> </a></div><div class="dooball-banner-container banner-pos-above_match_table" id="banner-3d5212e9b5cd49e73474b30ac0e1b871" data-banner-id="3d5212e9b5cd49e73474b30ac0e1b871"> <script>if (localStorage.getItem('dooball-banner-closed-3d5212e9b5cd49e73474b30ac0e1b871')) {
-                        var expiry = localStorage.getItem('dooball-banner-closed-expiry-3d5212e9b5cd49e73474b30ac0e1b871');
-                        if (!expiry || Date.now() < parseInt(expiry)) {
-                            document.write('<style>#banner-3d5212e9b5cd49e73474b30ac0e1b871 { display: none !important; }</style>');
-                        } else {
-                            localStorage.removeItem('dooball-banner-closed-3d5212e9b5cd49e73474b30ac0e1b871');
-                            localStorage.removeItem('dooball-banner-closed-expiry-3d5212e9b5cd49e73474b30ac0e1b871');
-                                                        document.write('<style>#primary { margin-top: 15px !important; }</style>');
-                                                    }
-                    } else {
-                                                document.write('<style>#primary { margin-top: 15px !important; }</style>');
-                                            }</script><style>#primary { margin-top: 15px !important; }</style> <button type="button" class="close-banner-btn" aria-label="Close Ad">×</button> <a href="https://goto.nix68.com/sports/15711/th/12bet/index.html" target="_blank" rel="noopener"> <img src="https://warpsport24.online/wp-content/uploads/2026/06/ups-vdo.gif" alt="nix68"> </a></div><div class="dooball-banner-container banner-pos-above_match_table" id="banner-f371b43c04cc087b4afc4b4c4adea4bf" data-banner-id="f371b43c04cc087b4afc4b4c4adea4bf"> <script>if (localStorage.getItem('dooball-banner-closed-f371b43c04cc087b4afc4b4c4adea4bf')) {
-                        var expiry = localStorage.getItem('dooball-banner-closed-expiry-f371b43c04cc087b4afc4b4c4adea4bf');
-                        if (!expiry || Date.now() < parseInt(expiry)) {
-                            document.write('<style>#banner-f371b43c04cc087b4afc4b4c4adea4bf { display: none !important; }</style>');
-                        } else {
-                            localStorage.removeItem('dooball-banner-closed-f371b43c04cc087b4afc4b4c4adea4bf');
-                            localStorage.removeItem('dooball-banner-closed-expiry-f371b43c04cc087b4afc4b4c4adea4bf');
-                                                        document.write('<style>#primary { margin-top: 15px !important; }</style>');
-                                                    }
-                    } else {
-                                                document.write('<style>#primary { margin-top: 15px !important; }</style>');
-                                            }</script><style>#primary { margin-top: 15px !important; }</style> 
-                                        <button type="button" class="close-banner-btn" aria-label="Close Ad">×</button> <a href="https://ufainter.com/" target="_blank" rel="noopener"> <img src="https://img2.pic.in.th/8766.gif" alt=""> </a></div></div>
-                                        <style>.entry-header {
-        display: none;
-    }</style>
-    
-    <main id="primary" class="site-main container"><div class="row justify-content-center"><div class="col-12 col-lg-6 col-xl-8"><header class="-header"><div class="x-heading-title-container  x-heading-title-left"><div class="-title-wrap fadeInUpShortly animated" data-animatable="fadeInUpShortly" data-delay="100"><h2 class="-title">ดูทีวีออนไลน์</h2></div></div></header>
-    
-    <div class="-tv-list mt-3"><ul class="list-unstyled d-flex flex-row flex-wrap justify-content-center"><li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="intent://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/27/27.mpd#Intent;package=org.drm.player;S.userAgent=exo_player;S.title=Live%20Program;S.referer=;scheme=https;type=video/mp4;end" class="text-white">
-             
-           <div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://goodiptv.site/images/tv/KLkKLHsc5TCE9xKr2uhfbKl4E50gTdq20240418191335ch8.jpg" title="CH8" alt=" CH8" height="68"><p class="tv-title">CH8</p></div> </a></li><li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="intent://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/27/27.mpd#Intent;package=org.drm.player;S.userAgent=exo_player;S.title=Live%20Program;S.referer=;scheme=https;type=video/mp4;end" class="text-white">
-        <div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://goodiptv.site/images/tv/dhogVoGwkGXbl41VahO3KQn9X29RnCx20240418190941Workpoint.jpg" title="MONO" alt=" MONO" height="68"><p class="tv-title">WORKPOINT</p></div> </a></li><li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="intent://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/23/23.mpd#Intent;package=org.drm.player;S.userAgent=exo_player;S.title=Live%20Program;S.referer=;scheme=https;type=video/mp4;end" class="text-white">
-            
-    <div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://goodiptv.site/images/tv/dhogVoGwkGXbl41VahO3KQn9X29RnCx20240418190941Workpoint.jpg" title="MCOT HD" alt=" MCOT HD" height="68">
-    <p class="tv-title">MCOT HD</p></div> </a></li>
-    <li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="intent://hls.iptv-th.workers.dev/live/1228/playlist.m3u8#Intent;package=org.drm.player;S.userAgent=exo_player;S.title=Live%20Program;S.referer=;scheme=https;type=video/mp4;end" class="text-white">
-        <div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://goodiptv.site/images/tv/wK0lnULhkhSZq0C1b4Gm77FOO37rux720240418191350onehd.jpg" title="ONE 31 HD" alt=" ONE 31 HD" height="68"><p class="tv-title">ONE 31 HD</p></div> </a></li><li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="intent://hls.iptv-th.workers.dev/live/1228/playlist.m3u8#Intent;package=org.drm.player;S.userAgent=exo_player;S.title=Live%20Program;S.referer=;scheme=https;type=video/mp4;end" class="text-white">
-            
-    <div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://goodiptv.site/images/tv/wIvpTVufwuomyCez38RtU10ql6ReqIX20240418191057thairahttvhd.jpg" title="Thairath TV HD" alt=" Thairath TV HD" height="68"><p class="tv-title">Thairath TV HD</p></div> </a></li><li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="intent://hls.iptv-th.workers.dev/live/1004/playlist.m3u8#Intent;package=org.drm.player;S.userAgent=exo_player;S.title=Live%20Program;S.referer=;scheme=https;type=video/mp4;end" class="text-white">
-        
-        <div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://goodiptv.site/images/tv/1Ervzo24A48KRTrhArja3Oc06IV0oPG20240418191821ch3hd.jpg" title="3 HD" alt=" 3 HD" height="68"><p class="tv-title">3 HD</p></div> </a></li><li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="intent://hls.iptv-th.workers.dev/live/1057/playlist.m3u8#Intent;package=org.drm.player;S.userAgent=exo_player;S.title=Live%20Program;S.referer=;scheme=https;type=video/mp4;end" class="text-white">
-        <div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/AmarinTV_NEW512.png" title="AmarinTV HD" alt=" AmarinTV HD" height="68"><p class="tv-title">AmarinTV HD</p></div> </a></li><li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="?id=5abdd28daae73161cb8ef446" class="text-white">
-        <div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/0018.png" title="CH7 HD" alt=" CH7 HD" height="68"><p class="tv-title">CH7 HD</p></div> </a></li><li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="?id=5d4bebb6aae7315312049035" class="text-white">
-        
-        <div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/R_0022.png" title="PPTV HD" alt=" PPTV HD" height="68"><p class="tv-title">PPTV HD</p></div> </a></li><li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="?id=5fdb33c120ccacf849c813ef" class="text-white"><div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/VTVNews.png" title="VTV News" alt=" VTV News" height="68"><p class="tv-title">VTV News</p></div> </a></li><li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="?id=63ca409d1eb6dd945e497d20" class="text-white"><div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE///channelicon//3BBAsian_new.png" title="3BB Asian" alt=" 3BB Asian" height="68"><p class="tv-title">3BB Asian</p></div> </a></li><li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="?id=597e004b7ed5a24e46f6725a" class="text-white"><div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0105.png" title="Warner TV" alt=" Warner TV" height="68"><p class="tv-title">Warner TV</p></div> </a></li><li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="?id=63ca444c1eb6dd945e497d3f" class="text-white"><div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE///channelicon//Mono29Plus_new.png" title="MONO29 Plus" alt=" MONO29 Plus" height="68"><p class="tv-title">MONO29 Plus</p></div> </a></li><li class="logo-channel p-1 cursor-pointer animated fadeInUpShortly" data-animatable="fadeInUpShortly" data-delay="100"> <a href="?id=5ee1eb4d0f24872fd951d196" class="text-white">
-                   <div class="card card-body p-1 rounded-sm text-center"> <img class="mx-auto" src="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/V0112.png" title="TrueSelect" alt=" TrueSelect" height="68"><p class="tv-title">TrueSelect</p></div> </a></li></ul></div><article id="post-1531" class="post-1531 page type-page status-publish hentry"><header class="entry-header">
-            <div class="x-heading-title-container  x-heading-title-left">
-            <div class="-title-wrap fadeInUpShortly animated" data-animatable="fadeInUpShortly" data-delay="100">
-    <h1 class="-title">ดูทีวีออนไลน์</h1></
-    div></div></header>
-    <div class="entry-content"></div></article></div>
-    </div></main><div id="back-top" style=""> <a href="#--top"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path> </svg> </a></div><style>#back-top svg {
-        fill: #fff;
-        font-size: 2em;
-    }
-
-    #back-top a {
-        position: fixed;
-        right: 15px;
-        bottom: 100px;
-        background: #ab0101;
-        z-index: 1000;
-        text-decoration: none;
-        -webkit-transition: all .8s ease 0s;
-        -o-transition: all .8s ease 0s;
-        transition: all .8s ease 0s;
-        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
-        box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        -webkit-transition-duration: .4s;
-        -o-transition-duration: .4s;
-        transition-duration: .4s
-    }</style> <script>jQuery(document).ready(function(a) {
-        a(window).scroll(function() {
-                100 < a(this).scrollTop() ?
-                    a('#back-top').fadeIn() :
-                    a('#back-top').fadeOut();
-            }),
-            a('#back-top').click(function() {
-                return (
-                    a('html, body').animate({
-                            scrollTop: 0,
-                        },
-                        800
-                    ),
-                    !1
-                );
-            });
-    })</script> <script id="loading" type="text/template"><div class="x-loading-container">
-        <div class="lds-ripple">
-            <div></div>
-            <div></div>
-        </div>
-    </div></script> 
-    
-    
-    <footer id="colophon" class="site-footer container mt-5">
-    <div class="site-info text-center"> Theme: dooball by <a href="https://isgamez.com/" target="_blank">ISGAMEZ.COM</a></div></footer></div>
-    
-    <div class="x-base-overlay-screen x-theme-switcher-page-container">
-    <div class="container">
-    <div class="row -outer-row-wrapper">
-    <div class="col-md-7 col-lg-6 col-xl-5 -outer-col-wrapper">
-    <div class="row justify-content-center">
-    <div class="col-12">
-    <div class="-title"> <span>เมนู</span></div></div>
-    <div class="col-8">
-    <div class="-menu-wrapper"><ul id="menu-main-1" class="nav x-menus-container flex-column"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1015 nav-item"><a href="https://sugus25.github.io/live-streame/" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2" data-v-ebd68cb9="">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z" data-v-ebd68cb9=""></path></svg>portalheaven</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12936 nav-item"><a href="https://sugus25.github.io/iptvweb/" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><svg id="Layer_1" style="fill:#fff;width:2.5em;margin-right:5px;" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 74.57"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>fight-dispute</title>
-    
-    <path class="cls-1" d="M102.43,64.39a31.59,31.59,0,0,0,1.62-6.34,28.23,28.23,0,0,0,.16-5.11,31.42,31.42,0,0,0-2.79-11,32.16,32.16,0,0,0-4.67-4.37,26,26,0,0,0-5.13-3,28.07,28.07,0,0,0-6.12-1.88,20.31,20.31,0,0,0-5.64-.3A12,12,0,0,0,75,34,4,4,0,0,0,73,36.36c-.25,1.36,2.25,2.4,5.09,3.15l.23,0A41,41,0,0,1,85,41a1.34,1.34,0,0,1-.64,2.59l-1.28-.25c-1.44-.26-3.33-.62-5.22-1.13-3.7-.42-6.62,0-8.78,1.18a9.11,9.11,0,0,0-4.32,5.72,17.06,17.06,0,0,0-.54,2.69,33.92,33.92,0,0,0,.25,8.66,16,16,0,0,0,2,6.11A10.51,10.51,0,0,0,71,70.23a20.21,20.21,0,0,0,7.4,1.66h0c1.27,0,2.56,0,3.85-.11s2.57-.23,3.85-.43a41.48,41.48,0,0,0,7-1.53,26,26,0,0,0,6.25-3l.07-.05a27.49,27.49,0,0,0,3.08-2.35Zm-83.6-6.32a32.1,32.1,0,0,0,1.62,6.32,27.49,27.49,0,0,0,3.08,2.35l.07.05a26,26,0,0,0,6.25,3,41.48,41.48,0,0,0,6.95,1.53c1.28.2,2.57.34,3.85.43s2.58.13,3.85.11h0a20.21,20.21,0,0,0,7.4-1.66,10.51,10.51,0,0,0,4.44-3.7,16,16,0,0,0,2-6.11,33.92,33.92,0,0,0,.25-8.66,17.06,17.06,0,0,0-.54-2.69,9.11,9.11,0,0,0-4.32-5.72c-2.16-1.18-5.09-1.6-8.78-1.18-1.89.52-3.78.87-5.22,1.13l-1.28.25A1.34,1.34,0,0,1,37.84,41a41.24,41.24,0,0,1,6.68-1.42l.23,0c2.83-.75,5.34-1.79,5.09-3.15A4,4,0,0,0,47.9,34,12,12,0,0,0,43,32.31a20.31,20.31,0,0,0-5.64.3,28.07,28.07,0,0,0-6.12,1.88,26,26,0,0,0-5.13,3,32.16,32.16,0,0,0-4.67,4.37,31.42,31.42,0,0,0-2.79,11,28.45,28.45,0,0,0,.16,5.13Zm-.42,8.07c-.81,0-1.72.1-2.66.17-5.32.38-11.66.84-14-3.48C.46,60.59-.19,55.66.05,51.14c.22-4,1.13-7.7,3-9.33a6.72,6.72,0,0,1,2.05-1.25A8.75,8.75,0,0,1,7.38,40l12.4-.21a34.32,34.32,0,0,1,4.74-4.38,28.53,28.53,0,0,1,5.67-3.35A30.41,30.41,0,0,1,36.9,30a22.57,22.57,0,0,1,6.39-.33,15.05,15.05,0,0,1,6.05,2.11,6.43,6.43,0,0,1,3.12,4.12,3.73,3.73,0,0,1-1.63,3.71A13.5,13.5,0,0,1,55,41a11.66,11.66,0,0,1,5.61,7.31,18.64,18.64,0,0,1,.63,3.13c.09.73.14,1.56.17,2.45h0c0-.89.08-1.72.17-2.45a18.64,18.64,0,0,1,.63-3.13A11.63,11.63,0,0,1,67.85,41a13.5,13.5,0,0,1,4.2-1.41,3.73,3.73,0,0,1-1.63-3.71,6.43,6.43,0,0,1,3.12-4.12,15.05,15.05,0,0,1,6-2.11A22.57,22.57,0,0,1,86,30a30.41,30.41,0,0,1,6.71,2.07,28.82,28.82,0,0,1,5.67,3.35,34.32,34.32,0,0,1,4.74,4.38l12.29.2h.11a8.75,8.75,0,0,1,2.32.56,6.84,6.84,0,0,1,2.05,1.25c1.83,1.63,2.74,5.38,3,9.33.24,4.52-.41,9.45-1.65,11.69-2.39,4.32-8.73,3.86-14.05,3.48-.94-.07-1.85-.14-2.66-.17A30.33,30.33,0,0,1,100.82,69l-.07.05a28.7,28.7,0,0,1-6.88,3.36A45.66,45.66,0,0,1,86.48,74c-1.33.2-2.69.35-4.07.44s-2.68.13-4.07.11h-.13a23,23,0,0,1-8.38-1.91A13.13,13.13,0,0,1,64.31,68a18.59,18.59,0,0,1-2.43-7.2A36.72,36.72,0,0,1,61.44,56h0A36.72,36.72,0,0,1,61,60.82,18.59,18.59,0,0,1,58.57,68a13.13,13.13,0,0,1-5.52,4.63,23,23,0,0,1-8.38,1.91h-.13c-1.39,0-2.75,0-4.07-.11s-2.74-.24-4.07-.44A45.66,45.66,0,0,1,29,72.37,28.7,28.7,0,0,1,22.13,69L22.06,69a30.33,30.33,0,0,1-3.65-2.82ZM11.14,41.2,17,41c-3.36,3-4,3.88-4.58,8.19-.17,1.29-.29,2.63-.35,4,.29,2.19-.47,3.34-2.39,3.32l-1,0c-1.36-.32-2.38-1.15-2.23-3.79l.5-4.19c.22-1.88.15-4,1.49-5.46a8.52,8.52,0,0,1,2.74-1.93ZM73,52.27a1.19,1.19,0,0,1,2.3-.63,22.33,22.33,0,0,1,.82,5,17.68,17.68,0,0,1-.45,5A1.19,1.19,0,0,1,73.38,61a15.1,15.1,0,0,0,.4-4.29A20.11,20.11,0,0,0,73,52.27Zm6.44,0a1.19,1.19,0,0,1,2.29-.63,23,23,0,0,1,.83,5,17.33,17.33,0,0,1-.46,5A1.19,1.19,0,1,1,79.82,61a15.09,15.09,0,0,0,.39-4.29,20.69,20.69,0,0,0-.74-4.45Zm-31.92-.63a1.19,1.19,0,0,1,2.3.63,20,20,0,0,0-.75,4.45A15.1,15.1,0,0,0,49.5,61a1.19,1.19,0,1,1-2.32.56,17.68,17.68,0,0,1-.45-5,22.33,22.33,0,0,1,.82-5Zm-6.43,0a1.19,1.19,0,0,1,2.29.63,20.58,20.58,0,0,0-.74,4.45A15.09,15.09,0,0,0,43.06,61a1.2,1.2,0,0,1-.88,1.44,1.19,1.19,0,0,1-1.43-.88,17.33,17.33,0,0,1-.46-5,23,23,0,0,1,.83-5Zm12.45-23.7a1.66,1.66,0,0,1-2.12,2.55L37.23,18.67,53.48,19,50.81,5.21l11.76,7.84L68.88,0l4.41,13.55,13.39-7-4.9,14.09,14,1.32-6.59,7a1.66,1.66,0,0,1-2.42-2.27l2-2.09L77.25,23.51l3.54-10.16-9.45,5L68.28,8.88l-4.38,9-8.32-5.55,1.94,10-10.89-.22,6.94,5.77Zm50.87,14.25a33.56,33.56,0,0,1,2.43,10.61,32.72,32.72,0,0,1-1.27,11l1.7.12c4.63.34,10.15.74,11.79-2.25,1-1.89,1.59-6.28,1.36-10.42-.18-3.39-.86-6.51-2.17-7.67a4.28,4.28,0,0,0-1.33-.82,6.67,6.67,0,0,0-1.68-.4l-1.63,0a6.36,6.36,0,0,1,.84.79c1.34,1.49,1.27,3.58,1.49,5.46l.5,4.19c.15,2.64-.87,3.47-2.23,3.79l-1,0c-1.92,0-2.68-1.13-2.39-3.32-.06-1.39-.18-2.73-.35-4-.47-3.65-1-4.86-3.21-7l-2.86,0Z"></path></svg>tv</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1040 nav-item"><a href="https://warpsport24.online/favorite/" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><span class="badge badge-favorite"></span> <i class="far fa-star mr-1" style="font-size: 1.47rem;"></i> เกมติดตาม</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11061 nav-item"><a href="https://warpsport24.online/sport-other/" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><i class="fas fa-futbol mr-1" style="font-size: 1.47rem;"></i> กีฬาอื่น</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1017 nav-item"><a href="https://www.jokerzone68.com/list-games" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2" data-v-ebd68cb9=""><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" data-v-ebd68cb9=""></path></svg>บทความ</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1016 nav-item">
-        
-
-        
-        <a href="intent://m7smarter.ddns.net#Intent;scheme=http;launchFlags=0x14000000;package=com.mycompany.app.soulbrowser;component=com.mycompany.app.soulbrowser/com.mycompany.app.web.WebLauncher;end" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6 mr-2" data-v-ebd68cb9=""><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" data-v-ebd68cb9=""></path>
-        
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" data-v-ebd68cb9=""></path></svg>M7SMARTER</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1158 nav-item">
-            <a href="intent://poid0020.trueddns.com:54336/web/?fbclid=IwVERDUATrzElwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHjO4c0-aD2TPFRVgVyt19oZtONyXQ1C7h3juTlj2Uj6WhCij2yt05cmNtl9u_aem_KzuFFvnqV2q3I3R80sMXUg#/movies?topParentId=9a461091f124286bc2ca031795a73c16&collectionType=movies#Intent;scheme=http;launchFlags=0x14400000;package=com.mycompany.app.soulbrowser;end" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><i class="fas fa-futbol mr-1" style="font-size: 1.47rem;"></i> JELLYFIN</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11757 nav-item"><a target="_blank" href="intent://movie911hd.com#Intent;scheme=https;launchFlags=0x14000000;package=com.mycompany.app.soulbrowser;end" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 4l0 16"></path><path d="M16 4l0 16"></path><path d="M4 8l4 0"></path><path d="M4 16l4 0"></path><path d="M4 12l16 0"></path><path d="M16 8l4 0"></path><path d="M16 16l4 0"></path></svg> ดูหนัง</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21620 nav-item"><a target="_blank" href="https://t.me/kkvindoo" class="nav-link animated fadeInLeftShortly" data-animatable="fadeInLeftShortly" data-delay="150"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(255, 255, 255)" d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM435 240.7C431.3 279.9 415.1 375.1 406.9 419C403.4 437.6 396.6 443.8 390 444.4C375.6 445.7 364.7 434.9 350.7 425.7C328.9 411.4 316.5 402.5 295.4 388.5C270.9 372.4 286.8 363.5 300.7 349C304.4 345.2 367.8 287.5 369 282.3C369.2 281.6 369.3 279.2 367.8 277.9C366.3 276.6 364.2 277.1 362.7 277.4C360.5 277.9 325.6 300.9 258.1 346.5C248.2 353.3 239.2 356.6 231.2 356.4C222.3 356.2 205.3 351.4 192.6 347.3C177.1 342.3 164.7 339.6 165.8 331C166.4 326.5 172.5 322 184.2 317.3C256.5 285.8 304.7 265 328.8 255C397.7 226.4 412 221.4 421.3 221.2C423.4 221.2 427.9 221.7 430.9 224.1C432.9 225.8 434.1 228.2 434.4 230.8C434.9 234 435 237.3 434.8 240.6z"></path></svg> ติดต่อเรา</a></li></ul></div></div></div></div></div></div></div><div class="x-button-footer-actions "><div class="-menu-wrapper"> <a href="/" class="-btn-item -btn-favorite" target="_self"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokewidth="1.5" stroke="red" class="w-6"> <path strokelinecap="round" strokelinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path> </svg> <span class="https://coffee-spark-ai-barista-ceb7e.web.app">หน้าแรก</span> </a>
-    
-    IB88
-    
-    <a href="https://www.ib888x4.com/" class="-btn-item -btn-favorite" target="_self"> <span class="badge badge-favorite -mobile"></span> <i class="far fa-star mb-1" style="font-size: 1.45rem;"></i> <span class="-typo">IB88</span> </a> <a href="/highlight" class="-btn-item -btn-hilight" target="_self"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" class="w-6"> <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path> <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z"></path> </svg> <span class="-typo">ไฮไลท์บอล</span> </a> <a href="https://sugus25.github.io/iptvwebplayer/" class="-btn-item -btn-category" target="_self"> <svg style="color: var(--accent);" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-tv" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path> <path d="M16 3l-4 4l-4 -4"></path> </svg> <span class="https://sugus25.github.io/iptvweb/">ดูทีวี</span> </a> <a href="https://www.jokerzone68.com/list-games" class="-btn-item -btn-category" target="_self"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" class="w-6"> <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"></path> </svg> <span class="https://sugus25.github.io/live-streame/">ข่าวสาร</span> </a></div></div><div class="x-modal modal " id="matchModal" tabindex="-1" role="dialog" aria-hidden="true" data-loading-container=".modal-body" data-ajax-modal-always-reload="true" data-ajax-modal="https://warpsport24.online/wp-content/themes/dooball/_ajax_/match.php?_nonce=63e40e6b8f" data-container="#matchModal">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable -modal-size -modal-bigger" role="document"><div class="modal-content -modal-content"> <button type="button" class="btn -btn-close -modal " data-dismiss="modal" aria-label="Close"> <i class="fas fa-times"></i> </button><div class="modal-body"><div class="js-modal-content"></div></div></div></div></div><div class="dooball-banner-group banner-pos-below_match_table"><div class="dooball-banner-container banner-pos-below_match_table" id="banner-1123baffb11dbc5e5b68822e71f1f571" data-banner-id="1123baffb11dbc5e5b68822e71f1f571"> <button type="button" class="close-banner-btn" aria-label="Close Ad">×</button> 
-    <a href="" target="_blank" rel="noopener"> <img src="" alt="FIFA WORLD"> </a></div></div>
-    
-    <script type="speculationrules">{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/dooball/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}</script> <script>document.addEventListener('DOMContentLoaded', function() {
-            var closeButtons = document.querySelectorAll('.dooball-banner-container .close-banner-btn');
-            closeButtons.forEach(function(btn) {
-                btn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    var container = btn.closest('.dooball-banner-container');
-                    var bannerId = container.getAttribute('data-banner-id');
-
-                    // Hide with transition
-                    container.style.transition = 'opacity 0.25s ease, height 0.25s ease, margin 0.25s ease';
-                    container.style.opacity = '0';
-                    setTimeout(function() {
-                        container.style.height = '0';
-                        container.style.margin = '0';
-                        container.style.padding = '0';
-                        container.style.overflow = 'hidden';
-                        setTimeout(function() {
-                            container.remove();
-                        }, 250);
-                    }, 250);
-
-                    // Adjust page content layout if the closed banner was above the match table
-                    if (container.classList.contains('banner-pos-above_match_table')) {
-                        var primary = document.getElementById('primary');
-                        if (primary) {
-                            primary.style.transition = 'margin-top 0.25s ease';
-                            primary.style.setProperty('margin-top', 'calc(4.5rem + var(--wc-banner-h, 60px))', 'important');
-                        }
-                    }
-
-                    if (bannerId) {
-                        var expiryTime = Date.now() + (24 * 60 * 60 * 1000); // 24 hours
-                        localStorage.setItem('dooball-banner-closed-' + bannerId, '1');
-                        localStorage.setItem('dooball-banner-closed-expiry-' + bannerId, expiryTime.toString());
-                    }
-                });
-            });
-        });</script> 
-        
-        <script id="seed-social-js" src="https://warpsport24.online/wp-content/plugins/seed-social/script.js?ver=2021.02"></script> 
-        <script id="dooball-runtime-js" src="https://warpsport24.online/wp-content/themes/dooball/js/runtime.js?ver=1cd6dbe187334cbf7afdb84abfe8ac4a"></script> 
-    <script id="dooball-878-js" src="https://warpsport24.online/wp-content/themes/dooball/js/878.js?ver=1cd6dbe187334cbf7afdb84abfe8ac4a"></script> 
-        <script id="dooball-782-js" src="https://warpsport24.online/wp-content/themes/dooball/js/782.js?ver=1cd6dbe187334cbf7afdb84abfe8ac4a"></script> 
-        
-        <script id="dooball-app-js" src="https://warpsport24.online/wp-content/themes/dooball/js/app.js?ver=1.1"></script>
-    <script id="dooball-countdown-js" src="https://warpsport24.online/wp-content/themes/dooball/js/jquery.countdown.min.js?ver=1cd6dbe187334cbf7afdb84abfe8ac4a"></script> 
-        <script id="dooball-navigation-js" src="https://warpsport24.online/wp-content/themes/dooball/js/navigation.js?ver=1.0.0"></script> 
-        <script id="dooball_theme-js-extra">var dooball_obj = {"theme":"https://warpsport24.online/wp-content/themes/dooball","ajaxurl":"https://warpsport24.online/wp-admin/admin-ajax.php","match_nonce":"63e40e6b8f","leagueKey_nonce":"f512fe640a","favorite_nonce":"e847fb7898","tab_nonce":"5b59f1aa2f","refresh_nonce":"88e9ca3c3e"};
-//# sourceURL=dooball_theme-js-extra</script> 
-
-<script id="dooball_theme-js" src="https://warpsport24.online/wp-content/themes/dooball/js/theme.js?ver=1777821046">
-</script> <script id="wp-emoji-settings" type="application/json">{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://warpsport24.online/wp-includes/js/wp-emoji-release.min.js?ver=1cd6dbe187334cbf7afdb84abfe8ac4a"}}</script> <script type="module">/*! This file is auto-generated */
-const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
-//# sourceURL=https://warpsport24.online/wp-includes/js/wp-emoji-loader.min.js</script> <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;1b9cb2f5bacd4424a69a531a0eba4b4e&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
-<script async="" type="text/javascript" src="https://s4.histats.com/stats/5033985.php?5033985&amp;@f16&amp;@g0&amp;@h3&amp;@i1&amp;@j1782794572528&amp;@k11788&amp;@l3&amp;@m%E0%B8%94%E0%B8%B9%E0%B8%97%E0%B8%B5%E0%B8%A7%E0%B8%B5%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C%20-%20Warpsport24&amp;@n0&amp;@ohttps%3A%2F%2Fwarpsport24.xyz%2Ftv-online%2F&amp;@q0&amp;@r0&amp;@s9&amp;@tth-TH&amp;@u421&amp;@b1:147422505&amp;@b3:1782794573&amp;@b4:js15_as.js&amp;@b5:420&amp;@a-_0.2.1&amp;@vhttps%3A%2F%2Fwarpsport24.xyz%2Ftv-online%2F&amp;@w"></script><script async="" type="text/javascript" src="https://s10.histats.com/counters/cc_9.js"></script></body>
+</body>
+</html>
