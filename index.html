@@ -178,7 +178,7 @@
     }
     .ext-btn:hover { transform: translateY(-2px); }
     .ext-drm { background: linear-gradient(135deg, #7c3aed, #5b21b6); }
-    .ext-yamby { background: linear-gradient(135deg, #ea4335, #d33426); }
+    .ext-Drm.Player { background: linear-gradient(135deg, #ea4335, #d33426); }
     .ext-win { background: linear-gradient(135deg, #0ea5e9, #0284c7); }
     .ext-copy { background: linear-gradient(135deg, #10b981, #059669); }
     .ext-copy.copied { background: #4ade80; color: #000; }
@@ -274,7 +274,7 @@
       <!-- ✅ ปุ่มภายนอก — แก้ไขใหม่ -->
       <div class="ext-bar" id="extBar">
         <button class="ext-btn ext-drm" id="openInAppBtn">📲 เปิดในแอปอื่น</button>
-        <button class="ext-btn ext-yamby" id="yambyBtn">📱 Yamby</button>
+        <button class="ext-btn ext-Drm.Player" id="Drm.PlayerBtn">📱 Drm.Player</button>
         <button class="ext-btn ext-win" id="winBtn">🖥️ เบราว์เซอร์</button>
         <button class="ext-btn ext-copy" id="copyBtn">📋 คัดลอกลิงก์</button>
       </div>
@@ -584,10 +584,10 @@ document.getElementById('openInAppBtn').addEventListener('click', () => {
   }, 800);
 });
 
-// 📱 เปิดเฉพาะ Yamby
-document.getElementById('yambyBtn').addEventListener('click', () => {
+// 📱 เปิดเฉพาะ Drm.Player
+document.getElementById('Drm.PlayerBtn').addEventListener('click', () => {
   if (!currentStreamUrl) return showStatus('⚠️ เลือกช่องก่อนครับ', 'err');
-  const intentUrl = `intent:${currentStreamUrl}#Intent;package=com.hush.yamby;action=android.intent.action.VIEW;type=video/*;S.userAgent=exo_player;end`;
+  const intentUrl = `intent:${currentStreamUrl}#Intent;package=org.drm.player;action=android.intent.action.VIEW;type=video/*;S.userAgent=exo_player;end`;
   window.location.href = intentUrl;
 });
 
