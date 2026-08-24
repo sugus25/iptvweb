@@ -4,6 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <title>📺 IPTV Player — M3U + JSON + W3U</title>
+  
+  <!-- 🔥 นำเข้า Firebase SDK เวอร์ชัน 9+ -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+  import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
+
+  // ==============================================
+  // ⚙️ ใส่ข้อมูล Firebase ของคุณตรงนี้ครับ
+  // ==============================================
+  const firebaseConfig = {
+    apiKey: "AIzaSyCKTJ7qKWXdH9epAQCDfiBlIXkVT9MrYFA",
+    authDomain: "ostudio-7134661210-2104d.firebaseapp.com",
+    databaseURL: "https://DATABASE_URLของคุณ.firebaseio.com",
+    projectId: "studio-7134661210-2104d",
+    storageBucket: "studio-7134661210-2104d.firebasestorage.app",
+    messagingSenderId: "853013908353",
+    appId: "1:853013908353:web:269fc991c07527a7b57680"
+  };
+
+  // เริ่มต้นใช้งาน Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  // ให้ฟังก์ชันอื่นๆ เข้าถึงได้
+  window.firebaseDB = { db, ref, onValue, set };
+</script>
+  
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.21/dist/hls.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dashjs@4.7.4/dist/dash.all.min.js"></script>
@@ -299,7 +326,7 @@
         <button class="ext-btn ext-drm" id="openInAppBtn">📲 เปิดในแอปอื่น</button>
         <button class="ext-btn ext-yamby" id="yambyBtn">📱 Yamby</button>
         <button class="ext-btn ext-win" id="winBtn">🖥️ DrmPlayer</button>
-        <button class="ext-btn ext-copy" id="copyBtn">📋 คัดลอกลิงก์</button>
+        <button class="ext-btn ext-copy" id="copyBtn">📋 MxPlayer</button>
       </div>
     </div>
   </div>
@@ -678,11 +705,8 @@ document.getElementById('winBtn').addEventListener('click', () => {
 
 document.getElementById('copyBtn').addEventListener('click', () => {
   if (!currentStreamUrl) return showStatus('⚠️ เลือกช่องก่อนครับ', 'err');
-  navigator.clipboard.writeText(currentStreamUrl).then(() => {
-    showStatus('✅ คัดลอกลิงก์แล้ว', 'ok');
-    document.getElementById('copyBtn').classList.add('copied');
-    setTimeout(() => document.getElementById('copyBtn').classList.remove('copied'), 2000);
-  });
+  const intentUrl = `intent:${currentStreamUrl}#Intent;package=com.mxtech.videoplayer.ad;action=android.intent.action.VIEW;type=video/*;S.userAgent=exo_player;end`;
+  window.location.href = intentUrl;
 });
 
 // ===== เล่นลิงก์ตรง =====
