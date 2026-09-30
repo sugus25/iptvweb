@@ -1,0 +1,56 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-chno="224" tvg-name="True Movie Hits" group-title="🎬 ภาพยนตร์",🟢 True Movie Hits
+#EXTVLCOPT:http-referrer=https://trueid.net/
+https://tv.trueid.net/th-th/live/true-movie-hits
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/f8eef0cf775f.jfif" group-title="iPTVplus", MySci
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://edge-1.m-fixer.net/
+https://edge-1.m-fixer.net:8092/stream/ais/mysci/master.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/81927b8d5365.jfif" group-title="iPTVplus", Samrujlok
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://edge-2.m-fixer.net/
+https://edge-2.m-fixer.net:8092/stream/ais/samrujlok/master.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://cdn.imgchest.com/files/0cfebc3ad9bc.jpg" group-title="iPTVplus", Animal Show
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://edge-1.m-fixer.net/
+https://edge-1.m-fixer.net:8092/stream/ais/animalshow/master.m3u8
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://overseer.blackboxsys.net/images/png/hd-thairath.png", ThaiRath TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://edge-1.m-fixer.net/
+https://edge-1.m-fixer.net:8092/stream/ais/thairathtvhd/master.m3u8
+
+
+#EXTINF:-1 group-title="iPTVplus" tvg-logo="https://gigatv.3bbtv.co.th/wp-content/themes/changwattana/assets/channel/27.png", CH8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://edge-1.m-fixer.net/
+https://edge-1.m-fixer.net:8092/stream/ais/ch8/master.m3u8
+
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE///channelicon//Mono29Plus_new.png" group-title="ช่องทีวีดิจิตอล", MonoPlus
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://edge-1.m-fixer.net/
+https://edge-1.m-fixer.net:8092/stream/ais/mono29plus/master.m3u8
+
+
+
+
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://edge-1.m-fixer.net/
+https://edge-1.m-fixer.net:8092/stream/ais/cinemax/master.m3u8
+
+
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon///KhongDeeThailand.png" group-title="ช่องสารคดี", Khong Dee Thailand
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://edge-1.m-fixer.net/
+https://edge-1.m-fixer.net:8092/stream/ais/khongdeethailand/master.m3u8
+
+
+
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://edge-1.m-fixer.net/
