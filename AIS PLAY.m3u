@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U url="https://raw.githubusercontent.com/sugus25/iptvweb/refs/heads/main/AIS%20PLAY.m3u"
 
 #EXTINF:-1 tvg-chno="224" tvg-name="True Movie Hits" group-title="🎬 ภาพยนตร์",🟢 True Movie Hits
 #EXTVLCOPT:http-referrer=https://trueid.net/
